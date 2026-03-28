@@ -1,0 +1,35 @@
+name: Verify
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run JavaScript tests
+        run: node --test tests/qb1_tracker_helpers.test.mjs tests/email_consolidator.test.mjs
+
+      - name: Run Python tests
+        run: python -m unittest tests.test_ingest_onedrive tests.test_verify_repo_consistency
+
+      - name: Generate consistency reports
+        run: |
+          python scripts/verify_repo_consistency.py
+          python scripts/repo_sweep.py
