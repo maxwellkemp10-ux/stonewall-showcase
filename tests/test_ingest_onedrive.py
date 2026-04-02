@@ -12,7 +12,9 @@ from unittest import mock
 
 from scripts.ingest_onedrive import (
     CaseRecord,
+    DEFAULT_MANUAL_OVERRIDES,
     IntakeError,
+    LEGACY_MANUAL_OVERRIDES,
     build_case_keywords,
     choose_primary_case,
     classify_artifact,
@@ -21,6 +23,7 @@ from scripts.ingest_onedrive import (
     cmd_sync_notion,
     derive_case_tag,
     extract_docx_text,
+    load_manual_overrides,
     normalize_path_for_export,
     notion_api,
     score_case_matches,
@@ -472,6 +475,90 @@ class SyncNotionTests(unittest.TestCase):
             notion_api("fake-token", "POST", "data_sources/demo/query", {}, retries=3)
         self.assertEqual(mock_urlopen.call_count, 3)
         self.assertEqual(mock_sleep.call_count, 2)
+
+
+class LoadManualOverridesTests(unittest.TestCase):
+    """Tests for the legacy manual overrides fallback (PR #105)."""
+
+    def test_load_manual_overrides_falls_back_to_legacy_path(self) -> None:
+        """When the local default file is missing but legacy exists, use legacy."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            local_path = root / "local_overrides.json"
+            legacy_path = root / "legacy_overrides.json"
+
+            source = (root / "some_doc.pdf").resolve()
+            legacy_data = [
+                {"original_path": str(source), "mode": "link", "reason": "Legacy."}
+            ]
+            legacy_path.write_text(json.dumps(legacy_data), encoding="utf-8")
+
+            with (
+                mock.patch("scripts.ingest_onedrive.DEFAULT_MANUAL_OVERRIDES", local_path),
+                mock.patch("scripts.ingest_onedrive.LEGACY_MANUAL_OVERRIDES", legacy_path),
+                contextlib.redirect_stderr(io.StringIO()) as stderr,
+            ):
+                overrides = load_manual_overrides(local_path)
+
+            self.assertIn(str(source), overrides)
+            self.assertEqual(overrides[str(source)]["mode"], "link")
+            self.assertIn("falling back", stderr.getvalue())
+
+    def test_load_manual_overrides_explicit_path_skips_legacy(self) -> None:
+        """An explicit custom path should NOT read the legacy file."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            custom_path = root / "custom.json"
+            legacy_path = root / "legacy_overrides.json"
+
+            custom_path.write_text("[]", encoding="utf-8")
+            legacy_path.write_text(
+                json.dumps([{"original_path": "/x", "mode": "no_case", "reason": "x"}]),
+                encoding="utf-8",
+            )
+
+            with (
+                mock.patch("scripts.ingest_onedrive.DEFAULT_MANUAL_OVERRIDES", root / "default.json"),
+                mock.patch("scripts.ingest_onedrive.LEGACY_MANUAL_OVERRIDES", legacy_path),
+            ):
+                overrides = load_manual_overrides(custom_path)
+
+            self.assertEqual(overrides, {})
+
+    def test_load_manual_overrides_merges_legacy_without_overwriting_local(self) -> None:
+        """When both local and legacy exist, local entries take precedence and
+        legacy-only entries are carried through."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            local_path = root / "local_overrides.json"
+            legacy_path = root / "legacy_overrides.json"
+
+            shared_source = (root / "shared.pdf").resolve()
+            legacy_only_source = (root / "legacy_only.txt").resolve()
+
+            local_data = [
+                {"original_path": str(shared_source), "mode": "link", "reason": "Local wins."}
+            ]
+            legacy_data = [
+                {"original_path": str(shared_source), "mode": "no_case", "reason": "Legacy."},
+                {"original_path": str(legacy_only_source), "mode": "no_case", "reason": "Legacy only."},
+            ]
+
+            local_path.write_text(json.dumps(local_data), encoding="utf-8")
+            legacy_path.write_text(json.dumps(legacy_data), encoding="utf-8")
+
+            with (
+                mock.patch("scripts.ingest_onedrive.DEFAULT_MANUAL_OVERRIDES", local_path),
+                mock.patch("scripts.ingest_onedrive.LEGACY_MANUAL_OVERRIDES", legacy_path),
+            ):
+                overrides = load_manual_overrides(local_path)
+
+            # Local wins for shared key
+            self.assertEqual(overrides[str(shared_source)]["mode"], "link")
+            self.assertEqual(overrides[str(shared_source)]["reason"], "Local wins.")
+            # Legacy-only key is carried through
+            self.assertIn(str(legacy_only_source), overrides)
+            self.assertEqual(overrides[str(legacy_only_source)]["mode"], "no_case")
 
 
 if __name__ == "__main__":

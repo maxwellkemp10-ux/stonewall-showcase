@@ -27,6 +27,9 @@ sources/emails/**/*.csv
 sources/emails/**/*.xlsx
 sources/emails/consolidated_emails.json
 
+# Local-only manual overrides (user-specific, never commit)
+*.local.json
+
 # Generated intake planning/report artifacts
 catalog/intake/*.jsonl
 catalog/intake/*_report_*.md

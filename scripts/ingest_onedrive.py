@@ -28,7 +28,8 @@ DEFAULT_CASE_INDEX = REPO_ROOT / "scripts" / "case_index.json"
 DEFAULT_MANIFEST = REPO_ROOT / "catalog" / "intake" / "onedrive_ingest_manifest.jsonl"
 DEFAULT_REVIEW_QUEUE = REPO_ROOT / "catalog" / "intake" / "onedrive_review_queue.md"
 DEFAULT_DERIVATIVE_ROOT = REPO_ROOT / "sources" / "onedrive_ingest"
-DEFAULT_MANUAL_OVERRIDES = REPO_ROOT / "catalog" / "intake" / "onedrive_manual_case_overrides.json"
+DEFAULT_MANUAL_OVERRIDES = REPO_ROOT / "catalog" / "intake" / "onedrive_manual_case_overrides.local.json"
+LEGACY_MANUAL_OVERRIDES = REPO_ROOT / "catalog" / "intake" / "onedrive_manual_case_overrides.json"
 
 LEGAL_MATTERS_DS_ID = os.environ.get("NOTION_LEGAL_MATTERS_DB", "YOUR_LEGAL_MATTERS_DATABASE_ID")
 STONEWALL_ARCHIVE_DS_ID = os.environ.get("NOTION_ARCHIVE_DB", "YOUR_ARCHIVE_DATABASE_ID")
@@ -993,10 +994,10 @@ def choose_primary_case(candidates: list[MatchCandidate]) -> MatchCandidate | No
     return None
 
 
-def load_manual_overrides(path: Path) -> dict[str, dict]:
-    if not path.exists():
-        return {}
-    raw = json.loads(path.read_text(encoding="utf-8"))
+def parse_manual_overrides_file(filepath: Path) -> dict[str, dict]:
+    """Parse a manual overrides JSON file (list or dict format) into a dict
+    keyed by original_path."""
+    raw = json.loads(filepath.read_text(encoding="utf-8"))
     overrides: dict[str, dict] = {}
     if isinstance(raw, list):
         for item in raw:
@@ -1009,6 +1010,30 @@ def load_manual_overrides(path: Path) -> dict[str, dict]:
                 merged = dict(item)
                 merged.setdefault("original_path", original_path)
                 overrides[str(original_path)] = merged
+    return overrides
+
+
+def load_manual_overrides(path: Path) -> dict[str, dict]:
+    if not path.exists():
+        if path == DEFAULT_MANUAL_OVERRIDES and LEGACY_MANUAL_OVERRIDES.exists():
+            print(
+                f"Manual overrides: local file not found, falling back to {LEGACY_MANUAL_OVERRIDES}",
+                file=sys.stderr,
+            )
+            try:
+                return parse_manual_overrides_file(LEGACY_MANUAL_OVERRIDES)
+            except (json.JSONDecodeError, OSError) as exc:
+                print(f"Manual overrides: skipping legacy fallback — could not read {LEGACY_MANUAL_OVERRIDES}: {exc}", file=sys.stderr)
+                return {}
+        return {}
+    overrides = parse_manual_overrides_file(path)
+    if path == DEFAULT_MANUAL_OVERRIDES and LEGACY_MANUAL_OVERRIDES.exists():
+        try:
+            legacy_overrides = parse_manual_overrides_file(LEGACY_MANUAL_OVERRIDES)
+            for original_path, item in legacy_overrides.items():
+                overrides.setdefault(original_path, item)
+        except (json.JSONDecodeError, OSError) as exc:
+            print(f"Manual overrides: skipping legacy merge — could not read {LEGACY_MANUAL_OVERRIDES}: {exc}", file=sys.stderr)
     return overrides
 
 
