@@ -136,15 +136,22 @@ def extract_email_candidates(
 
 
 def scan_markdown_candidates(
+    cases: dict[str, dict] | None = None,
     patterns: list[str] | None = None,
 ) -> dict[str, list[str]]:
-    """Scan markdown files for complaint-context date signals."""
+    """Scan markdown files for complaint-context date signals.
+
+    Results are keyed by case name (matched from file path) so they can
+    be merged directly with email candidates.  Files that don't match any
+    known case name are keyed by filepath as a fallback.
+    """
     candidates: defaultdict[str, list[str]] = defaultdict(list)
     if patterns is None:
         patterns = [
             str(REPO_ROOT / "sources" / "emails" / "**" / "*.md"),
             str(REPO_ROOT / "catalog" / "**" / "*.md"),
         ]
+    case_names = list(cases.keys()) if cases else []
     for pattern in patterns:
         for filepath in glob.iglob(pattern, recursive=True):
             try:
@@ -156,10 +163,21 @@ def scan_markdown_candidates(
                 continue
             if not re.search(r"complaint", text, re.IGNORECASE):
                 continue
+            dates: list[str] = []
             for m in EMBEDDED_DATE_RE.finditer(text):
                 iso = normalize_date(m.group(1))
                 if iso:
-                    candidates[filepath].append(iso)
+                    dates.append(iso)
+            if not dates:
+                continue
+            # Try to map the file to a known case name
+            key = filepath
+            fp_lower = filepath.lower()
+            for name in case_names:
+                if name.lower().replace(" ", "_") in fp_lower or name.lower().replace(" ", "-") in fp_lower:
+                    key = name
+                    break
+            candidates[key].extend(dates)
     return dict(candidates)
 
 
@@ -188,7 +206,12 @@ def load_cases(case_index_path: Path) -> dict[str, dict]:
     except (json.JSONDecodeError, OSError):
         return {}
     if isinstance(raw, list):
-        return {rec.get("case_name", ""): rec for rec in raw if rec.get("case_name")}
+        result: dict[str, dict] = {}
+        for rec in raw:
+            name = rec.get("name") or rec.get("case_name") or ""
+            if name:
+                result[name] = rec
+        return result
     if isinstance(raw, dict):
         return raw
     return {}
@@ -303,7 +326,7 @@ def main(argv: list[str] | None = None) -> int:
     cases = load_cases(Path(args.case_index))
     case_dates = load_case_dates(Path(args.case_dates))
     email_candidates = extract_email_candidates(Path(args.emails), cases)
-    markdown_candidates = scan_markdown_candidates()
+    markdown_candidates = scan_markdown_candidates(cases)
     all_candidates = merge_candidate_sources(email_candidates, markdown_candidates)
     rows = build_rows(cases, case_dates, all_candidates)
     csv_path, md_path = write_outputs(rows, args.stamp, Path(args.out_dir))
