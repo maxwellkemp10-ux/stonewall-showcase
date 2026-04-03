@@ -1,4 +1,5 @@
 ---
+icon: scale-balanced
 metaLinks:
   alternates:
     - https://app.gitbook.com/s/2gzprIe0ymqfqsequAXB/
