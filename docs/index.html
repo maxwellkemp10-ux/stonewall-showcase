@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Stonewall Showcase is a legal document intelligence platform for high-volume civil litigation.">
+  <meta name="description" content="Stonewall Showcase — Enterprise legal intelligence platform. Public product demo presenting v9 innovations, module architecture, and operational metrics.">
   <meta name="theme-color" content="#0b0f14">
-  <title>Stonewall Showcase</title>
+  <title>Stonewall Showcase — Public Product Demo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,217 +19,292 @@
       <a class="brand" href="#top" aria-label="Stonewall Showcase home">
         <span class="brand__mark">SW</span>
         <span class="brand__copy">
-          <strong>Stonewall Showcase</strong>
+          <strong>Stonewall</strong>
           <span>Legal document intelligence platform</span>
         </span>
       </a>
 
       <nav class="topnav" aria-label="Primary">
-        <a href="#system">System</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#model">Model</a>
-        <a href="#surfaces">Surfaces</a>
+        <a href="#top">Home</a>
+        <a href="#modules">Showcase</a>
+        <a href="#metrics">Insights</a>
+        <a href="#features">Claude Code</a>
+        <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">Repository</a>
       </nav>
     </div>
   </header>
 
   <main id="content">
+    <!-- Hero with showcase stats -->
     <section class="hero" id="top">
       <div class="hero__sigil" aria-hidden="true">SW</div>
       <div class="wrap hero__grid">
         <div class="hero__content">
-          <p class="eyebrow">Stonewall at Manassas</p>
-          <h1>Stonewall turns litigation exhaust into a live operating corpus.</h1>
+          <p class="eyebrow">Stonewall Platform v9</p>
+          <h1>Enterprise legal intelligence, sanitized for public demo.</h1>
           <p class="lede">
-            OneDrive exports, Outlook mail, Notion matters, and repo-side QC move through a single
-            pipeline that ingests, tags, cross-links, and audits high-volume civil litigation work.
+            This showcase presents the strongest v9 innovations with all client-specific names,
+            matter lore, and sensitive references removed. What remains is the architecture:
+            deterministic analysis workflows, source-grounded retrieval, and auditable automation.
           </p>
 
           <div class="actions">
-            <a class="button" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">View repository</a>
-            <a class="secondary" href="https://github.com/maxwellkemp10-ux/stonewall-showcase/blob/main/docs/ARCHITECTURE.md">Read architecture</a>
-            <a class="secondary" href="https://github.com/maxwellkemp10-ux/stonewall-showcase#readme">Read repo brief</a>
+            <a class="button" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">Explore Showcase Repo</a>
+            <a class="secondary" href="#metrics">View Analytics</a>
+            <a class="secondary" href="prototype/">Private Prototype</a>
           </div>
 
-          <dl class="hero__facts" aria-label="Project highlights">
+          <dl class="hero__facts" aria-label="Showcase highlights">
             <div class="fact">
-              <dt>Throughput</dt>
+              <dt>Behavioral Patterns</dt>
+              <dd>176</dd>
+              <p>Cataloged institutional patterns in the live phenomenology registry.</p>
+            </div>
+            <div class="fact">
+              <dt>Cataloged Artifacts</dt>
+              <dd>750+</dd>
+              <p>Indexed artifacts under manifest control with full traceability.</p>
+            </div>
+            <div class="fact">
+              <dt>Active Matter Streams</dt>
               <dd>40+</dd>
-              <p>Active matters handled in the source working vertical.</p>
+              <p>Live matter pipelines with synchronized case posture tracking.</p>
             </div>
             <div class="fact">
-              <dt>Email corpus</dt>
-              <dd>Live</dd>
-              <p>Inbound and outbound correspondence matched to case matters in Notion.</p>
-            </div>
-            <div class="fact">
-              <dt>QC loop</dt>
-              <dd>GitHub</dd>
-              <p>Consistency checks and reporting run against every push.</p>
-            </div>
-            <div class="fact">
-              <dt>Delivery</dt>
-              <dd>Managed</dd>
-              <p>This repo is an evaluation surface, not a self-serve SaaS signup page.</p>
+              <dt>Orchestrated Skill Modules</dt>
+              <dd>6</dd>
+              <p>Purpose-built AI modules operating under strict execution boundaries.</p>
             </div>
           </dl>
         </div>
 
         <aside class="hero__aside">
-          <p class="aside__label">Control plane</p>
+          <p class="aside__label">V9 Innovations</p>
+          <div class="aside__intro">
+            <strong>Core capabilities, rebuilt for public-safe storytelling</strong>
+            <span>We extracted the high-leverage patterns and system design choices from
+            Stonewall v9, then rewrote every public-facing description to remove private
+            identities, confidential legal detail, and internal lore canon.</span>
+          </div>
           <ul class="layer-list">
             <li>
-              <strong>Source</strong>
-              <span>OneDrive PDFs, DOCX, XLSX, screenshots, and Outlook CSV exports.</span>
+              <strong>Deterministic Mode Router</strong>
+              <span>Strict execution switch separating analytical narration from operational execution.</span>
             </li>
             <li>
-              <strong>Ingestion</strong>
-              <span><code>ingest_onedrive.py</code> and <code>parse_emails.ps1</code> shape upstream files.</span>
+              <strong>Codex + Registry Stack</strong>
+              <span>Identity, timeline, case-state, and pattern indexes form a single retrieval stack.</span>
             </li>
             <li>
-              <strong>Processing</strong>
-              <span><code>email_consolidator.mjs</code>, <code>docx_to_md.py</code>, and <code>email_defuzz.mjs</code> normalize the corpus.</span>
+              <strong>Retrieval Cascade</strong>
+              <span>Fixed resolution path: synthesis → case map → event map → identity map → corpus.</span>
             </li>
             <li>
-              <strong>Sync</strong>
-              <span><code>notion_wire_cases.py</code>, <code>notion_case_dates.py</code>, and <code>notion_consolidate_emails.py</code> wire the case registry.</span>
+              <strong>Privacy-First Canonization</strong>
+              <span>Role-safe descriptors replace personal identifiers while preserving architectural insight.</span>
             </li>
             <li>
-              <strong>QC and reporting</strong>
-              <span><code>qc_sweep.mjs</code>, <code>verify_repo_consistency.py</code>, and <code>tactical_brief.py</code> keep the surface auditable.</span>
+              <strong>QC Sweep Discipline</strong>
+              <span>Version-to-version sweeps reconcile chronology, labels, and posture against source artifacts.</span>
             </li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="system">
+    <!-- Module Constellation -->
+    <section class="section" id="modules">
       <div class="wrap section__heading">
-        <h2>Built for the firehose.</h2>
+        <h2>Six modules, one orchestrated product system.</h2>
         <p>
-          Stonewall was battle-tested inside a high-volume insurance defense vertical. The point is not
-          novelty theater. The point is to turn email, filings, depositions, and case events into a
-          searchable, auditable intelligence layer that can actually survive contact with the work.
+          The public showcase uses capability-first naming to communicate value without
+          exposing sensitive people, matters, or internal nicknames.
+        </p>
+      </div>
+
+      <div class="wrap module-grid">
+        <article class="module-card">
+          <span class="module-card__tag">Recall</span>
+          <h3>Core Memory Engine</h3>
+          <p>Primary context layer for high-fidelity recall of indexed events, documents, and matter posture with source traceability.</p>
+        </article>
+        <article class="module-card">
+          <span class="module-card__tag">Interpretation</span>
+          <h3>Narrative Lens</h3>
+          <p>Alternative voice layer for executive storytelling, emphasizing pattern clarity and institutional signal detection.</p>
+        </article>
+        <article class="module-card">
+          <span class="module-card__tag">Maintenance</span>
+          <h3>Archive Steward</h3>
+          <p>Corpus hygiene module for deduplication, quality gates, and canonical precedence enforcement.</p>
+        </article>
+        <article class="module-card">
+          <span class="module-card__tag">Method</span>
+          <h3>Cross-Exam Analytics</h3>
+          <p>Technique mapper that extracts repeatable litigation frameworks from testimony and hearing transcripts.</p>
+        </article>
+        <article class="module-card">
+          <span class="module-card__tag">Input</span>
+          <h3>Verbatim Normalizer</h3>
+          <p>Transcript normalization pipeline that converts mixed raw text into citation-ready structured markdown.</p>
+        </article>
+        <article class="module-card">
+          <span class="module-card__tag">Execution</span>
+          <h3>Hearing Prep Builder</h3>
+          <p>Operational module for drafting outlines, issue ladders, and witness attack plans from verified corpus context.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="section" id="architecture">
+      <div class="wrap section__heading">
+        <h2>From evidence intake to audit-safe outputs.</h2>
+        <p>
+          The v9 architecture is intentionally opinionated: strict chronology,
+          scoped authority, and automated verification before publication.
+        </p>
+      </div>
+
+      <div class="wrap arch-split">
+        <div class="arch-column">
+          <h3 class="arch-column__title">Knowledge Authority Layers</h3>
+          <p class="arch-column__intro">Four interlocking references govern deterministic retrieval.</p>
+          <div class="arch-items">
+            <article class="arch-item">
+              <strong>Identity Index</strong>
+              <span>Role-safe actor map with alias normalization and conflict checks.</span>
+            </article>
+            <article class="arch-item">
+              <strong>Event Timeline</strong>
+              <span>Source-backed chronology with revision-aware precedence controls.</span>
+            </article>
+            <article class="arch-item">
+              <strong>Matter State Map</strong>
+              <span>Active/resolved posture tracking with dependency and deadline context.</span>
+            </article>
+            <article class="arch-item">
+              <strong>Pattern Registry</strong>
+              <span>176-pattern institutional taxonomy for repeatable diagnostic language.</span>
+            </article>
+          </div>
+        </div>
+        <div class="arch-column">
+          <h3 class="arch-column__title">Operational Surfaces</h3>
+          <p class="arch-column__intro">Synchronized surfaces support intake, analysis, and publication.</p>
+          <div class="arch-items">
+            <article class="arch-item">
+              <strong>Git Repository</strong>
+              <span>Versioned corpus, scripts, manifests, and public documentation.</span>
+            </article>
+            <article class="arch-item">
+              <strong>Workspace Databases</strong>
+              <span>Matter routing, quality canaries, and structured operational views.</span>
+            </article>
+            <article class="arch-item">
+              <strong>Cloud Staging</strong>
+              <span>Read-safe evidence staging and derivative generation workflows.</span>
+            </article>
+            <article class="arch-item">
+              <strong>Verification Harness</strong>
+              <span>Automated repo consistency, gap analysis, and regression checks.</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Metrics -->
+    <section class="section" id="metrics">
+      <div class="wrap section__heading">
+        <h2>Proof of system maturity.</h2>
+        <p>
+          These metrics highlight architectural scale and process discipline, not client-specific facts.
+        </p>
+      </div>
+
+      <div class="wrap metrics-grid">
+        <div class="metric">
+          <span class="metric__value">750+</span>
+          <span class="metric__label">Indexed artifacts under manifest control</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">176</span>
+          <span class="metric__label">Patterns in the live phenomenology registry</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">15+</span>
+          <span class="metric__label">Operational views and QA canaries</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">10+</span>
+          <span class="metric__label">Canonical reference families cross-linked</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">3</span>
+          <span class="metric__label">Primary system surfaces synchronized</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">2</span>
+          <span class="metric__label">Operating modes with strict execution boundaries</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">100%</span>
+          <span class="metric__label">Public-facing text sanitized for confidentiality</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">v9</span>
+          <span class="metric__label">Feature baseline for this elite public demo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="section" id="features">
+      <div class="wrap section__heading">
+        <h2>What this showcase demonstrates.</h2>
+        <p>
+          The showcase is public enough to explain the machine, but not permissive enough
+          to pretend this is generic deployware. The scripts are the product. The value is
+          the implementation discipline that wires them together.
         </p>
       </div>
 
       <div class="wrap three-col">
         <article class="block">
-          <h3>Ingest</h3>
-          <p>Pull in Outlook exports and OneDrive documents without losing provenance, dates, or matter linkage.</p>
+          <h3>Deterministic Mode Router</h3>
+          <p>A strict execution switch separates analytical narration from operational execution. Teams avoid accidental advisory drift and keep outputs context-appropriate.</p>
         </article>
         <article class="block">
-          <h3>Normalize</h3>
-          <p>Deduplicate, convert, classify, and cross-link the material so it can be searched and trusted.</p>
+          <h3>Codex + Registry Stack</h3>
+          <p>Identity index, timeline index, case-state index, and pattern registry form a single retrieval stack. Each layer has clear authority rules and chronology safeguards.</p>
         </article>
         <article class="block">
-          <h3>Audit</h3>
-          <p>Run consistency sweeps and tactical reporting so the corpus keeps telling the truth when the organization does not.</p>
+          <h3>Retrieval Cascade</h3>
+          <p>Queries resolve via a fixed cascade: synthesis layer, case map, event map, identity map, then full corpus search. This improves speed, consistency, and citation quality.</p>
+        </article>
+        <article class="block">
+          <h3>Privacy-First Canonization</h3>
+          <p>Public outputs intentionally replace all personal identifiers with role-safe descriptors and remove client specifics while preserving architectural insight.</p>
+        </article>
+        <article class="block">
+          <h3>QC Sweep Discipline</h3>
+          <p>Version-to-version sweeps reconcile chronology, labels, and case posture against source artifacts so the system remains audit-ready after every major update.</p>
+        </article>
+        <article class="block">
+          <h3>Multi-Surface Control Plane</h3>
+          <p>Git-backed corpus, workspace databases, and cloud evidence staging are synchronized with consistency checks, enabling both velocity and governance.</p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="architecture">
-      <div class="wrap section__heading">
-        <h2>Architecture in layers.</h2>
-        <p>
-          The repo's architecture note is straightforward: source files arrive, the processing layer converts them
-          into structured text, Notion carries the relationships, AI fills the gaps, and QC closes the loop.
-        </p>
-      </div>
-
-      <div class="wrap stack" role="list" aria-label="Stonewall architecture">
-        <div class="stack__row" role="listitem">
-          <div class="stack__layer">01 Source</div>
-          <div class="stack__body">
-            <strong>OneDrive and Outlook feed the system.</strong>
-            <p>PDFs, DOCX, XLSX, and CSV email exports enter as raw evidence rather than polished product data.</p>
-            <div class="stack__meta">Inputs: OneDrive, Outlook CSV exports</div>
-          </div>
-        </div>
-
-        <div class="stack__row" role="listitem">
-          <div class="stack__layer">02 Ingestion</div>
-          <div class="stack__body">
-            <strong>Documents become structured text.</strong>
-            <p><code>ingest_onedrive.py</code> and <code>parse_emails.ps1</code> walk folders, match matters, and write usable derivatives.</p>
-            <div class="stack__meta">Scripts: ingest_onedrive.py, parse_emails.ps1</div>
-          </div>
-        </div>
-
-        <div class="stack__row" role="listitem">
-          <div class="stack__layer">03 Processing</div>
-          <div class="stack__body">
-            <strong>Dupes disappear and formats settle down.</strong>
-            <p><code>email_consolidator.mjs</code>, <code>email_to_md.py</code>, <code>docx_to_md.py</code>, and <code>email_defuzz.mjs</code> build a clean working corpus.</p>
-            <div class="stack__meta">Scripts: email_consolidator.mjs, email_to_md.py, docx_to_md.py, email_defuzz.mjs</div>
-          </div>
-        </div>
-
-        <div class="stack__row" role="listitem">
-          <div class="stack__layer">04 Sync</div>
-          <div class="stack__body">
-            <strong>Notion becomes the case registry.</strong>
-            <p><code>notion_wire_cases.py</code>, <code>notion_wire_batch.py</code>, and <code>notion_case_dates.py</code> keep matters, dates, and relations aligned.</p>
-            <div class="stack__meta">Scripts: notion_wire_cases.py, notion_wire_batch.py, notion_case_dates.py</div>
-          </div>
-        </div>
-
-        <div class="stack__row" role="listitem">
-          <div class="stack__layer">05 AI tagging</div>
-          <div class="stack__body">
-            <strong>Models label the content and fill the gaps.</strong>
-            <p><code>email_deep_tag.mjs</code>, <code>legal_matters_fill.mjs</code>, and <code>legal_hold_backfill.mjs</code> turn raw material into decision-ready structure.</p>
-            <div class="stack__meta">Scripts: email_deep_tag.mjs, legal_matters_fill.mjs, legal_hold_backfill.mjs</div>
-          </div>
-        </div>
-
-        <div class="stack__row" role="listitem">
-          <div class="stack__layer">06 QC</div>
-          <div class="stack__body">
-            <strong>Every push gets checked against the corpus.</strong>
-            <p><code>qc_sweep.mjs</code>, <code>repo_sweep.py</code>, <code>verify_repo_consistency.py</code>, and <code>tactical_brief.py</code> keep the front door honest.</p>
-            <div class="stack__meta">Scripts: qc_sweep.mjs, repo_sweep.py, verify_repo_consistency.py, tactical_brief.py</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="model">
-      <div class="wrap section__heading">
-        <h2>What this repo demonstrates.</h2>
-        <p>
-          The showcase is public enough to explain the machine, but not permissive enough to pretend this is generic
-          deployware. The scripts are the product. The value is the implementation discipline that wires them together.
-        </p>
-      </div>
-
-      <div class="wrap surface-links">
-        <article class="surface-link surface-link--static">
-          <strong>Real-time email corpus</strong>
-          <span>Inbound and outbound mail matched to case matters in Notion, with deduplication across import batches.</span>
-        </article>
-        <article class="surface-link surface-link--static">
-          <strong>AI document tagging</strong>
-          <span>Claude and OpenAI classify filings, transcripts, and correspondence while flagging missing properties.</span>
-        </article>
-        <article class="surface-link surface-link--static">
-          <strong>Case date management</strong>
-          <span>Date of loss, complaint filed, discovery cutoff, deposition dates, reserve, and incurred synced into the live registry.</span>
-        </article>
-        <article class="surface-link surface-link--static">
-          <strong>Legal hold tracking</strong>
-          <span>Per-matter hold status with backfill logic and auditability instead of spreadsheet folklore.</span>
-        </article>
-      </div>
-    </section>
-
+    <!-- Public Surfaces -->
     <section class="section" id="surfaces">
       <div class="wrap section__heading">
         <h2>Public surfaces.</h2>
         <p>
           The repo carries the brief, the architecture note, and the evaluation license. That is the correct public shape:
-          enough to evaluate the system honestly, without pretending the licensing says “fork me and go build a startup.”
+          enough to evaluate the system honestly, without pretending the licensing says "fork me and go build a startup."
         </p>
       </div>
 
@@ -253,24 +328,28 @@
       </div>
     </section>
 
+    <!-- Closing -->
     <section class="section closing">
       <div class="wrap closing__panel">
         <div>
-          <p class="eyebrow">Delivery model</p>
-          <h2>Evaluation artifact, managed implementation.</h2>
+          <p class="eyebrow">Same engine, safer narrative</p>
+          <h2>Built to impress without exposing.</h2>
           <p class="lede">
-            This showcase is here to demonstrate architecture, not to disguise licensing reality. The software is provided
-            for demonstration and evaluation only. Implementation is a separate conversation.
+            This showcase captures the strongest Stonewall v9 innovations in a confidentiality-safe,
+            product-grade presentation suitable for demos, partnerships, and technical due diligence.
           </p>
         </div>
-        <a class="button" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">Open the showcase repo</a>
+        <div class="closing__actions">
+          <a class="button" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">Open Showcase Repo</a>
+          <a class="secondary" href="prototype/">Private Prototype</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <span>GitHub Pages front door for the Stonewall showcase.</span>
-    <span>Last updated 2026-03-28.</span>
+    <span>Stonewall Showcase &middot; Public-safe architecture narrative &middot; v9 baseline</span>
+    <span>Last updated 2026-04-03.</span>
   </footer>
 </body>
 </html>
