@@ -33,6 +33,7 @@ sources/emails/consolidated_emails.json
 # Generated intake planning/report artifacts
 catalog/intake/*.jsonl
 catalog/intake/*_report_*.md
+catalog/intake/*_report*.json
 # Generated intake/sync run artifacts (ephemeral, date-stamped)
 catalog/intake/notion_sync_report_*.md
 catalog/intake/onedrive_notion_update_report_*.md
