@@ -1026,7 +1026,20 @@ def load_manual_overrides(path: Path) -> dict[str, dict]:
                 print(f"Manual overrides: skipping legacy fallback — could not read {LEGACY_MANUAL_OVERRIDES}: {exc}", file=sys.stderr)
                 return {}
         return {}
-    overrides = parse_manual_overrides_file(path)
+    try:
+        overrides = parse_manual_overrides_file(path)
+    except (json.JSONDecodeError, OSError) as exc:
+        print(
+            f"Manual overrides: skipping primary file — could not read {path}: {exc}",
+            file=sys.stderr,
+        )
+        if path == DEFAULT_MANUAL_OVERRIDES and LEGACY_MANUAL_OVERRIDES.exists():
+            print(f"Manual overrides: falling back to {LEGACY_MANUAL_OVERRIDES}", file=sys.stderr)
+            try:
+                return parse_manual_overrides_file(LEGACY_MANUAL_OVERRIDES)
+            except (json.JSONDecodeError, OSError) as legacy_exc:
+                print(f"Manual overrides: skipping legacy fallback — could not read {LEGACY_MANUAL_OVERRIDES}: {legacy_exc}", file=sys.stderr)
+        return {}
     if path == DEFAULT_MANUAL_OVERRIDES and LEGACY_MANUAL_OVERRIDES.exists():
         try:
             legacy_overrides = parse_manual_overrides_file(LEGACY_MANUAL_OVERRIDES)

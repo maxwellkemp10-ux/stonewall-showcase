@@ -12,9 +12,7 @@ from unittest import mock
 
 from scripts.ingest_onedrive import (
     CaseRecord,
-    DEFAULT_MANUAL_OVERRIDES,
     IntakeError,
-    LEGACY_MANUAL_OVERRIDES,
     build_case_keywords,
     choose_primary_case,
     classify_artifact,

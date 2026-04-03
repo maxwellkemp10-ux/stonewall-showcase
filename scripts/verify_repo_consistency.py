@@ -61,6 +61,8 @@ def extract_repo_path(file_field: str) -> str | None:
 
 def parse_manifest_rows(manifest_path: Path) -> list[ManifestRow]:
     rows: list[ManifestRow] = []
+    if not manifest_path.exists():
+        return rows
     for line in manifest_path.read_text(encoding="utf-8", errors="ignore").splitlines():
         if not line.startswith("| A"):
             continue

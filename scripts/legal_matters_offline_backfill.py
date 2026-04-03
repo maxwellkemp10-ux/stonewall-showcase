@@ -218,7 +218,7 @@ def load_cases(case_index_path: Path) -> dict[str, dict]:
 
 
 def load_case_dates(case_dates_path: Path) -> dict[str, dict]:
-    """Load supplementary case dates."""
+    """Load supplementary case dates (dict or list form)."""
     if not case_dates_path.exists():
         return {}
     try:
@@ -227,13 +227,20 @@ def load_case_dates(case_dates_path: Path) -> dict[str, dict]:
         return {}
     if isinstance(raw, dict):
         return raw
+    if isinstance(raw, list):
+        result: dict[str, dict] = {}
+        for rec in raw:
+            name = rec.get("name") or rec.get("case_name") or ""
+            if name:
+                result[name] = rec
+        return result
     return {}
 
 
 def build_rows(
     cases: dict[str, dict],
     case_dates: dict[str, dict],
-    email_candidates: dict[str, list[str]],
+    complaint_date_candidates: dict[str, list[str]],
 ) -> list[dict[str, str]]:
     """Build CSV rows for each case."""
     rows: list[dict[str, str]] = []
@@ -244,15 +251,18 @@ def build_rows(
         if dates_rec.get("complaint_date"):
             complaint_date = dates_rec["complaint_date"]
             source = "case_dates"
-        elif case_name in email_candidates:
-            chosen = choose_email_date(email_candidates[case_name])
+        elif rec.get("date_of_complaint"):
+            complaint_date = rec["date_of_complaint"]
+            source = "case_index"
+        elif case_name in complaint_date_candidates:
+            chosen = choose_email_date(complaint_date_candidates[case_name])
             if chosen:
                 complaint_date = chosen
                 source = "emails.complaint_context"
 
         plaintiff = _sanitize_field(rec.get("plaintiff", "") or "")
         ups_driver = _sanitize_field(rec.get("ups_driver", "") or "")
-        claim_number = rec.get("claim_number", "") or ""
+        claim_number = rec.get("claim") or rec.get("claim_number") or ""
         dol = dates_rec.get("date_of_loss", "") or rec.get("date_of_loss", "") or ""
 
         rows.append({

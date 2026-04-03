@@ -1,7 +1,4 @@
-import json
-import tempfile
 import unittest
-from pathlib import Path
 
 from scripts.legal_matters_offline_backfill import (
     _sanitize_field,
