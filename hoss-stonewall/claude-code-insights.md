@@ -6,7 +6,7 @@ description: Usage analysis, friction map, and operating upgrades from 77 sessio
 
 > A two-week audit of how QB1 uses Claude Code across legal ops, file organization, codex maintenance, and document production.
 
-<a href="./" class="button primary" data-icon="house">Back to the landing page</a> <a href="stonewall-deep-reference.md" class="button secondary" data-icon="book">Open deep reference</a>
+<a href="../" class="button primary" data-icon="house">Back to the landing page</a> <a href="/broken/pages/Gr7hrx2cO9AmzbzjcLXn" class="button secondary" data-icon="book">Open deep reference</a>
 
 ### Snapshot
 
