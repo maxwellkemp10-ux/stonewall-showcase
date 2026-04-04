@@ -2,13 +2,6 @@
 
 * [Stonewall QB1MAXXED](README.md)
 * [case\_codex](case_codex.md)
-* [deposition\_codex](deposition_codex/README.md)
-  * [deposition\_codex](deposition_codex/deposition_codex/README.md)
-    * [MINDFREAK Compendium](deposition_codex/deposition_codex/mindfreak-compendium.md)
-    * [Supporting Depositions](deposition_codex/deposition_codex/supporting-depositions.md)
-    * [Calls and Intake Registry](deposition_codex/deposition_codex/calls-and-intake-registry.md)
-    * [Hearings, Cuck Deck, and Portfolio](deposition_codex/deposition_codex/hearings-cuck-deck-and-portfolio.md)
-    * [Identity Guide and Rules](deposition_codex/deposition_codex/identity-guide-and-rules.md)
 * [tactical\_legal\_standards](tactical_legal_standards.md)
 * [notion\_sync\_protocol](notion_sync_protocol.md)
 * [discovery\_registry](discovery_registry.md)

@@ -74,7 +74,7 @@ All 11 crown matters were cross-checked against primary sources and live surface
 Jump straight to the adjacent control surface you need:
 
 * Use [Stonewall Deep Reference](stonewall-deep-reference.md) for full canon, retrieval order, and package-level rules.
-* Use [Deposition Codex](deposition_codex/) for MINDFREAK tapes, witness handling, and depo technique.
+* Use [Deposition Codex](/broken/spaces/2gzprIe0ymqfqsequAXB/pages/kZFimG70O4vjDp03bYYE) for MINDFREAK tapes, witness handling, and depo technique.
 * Use [Artifact Codex](artifact_codex.md) when chronology, source control, or event order decides the answer.
 * Use [Discovery Registry](discovery_registry.md) for subpoena posture, outstanding discovery, and tracking.
 * Use [Corpus Compendium](corpus_compendium.md) when the task spans multiple artifact families or archive layers.
@@ -104,7 +104,7 @@ Use [tactical\_legal\_standards](tactical_legal_standards.md) when QB1 wants dra
 
 ### Working surfaces
 
-<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>Case Codex</td><td><a href="case_codex.md">case_codex.md</a></td></tr><tr><td>Artifact Codex</td><td><a href="artifact_codex.md">artifact_codex.md</a></td></tr><tr><td>Deposition Codex</td><td><a href="deposition_codex/">deposition_codex</a></td></tr><tr><td>Cast Codex</td><td><a href="cast_codex.md">cast_codex.md</a></td></tr><tr><td>Phenomenology Registry</td><td><a href="phenomenology_registry.md">phenomenology_registry.md</a></td></tr><tr><td>Corpus Compendium</td><td><a href="corpus_compendium.md">corpus_compendium.md</a></td></tr><tr><td>Discovery Registry</td><td><a href="discovery_registry.md">discovery_registry.md</a></td></tr><tr><td>Notion Sync Protocol</td><td><a href="notion_sync_protocol.md">notion_sync_protocol.md</a></td></tr><tr><td>Claude Code Insights</td><td><a href="claude-code-insights.md">claude-code-insights.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>Case Codex</td><td><a href="case_codex.md">case_codex.md</a></td></tr><tr><td>Artifact Codex</td><td><a href="artifact_codex.md">artifact_codex.md</a></td></tr><tr><td>Deposition Codex</td><td><a href="/broken/spaces/2gzprIe0ymqfqsequAXB/pages/kZFimG70O4vjDp03bYYE">Broken link</a></td></tr><tr><td>Cast Codex</td><td><a href="cast_codex.md">cast_codex.md</a></td></tr><tr><td>Phenomenology Registry</td><td><a href="phenomenology_registry.md">phenomenology_registry.md</a></td></tr><tr><td>Corpus Compendium</td><td><a href="corpus_compendium.md">corpus_compendium.md</a></td></tr><tr><td>Discovery Registry</td><td><a href="discovery_registry.md">discovery_registry.md</a></td></tr><tr><td>Notion Sync Protocol</td><td><a href="notion_sync_protocol.md">notion_sync_protocol.md</a></td></tr><tr><td>Claude Code Insights</td><td><a href="claude-code-insights.md">claude-code-insights.md</a></td></tr></tbody></table>
 
 ### What lives here
 
