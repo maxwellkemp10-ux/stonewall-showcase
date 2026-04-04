@@ -4,12 +4,7 @@
 
 ### Built from v16.1 Archaeological Edition plus corpus sweep delta report 3/26/26
 
-> Every fact verified against primary source documents. No recycled entries. No reading like Yisenia.\
-> Sources cited in brackets: \[DEPO:case], \[SUW:row], \[CALL:file], \[TEAMS:file], \[TS:file], \[EMAIL:file], \[QB1:direct]\
-> Rebuilt 3/23/26 from: Consolidated\_Volume\_Small\_Smith\_Uhrig\_Matteson\_Verbatim.md, 01\_UPS\_Review\_3\_11-3\_12\_\_Day\_1.md,\
-> Noble\_Joseph\_102125.txt, Roberto\_Rivera\_012826\_Deposition\_Verbatim.md, Mark\_Negrette\_101725\_Deposition\_Verbatim.md,\
-> CALL\_TRANSCRIPTS\_COMBINED\_3\_4\_to\_3\_19\_26.md, ULTIMATE\_TEAMS\_SYNTHESIS\_v5, all timesheets, Mick\_Sheppard\_110325\_CONDENSED.md,\
-> Colette Boy Depo transcript, Egan call transcripts, Decker\_Boyle\_Call\_CONDENSED.md, QB1 direct testimony 3/23/26.
+> Every fact verified against primary source documents. No recycled entries. No reading like Yisenia. Sources cited in brackets: \[DEPO:case], \[SUW:row], \[CALL:file], \[TEAMS:file], \[TS:file], \[EMAIL:file], \[QB1:direct]. Rebuilt 3/23/26 from: Consolidated\_Volume\_Small\_Smith\_Uhrig\_Matteson\_Verbatim.md, 01\_UPS\_Review\_3\_11-3\_12\_\_Day\_1.md, Colette Boy Depo transcript, Egan call transcripts, Decker\_Boyle\_Call\_CONDENSED.md, QB1 direct testimony 3/23/26.
 
 ***
 
