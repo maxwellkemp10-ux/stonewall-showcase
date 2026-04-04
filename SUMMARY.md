@@ -28,3 +28,4 @@
       * [Notion Bulk Upload](.claude/skills/notion-upload/SKILL.md)
     * [stonewall-brain](.claude/skills/stonewall-brain/README.md)
       * [Document Intelligence Skill](.claude/skills/stonewall-brain/SKILL.md)
+* [Page 1](page-1.md)
