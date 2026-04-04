@@ -4,7 +4,7 @@
 
 > The canonical registry of every deposition, hearing, intake call, and documented work product in the QB1 championship archive. Each entry is a complete archaeological record — consult before analyzing any case-specific material.
 
-<a href="./" class="button primary" data-icon="house">Back to Stonewall</a> <a href="case_codex.md" class="button secondary" data-icon="briefcase">Open case map</a> <a href="artifact_codex.md" class="button secondary" data-icon="timeline">Follow chronology</a> <a href="cast_codex.md" class="button secondary" data-icon="users">Check cast</a>
+<a href="../" class="button primary" data-icon="house">Back to Stonewall</a> <a href="../case_codex.md" class="button secondary" data-icon="briefcase">Open case map</a> <a href="../artifact_codex.md" class="button secondary" data-icon="timeline">Follow chronology</a> <a href="../cast_codex.md" class="button secondary" data-icon="users">Check cast</a>
 
 {% hint style="info" %}
 **Use this registry for witness history, method archetypes, and outcome memory.**\
@@ -29,7 +29,7 @@ Start here when the question turns on who testified, what broke, and why the tap
 
 ### Fast paths
 
-<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>Case posture</td><td><a href="case_codex.md">case_codex.md</a></td></tr><tr><td>Event chronology</td><td><a href="artifact_codex.md">artifact_codex.md</a></td></tr><tr><td>Identity control</td><td><a href="cast_codex.md">cast_codex.md</a></td></tr><tr><td>Full monolith</td><td><a href="stonewall-deep-reference.md">stonewall-deep-reference.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>Case posture</td><td><a href="../case_codex.md">case_codex.md</a></td></tr><tr><td>Event chronology</td><td><a href="../artifact_codex.md">artifact_codex.md</a></td></tr><tr><td>Identity control</td><td><a href="../cast_codex.md">cast_codex.md</a></td></tr><tr><td>Full monolith</td><td><a href="../stonewall-deep-reference.md">stonewall-deep-reference.md</a></td></tr></tbody></table>
 
 ### How to use this page
 
@@ -63,7 +63,7 @@ Use the entry's methodology, key moments, and outcome to rebuild the tactical la
 **MINDFREAK XII**\
 Mosquito Windshield. Kill Box v4. Five corridors locked.
 
-[Jump to Colette Boy](deposition_codex.md#deposition-xii--colette-maria-boy-31326)
+[Jump to Colette Boy](./#deposition-xii--colette-maria-boy-31326)
 {% endhint %}
 {% endcolumn %}
 
@@ -74,7 +74,7 @@ Mosquito Windshield. Kill Box v4. Five corridors locked.
 **MINDFREAK V**\
 Six hours. 221 pages. Million-dollar territory compressed.
 
-[Jump to Mark Negrette](deposition_codex.md#deposition-v--mark-negrette-101725)
+[Jump to Mark Negrette](./#deposition-v--mark-negrette-101725)
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -87,7 +87,7 @@ Six hours. 221 pages. Million-dollar territory compressed.
 **MINDFREAK I**\
 The Glacier begins here. Three sessions. Tactical DNA source.
 
-[Jump to Fernando Nunez](deposition_codex.md#deposition-i--fernando-nunez-411-79-91725)
+[Jump to Fernando Nunez](./#deposition-i--fernando-nunez-411-79-91725)
 {% endhint %}
 {% endcolumn %}
 
@@ -98,7 +98,7 @@ The Glacier begins here. Three sessions. Tactical DNA source.
 **VII-IX + XI**\
 Samuel, Vernitha, Smith, Uhrig. Full liability collapse architecture.
 
-[Jump to Samuel Small](deposition_codex.md#deposition-vii--samuel-small-12425)
+[Jump to Samuel Small](./#deposition-vii--samuel-small-12425)
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -107,21 +107,21 @@ Samuel, Vernitha, Smith, Uhrig. Full liability collapse architecture.
 
 {% columns %}
 {% column %}
-* [I — Nunez](deposition_codex.md#deposition-i--fernando-nunez-411-79-91725)
-* [II — Libroth](deposition_codex.md#deposition-ii--pamela-libroth-62525)
-* [III — Mitchell](deposition_codex.md#deposition-iii--calvin-mitchell-82625)
-* [IV — Adams](deposition_codex.md#deposition-iv--talonda-adams-101025)
-* [V — Negrette](deposition_codex.md#deposition-v--mark-negrette-101725)
-* [VI — Sheppard](deposition_codex.md#deposition-vi--mick-sheppard-11325)
+* [I — Nunez](./#deposition-i--fernando-nunez-411-79-91725)
+* [II — Libroth](./#deposition-ii--pamela-libroth-62525)
+* [III — Mitchell](./#deposition-iii--calvin-mitchell-82625)
+* [IV — Adams](./#deposition-iv--talonda-adams-101025)
+* [V — Negrette](./#deposition-v--mark-negrette-101725)
+* [VI — Sheppard](./#deposition-vi--mick-sheppard-11325)
 {% endcolumn %}
 
 {% column %}
-* [VII — Samuel Small](deposition_codex.md#deposition-vii--samuel-small-12425)
-* [VIII — Vernitha Small](deposition_codex.md#deposition-viii--vernitha-small-11426)
-* [IX — Sharon Lee Smith](deposition_codex.md#deposition-ix--sharon-lee-smith--golgotha-11526)
-* [X — Rivera](deposition_codex.md#deposition-x--roberto-rivera-12826)
-* [XI — Uhrig](deposition_codex.md#deposition-xi--neil-uhrig-21026)
-* [XII — Colette Boy](deposition_codex.md#deposition-xii--colette-maria-boy-31326)
+* [VII — Samuel Small](./#deposition-vii--samuel-small-12425)
+* [VIII — Vernitha Small](./#deposition-viii--vernitha-small-11426)
+* [IX — Sharon Lee Smith](./#deposition-ix--sharon-lee-smith--golgotha-11526)
+* [X — Rivera](./#deposition-x--roberto-rivera-12826)
+* [XI — Uhrig](./#deposition-xi--neil-uhrig-21026)
+* [XII — Colette Boy](./#deposition-xii--colette-maria-boy-31326)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -129,14 +129,14 @@ Samuel, Vernitha, Smith, Uhrig. Full liability collapse architecture.
 
 <summary>Quick index</summary>
 
-* [MINDFREAK compendium](deposition_codex.md#1-the-m-i-n-d-f-r-e-a-k-compendium)
-* [Settlement calls, expert conferences, and OC engagement registry](deposition_codex.md#2a-settlement-calls-expert-conferences--oc-engagement-registry)
-* [Driver intake call registry](deposition_codex.md#2b-driver-intake-call-registry)
-* [Hearing and motion practice victories](deposition_codex.md#3-hearing--motion-practice-victories)
-* [The complete cuck deck](deposition_codex.md#4-the-complete-cuck-deck)
-* [Case portfolio tracking](deposition_codex.md#5-case-portfolio-tracking)
-* [Opposing counsel identity guide](deposition_codex.md#6-opposing-counsel-identity-guide)
-* [Critical identity rules](deposition_codex.md#7-critical-identity-rules)
+* [MINDFREAK compendium](./#1-the-m-i-n-d-f-r-e-a-k-compendium)
+* [Settlement calls, expert conferences, and OC engagement registry](./#2a-settlement-calls-expert-conferences--oc-engagement-registry)
+* [Driver intake call registry](./#2b-driver-intake-call-registry)
+* [Hearing and motion practice victories](./#3-hearing--motion-practice-victories)
+* [The complete cuck deck](./#4-the-complete-cuck-deck)
+* [Case portfolio tracking](./#5-case-portfolio-tracking)
+* [Opposing counsel identity guide](./#6-opposing-counsel-identity-guide)
+* [Critical identity rules](./#7-critical-identity-rules)
 
 </details>
 

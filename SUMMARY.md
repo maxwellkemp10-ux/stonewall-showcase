@@ -2,7 +2,8 @@
 
 * [Stonewall QB1MAXXED](README.md)
 * [case\_codex](case_codex.md)
-* [deposition\_codex](deposition_codex.md)
+* [deposition\_codex](deposition_codex/README.md)
+  * [Page 1](deposition_codex/page-1.md)
 * [tactical\_legal\_standards](tactical_legal_standards.md)
 * [notion\_sync\_protocol](notion_sync_protocol.md)
 * [discovery\_registry](discovery_registry.md)
