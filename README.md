@@ -16,6 +16,18 @@ Stonewall turns filings, email, transcripts, and matter activity into a governed
 
 It is built for teams that need fast recall, clean chronology, and outputs they can defend.
 
+<a href="docs/ARCHITECTURE.md" class="button primary" data-icon="sitemap">View architecture</a> <a href="SKILL.md" class="button secondary" data-icon="brain">Open skill surface</a> <a href="docs/showcase-repo-handoff.md" class="button secondary" data-icon="shield">Review showcase rules</a>
+
+{% hint style="info" %}
+**Fast read**
+
+* **What it is** — a governed legal document intelligence system
+* **What it does** — ingests, routes, classifies, verifies, and publishes
+* **Why it matters** — faster recall with cleaner evidence trails
+{% endhint %}
+
+<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>System architecture</td><td><a href="docs/ARCHITECTURE.md">ARCHITECTURE.md</a></td></tr><tr><td>Agent skill surface</td><td><a href="SKILL.md">SKILL.md</a></td></tr><tr><td>Public-safe export rules</td><td><a href="docs/showcase-repo-handoff.md">showcase-repo-handoff.md</a></td></tr></tbody></table>
+
 ***
 
 ### I. Abstract
@@ -51,14 +63,55 @@ The point is disciplined retrieval.
 
 ### III. Operational sequence
 
-| Stage              | Function                                                               | Result                          |
-| ------------------ | ---------------------------------------------------------------------- | ------------------------------- |
-| **01 — Intake**    | Source files and exports land in controlled paths.                     | Raw material enters the system. |
-| **02 — Normalize** | PDF, DOCX, email, and spreadsheet content becomes structured markdown. | Searchable text.                |
-| **03 — Route**     | Items connect to the right matter.                                     | Context stays attached.         |
-| **04 — Analyze**   | AI modules classify, extract, and summarize.                           | Signal emerges from volume.     |
-| **05 — Verify**    | QC catches drift, gaps, and unsupported claims.                        | Confidence rises.               |
-| **06 — Publish**   | Teams receive usable records and decision-ready work product.          | Operational output.             |
+{% stepper %}
+{% step %}
+### 01 — Intake
+
+Source files and exports land in controlled paths.
+
+**Result:** raw material enters the system.
+{% endstep %}
+
+{% step %}
+### 02 — Normalize
+
+PDF, DOCX, email, and spreadsheet content becomes structured markdown.
+
+**Result:** searchable text.
+{% endstep %}
+
+{% step %}
+### 03 — Route
+
+Items connect to the right matter.
+
+**Result:** context stays attached.
+{% endstep %}
+
+{% step %}
+### 04 — Analyze
+
+AI modules classify, extract, and summarize.
+
+**Result:** signal emerges from volume.
+{% endstep %}
+
+{% step %}
+### 05 — Verify
+
+QC catches drift, gaps, and unsupported claims.
+
+**Result:** confidence rises.
+{% endstep %}
+
+{% step %}
+### 06 — Publish
+
+Teams receive usable records and decision-ready work product.
+
+**Result:** operational output.
+{% endstep %}
+{% endstepper %}
 
 ***
 
@@ -89,6 +142,8 @@ If summary conflicts with source, source wins.
 
 ### V. Operating modes
 
+{% columns %}
+{% column %}
 #### Analytical mode
 
 Use this for interpretation.
@@ -97,7 +152,9 @@ Use this for interpretation.
 * Posture analysis
 * Narrative synthesis
 * Pattern extraction
+{% endcolumn %}
 
+{% column %}
 #### Execution mode
 
 Use this for work product.
@@ -106,6 +163,8 @@ Use this for work product.
 * Drafts
 * Matter routing
 * Verified operational outputs
+{% endcolumn %}
+{% endcolumns %}
 
 ***
 
@@ -117,9 +176,7 @@ It removes the private record.
 
 #### Entry points
 
-* [Architecture — Stonewall Legal Document Intelligence Platform](docs/ARCHITECTURE.md)
-* [Document Intelligence Skill](SKILL.md)
-* [Stonewall Showcase — Repository Handoff Runbook](docs/showcase-repo-handoff.md)
+<a href="docs/ARCHITECTURE.md" class="button primary" data-icon="sitemap">Architecture</a> <a href="SKILL.md" class="button secondary" data-icon="brain">Skill</a> <a href="docs/showcase-repo-handoff.md" class="button secondary" data-icon="shield">Runbook</a>
 
 #### Guardrails
 
@@ -192,6 +249,8 @@ If you want the technical stack, read the [architecture page](docs/ARCHITECTURE.
 If you want the skill surface, read [Document Intelligence Skill](SKILL.md).
 
 If you want the public-safe export rules, read the [showcase handoff runbook](docs/showcase-repo-handoff.md).
+
+<a href="docs/ARCHITECTURE.md" class="button primary" data-icon="arrow-right">Continue to architecture</a>
 
 ***
 
