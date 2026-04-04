@@ -1,8 +1,54 @@
 # case\_codex
 
-> Sovereign portfolio map for the UPS vertical. Built 2026-03-26 from the v5 case codex, Suwanee review references, claim-review notes, artifact/corpus codices, the March 23 verified package state, and the Stomping the Yard session. Updated 2026-03-31 (v8.2): comprehensive QC cross-check: skill ↔ repo ↔ Notion (40 active matters). OC backfill, specials reconciliation, 12 new secondary matters added. Updated 2026-03-31 (v8.3): same-day posture updates from Teams/email activity — Egan 06 SDT batch filed, Harrigan DG delivered, Sheppard corp rep depo notice gap, Mitchell expert strategy question, Libroth Filevine trial prep tab, Griffith M\&M updated records, "Ducky" = Mark Howard. Updated 2026-03-31 (v8.7): Elder traffic court hearing (4/23/25, CDL saved), Guiducci depo (3/24/25), all OC firms verified, Muller depo confirmed in depo codex. Updated 2026-04-02 (v8.8): Character alias normalization (Chance Arias = The Admiral, Katie Sagel = Katherine Madigan, 7Snapp = Laurene Snapp, Mr. Bill = William Smoak). Portal v2 deployed. 113 artifacts recategorized out of 'other'. Updated 2026-04-02 (v8.9): REVERTED Manifesto/Die Glocke date to 2026-01-09 (was erroneously changed to 01-15 in v8.8). Merged Ostrich Protocol content (4 new patterns #173-176, Katie phantom hours). Propagated fix across all surfaces. Updated 2026-04-02 (v8.9 QC sweep): Full cross-check of all 11 crown matters against source artifacts + Notion. Fixes: Griffith specials separated from life-care plan ($368K/$725K), Griffith trial date corrected (no date set, \~2027), Griffith defense PFS killed. Sheppard specials vs incurred separated ($77K/$302K), mediation 04/16 added. Harrigan specials clarified (past meds $61.6K vs OC demand $149K), authority updated to current DG ($325K rec). Nunez Guiducci corrected to President (not CEO), depo dates 3/24-25/25, Darlene Mentor added. Rivera prior gunshot corrected to 2018 (not post-depo).
+## Case map
 
-## I. Crown Matters
+> Active UPS matter map. Use this page for posture, deadlines, value bands, and file memory.
+
+{% hint style="info" %}
+**Start here for matter posture.**\
+Use this page to lock the file state fast. Then jump to the deposition, artifact, or corpus pages for deeper lore.
+{% endhint %}
+
+### At a glance
+
+{% columns %}
+{% column %}
+* **Scope:** 40 active matters
+* **Best for:** posture, venue, deadlines, value
+* **Primary use:** fast file-state checks
+{% endcolumn %}
+
+{% column %}
+* **Deep follow-up:** deposition, artifact, corpus
+* **Last full QC:** 2026-04-02
+* **Status note:** portal v2 deployed
+{% endcolumn %}
+{% endcolumns %}
+
+### Jump to
+
+* [Crown matters](case_codex.md#crown-matters)
+* [Secondary matters](case_codex.md#secondary-matters)
+* [Resolved in 2026](case_codex.md#resolved-in-2026)
+* [Pattern map](case_codex.md#pattern-map)
+* [Operating rule](case_codex.md#operating-rule)
+
+<details>
+
+<summary>Version log and source note</summary>
+
+Built 2026-03-26 from the v5 case codex, Suwanee review references, claim-review notes, artifact and corpus codices, the March 23 verified package state, and the Stomping the Yard session.
+
+* **2026-03-31 v8.2:** Full skill ↔ repo ↔ Notion QC. 40 active matters. OC backfill. Specials reconciliation. 12 secondary matters added.
+* **2026-03-31 v8.3:** Same-day posture updates from Teams and email. Egan 06 SDT batch filed. Harrigan DG delivered. Sheppard corp rep notice gap flagged. Mitchell expert-strategy gap flagged. Libroth Filevine trial-prep tab added. Griffith M\&M records updated. "Ducky" confirmed as Mark Howard.
+* **2026-03-31 v8.7:** Elder traffic hearing added. Guiducci depo added. All OC firms verified. Muller depo confirmed in deposition codex.
+* **2026-04-02 v8.8:** Character aliases normalized. Portal v2 deployed. 113 artifacts recategorized out of `other`.
+* **2026-04-02 v8.9:** Manifesto/Die Glocke date corrected back to 2026-01-09. Ostrich Protocol merged. Four new patterns added. Fix propagated across surfaces.
+* **2026-04-02 v8.9 QC sweep:** All 11 crown matters cross-checked against source artifacts and Notion. Griffith specials separated from life-care plan. Sheppard specials separated from incurred total. Harrigan specials clarified. Guiducci corrected to President. Rivera prior gunshot corrected to 2018.
+
+</details>
+
+## Crown matters
 
 These are the matters that dominate the lore, the work output, or both.
 
@@ -104,7 +150,7 @@ These are the matters that dominate the lore, the work output, or both.
 * Canon: MINDFREAK III (8/26/25), one of the Thursday Blitzkrieg fronts, one of the cleaner valuation-control specimens.
 * Pattern family: 40, 141.
 
-## II. Secondary Active Matters
+## Secondary matters
 
 | Matter                          | Posture                              | Core Lore                                                                                                                                                                                                                                    |
 | ------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -139,7 +185,7 @@ These are the matters that dominate the lore, the work output, or both.
 | Skaggs                          | Pre-Suit                             | OC: Martin Hernandez; reserve $56,100                                                                                                                                                                                                        |
 | Flores                          | Closed/Settled                       | Claim AB505513880; driver Gregory Mathis; resolved                                                                                                                                                                                           |
 
-## III. Resolved 2026 Matters
+## Resolved in 2026
 
 | Matter     | Resolution                                                         |
 | ---------- | ------------------------------------------------------------------ |
@@ -152,7 +198,7 @@ These are the matters that dominate the lore, the work output, or both.
 
 Total verified 2026 settlements in the packaged roster: $356K+ across six matters (Flores amount pending verification).
 
-## IV. Matter-to-Phenomenology Map
+## Pattern map
 
 * Boy: 41, 42, 79, 101, 102, 116, 131, 136, 161, 164, 165.
 * Egan: 49, 52, 54, 81, 96, 131, 132, 143, 144, 145.
@@ -167,6 +213,6 @@ Total verified 2026 settlements in the packaged roster: $356K+ across six matter
 * Mitchell: 40, 98, 141.
 * General: 153, 159, 166.
 
-## V. Operating Rule
+## Operating rule
 
 When a prompt names a case, anchor in this codex first, then move to the artifact codex and the corpus compendium for the deeper lore cluster. This prevents drift between docket posture and kabuki narration.
