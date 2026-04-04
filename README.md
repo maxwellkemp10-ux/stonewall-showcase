@@ -6,17 +6,19 @@ metaLinks: {}
 
 # Stonewall QB1MAXXED
 
-> A corpus repo for analysis, provenance, tactical sync, and QB1-grade execution.
+> The command surface for the Stonewall corpus. Built for recall, routing, and QB1-grade execution.
 
-<a href="corpus_compendium.md" class="button primary" data-icon="compass">Enter the corpus</a> <a href="tactical_legal_standards.md" class="button primary" data-icon="gavel">Open tactics</a> <a href="case_codex.md" class="button secondary" data-icon="briefcase">Open the case map</a> <a href="claude-code-insights.md" class="button secondary" data-icon="chart-line">See usage insights</a>
+<a href="tactical_legal_standards.md" class="button primary" data-icon="gavel">Start with live tactics</a> <a href="case_codex.md" class="button primary" data-icon="briefcase">Scan the case map</a> <a href="artifact_codex.md" class="button secondary" data-icon="clock">Trace the chronology</a> <a href="phenomenology_registry.md" class="button secondary" data-icon="bolt">See the pattern engine</a> <a href="stonewall-deep-reference.md" class="button secondary" data-icon="book">Open the full canon</a>
 
 {% hint style="info" %}
-**Quickest path:** click **Open tactics** for drafting, motion work, email, billing, or execution standards.
+**Fastest win:** open **Start with live tactics** for drafting, billing, motion work, or send-ready cleanup.
+
+**Best deep dive:** open **Open the full canon** when identity, chronology, or lore controls the answer.
 {% endhint %}
 
-### Quick routes
+### Pick your lane
 
-<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>Tactical legal standards</td><td><a href="tactical_legal_standards.md">tactical_legal_standards.md</a></td></tr><tr><td>Case codex</td><td><a href="case_codex.md">case_codex.md</a></td></tr><tr><td>Deep reference</td><td><a href="stonewall-deep-reference.md">stonewall-deep-reference.md</a></td></tr><tr><td>Usage insights</td><td><a href="claude-code-insights.md">claude-code-insights.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th></tr></thead><tbody><tr><td>Draft faster with QB1 standards</td><td><a href="tactical_legal_standards.md">tactical_legal_standards.md</a></td></tr><tr><td>Get matter posture in one jump</td><td><a href="case_codex.md">case_codex.md</a></td></tr><tr><td>Lock the event sequence</td><td><a href="artifact_codex.md">artifact_codex.md</a></td></tr><tr><td>Name the absurdity correctly</td><td><a href="phenomenology_registry.md">phenomenology_registry.md</a></td></tr><tr><td>Pull the whole monolith</td><td><a href="stonewall-deep-reference.md">stonewall-deep-reference.md</a></td></tr><tr><td>See how the system gets used</td><td><a href="claude-code-insights.md">claude-code-insights.md</a></td></tr></tbody></table>
 
 {% hint style="success" %}
 **Last verified canon:** April 2, 2026.\
@@ -38,6 +40,24 @@ All 11 crown matters were cross-checked against primary sources and live surface
 * **Standard:** zero misspellings
 {% endcolumn %}
 {% endcolumns %}
+
+### Why this punches above its weight
+
+{% columns %}
+{% column %}
+* **One front door:** case posture, chronology, patterns, and execution all route from here.
+* **Faster than blind search:** every click pushes you toward the controlling surface.
+* **Canon stays tight:** identity law and sequence stay locked across the stack.
+{% endcolumn %}
+
+{% column %}
+* **Built for live work:** this is operational memory, not archive cosplay.
+* **Useful under pressure:** drafting, audit, research, and retrieval all start cleanly.
+* **No fake surface area:** the repo, codices, and sync rules all do real work.
+{% endcolumn %}
+{% endcolumns %}
+
+<a href="cast_codex.md" class="button secondary" data-icon="users">Find a person fast</a> <a href="discovery_registry.md" class="button secondary" data-icon="magnifying-glass">Track discovery</a> <a href="notion_sync_protocol.md" class="button secondary" data-icon="arrows-rotate">See sync rules</a>
 
 ### Command deck
 
@@ -92,19 +112,19 @@ Use [tactical\_legal\_standards](tactical_legal_standards.md) when QB1 wants dra
 {% column %}
 **Prompt core**
 
-* voice
-* canon
-* retrieval rules
-* synthesis posture
+* voice that does not drift
+* canon that does not wobble
+* retrieval rules with hierarchy
+* synthesis posture for live use
 {% endcolumn %}
 
 {% column %}
 **Tactical control**
 
-* case posture
-* chronology
-* discovery tracking
-* execution standards
+* matter posture in one jump
+* chronology without myth
+* discovery visibility
+* send-ready standards
 {% endcolumn %}
 {% endcolumns %}
 
