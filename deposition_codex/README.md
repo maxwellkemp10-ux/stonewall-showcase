@@ -842,6 +842,19 @@ If a detail here conflicts with memory, memory loses.
 * **Harran Udell = NEGRETTE OC** — Nobody calls him. Opposing counsel at M\&M (For The People), NOT an adjuster.
 * **Brian Guiducci = President of Jet Star Express (now Penn Tank Lines)** — NOT a driver, NOT OC. Corporate witness deposed back-to-back 3/24/25 (personal/duces tecum) and 3/25/25 (corporate rep for defunct Jet Star). The Double Boning — Judge Moe split the scope.
 
+### Summary
+
+* This is the master registry for deposition memory across the archive.
+* Use it to lock witness history, method patterns, outcome memory, and identity control fast.
+* The spine is MINDFREAK I-XII, followed by supporting tapes, call work, hearing wins, portfolio posture, and identity law.
+
+### Next steps
+
+1. Use [case\_codex](../case_codex.md) for live matter posture, exposure, and deadlines.
+2. Use [artifact\_codex](../artifact_codex.md) when chronology or source order controls the answer.
+3. Use [cast\_codex](../cast_codex.md) when witness or counsel identity needs to stay exact.
+4. Return here when the question turns on who testified, what method landed, and what the tape actually achieved.
+
 ***
 
 _The dogs bark. The caravan moves on. The caravan has memorized every medical record, prepared in two languages, constructed the jigsaw before the witness sat down, and will thank you for your time when it's over._
