@@ -69,10 +69,8 @@ Stonewall is a multi-layer automation platform that transforms raw legal documen
 │  ├─ Flag missing dates/holds   ├─ Upcoming deadlines                │
 │  verify_repo_consistency.py    legal_matters_pdf.py                 │
 │  ├─ Validate corpus alignment  └─ PDF/HTML case report generator    │
-│  repo_sweep.py                 verify_all.py                        │
-│  ├─ Repository hygiene checks  ├─ Canonical pre-PR gate             │
-│  stonewall.py (CLI)            pr_checklist.py                      │
-│  └─ stats/find/validate/doctor └─ PR summary block generator        │
+│  repo_sweep.py                                                      │
+│  └─ Repository hygiene checks                                       │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -171,8 +169,8 @@ Comprehensive QC audit. Cross-checks Notion database data against the local case
 
 **Output:** Console report with counts and specific flagged items
 
-#### `verify_all.py` / `pr_checklist.py`
-Pre-PR verification gate. `verify_all.py` is the canonical gate that runs all consistency checks. `pr_checklist.py` generates a structured summary block for pull request descriptions.
+#### `verify_repo_consistency.py` / `repo_sweep.py`
+Pre-PR verification flow. `verify_repo_consistency.py` validates corpus alignment and manifest consistency. `repo_sweep.py` performs broader repository hygiene checks including duplicate detection and naming audits.
 
 #### `tactical_brief.py`
 CLI tool for a daily operating brief. Reads the live corpus and produces:
@@ -197,22 +195,21 @@ NOTION_TOKEN=ntn_xxx python scripts/legal_matters_pdf.py --html -o dashboard.htm
 
 ### CLI Layer
 
-#### `stonewall.py`
-Full command-line interface for corpus and case management queries.
+The main Stonewall platform includes a unified CLI for corpus and case management queries. The following commands are available on the main platform:
 
-```bash
-python stonewall.py stats                    # Corpus health and coverage summary
-python stonewall.py find "<query>" --limit 20  # Full-text search
-python stonewall.py case <matter-id>         # Case posture and timeline
-python stonewall.py character <role-id>      # Role/party detail
-python stonewall.py pattern <pattern-id>     # Pattern detail and cross-references
-python stonewall.py timeline <matter-id>     # Matter timeline
-python stonewall.py show <artifact-id>       # Artifact detail
-python stonewall.py validate                 # Ontology validation
-python stonewall.py doctor                   # Corpus health diagnostics
-```
+* `stats` — Corpus health and coverage summary
+* `find "<query>" --limit 20` — Full-text search
+* `case <matter-id>` — Case posture and timeline
+* `character <role-id>` — Role/party detail
+* `pattern <pattern-id>` — Pattern detail and cross-references
+* `timeline <matter-id>` — Matter timeline
+* `show <artifact-id>` — Artifact detail
+* `validate` — Ontology validation
+* `doctor` — Corpus health diagnostics
 
 All commands support `--json` for machine-readable output and `--limit` for result capping.
+
+In this showcase repository, equivalent functionality is provided by individual scripts under `scripts/` (e.g., `tactical_brief.py`, `ingest_onedrive.py`, `verify_repo_consistency.py`).
 
 ---
 

@@ -37,30 +37,13 @@ That shift improves speed, consistency, and execution quality.
 
 ### Operating model
 
-<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 200px;">
-
-**Governance layer**
-
-* core rules
-* naming standards
-* chronology standards
-* ownership boundaries
-* update controls
-
-</div>
-<div style="flex: 1; min-width: 200px;">
-
-**Execution layer**
-
-* drafting surfaces
-* retrieval surfaces
-* pattern libraries
-* review workflows
-* operational memory
-
-</div>
-</div>
+| Governance layer | Execution layer |
+|---|---|
+| Core rules | Drafting surfaces |
+| Naming standards | Retrieval surfaces |
+| Chronology standards | Pattern libraries |
+| Ownership boundaries | Review workflows |
+| Update controls | Operational memory |
 
 ### Distinctive features
 
@@ -74,89 +57,31 @@ Stonewall creates an operating architecture.
 
 ### Value creation logic
 
-<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 200px;">
-
-**Speed**
-
-Teams spend less time locating context.
-
-Work starts closer to decision-ready.
-
-</div>
-<div style="flex: 1; min-width: 200px;">
-
-**Quality**
-
-Core facts remain stable across repeated use.
-
-Contradictions surface earlier.
-
-</div>
-</div>
+| Speed | Quality |
+|---|---|
+| Teams spend less time locating context. | Core facts remain stable across repeated use. |
+| Work starts closer to decision-ready. | Contradictions surface earlier. |
 
 ### System effects
 
-<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 200px;">
+| Compression | Coordination |
+|---|---|
+| Large knowledge sets collapse into usable frames. | People work from the same truth surface. |
+| Teams spend less time re-learning old context. | Contradictions get caught earlier. |
 
-**Compression**
-
-Large knowledge sets collapse into usable frames.
-
-Teams spend less time re-learning old context.
-
-</div>
-<div style="flex: 1; min-width: 200px;">
-
-**Coordination**
-
-People work from the same truth surface.
-
-Contradictions get caught earlier.
-
-</div>
-</div>
-
-<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 200px;">
-
-**Scalability**
-
-The system grows without collapsing into noise.
-
-New material fits an existing logic.
-
-</div>
-<div style="flex: 1; min-width: 200px;">
-
-**Continuity**
-
-Institutional memory survives handoffs.
-
-Key knowledge stays durable.
-
-</div>
-</div>
+| Scalability | Continuity |
+|---|---|
+| The system grows without collapsing into noise. | Institutional memory survives handoffs. |
+| New material fits an existing logic. | Key knowledge stays durable. |
 
 ### Why it works
-
-<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 200px;">
 
 * **One front door:** entry is simple.
 * **Clear routing:** each question has a home.
 * **Repeatable rules:** scale does not require improvisation.
-
-</div>
-<div style="flex: 1; min-width: 200px;">
-
 * **Fast under pressure:** retrieval remains efficient.
 * **Built for maintenance:** updates remain controlled.
 * **Operational by design:** output supports real work, not display.
-
-</div>
-</div>
 
 ### Design principles
 
@@ -191,18 +116,18 @@ The document corpus underwent a major hardening sweep, achieving:
 
 #### Stonewall CLI
 
-A full command-line interface for corpus and case management:
+The main platform includes a full command-line interface for corpus and case management:
 
-```bash
-python stonewall.py stats          # Corpus health and coverage summary
-python stonewall.py find <query>   # Full-text search with result limiting
-python stonewall.py case <id>      # Case posture and timeline
-python stonewall.py pattern <id>   # Pattern detail and cross-references
-python stonewall.py validate       # Ontology validation against schema
-python stonewall.py doctor         # Corpus health diagnostics
-```
+* `stats` — Corpus health and coverage summary
+* `find` — Full-text search with result limiting
+* `case` — Case posture and timeline
+* `pattern` — Pattern detail and cross-references
+* `validate` — Ontology validation against schema
+* `doctor` — Corpus health diagnostics
 
 Supports JSON output (`--json`) and ontology validation against a machine-readable schema.
+
+In this showcase repository, the equivalent script-level commands are available under `scripts/` (e.g., `scripts/tactical_brief.py`, `scripts/ingest_onedrive.py`, `scripts/verify_repo_consistency.py`).
 
 #### Multi-Platform Architecture
 
@@ -232,9 +157,9 @@ Features AI-powered semantic email classification, property auto-fill, and autom
 
 Automated pre-PR gates with:
 
-* `verify_all.py` as the canonical verification gate
-* `pr_checklist.py` generating structured summary blocks
-* CI/CD integration on every push and pull request
+* `scripts/verify_repo_consistency.py` for repository consistency checks
+* `scripts/repo_sweep.py` for broader repository verification sweeps
+* Python and Node test commands, with CI/CD integration on every push and pull request
 
 ### Business value
 

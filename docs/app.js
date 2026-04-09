@@ -132,11 +132,11 @@
       // Ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       const current = Math.round(eased * target);
-      el.textContent = current + suffix;
+      el.textContent = current.toLocaleString() + suffix;
       if (progress < 1) {
         requestAnimationFrame(tick);
       } else {
-        el.textContent = target + suffix;
+        el.textContent = target.toLocaleString() + suffix;
         el.classList.add('done');
         // Set bar width for metric parents
         const metricBar = el.closest('.metric')?.querySelector('.metric__bar');

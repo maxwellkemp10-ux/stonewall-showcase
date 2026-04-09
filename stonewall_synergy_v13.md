@@ -80,35 +80,24 @@ NOTION_TOKEN=ntn_xxx python scripts/notion_wire_cases.py
 NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
 ```
 
-### Stonewall CLI Commands
+### Stonewall CLI
 
-```bash
-# Corpus health and coverage summary
-python stonewall.py stats
+The main Stonewall platform provides a unified CLI for corpus and case management.
+Available commands on the main platform include:
 
-# Full-text search with optional result limit
-python stonewall.py find "<query>" --limit 20
-
-# Case posture and timeline
-python stonewall.py case <matter-id>
-
-# Pattern detail and cross-references
-python stonewall.py pattern <pattern-id>
-
-# Timeline for a matter
-python stonewall.py timeline <matter-id>
-
-# Show artifact or document detail
-python stonewall.py show <artifact-id>
-
-# Ontology validation against machine-readable schema
-python stonewall.py validate
-
-# Corpus health diagnostics
-python stonewall.py doctor
-```
+* `stats` — Corpus health and coverage summary
+* `find "<query>" --limit 20` — Full-text search with optional result limit
+* `case <matter-id>` — Case posture and timeline
+* `pattern <pattern-id>` — Pattern detail and cross-references
+* `timeline <matter-id>` — Timeline for a matter
+* `show <artifact-id>` — Artifact or document detail
+* `validate` — Ontology validation against machine-readable schema
+* `doctor` — Corpus health diagnostics
 
 All commands support `--json` for machine-readable output.
+
+In this showcase repository, use the script-level commands in **Key Commands** above
+for the supported ingestion, sync, wiring, and QC workflows.
 
 ---
 
@@ -162,17 +151,15 @@ The document corpus underwent a systematic hardening sweep achieving production-
 NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs   # Cross-check Notion data against local index
 python scripts/verify_repo_consistency.py          # Validate corpus alignment and manifest
 python scripts/repo_sweep.py                       # Repository hygiene checks
-python stonewall.py validate                       # Ontology schema validation against machine-readable schema
-python stonewall.py doctor                         # Corpus health diagnostics (coverage, gaps, errors)
 ```
 
 ### PR Verification Gates
 ```bash
-# Canonical pre-PR verification gate
-python scripts/verify_all.py
-
-# Generate structured PR summary block
-python scripts/pr_checklist.py
+# Pre-PR verification sequence
+python scripts/verify_repo_consistency.py   # Corpus alignment and manifest consistency
+python scripts/repo_sweep.py               # Repository hygiene checks
+python -m unittest tests.test_ingest_onedrive tests.test_verify_repo_consistency  # Python tests
+node --test tests/qb1_tracker_helpers.test.mjs tests/email_consolidator.test.mjs  # Node tests
 ```
 
 ---
