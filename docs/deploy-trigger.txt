@@ -1,0 +1,3 @@
+Stonewall Pages deployment trigger
+Generated: 2026-04-09T18:18:00-04:00
+Purpose: force a standard push event so GitHub Pages deploys the current sanitized docs tree.
