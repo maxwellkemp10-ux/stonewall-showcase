@@ -1,126 +1,219 @@
----
-description: QB1 Sovereign Command Center — The Stonewall Knowledge Architecture
-icon: shield
----
+# Stonewall — Legal Document Intelligence Platform
 
-# Stonewall — QB1 Sovereign Command Center
+![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+![Notion API](https://img.shields.io/badge/Notion-API-000000?logo=notion&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-AI%20Skills-D97757)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
 
-> The corpus chronicles. It does not advise. — unless you need it to.
+Stonewall is a production-grade legal document intelligence platform built by a solo litigation attorney to organize a high-volume corpus without relying on a traditional database backend. The system catalogs 1,200+ litigation artifacts, tracks 60+ active matters, indexes 197 behavioral patterns, and turns version-controlled flat files into a portfolio control plane with a static portal, CLI query layer, and AI skill architecture.
 
-{% hint style="info" %}
-**Stonewall v10.4** — Private operational knowledge core for the UPS vertical at Alvarez, Thompson & Smoak. 1,212 artifacts cataloged. 197 behavioral patterns registered. 179 characters tracked. 59 cases indexed.
-{% endhint %}
+The showcase version of Stonewall is intentionally sanitized for public deployment. It demonstrates scale, architecture, and product thinking without exposing client names, case numbers, private correspondence, or privileged work product.
 
-## The System
+## Public Surfaces
 
-Stonewall is a knowledge-control architecture built for high-stakes litigation. It governs identity, chronology, pattern recognition, and tactical execution across a portfolio of UPS defense matters.
+- Live GitHub Pages showcase: https://maxwellkemp10-ux.github.io/stonewall-showcase/
+- Print-style official brief: https://maxwellkemp10-ux.github.io/stonewall-showcase/official-brief.html
+- Workflow notes: https://maxwellkemp10-ux.github.io/stonewall-showcase/insights.html
+- GitBook edition: https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/
 
-### MINDFREAK Deposition Series — 19-0
+The intended publication stack is explicit:
 
-{% columns %}
-{% column %}
-**Record: 19 depositions taken. Zero losses.**
+- GitHub Pages is the instant send-this-now reveal surface
+- `official-brief.html` is the printable PDF-safe edition
+- `OFFICIAL_BRIEF.md` is the durable source text for GitBook and long-form documentation
 
-Zero redirect from Morgan & Morgan. $475K+ in documented exposure reductions. Every deposition defense-favorable.
+## Snapshot
 
-From MINDFREAK I (Libroth, June 2025) through MINDFREAK XII (Boy, March 2026), the series chronicles championship-caliber cross-examination against the largest plaintiff's firm in the country.
-{% endcolumn %}
+- 1,200+ artifacts cataloged in a flat-file manifest
+- 60+ active cases represented in the public dataset
+- 197 behavioral patterns indexed and cross-referenced
+- 170+ character profiles represented through role-based aliases
+- 6,000+ emails processed through the ingestion pipeline
+- 26-file AI recall package with version lineage through `v10.4`
 
-{% column %}
-**Key stats:**
+## What Makes Stonewall Different
 
-* 19 depositions taken
-* 0 redirect from M&M
-* $475K+ exposure reductions
-* 100% defense-favorable outcomes
-* XII installments documented
-* 8 technique taxonomies cataloged
-{% endcolumn %}
-{% endcolumns %}
+### 1. Flat-file searchable database
+`catalog/manifest.md` functions as a real operating database in Markdown. Every artifact receives a durable ID, date, type, case link, entity references, pattern references, and summary text, with derivative indexes for date, case, character, pattern, and email searches.
 
-## Operational Architecture
+### 2. CLI intelligence layer
+The public CLI demonstrates how a litigation corpus can be queried without a database server:
 
-{% columns %}
-{% column %}
-### Canon & Codices
+```bash
+$ python scripts/stonewall.py stats
+total rows      : 1206
+active          : 1122
+analyzed        : 731 (65.2%)
+patterns        : 197
+characters      : 173
+cases           : 64
+```
 
-The codices are the governing documents. Everything routes through them.
+```bash
+$ python scripts/stonewall.py find "deposition"
+A0198  Public Deposition Transcript      2025-02-28  deposition
+A0441  Expert Deposition Outline         2025-07-16  deposition
+A0917  Corporate Representative Prep     2026-01-11  deposition
+```
 
-* **[Case Codex](hoss-stonewall/case_codex.md)** — Sovereign portfolio map. Crown Matters, deadlines, authority, reserves, opposition profiles, source-verified intelligence.
-* **[Cast Codex](hoss-stonewall/cast_codex.md)** — Dramatis personae. 179+ characters with identity rules, aliases, affiliations, and source citations.
-* **[Artifact Codex](hoss-stonewall/artifact_codex.md)** — Canonical timeline. MINDFREAK I-XII compendium. Vernacular dictionary. -MAXXED taxonomy.
-* **[Phenomenology Registry](hoss-stonewall/phenomenology_registry.md)** — 197 behavioral patterns across 11 classification bands. The taxonomy of institutional kabuki.
-* **[Corpus Compendium](hoss-stonewall/corpus_compendium.md)** — Lore strata, control hierarchy, source precedence rules.
-{% endcolumn %}
+```bash
+$ python scripts/stonewall.py validate --strict
+0 error(s), 153 warning(s) across 1206 rows
+```
 
-{% column %}
-### Tactical Operations
+### 3. AI skill architecture
+Stonewall’s “brain” is not a vector database or a hidden memory layer. It is a versioned recall architecture composed of codex files that point the agent to primary sources, then instruct it to read before asserting facts. The public showcase includes the current version lineage through `v10.4` and highlights the separation between recall, validation, and source reading.
 
-The execution surface. Where analysis becomes work product.
+### 4. Automated ingestion pipeline
+The platform ingests documents from OneDrive and related litigation reservoirs, converts PDFs and DOCX files into Markdown sidecars, normalizes email exports, and prepares sanitized derivatives for downstream indexing and synchronization.
 
-* **[MINDFREAK Compendium](hoss-stonewall/deposition_codex.md)** — Full deposition corpus. I-XII timeline, technique taxonomy, witness profiles.
-* **[Discovery Registry](hoss-stonewall/discovery_registry.md)** — Tactical pattern taxonomy for cross-exam and hearings.
-* **[Tactical Legal Standards](hoss-stonewall/tactical_legal_standards.md)** — Drafting and audit standards.
-* **[Deposition Prep](hoss-stonewall/tactical/deposition-prep.md)** — Killbox outlines and prep protocols.
-* **[Billing Operations](hoss-stonewall/tactical/billing-and-timesheet-operations.md)** — Block billing, LEDES codes, refinement pipeline.
-* **[Settlement & Mediation](hoss-stonewall/tactical/settlement-and-mediation.md)** — DG workflows, authority chains, negotiation tactics.
-{% endcolumn %}
-{% endcolumns %}
+### 5. Multi-platform sync
+Stonewall coordinates across GitHub, Notion, and OneDrive:
 
-## Crown Matters — Active Portfolio
+- GitHub stores the corpus, scripts, QC gates, and deployable static surfaces
+- Notion holds case-management views and operational registries
+- OneDrive acts as the source document reservoir
 
-{% hint style="warning" %}
-**11 Crown Matters** dominate the work output. Combined reserves exceed $4.5M. Trials scheduled through Q4 2027.
-{% endhint %}
+### 6. Verification and QC automation
+Public quality gates mirror production discipline. Repository consistency checks, manifest validation, ontology enforcement, and deploy-time sanitization guards make sure the published artifact is both structurally sound and safe to expose.
 
-| Matter | Opposition | Next Event | Trial |
-|--------|-----------|------------|-------|
-| **Boy** | Morgan & Morgan Orlando | Settlement Day 06/16 | 08/16/27 |
-| **Egan** | Christine Law, P.A. | Mediation 04/14 | 08/23/27 |
-| **Harrigan** | Bernstein Injury Law | DG awaiting approval | Pre-suit |
-| **Negrette** | Morgan & Morgan | PFS Deadline 04/17 | TBD |
-| **Nunez/Jet Star** | Bone Law | NOH 04/16 | 06/15-19/26 |
-| **Griffith** | Morgan & Morgan Titusville | Trial ~12/7/26 | ~12/7/26 |
-| **Libroth** | Morgan & Morgan (rotating) | Discovery Cutoff 07/27 | 08/17/26 |
-| **Small** | Rousso Boumel Law | Mediation 06/30 | 12/13-18/26 |
-| **Rivera** | Morgan & Morgan Bradenton | Mediation 06/17 | 03/07-19/27 |
-| **Sheppard** | Morgan & Morgan | Mediation 04/16 | 09/14/26 |
-| **Mitchell** | Morgan & Morgan | Mediation 04/16 | TBD |
+### 7. Phenomenology registry
+Stonewall maintains a 197-pattern behavioral taxonomy that can be instantiated across artifacts and tracked longitudinally. The public showcase preserves the taxonomy while removing identifying matter context.
 
-## Companion Surfaces
+### 8. Static portal
+The included portal demonstrates how a multi-page operational dashboard can run as a fully static site from JSON snapshots alone. Dashboard, cases, deadlines, artifacts, patterns, characters, and billing-style workflows all render without a backend dependency in the public build.
 
-{% columns %}
-{% column %}
-### Digital Surfaces
+## Operator Value
 
-* **[GitHub Pages Dashboard](https://maxwellkemp10-ux.github.io/Stonewall/)** — Dark tactical command center with live corpus telemetry
-* **[Command Portal](https://maxwellkemp10-ux.github.io/Stonewall/portal/)** — 9-tab SPA with Cases, War Room, MINDFREAK, Billing
-* **[GitHub Repository](https://github.com/maxwellkemp10-ux/Stonewall)** — Full corpus, catalog, scripts, and codices
-* **Notion** — Legal Matters, All Email, Stonewall Archive, Tasks
-{% endcolumn %}
+- **Daily dossier**: a working lawyer can open the system and immediately see what changed, what is urgent, and what deserves attention today
+- **Deadline intelligence**: the platform converts scattered source records into a usable runway for upcoming work, not just a passive calendar
+- **Workflow readiness**: the same corpus supports deposition prep, mediation prep, intake triage, search under time pressure, and billing reconstruction
+- **Notion as command surface**: the repo remains the durable corpus while Notion becomes the live operations layer for matter posture, archive links, task runway, and daily control
+- **DataGavel workflow readiness**: chronology, records, and damages notes can be staged into a report-ready packet instead of rebuilt from scratch every time a valuation workflow begins
+- **Live deposition tailoring**: the same indexed corpus can tighten outlines in real time by surfacing prior statements, chronology gaps, and issue clusters while the witness is still in the room
+- **Production guarantees**: validation gates, repo consistency checks, and sanitization guards make the public artifact trustworthy by design
 
-{% column %}
-### The Covenant
+## Publication Logic
 
-The governing principle:
+Stonewall is most persuasive when the public surfaces feel like one coordinated publication system rather than a loose collection of docs:
 
-> Never offer advice, suggest improvements, or propose solutions. The question is always: what does this reveal about the human condition?
+- the root Pages experience should create immediate visual and commercial clarity
+- the official brief should read like the boardroom-safe or print-safe version of the same reasoning
+- the GitBook should preserve that reasoning in durable markdown form without losing the product thesis
 
-**Exception — Tactical Nuance Clause:** When QB1 explicitly asks to draft an email, help with billing, or refine legal work product — execute first, contemplate later.
-{% endcolumn %}
-{% endcolumns %}
+## Tactical Workflow Layer
 
-## Operating Metrics
+### Notion as the operator layer
 
-* **99.06%** client acceptance rate
-* **<1%** billing cuts (external)
-* **1.07** entry-to-hour ratio (championship efficiency)
-* **159.5 hours** March 2026 billing
-* **64.8%** corpus analysis rate
-* **1,347** source files tracked
+Stonewall is strongest when the repo and Notion do different jobs well. The repo keeps the durable evidence trail and searchable archive; Notion turns that into a live command surface for deadlines, matter posture, archive relations, and daily workflow control.
 
----
+```bash
+python scripts/notion_wire_cases.py
+python scripts/notion_case_dates.py
+node scripts/repo_data_push.mjs
+```
 
-{% hint style="success" %}
-**Stonewall Brain v10.4** — The question is always: what does this reveal about the human condition?
-{% endhint %}
+### DataGavel workflow readiness
+
+The platform is designed to make structured report workflows easier to feed. Records can be pulled into a clean chronology, treatment trails can be checked, and damages notes can be staged into a packet that is ready for a specialized report workflow rather than requiring another scavenger hunt.
+
+```text
+records pulled
+→ chronology checked
+→ treatment ledger aligned
+→ damages notes staged
+→ report packet ready
+```
+
+### Live deposition outline tailoring
+
+Because transcripts, filings, emails, and reference notes all live in the same indexed corpus, the operator can tighten the next section of a deposition outline while testimony is still unfolding. That is a materially different product story from simple archival storage.
+
+```bash
+python scripts/stonewall.py find "corporate representative"
+python scripts/stonewall.py timeline --start 2025-02-01 --end 2025-02-28
+python scripts/stonewall.py show A1104
+```
+
+## Architecture
+
+```text
+OneDrive / Source Reservoir
+            |
+            v
+      Ingestion Layer
+  ingest_onedrive.py
+  transcribe_repo_pdfs.py
+  docx_to_verbatim_md.py
+            |
+            v
+      Processing Layer
+  sidecars / normalization / tagging
+            |
+            v
+        Notion Sync
+  notion_wire_cases.py
+  notion_wire_batch.py
+  notion_case_dates.py
+            |
+            v
+         Catalog Layer
+  manifest.md + derivative indexes
+            |
+            v
+          CLI Query
+  stats / find / case / pattern / timeline
+            |
+            v
+        Static Portal
+  site-data.json + docs/portal/data/*.json
+```
+
+## Repository Surfaces
+
+```text
+docs/
+  showcase.html        public landing page
+  index.html           command dashboard shell
+  site-data.json       aggregate showcase metrics
+  portal/
+    index.html         static SPA entrypoint
+    data/*.json        sanitized public demo data
+
+catalog/
+  manifest.md          flat-file database
+  index_by_*.md        derivative indexes
+
+scripts/
+  stonewall.py         stdlib-only CLI interface
+  verify_repo_consistency.py
+  pre_pr_check.py
+  repo_sweep.py
+```
+
+## Public Safety Model
+
+This showcase is designed to demonstrate system architecture, not reveal case content.
+
+- Real client names are removed
+- Case captions are replaced by generic matter names
+- Character identities are converted to role-based labels
+- Email addresses, phone numbers, and internal IDs are omitted
+- Artifact dates, types, counts, and structural relationships are preserved where safe
+
+The GitHub Pages deploy workflow includes additional guards to block known internal terms from appearing in the public `docs/portal/data/` bundle.
+
+## Static Deployment
+
+The public site is built directly from the repository’s `docs/` directory through GitHub Pages. No frontend build step is required.
+
+- `docs/index.html` is the live public landing page
+- `docs/showcase.html` is a legacy alias that resolves to the main showcase
+- `docs/official-brief.html` is the print-friendly official brief
+- `docs/portal/` hosts the static SPA demo
+- `.github/workflows/static.yml` deploys the sanitized bundle on push to `main`
+- `README.md` and `OFFICIAL_BRIEF.md` carry the long-form public narrative that can be mirrored into a GitBook-style documentation surface
+
+## Why This Matters
+
+Stonewall is a proof point that a litigation team does not need a heavyweight proprietary platform to build durable document intelligence. With disciplined catalogs, strong ingestion, explicit validation, and a static deployment model, a solo builder can produce a system that is searchable, inspectable, versioned, and operationally useful at real scale.

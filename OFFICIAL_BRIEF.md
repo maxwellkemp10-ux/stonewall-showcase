@@ -2,6 +2,16 @@
 
 Stonewall is the durable narrative edition of a legal intelligence system built as a control plane rather than a dashboard costume. The public showcase demonstrates a platform that can catalog, search, validate, synchronize, and publish a large litigation corpus without exposing private matter detail. The official brief is the non-ephemeral version of that same claim: the long-form reasoning that a GitBook surface or printed PDF can preserve without depending on a live UI.
 
+## Publication Stack
+
+Stonewall now publishes through three coordinated public-safe surfaces:
+
+- GitHub Pages is the immediate reveal layer designed to create instant product clarity
+- `official-brief.html` is the print-safe and PDF-safe edition of the same thesis
+- `OFFICIAL_BRIEF.md` is the durable markdown source for GitBook and long-form documentation
+
+These surfaces should not compete with each other. They should feel like one argument expressed in three tempos: immediate, formal, and durable.
+
 ## Executive Summary
 
 Stonewall is a production-grade legal document intelligence platform built by a solo litigation attorney to organize a high-volume litigation corpus without relying on a conventional database backend. The system shows that a version-controlled flat-file archive can do real platform work when it is paired with explicit indexing, repeatable ingestion, operator-facing synchronization, and verification gates.
@@ -34,7 +44,7 @@ The stdlib-only CLI exposes stats, search, case, timeline, pattern, validation, 
 
 ### AI brain as routed recall
 
-Stonewall’s brain is not an invisible memory layer. It is a versioned recall architecture composed of codex files that tell the assistant where to look, then force fresh reading before confident assertion.
+Stonewall’s “brain” is not an invisible memory layer. It is a versioned recall architecture composed of codex files that tell the assistant where to look, then force fresh reading before confident assertion.
 
 ### Automated ingestion and sidecars
 
@@ -76,7 +86,7 @@ These are the points where legal time is most expensive and context reconstructi
 
 The public build is sanitized by design. Real client names, matter captions, email addresses, internal identifiers, and privileged summaries are removed. Counts, artifact classes, dates, workflow shape, architecture, and product logic remain visible.
 
-That is what allows GitHub Pages to function as the instant send-this-to-someone surface, while GitBook serves as the durable narrative edition of the same thesis.
+That is what allows GitHub Pages to function as the instant “send this to someone” surface, while GitBook serves as the durable narrative edition of the same thesis and the official brief serves as the PDF-safe expression of that same line of reasoning.
 
 ## Closing Position
 
