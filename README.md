@@ -1,296 +1,197 @@
 # Stonewall — Legal Document Intelligence Platform
 
-**Stonewall** is a production-grade legal document intelligence platform built for law firms that handle high-volume civil litigation. It combines automated email ingestion, AI-powered document tagging, Notion-based case management, and GitHub Actions-driven QC to give legal teams a real-time, searchable, auditable corpus of case activity.
+![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+![Notion API](https://img.shields.io/badge/Notion-API-000000?logo=notion&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-AI%20Skills-D97757)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
 
-> *This is the working platform. The scripts are the product. Contact us to implement it for your firm.*
+Stonewall is a production-grade legal document intelligence platform built by a solo litigation attorney to organize a high-volume corpus without relying on a traditional database backend. The system catalogs 1,200+ litigation artifacts, tracks 60+ active matters, indexes 197 behavioral patterns, and turns version-controlled flat files into a portfolio control plane with a static portal, CLI query layer, and AI skill architecture.
 
----
+The showcase version of Stonewall is intentionally sanitized for public deployment. It demonstrates scale, architecture, and product thinking without exposing client names, case numbers, private correspondence, or privileged work product.
 
-## Overview
+## Snapshot
 
-Modern litigation generates thousands of emails, filings, depositions, and case events per month. Stonewall turns that firehose into a structured, queryable intelligence layer — wired to Notion for case management, powered by Claude and OpenAI for document classification, and automated end-to-end through GitHub Actions.
+- 1,200+ artifacts cataloged in a flat-file manifest
+- 60+ active cases represented in the public dataset
+- 197 behavioral patterns indexed and cross-referenced
+- 170+ character profiles represented through role-based aliases
+- 6,000+ emails processed through the ingestion pipeline
+- 26-file AI recall package with version lineage through `v10.4`
 
-The platform was built and battle-tested on a high-volume insurance defense vertical processing 40+ active matters simultaneously. It delivers:
+## What Makes Stonewall Different
 
-- **Real-time email corpus** — all inbound/outbound email matched to case matters in Notion
-- **AI document tagging** — automatic classification of filings, transcripts, and correspondence
-- **Legal hold tracking** — per-matter hold status with audit trail
-- **Case date management** — DOL, complaint filed, discovery cutoff, depo dates — all synced to Notion
-- **QC automation** — cross-checks Notion data against local index on every push
-- **Daily tactical briefing** — CLI command for a morning operating brief from the live corpus
+### 1. Flat-file searchable database
+`catalog/manifest.md` functions as a real operating database in Markdown. Every artifact receives a durable ID, date, type, case link, entity references, pattern references, and summary text, with derivative indexes for date, case, character, pattern, and email searches.
 
----
+### 2. CLI intelligence layer
+The public CLI demonstrates how a litigation corpus can be queried without a database server:
+
+```bash
+$ python scripts/stonewall.py stats
+total rows      : 1206
+active          : 1122
+analyzed        : 731 (65.2%)
+patterns        : 197
+characters      : 173
+cases           : 64
+```
+
+```bash
+$ python scripts/stonewall.py find "deposition"
+A0198  Public Deposition Transcript      2025-02-28  deposition
+A0441  Expert Deposition Outline         2025-07-16  deposition
+A0917  Corporate Representative Prep     2026-01-11  deposition
+```
+
+```bash
+$ python scripts/stonewall.py validate --strict
+0 error(s), 153 warning(s) across 1206 rows
+```
+
+### 3. AI skill architecture
+Stonewall’s “brain” is not a vector database or a hidden memory layer. It is a versioned recall architecture composed of codex files that point the agent to primary sources, then instruct it to read before asserting facts. The public showcase includes the current version lineage through `v10.4` and highlights the separation between recall, validation, and source reading.
+
+### 4. Automated ingestion pipeline
+The platform ingests documents from OneDrive and related litigation reservoirs, converts PDFs and DOCX files into Markdown sidecars, normalizes email exports, and prepares sanitized derivatives for downstream indexing and synchronization.
+
+### 5. Multi-platform sync
+Stonewall coordinates across GitHub, Notion, and OneDrive:
+
+- GitHub stores the corpus, scripts, QC gates, and deployable static surfaces
+- Notion holds case-management views and operational registries
+- OneDrive acts as the upstream document reservoir
+
+### 6. Verification and QC automation
+Public quality gates mirror production discipline. Repository consistency checks, manifest validation, ontology enforcement, and deploy-time sanitization guards make sure the published artifact is both structurally sound and safe to expose.
+
+### 7. Phenomenology registry
+Stonewall maintains a 197-pattern behavioral taxonomy that can be instantiated across artifacts and tracked longitudinally. The public showcase preserves the taxonomy while removing identifying matter context.
+
+### 8. Static portal
+The included portal demonstrates how a multi-page operational dashboard can run as a fully static site from JSON snapshots alone. Dashboard, cases, deadlines, artifacts, patterns, characters, and billing-style workflows all render without a backend dependency in the public build.
+
+## Operator Value
+
+- **Daily dossier**: a working lawyer can open the system and immediately see what changed, what is urgent, and what deserves attention today
+- **Deadline intelligence**: the platform converts scattered source records into a usable runway for upcoming work, not just a passive calendar
+- **Workflow readiness**: the same corpus supports deposition prep, mediation prep, intake triage, search under time pressure, and billing reconstruction
+- **Notion as command surface**: the repo remains the durable corpus while Notion becomes the live operations layer for matter posture, archive links, task runway, and daily control
+- **DataGavel workflow readiness**: chronology, records, and damages notes can be staged into a report-ready packet instead of rebuilt from scratch every time a valuation workflow begins
+- **Live deposition tailoring**: the same indexed corpus can tighten outlines in real time by surfacing prior statements, chronology gaps, and issue clusters while the witness is still in the room
+- **Production guarantees**: validation gates, repo consistency checks, and sanitization guards make the public artifact trustworthy by design
+
+## Tactical Workflow Layer
+
+### Notion as the operator layer
+
+Stonewall is strongest when the repo and Notion do different jobs well. The repo keeps the durable evidence trail and searchable archive; Notion turns that into a live command surface for deadlines, matter posture, archive relations, and daily workflow control.
+
+```bash
+python scripts/notion_wire_cases.py
+python scripts/notion_case_dates.py
+node scripts/repo_data_push.mjs
+```
+
+### DataGavel workflow readiness
+
+The platform is designed to make structured report workflows easier to feed. Records can be pulled into a clean chronology, treatment trails can be checked, and damages notes can be staged into a packet that is ready for a specialized report workflow rather than requiring another scavenger hunt.
+
+```text
+records pulled
+→ chronology checked
+→ treatment ledger aligned
+→ damages notes staged
+→ report packet ready
+```
+
+### Live deposition outline tailoring
+
+Because transcripts, filings, emails, and reference notes all live in the same indexed corpus, the operator can tighten the next section of a deposition outline while testimony is still unfolding. That is a materially different product story from simple archival storage.
+
+```bash
+python scripts/stonewall.py find "corporate representative"
+python scripts/stonewall.py timeline --start 2025-02-01 --end 2025-02-28
+python scripts/stonewall.py show A1104
+```
 
 ## Architecture
 
-```
-OneDrive / Email Export
-        │
-        ▼
-  [Ingestion Layer]
-  ingest_onedrive.py     ← Converts PDF/DOCX/EML to Markdown derivatives
-  parse_emails.ps1       ← Matches Outlook CSV exports to case matters
-        │
-        ▼
-  [Processing Layer]
-  email_consolidator.mjs ← Deduplicates and normalizes email records
-  email_defuzz.mjs       ← Fuzzy-matches emails to Notion pages
-  email_to_md.py         ← Converts raw email data to Markdown
-  docx_to_md.py          ← Converts DOCX documents to Markdown
-        │
-        ▼
-  [Notion Sync Layer]
-  notion_wire_cases.py          ← Wires email relations to case pages
-  notion_wire_batch.py          ← Batch-uploads email records
-  notion_case_dates.py          ← Syncs case dates (DOL, discovery, depos)
-  notion_backfill_legal_matters.py ← Backfills missing matter properties
-  notion_consolidate_emails.py  ← Consolidates datasource into unified DB
-        │
-        ▼
-  [AI Tagging Layer]
-  email_deep_tag.mjs     ← AI-powered email classification
-  email_audit.mjs        ← Audits and repairs tagging gaps
-  legal_matters_fill.mjs ← AI-fills missing Legal Matters properties
-  legal_hold_backfill.mjs ← Sets legal hold status on matters
-        │
-        ▼
-  [QC & Reporting Layer]
-  qc_sweep.mjs           ← Comprehensive QC cross-check
-  repo_sweep.py          ← Repository hygiene checks
-  verify_repo_consistency.py ← Validates corpus alignment
-  tactical_brief.py      ← CLI daily operating brief
-  legal_matters_pdf.py   ← Generates PDF/HTML case management reports
-        │
-        ▼
-  [Notion Databases]
-  Legal Matters          ← Primary case registry
-  All Email              ← Full email corpus with case relations
-  Document Archive       ← Ingested document derivatives
+```text
+OneDrive / Source Reservoir
+            |
+            v
+      Ingestion Layer
+  ingest_onedrive.py
+  transcribe_repo_pdfs.py
+  docx_to_verbatim_md.py
+            |
+            v
+      Processing Layer
+  sidecars / normalization / tagging
+            |
+            v
+        Notion Sync
+  notion_wire_cases.py
+  notion_wire_batch.py
+  notion_case_dates.py
+            |
+            v
+         Catalog Layer
+  manifest.md + derivative indexes
+            |
+            v
+          CLI Query
+  stats / find / case / pattern / timeline
+            |
+            v
+        Static Portal
+  site-data.json + docs/portal/data/*.json
 ```
 
----
+## Repository Surfaces
 
-## Key Capabilities
+```text
+docs/
+  showcase.html        public landing page
+  index.html           command dashboard shell
+  site-data.json       aggregate showcase metrics
+  portal/
+    index.html         static SPA entrypoint
+    data/*.json        sanitized public demo data
 
-- **Multi-source email ingestion** — Process Outlook CSV exports from any date range; deduplicate across import batches; match to case matters by subject keywords and claim numbers
-- **OneDrive document ingestion** — Walk OneDrive folder trees and convert PDF/DOCX/XLSX/EML to Markdown derivatives with automatic case linkage
-- **AI-powered tagging** — Claude and OpenAI classify document type, parties, and relevance; flag missing properties
-- **Notion-native case management** — Every case gets a structured Notion page with dates, hold status, email relations, and filing history
-- **Legal hold compliance** — Track active/released/not-applicable hold status per matter with automated backfill
-- **Batch processing** — Anthropic Batch API integration for high-throughput document processing without rate-limit friction
-- **GitHub Actions CI/CD** — QC sweep and consistency checks run on every push; failures surface immediately
-- **Tactical CLI** — `python scripts/tactical_brief.py today` for a morning brief: upcoming deadlines, recent case activity, inbox backlog
+catalog/
+  manifest.md          flat-file database
+  index_by_*.md        derivative indexes
 
----
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Language | Python 3.11+, Node.js 20+ (ESM), PowerShell 7+ |
-| AI | Anthropic Claude API, OpenAI API |
-| Case Management | Notion API |
-| Document Storage | Microsoft OneDrive |
-| CI/CD | GitHub Actions |
-| Email | Outlook CSV exports |
-| Packaging | `uv` (Python), `npm` (Node) |
-
----
-
-## Scripts Overview
-
-### Email Pipeline
-| Script | Purpose |
-|---|---|
-| `parse_emails.ps1` | Parse Outlook CSV exports; match emails to case matters by keyword |
-| `email_consolidator.mjs` | Deduplicate and normalize email records across import batches |
-| `email_defuzz.mjs` | Fuzzy-match email records to existing Notion pages |
-| `email_bulk_upload.mjs` | Bulk-upload matched email records to Notion All Email DB |
-| `email_body_push.mjs` | Push email body text to existing Notion pages |
-| `email_audit.mjs` | Audit and repair email tagging, dates, and case relations |
-| `email_deep_tag.mjs` | AI-powered semantic tagging of email content |
-| `email_to_md.py` | Convert raw email data to Markdown format |
-
-### Notion Sync
-| Script | Purpose |
-|---|---|
-| `notion_wire_cases.py` | Wire email-to-case relations in Notion |
-| `notion_wire_batch.py` | Batch-process email uploads to Notion |
-| `notion_case_dates.py` | Sync case dates (DOL, complaint, discovery, depos) from CSV |
-| `notion_consolidate_emails.py` | Consolidate multiple email datasources into unified DB |
-| `notion_fast_consolidate.py` | High-throughput consolidation variant |
-| `notion_fast_dates.py` | High-throughput date repair across datasources |
-| `notion_date_repair.py` | Repair malformed date fields in a single datasource |
-| `notion_date_repair_all.py` | Repair dates across all configured datasources |
-| `notion_email_body_update.py` | Update email body property across pages |
-| `notion_backfill_legal_matters.py` | Backfill missing properties on Legal Matters pages |
-
-### Document Ingestion
-| Script | Purpose |
-|---|---|
-| `ingest_onedrive.py` | Walk OneDrive; convert documents to Markdown; sync to Notion Archive |
-| `ingest_onedrive.ps1` | PowerShell wrapper for `ingest_onedrive.py` |
-| `docx_to_md.py` | Standalone DOCX-to-Markdown converter |
-| `transcribe_repo_pdfs.py` | Extract text from PDFs in the repository |
-
-### Legal Matter Tools
-| Script | Purpose |
-|---|---|
-| `legal_matters_fill.mjs` | AI-fill missing properties on Legal Matters pages |
-| `legal_matters_pdf.py` | Generate PDF/HTML case management report from Notion |
-| `legal_hold_backfill.mjs` | Set legal hold status on matters with blank status |
-
-### QC & Reporting
-| Script | Purpose |
-|---|---|
-| `qc_sweep.mjs` | Cross-check Notion DB against local case index and email corpus |
-| `repo_sweep.py` | Repository hygiene: orphan detection, consistency checks |
-| `verify_repo_consistency.py` | Validate catalog/corpus alignment |
-| `tactical_brief.py` | CLI daily operating brief from live corpus |
-| `repo_data_push.mjs` | Push repository data to Notion for reporting |
-
-### Batch Processing
-| Script | Purpose |
-|---|---|
-| `split_batches.ps1` | Split large JSON payloads into Anthropic Batch API batches |
-| `check_output.ps1` | Inspect batch output distribution |
-| `run_nap_job.ps1` | Launch a NAP (Notion Async Processing) job |
-| `start_nap_job.ps1` | Start a background NAP job |
-| `nap_job_status.ps1` | Check NAP job status |
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+ with `uv` package manager
-- Node.js 20+
-- PowerShell 7+ (Windows/macOS/Linux)
-- A Notion workspace with the integration token
-- Anthropic API key (for Claude-powered features)
-- OpenAI API key (for GPT-powered features)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-org/stonewall.git
-cd stonewall
-
-# Install Python dependencies
-uv pip install -r requirements.txt
-
-# Install Node dependencies
-npm install
+scripts/
+  stonewall.py         stdlib-only CLI interface
+  verify_repo_consistency.py
+  pre_pr_check.py
+  repo_sweep.py
 ```
 
-### Configuration
+## Public Safety Model
 
-Copy `.env.example` to `.env` and populate all required values:
+This showcase is designed to demonstrate system architecture, not reveal case content.
 
-```bash
-cp .env.example .env
-# Edit .env with your credentials and Notion database IDs
-```
+- Real client names are removed
+- Case captions are replaced by generic matter names
+- Character identities are converted to role-based labels
+- Email addresses, phone numbers, and internal IDs are omitted
+- Artifact dates, types, counts, and structural relationships are preserved where safe
 
-**Required environment variables:**
+The GitHub Pages deploy workflow includes additional guards to block known internal terms from appearing in the public `docs/portal/data/` bundle.
 
-| Variable | Description |
-|---|---|
-| `NOTION_TOKEN` | Notion integration token (`ntn_xxx...`) |
-| `NOTION_LEGAL_MATTERS_DB` | Legal Matters database ID |
-| `NOTION_ALL_EMAIL_DB` | All Email database ID |
-| `NOTION_ARCHIVE_DB` | Document Archive database ID |
-| `ANTHROPIC_API_KEY` | Anthropic Claude API key |
-| `OPENAI_API_KEY` | OpenAI API key |
-| `ONEDRIVE_PERSONAL_ROOT` | Path to personal OneDrive root |
-| `ONEDRIVE_FIRM_ROOT` | Path to firm OneDrive root |
+## Static Deployment
 
-See `.env.example` for the complete list.
+The public site is built directly from the repository’s `docs/` directory through GitHub Pages. No frontend build step is required.
 
-### Basic Usage
+- `docs/showcase.html` is the public landing page
+- `docs/index.html` is the dashboard shell
+- `docs/portal/` hosts the static SPA demo
+- `.github/workflows/static.yml` deploys the sanitized bundle on push to `main`
+- `README.md` carries the long-form public narrative that can be mirrored into a showcase repo or GitBook-style documentation surface
 
-**Refresh case data from Legal Matters:**
-```bash
-uv run python scripts/ingest_onedrive.py refresh-cases
-```
+## Why This Matters
 
-**Ingest documents from OneDrive:**
-```bash
-uv run --with pypdf --with cryptography python scripts/ingest_onedrive.py ingest --root firm --glob "*.pdf" --limit 50
-```
-
-**Sync ingested documents to Notion:**
-```bash
-uv run python scripts/ingest_onedrive.py sync-notion --limit 50 --workers 4
-```
-
-**Parse email exports and match to cases:**
-```powershell
-.\scripts\parse_emails.ps1
-```
-
-**Upload matched emails to Notion:**
-```bash
-NOTION_TOKEN=ntn_xxx node scripts/email_bulk_upload.mjs --limit 500
-```
-
-**Run a QC sweep:**
-```bash
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
-```
-
-**Get daily tactical brief:**
-```bash
-python scripts/tactical_brief.py today
-```
-
-**Generate legal matters report:**
-```bash
-NOTION_TOKEN=ntn_xxx python scripts/legal_matters_pdf.py --html -o report.html
-```
-
-### Running Tests
-
-```bash
-# Python test suite
-python -m unittest tests.test_ingest_onedrive tests.test_verify_repo_consistency tests.test_tactical_brief
-
-# Node test suite
-node --test tests/qb1_tracker_helpers.test.mjs
-node --test tests/email_consolidator.test.mjs
-```
-
-### CI/CD
-
-GitHub Actions workflows run on every push:
-- QC sweep validates Notion data integrity
-- Repo consistency check validates corpus alignment
-- Static site deployment (if configured)
-
-See `.github/workflows/` for workflow definitions.
-
----
-
-## Consultancy
-
-This platform is available as a **managed implementation** for law firms. We handle:
-
-- Full environment setup and Notion workspace configuration
-- Custom case matching rules calibrated to your docket
-- AI tagging models tuned to your practice area
-- Ongoing automation maintenance and pipeline extensions
-- Training for your legal and administrative team
-
-**Implementation includes:** intake pipeline, email ingestion, document processing, Notion database architecture, QC automation, and reporting dashboards — all production-ready.
-
-*Contact us to discuss an implementation engagement for your firm.*
-
----
-
-## License
-
-Copyright (c) 2026 Stonewall Legal Intelligence. All rights reserved.
-This software is provided for demonstration and evaluation purposes.
-For implementation licensing, contact the author.
+Stonewall is a proof point that a litigation team does not need a heavyweight proprietary platform to build durable document intelligence. With disciplined catalogs, strong ingestion, explicit validation, and a static deployment model, a solo builder can produce a system that is searchable, inspectable, versioned, and operationally useful at real scale.
