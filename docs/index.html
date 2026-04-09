@@ -1,1 +1,705 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0idXRmLTgiPgogIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSI+CiAgPHRpdGxlPlN0b25ld2FsbCDigJQgTGVnYWwgRG9jdW1lbnQgSW50ZWxsaWdlbmNlIFBsYXRmb3JtPC90aXRsZT4KICA8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iU3RvbmV3YWxsIGlzIGEgbGVnYWwgZG9jdW1lbnQgaW50ZWxsaWdlbmNlIHBsYXRmb3JtIGJ1aWx0IGJ5IGEgc29sbyBsaXRpZ2F0aW9uIGF0dG9ybmV5IHRvIGNhdGFsb2csIHNlYXJjaCwgdmFsaWRhdGUsIGFuZCBwdWJsaXNoIGxhcmdlIGxpdGlnYXRpb24gY29ycG9yYSB3aXRob3V0IGV4cG9zaW5nIHByaXZpbGVnZWQgZGV0YWlsLiI+CiAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tIj4KICA8bGluayByZWw9InByZWNvbm5lY3QiIGhyZWY9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20iIGNyb3Nzb3JpZ2luPgogIDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9TmV3c3JlYWRlcjpvcHN6LHdnaHRANi4uNzIsNTAwOzYuLjcyLDcwMCZmYW1pbHk9U291cmNlK1NhbnMrMzp3Z2h0QDQwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KICA8c3R5bGU+CiAgICA6cm9vdCB7CiAgICAgIC0tYmc6ICMwZDBiMDk7CiAgICAgIC0tc3VyZmFjZTogIzE3MTMxMDsKICAgICAgLS1zdXJmYWNlLXNvZnQ6IHJnYmEoMjU1LCAyNDgsIDI0MCwgMC4wNCk7CiAgICAgIC0tdGV4dDogI2Y0ZWRlMzsKICAgICAgLS1tdXRlZDogI2E1OTU4MzsKICAgICAgLS1hY2NlbnQ6ICNjOTZiM2M7CiAgICAgIC0tYWNjZW50LXNvZnQ6IHJnYmEoMjAxLCAxMDcsIDYwLCAwLjE0KTsKICAgICAgLS1saW5lOiByZ2JhKDI1NSwgMjQxLCAyMzAsIDAuMDkpOwogICAgICAtLWxpbmUtc3Ryb25nOiByZ2JhKDIwMSwgMTA3LCA2MCwgMC4zMCk7CiAgICAgIC0tc2hhZG93OiAwIDMwcHggODBweCByZ2JhKDAsIDAsIDAsIDAuMzgpOwogICAgICAtLW1heDogMTIwMHB4OwogICAgfQoKICAgICogeyBib3gtc2l6aW5nOiBib3JkZXItYm94OyB9CiAgICBodG1sIHsgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7IH0KCiAgICBib2R5IHsKICAgICAgbWFyZ2luOiAwOwogICAgICBmb250LWZhbWlseTogIlNvdXJjZSBTYW5zIDMiLCBzYW5zLXNlcmlmOwogICAgICBjb2xvcjogdmFyKC0tdGV4dCk7CiAgICAgIGxpbmUtaGVpZ2h0OiAxLjY7CiAgICAgIGJhY2tncm91bmQ6CiAgICAgICAgcmFkaWFsLWdyYWRpZW50KGNpcmNsZSBhdCAxNiUgOCUsIHJnYmEoMjAxLCAxMDcsIDYwLCAwLjE3KSwgdHJhbnNwYXJlbnQgMjglKSwKICAgICAgICByYWRpYWwtZ3JhZGllbnQoY2lyY2xlIGF0IDg0JSAwJSwgcmdiYSgyMDEsIDEwNywgNjAsIDAuMDgpLCB0cmFuc3BhcmVudCAyNCUpLAogICAgICAgIGxpbmVhci1ncmFkaWVudCgxODBkZWcsICMxMTBmMGQgMCUsIHZhcigtLWJnKSA0MiUsICMxNDEwMGQgMTAwJSk7CiAgICB9CgogICAgYm9keTo6YmVmb3JlIHsKICAgICAgY29udGVudDogIiI7CiAgICAgIHBvc2l0aW9uOiBmaXhlZDsKICAgICAgaW5zZXQ6IDA7CiAgICAgIHBvaW50ZXItZXZlbnRzOiBub25lOwogICAgICBiYWNrZ3JvdW5kLWltYWdlOgogICAgICAgIGxpbmVhci1ncmFkaWVudChyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDE1KSAxcHgsIHRyYW5zcGFyZW50IDFweCksCiAgICAgICAgbGluZWFyLWdyYWRpZW50KDkwZGVnLCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDE1KSAxcHgsIHRyYW5zcGFyZW50IDFweCk7CiAgICAgIGJhY2tncm91bmQtc2l6ZTogMzZweCAzNnB4OwogICAgICBtYXNrLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCByZ2JhKDAsMCwwLDAuNTUpLCB0cmFuc3BhcmVudCA3OCUpOwogICAgfQoKICAgIGEgeyBjb2xvcjogaW5oZXJpdDsgfQoKICAgIC5zaGVsbCB7CiAgICAgIHdpZHRoOiBtaW4odmFyKC0tbWF4KSwgY2FsYygxMDAlIC0gMzJweCkpOwogICAgICBtYXJnaW46IDAgYXV0bzsKICAgICAgcG9zaXRpb246IHJlbGF0aXZlOwogICAgfQoKICAgIC50b3BiYXIgewogICAgICBkaXNwbGF5OiBmbGV4OwogICAgICBhbGlnbi1pdGVtczogY2VudGVyOwogICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47CiAgICAgIGdhcDogMjBweDsKICAgICAgcGFkZGluZzogMjBweCAwOwogICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgdmFyKC0tbGluZSk7CiAgICB9CgogICAgLmJyYW5kIHsKICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgICBmb250LWZhbWlseTogIk5ld3NyZWFkZXIiLCBzZXJpZjsKICAgICAgZm9udC1zaXplOiAyNHB4OwogICAgICBmb250LXdlaWdodDogNzAwOwogICAgICBsZXR0ZXItc3BhY2luZzogLTAuMDNlbTsKICAgIH0KCiAgICAudG9wYmFyIG5hdiB7CiAgICAgIGRpc3BsYXk6IGZsZXg7CiAgICAgIGZsZXgtd3JhcDogd3JhcDsKICAgICAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDsKICAgICAgZ2FwOiA4cHg7CiAgICB9CgogICAgLnRvcGJhciBuYXYgYSB7CiAgICAgIHBhZGRpbmc6IDhweCAxNHB4OwogICAgICBib3JkZXItcmFkaXVzOiA5OTlweDsKICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgICBmb250LXNpemU6IDE0cHg7CiAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7CiAgICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQgMTYwbXMgZWFzZSwgY29sb3IgMTYwbXMgZWFzZSwgdHJhbnNmb3JtIDE2MG1zIGVhc2U7CiAgICB9CgogICAgLnRvcGJhciBuYXYgYTpob3ZlciwKICAgIC50b3BiYXIgbmF2IGEuYWN0aXZlIHsKICAgICAgYmFja2dyb3VuZDogdmFyKC0tYWNjZW50LXNvZnQpOwogICAgICBjb2xvcjogdmFyKC0tdGV4dCk7CiAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtMXB4KTsKICAgIH0KCiAgICAuaGVybywKICAgIC5zZWN0aW9uLWhlYWQsCiAgICAucG9ydGFsLXByZXZpZXcgewogICAgICBkaXNwbGF5OiBncmlkOwogICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IG1pbm1heCgwLCAxLjFmcikgbWlubWF4KDI4MHB4LCAwLjdmcik7CiAgICAgIGdhcDogMjhweDsKICAgIH0KCiAgICAuaGVybyB7CiAgICAgIHBhZGRpbmc6IDY0cHggMCAyOHB4OwogICAgICBhbGlnbi1pdGVtczogZW5kOwogICAgfQoKICAgIC5leWVicm93IHsKICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7CiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgIGdhcDogMTBweDsKICAgICAgcGFkZGluZzogN3B4IDE0cHg7CiAgICAgIGJvcmRlci1yYWRpdXM6IDk5OXB4OwogICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saW5lLXN0cm9uZyk7CiAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjAxLCAxMDcsIDYwLCAwLjEwKTsKICAgICAgY29sb3I6ICNlZmIwODk7CiAgICAgIGZvbnQtc2l6ZTogMTJweDsKICAgICAgZm9udC13ZWlnaHQ6IDcwMDsKICAgICAgbGV0dGVyLXNwYWNpbmc6IDAuMTJlbTsKICAgICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsKICAgIH0KCiAgICAuZXllYnJvdzo6YmVmb3JlIHsKICAgICAgY29udGVudDogIiI7CiAgICAgIHdpZHRoOiA4cHg7CiAgICAgIGhlaWdodDogOHB4OwogICAgICBib3JkZXItcmFkaXVzOiA1MCU7CiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWFjY2VudCk7CiAgICAgIGJveC1zaGFkb3c6IDAgMCAwIDZweCByZ2JhKDIwMSwgMTA3LCA2MCwgMC4xMik7CiAgICB9CgogICAgaDEsIGgyLCBoMyB7CiAgICAgIG1hcmdpbjogMDsKICAgICAgZm9udC1mYW1pbHk6ICJOZXdzcmVhZGVyIiwgc2VyaWY7CiAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7CiAgICAgIGxpbmUtaGVpZ2h0OiAxLjAyOwogICAgICBsZXR0ZXItc3BhY2luZzogLTAuMDRlbTsKICAgIH0KCiAgICBoMSB7CiAgICAgIG1hcmdpbi10b3A6IDE4cHg7CiAgICAgIGZvbnQtc2l6ZTogY2xhbXAoNDhweCwgN3Z3LCA4NHB4KTsKICAgICAgbWF4LXdpZHRoOiAxMWNoOwogICAgfQoKICAgIGgyIHsgZm9udC1zaXplOiBjbGFtcCgzNHB4LCA0dncsIDUycHgpOyB9CiAgICBoMyB7IGZvbnQtc2l6ZTogMzBweDsgfQoKICAgIC5oZXJvLWNvcHkgcCwKICAgIC5zZWN0aW9uLWhlYWQgcCB7CiAgICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7CiAgICAgIGZvbnQtc2l6ZTogMThweDsKICAgIH0KCiAgICAuaGVyby1jb3B5IHAgewogICAgICBtYXgtd2lkdGg6IDU4Y2g7CiAgICAgIG1hcmdpbjogMThweCAwIDA7CiAgICB9CgogICAgLmhlcm8tYWN0aW9ucyB7CiAgICAgIGRpc3BsYXk6IGZsZXg7CiAgICAgIGZsZXgtd3JhcDogd3JhcDsKICAgICAgZ2FwOiAxMnB4OwogICAgICBtYXJnaW4tdG9wOiAyOHB4OwogICAgfQoKICAgIC5idG4sCiAgICAuYnRuLXNlY29uZGFyeSB7CiAgICAgIGRpc3BsYXk6IGlubGluZS1mbGV4OwogICAgICBhbGlnbi1pdGVtczogY2VudGVyOwogICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsKICAgICAgZ2FwOiA4cHg7CiAgICAgIHBhZGRpbmc6IDEzcHggMjBweDsKICAgICAgYm9yZGVyLXJhZGl1czogOTk5cHg7CiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgICAgZm9udC1zaXplOiAxNXB4OwogICAgICBmb250LXdlaWdodDogNzAwOwogICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTYwbXMgZWFzZSwgYm94LXNoYWRvdyAxNjBtcyBlYXNlLCBib3JkZXItY29sb3IgMTYwbXMgZWFzZTsKICAgIH0KCiAgICAuYnRuIHsKICAgICAgY29sb3I6ICNmZmY4ZjA7CiAgICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsIHZhcigtLWFjY2VudCksICNlNDhkNTgpOwogICAgICBib3gtc2hhZG93OiAwIDE4cHggNDJweCByZ2JhKDIwMSwgMTA3LCA2MCwgMC4yNik7CiAgICB9CgogICAgLmJ0bi1zZWNvbmRhcnkgewogICAgICBjb2xvcjogdmFyKC0tdGV4dCk7CiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpbmUpOwogICAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDMpOwogICAgfQoKICAgIC5idG46aG92ZXIsCiAgICAuYnRuLXNlY29uZGFyeTpob3ZlciwKICAgIC5pbm5vdmF0aW9uOmhvdmVyIHsKICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0ycHgpOwogICAgfQoKICAgIC5iYWRnZS1yb3cgewogICAgICBkaXNwbGF5OiBmbGV4OwogICAgICBmbGV4LXdyYXA6IHdyYXA7CiAgICAgIGdhcDogMTBweDsKICAgICAgbWFyZ2luLXRvcDogMjJweDsKICAgIH0KCiAgICAuYmFkZ2UgewogICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDsKICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICAgICAgcGFkZGluZzogOHB4IDEycHg7CiAgICAgIGJvcmRlci1yYWRpdXM6IDk5OXB4OwogICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saW5lKTsKICAgICAgYmFja2dyb3VuZDogcmdiYSgyNTUsMjU1LDI1NSwwLjA0KTsKICAgICAgY29sb3I6IHZhcigtLW11dGVkKTsKICAgICAgZm9udC1zaXplOiAxMnB4OwogICAgICBmb250LXdlaWdodDogNzAwOwogICAgICBsZXR0ZXItc3BhY2luZzogMC4wNGVtOwogICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogICAgfQoKICAgIC5oZXJvLXBhbmVsLAogICAgLnN0YXQtdGlsZSwKICAgIC5pbm5vdmF0aW9uLAogICAgLnBpcGVsaW5lLXNoZWxsLAogICAgLnRlcm1pbmFsLAogICAgLmZyYW1lLAogICAgLnBvcnRhbC1ub3RlcyB7CiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpbmUpOwogICAgICBib3gtc2hhZG93OiB2YXIoLS1zaGFkb3cpOwogICAgICBib3JkZXItcmFkaXVzOiAyNnB4OwogICAgfQoKICAgIC5oZXJvLXBhbmVsLAogICAgLnBpcGVsaW5lLXNoZWxsLAogICAgLnBvcnRhbC1ub3RlcyB7CiAgICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxODBkZWcsIHJnYmEoMjU1LDI1NSwyNTUsMC4wNDUpLCByZ2JhKDI1NSwyNTUsMjU1LDAuMDIpKTsKICAgIH0KCiAgICAuaGVyby1wYW5lbCwKICAgIC5waXBlbGluZS1zaGVsbCwKICAgIC5wb3J0YWwtbm90ZXMsCiAgICAudGVybWluYWwgewogICAgICBwYWRkaW5nOiAyMnB4OwogICAgfQoKICAgIC5oZXJvLXBhbmVsIHsKICAgICAgcG9zaXRpb246IHJlbGF0aXZlOwogICAgICBvdmVyZmxvdzogaGlkZGVuOwogICAgfQoKICAgIC5oZXJvLXBhbmVsOjphZnRlciB7CiAgICAgIGNvbnRlbnQ6ICIiOwogICAgICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgICAgIHJpZ2h0OiAtNzBweDsKICAgICAgYm90dG9tOiAtOTBweDsKICAgICAgd2lkdGg6IDI0MHB4OwogICAgICBoZWlnaHQ6IDI0MHB4OwogICAgICBib3JkZXItcmFkaXVzOiA1MCU7CiAgICAgIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChjaXJjbGUsIHJnYmEoMjAxLCAxMDcsIDYwLCAwLjI0KSwgdHJhbnNwYXJlbnQgNjglKTsKICAgIH0KCiAgICAucGFuZWwta2lja2VyLAogICAgLnNlY3Rpb24tdGFnLAogICAgLnRlcm1pbmFsLWxhYmVsIHsKICAgICAgZm9udC1zaXplOiAxMnB4OwogICAgICBmb250LXdlaWdodDogNzAwOwogICAgICBsZXR0ZXItc3BhY2luZzogMC4xMmVtOwogICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogICAgfQoKICAgIC5wYW5lbC1raWNrZXIgeyBjb2xvcjogdmFyKC0tbXV0ZWQpOyB9CgogICAgLnBhbmVsLWdyaWQsCiAgICAub3V0Y29tZS1ncmlkLAogICAgLmlubm92YXRpb24tZ3JpZCwKICAgIC50ZXJtaW5hbC1ncmlkLAogICAgLnN0YXQtYmFuZCwKICAgIC5kaWFncmFtLWZvb3Rub3RlcyB7CiAgICAgIGRpc3BsYXk6IGdyaWQ7CiAgICAgIGdhcDogMTRweDsKICAgIH0KCiAgICAucGFuZWwtZ3JpZCB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDIsIG1pbm1heCgwLCAxZnIpKTsgbWFyZ2luLXRvcDogMThweDsgfQogICAgLm91dGNvbWUtZ3JpZCB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDQsIG1pbm1heCgwLCAxZnIpKTsgZ2FwOiAxNnB4OyB9CiAgICAuaW5ub3ZhdGlvbi1ncmlkIHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMiwgbWlubWF4KDAsIDFmcikpOyBnYXA6IDE4cHg7IH0KICAgIC50ZXJtaW5hbC1ncmlkIHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMywgbWlubWF4KDAsIDFmcikpOyBnYXA6IDE2cHg7IH0KICAgIC5zdGF0LWJhbmQgeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCg2LCBtaW5tYXgoMCwgMWZyKSk7IH0KICAgIC5kaWFncmFtLWZvb3Rub3RlcyB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDMsIG1pbm1heCgwLCAxZnIpKTsgbWFyZ2luLXRvcDogMThweDsgfQoKICAgIC5taW5pLXN0YXQgewogICAgICBwYWRkaW5nOiAxNHB4IDE0cHggMTZweDsKICAgICAgYm9yZGVyLXJhZGl1czogMThweDsKICAgICAgYmFja2dyb3VuZDogdmFyKC0tc3VyZmFjZS1zb2Z0KTsKICAgICAgYm9yZGVyOiAxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjA1KTsKICAgIH0KCiAgICAubWluaS1zdGF0IHN0cm9uZywKICAgIC5zdGF0LXRpbGUgc3Ryb25nIHsKICAgICAgZGlzcGxheTogYmxvY2s7CiAgICAgIGZvbnQtZmFtaWx5OiAiTmV3c3JlYWRlciIsIHNlcmlmOwogICAgICBsaW5lLWhlaWdodDogMTsKICAgIH0KCiAgICAubWluaS1zdGF0IHN0cm9uZyB7CiAgICAgIGZvbnQtc2l6ZTogMjlweDsKICAgICAgY29sb3I6ICNmNmMzYTA7CiAgICB9CgogICAgLm1pbmktc3RhdCBzcGFuIHsKICAgICAgZGlzcGxheTogYmxvY2s7CiAgICAgIG1hcmdpbi10b3A6IDZweDsKICAgICAgY29sb3I6IHZhcigtLW11dGVkKTsKICAgICAgZm9udC1zaXplOiAxM3B4OwogICAgfQoKICAgIC5zZWN0aW9uIHsgcGFkZGluZzogNTJweCAwIDA7IH0KCiAgICAuc2VjdGlvbi1oZWFkIHsKICAgICAgYWxpZ24taXRlbXM6IGVuZDsKICAgICAgbWFyZ2luLWJvdHRvbTogMjRweDsKICAgIH0KCiAgICAuc2VjdGlvbi10YWcgewogICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDsKICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICAgICAgZ2FwOiA4cHg7CiAgICAgIGNvbG9yOiAjZTZhZDg3OwogICAgfQoKICAgIC5zZWN0aW9uLXRhZzo6YmVmb3JlIHsKICAgICAgY29udGVudDogIiI7CiAgICAgIHdpZHRoOiAyNHB4OwogICAgICBoZWlnaHQ6IDFweDsKICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGluZS1zdHJvbmcpOwogICAgfQoKICAgIC5zZWN0aW9uLWhlYWQgcCB7CiAgICAgIG1hcmdpbjogMTJweCAwIDA7CiAgICAgIG1heC13aWR0aDogNjJjaDsKICAgIH0KCiAgICAuc2VjdGlvbi1oZWFkIC5hc2lkZSB7CiAgICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7CiAgICAgIGZvbnQtc2l6ZTogMTVweDsKICAgICAgYm9yZGVyLWxlZnQ6IDFweCBzb2xpZCB2YXIoLS1saW5lKTsKICAgICAgcGFkZGluZy1sZWZ0OiAxOHB4OwogICAgfQoKICAgIC5zdGF0LXRpbGUgewogICAgICBwYWRkaW5nOiAxOHB4IDE4cHggMjBweDsKICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE4MGRlZywgcmdiYSgyNTUsMjU1LDI1NSwwLjA0NSksIHJnYmEoMjU1LDI1NSwyNTUsMC4wMikpOwogICAgICBtaW4taGVpZ2h0OiAxNDJweDsKICAgIH0KCiAgICAuc3RhdC10aWxlIHN0cm9uZyB7CiAgICAgIGZvbnQtc2l6ZTogNDJweDsKICAgICAgY29sb3I6ICNmZmQwYWY7CiAgICB9CgogICAgLnN0YXQtdGlsZSBzcGFuIHsKICAgICAgZGlzcGxheTogYmxvY2s7CiAgICAgIG1hcmdpbi10b3A6IDEwcHg7CiAgICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7CiAgICAgIGZvbnQtc2l6ZTogMTNweDsKICAgICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsKICAgICAgbGV0dGVyLXNwYWNpbmc6IDAuMDhlbTsKICAgICAgZm9udC13ZWlnaHQ6IDcwMDsKICAgIH0KCiAgICAuc3RhdC10aWxlIHAsCiAgICAuaW5ub3ZhdGlvbiBwLAogICAgLm91dGNvbWUtY2FyZCBwLAogICAgLnBvcnRhbC1ub3RlcyB1bCwKICAgIC5kaWFncmFtLWZvb3Rub3RlcyBkaXYgewogICAgICBjb2xvcjogdmFyKC0tbXV0ZWQpOwogICAgICBmb250LXNpemU6IDE0cHg7CiAgICB9CgogICAgLnN0YXQtdGlsZSBwLAogICAgLmlubm92YXRpb24gcCwKICAgIC5vdXRjb21lLWNhcmQgcCB7CiAgICAgIG1hcmdpbjogMTBweCAwIDA7CiAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7CiAgICB9CgogICAgLm91dGNvbWUtY2FyZCB7CiAgICAgIHBhZGRpbmc6IDIwcHggMjBweCAyMnB4OwogICAgICBib3JkZXItcmFkaXVzOiAyMnB4OwogICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saW5lKTsKICAgICAgYmFja2dyb3VuZDoKICAgICAgICBsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCByZ2JhKDI1NSwyNTUsMjU1LDAuMDQpLCByZ2JhKDI1NSwyNTUsMjU1LDAuMDIpKSwKICAgICAgICBsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCByZ2JhKDIwMSwgMTA3LCA2MCwgMC4xMCksIHRyYW5zcGFyZW50IDM4JSk7CiAgICAgIGJveC1zaGFkb3c6IHZhcigtLXNoYWRvdyk7CiAgICB9CgogICAgLm91dGNvbWUtY2FyZCBzdHJvbmcgewogICAgICBkaXNwbGF5OiBibG9jazsKICAgICAgZm9udC1zaXplOiAxM3B4OwogICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogICAgICBsZXR0ZXItc3BhY2luZzogMC4xMmVtOwogICAgICBjb2xvcjogI2VmYjA4OTsKICAgIH0KCiAgICAub3V0Y29tZS1jYXJkIGgzIHsKICAgICAgbWFyZ2luLXRvcDogMTBweDsKICAgICAgZm9udC1zaXplOiAyNHB4OwogICAgfQoKICAgIC5pbm5vdmF0aW9uIHsKICAgICAgcGFkZGluZzogMjRweDsKICAgICAgYmFja2dyb3VuZDoKICAgICAgICBsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCByZ2JhKDIwMSwgMTA3LCA2MCwgMC4xMCksIHRyYW5zcGFyZW50IDM1JSksCiAgICAgICAgbGluZWFyLWdyYWRpZW50KDE4MGRlZywgcmdiYSgyNTUsMjU1LDI1NSwwLjA0NSksIHJnYmEoMjU1LDI1NSwyNTUsMC4wMikpOwogICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMTgwbXMgZWFzZSwgYm9yZGVyLWNvbG9yIDE4MG1zIGVhc2U7CiAgICB9CgogICAgLmlubm92YXRpb24gLmljb24gewogICAgICB3aWR0aDogNDZweDsKICAgICAgaGVpZ2h0OiA0NnB4OwogICAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDsKICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICAgIGJvcmRlci1yYWRpdXM6IDE0cHg7CiAgICAgIGJhY2tncm91bmQ6IHJnYmEoMjAxLCAxMDcsIDYwLCAwLjEyKTsKICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGluZS1zdHJvbmcpOwogICAgICBmb250LXNpemU6IDIycHg7CiAgICAgIG1hcmdpbi1ib3R0b206IDE0cHg7CiAgICB9CgogICAgLnRlcm1pbmFsIHsKICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE4MGRlZywgcmdiYSg4LCA3LCA2LCAwLjkwKSwgcmdiYSgxOCwgMTQsIDExLCAwLjk0KSk7CiAgICB9CgogICAgLnRlcm1pbmFsLWxhYmVsIHsKICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7CiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgIGdhcDogOHB4OwogICAgICBjb2xvcjogI2VmYjA4OTsKICAgIH0KCiAgICAudGVybWluYWwtbGFiZWw6OmJlZm9yZSB7CiAgICAgIGNvbnRlbnQ6ICI+XyI7CiAgICAgIGNvbG9yOiB2YXIoLS1hY2NlbnQpOwogICAgICBmb250LXNpemU6IDEzcHg7CiAgICB9CgogICAgLmZyYW1lIHsKICAgICAgYmFja2dyb3VuZDogcmdiYSgxMCwgOCwgNiwgMC43NCk7CiAgICAgIG1pbi1oZWlnaHQ6IDQyMHB4OwogICAgICBvdmVyZmxvdzogaGlkZGVuOwogICAgfQoKICAgIC5mcmFtZSBpZnJhbWUgewogICAgICB3aWR0aDogMTAwJTsKICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICBtaW4taGVpZ2h0OiA0MjBweDsKICAgICAgYm9yZGVyOiAwOwogICAgICBiYWNrZ3JvdW5kOiAjMTIwZjBkOwogICAgfQoKICAgIC5wb3J0YWwtbm90ZXMgdWwgewogICAgICBtYXJnaW46IDE0cHggMCAwOwogICAgICBwYWRkaW5nLWxlZnQ6IDE4cHg7CiAgICB9CgogICAgLnBvcnRhbC1ub3RlcyBsaSArIGxpIHsgbWFyZ2luLXRvcDogOHB4OyB9CgogICAgLmZvb3RlciB7CiAgICAgIHBhZGRpbmc6IDQwcHggMCA2NHB4OwogICAgICBkaXNwbGF5OiBmbGV4OwogICAgICBmbGV4LXdyYXA6IHdyYXA7CiAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsKICAgICAgZ2FwOiAxOHB4OwogICAgICBib3JkZXItdG9wOiAxcHggc29saWQgdmFyKC0tbGluZSk7CiAgICAgIG1hcmdpbi10b3A6IDUycHg7CiAgICB9CgogICAgLmZvb3RlciBwIHsKICAgICAgbWFyZ2luOiAwOwogICAgICBjb2xvcjogdmFyKC0tbXV0ZWQpOwogICAgICBtYXgtd2lkdGg6IDUyY2g7CiAgICAgIGZvbnQtc2l6ZTogMTRweDsKICAgIH0KCiAgICAuZm9vdGVyLWxpbmtzIHsKICAgICAgZGlzcGxheTogZmxleDsKICAgICAgZmxleC13cmFwOiB3cmFwOwogICAgICBnYXA6IDEwcHg7CiAgICB9CgogICAgLmZvb3Rlci1saW5rcyBhIHsKICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgICBjb2xvcjogdmFyKC0tdGV4dCk7CiAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB0cmFuc3BhcmVudDsKICAgIH0KCiAgICAuZm9vdGVyLWxpbmtzIGE6aG92ZXIgeyBib3JkZXItY29sb3I6IHZhcigtLWFjY2VudCk7IH0KCiAgICAubXV0ZWQtbm90ZSB7CiAgICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7CiAgICAgIGZvbnQtc2l6ZTogMTRweDsKICAgIH0KCiAgICBwcmUgewogICAgICBtYXJnaW46IDE2cHggMCAwOwogICAgICBwYWRkaW5nOiAxNnB4IDE4cHg7CiAgICAgIGJvcmRlci1yYWRpdXM6IDE4cHg7CiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4wOCk7CiAgICAgIGJhY2tncm91bmQ6IHJnYmEoNiwgNSwgNCwgMC42NSk7CiAgICAgIG92ZXJmbG93LXg6IGF1dG87CiAgICAgIGNvbG9yOiAjZjhlOGRhOwogICAgICBmb250LXNpemU6IDEzcHg7CiAgICAgIGxpbmUtaGVpZ2h0OiAxLjU1OwogICAgfQoKICAgIGNvZGUgeyBmb250LWZhbWlseTogdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIENvbnNvbGFzLCBtb25vc3BhY2U7IH0KCiAgICBAbWVkaWEgKG1heC13aWR0aDogMTEwMHB4KSB7CiAgICAgIC5zdGF0LWJhbmQgeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgzLCBtaW5tYXgoMCwgMWZyKSk7IH0KICAgICAgLnRlcm1pbmFsLWdyaWQsCiAgICAgIC5kaWFncmFtLWZvb3Rub3RlcywKICAgICAgLnBvcnRhbC1wcmV2aWV3LAogICAgICAuaGVybywKICAgICAgLnNlY3Rpb24taGVhZCB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyOyB9CiAgICB9CgogICAgQG1lZGlhIChtYXgtd2lkdGg6IDc2MHB4KSB7CiAgICAgIC5zaGVsbCB7IHdpZHRoOiBtaW4odmFyKC0tbWF4KSwgY2FsYygxMDAlIC0gMjBweCkpOyB9CiAgICAgIC50b3BiYXIgeyBwYWRkaW5nOiAxNnB4IDA7IH0KICAgICAgLnBhbmVsLWdyaWQsCiAgICAgIC5vdXRjb21lLWdyaWQsCiAgICAgIC5pbm5vdmF0aW9uLWdyaWQsCiAgICAgIC5zdGF0LWJhbmQgeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjsgfQogICAgICAuaGVybyB7IHBhZGRpbmctdG9wOiA0MnB4OyB9CiAgICAgIC5mb290ZXIgeyBwYWRkaW5nLWJvdHRvbTogNDBweDsgfQogICAgfQogIDwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CiAgPGhlYWRlciBjbGFzcz0ic2hlbGwgdG9wYmFyIj4KICAgIDxhIGNsYXNzPSJicmFuZCIgaHJlZj0iaW5kZXguaHRtbCI+U3RvbmV3YWxsPC9hPgogICAgPG5hdj4KICAgICAgPGEgY2xhc3M9ImFjdGl2ZSIgaHJlZj0iaW5kZXguaHRtbCI+U2hvd2Nhc2U8L2E+CiAgICAgIDxhIGhyZWY9Im9mZmljaWFsLWJyaWVmLmh0bWwiPk9mZmljaWFsIEJyaWVmPC9hPgogICAgICA8YSBocmVmPSJwb3J0YWwvIj5Qb3J0YWwgRGVtbzwvYT4KICAgICAgPGEgaHJlZj0iaW5zaWdodHMuaHRtbCI+V29ya2Zsb3cgTm90ZXM8L2E+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWF4d2VsbC1rZW1wLmdpdGJvb2suaW8vc3RvbmV3YWxsLXFiMy9zdG9uZXdhbGwtc2hvd2Nhc2UvcXVhcnRlcmJhY2svIj5HaXRCb29rPC9hPgogICAgICA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vbWF4d2VsbGtlbXAxMC11eC9zdG9uZXdhbGwtc2hvd2Nhc2UiPkdpdEh1YjwvYT4KICAgIDwvbmF2PgogIDwvaGVhZGVyPgoKICA8bWFpbiBjbGFzcz0ic2hlbGwiPgogICAgPHNlY3Rpb24gY2xhc3M9Imhlcm8iPgogICAgICA8ZGl2IGNsYXNzPSJoZXJvLWNvcHkiPgogICAgICAgIDxkaXYgY2xhc3M9ImV5ZWJyb3ciPlB1YmxpYyBEZXBsb3ltZW50IFJlYWR5PC9kaXY+CiAgICAgICAgPGgxPlN0b25ld2FsbCDigJQgTGVnYWwgRG9jdW1lbnQgSW50ZWxsaWdlbmNlIFBsYXRmb3JtPC9oMT4KICAgICAgICA8cD4KICAgICAgICAgIFN0b25ld2FsbCBpcyBhIHByb2R1Y3Rpb24tZ3JhZGUgbGVnYWwgZG9jdW1lbnQgaW50ZWxsaWdlbmNlIGNvbnRyb2wgcGxhbmUgYnVpbHQgYnkgYSBzb2xvIGxpdGlnYXRpb24gYXR0b3JuZXkuIEl0IHR1cm5zIGZsYXQgZmlsZXMsIHZhbGlkYXRlZCBzaWRlY2FycywgQUkgcmVjYWxsIGRpc2NpcGxpbmUsIGFuZCBzdGF0aWMgZGVwbG95bWVudCBzdXJmYWNlcyBpbnRvIGEgcG9ydGZvbGlvIGNvbW1hbmQgZGFzaGJvYXJkIGZvciBhcnRpZmFjdHMsIGRlYWRsaW5lcywgd29ya2Zsb3cgcmVhZGluZXNzLCBhbmQgZGFpbHkgb3BlcmF0aW5nIHZpc2liaWxpdHksIHdpdGhvdXQgZXhwb3NpbmcgcHJpdmlsZWdlZCBtYXR0ZXIgZGV0YWlsLgogICAgICAgIDwvcD4KICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLWFjdGlvbnMiPgogICAgICAgICAgPGEgY2xhc3M9ImJ0biIgaHJlZj0icG9ydGFsLyI+T3BlbiBQb3J0YWwgRGVtbzwvYT4KICAgICAgICAgIDxhIGNsYXNzPSJidG4tc2Vjb25kYXJ5IiBocmVmPSJvZmZpY2lhbC1icmllZi5odG1sIj5SZWFkIE9mZmljaWFsIEJyaWVmPC9hPgogICAgICAgICAgPGEgY2xhc3M9ImJ0bi1zZWNvbmRhcnkiIGhyZWY9Imh0dHBzOi8vbWF4d2VsbC1rZW1wLmdpdGJvb2suaW8vc3RvbmV3YWxsLXFiMy9zdG9uZXdhbGwtc2hvd2Nhc2UvcXVhcnRlcmJhY2svIj5PcGVuIEdpdEJvb2sgRWRpdGlvbjwvYT4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJiYWRnZS1yb3ciPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImJhZGdlIj5QeXRob24gMy4xMis8L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzcz0iYmFkZ2UiPlN0YXRpYyBEb2NzPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImJhZGdlIj5Ob3Rpb24gQVBJPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImJhZGdlIj5DbGF1ZGUgU2tpbGxzPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImJhZGdlIj5HaXRIdWIgQWN0aW9uczwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8cCBjbGFzcz0ibXV0ZWQtbm90ZSIgc3R5bGU9Im1hcmdpbjoxOHB4IDAgMCI+CiAgICAgICAgICBQdWJsaWNhdGlvbiBzdGFjazogR2l0SHViIFBhZ2VzIGZvciBpbnN0YW50IGltcGFjdCwgdGhlIG9mZmljaWFsIGJyaWVmIGZvciBwcmludC1zYWZlIFBERiBjaXJjdWxhdGlvbiwgYW5kIEdpdEJvb2sgZm9yIHRoZSBkdXJhYmxlIG5vbi1lcGhlbWVyYWwgbmFycmF0aXZlIGVkaXRpb24gb2YgdGhlIHNhbWUgdGhlc2lzLgogICAgICAgIDwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxhc2lkZSBjbGFzcz0iaGVyby1wYW5lbCI+CiAgICAgICAgPGRpdiBjbGFzcz0icGFuZWwta2lja2VyIj5MaXZlIFNuYXBzaG90PC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0icGFuZWwtZ3JpZCI+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJtaW5pLXN0YXQiPgogICAgICAgICAgICA8c3Ryb25nIGlkPSJoZXJvQ2F0YWxvZ2VkIj4xLDIwNjwvc3Ryb25nPgogICAgICAgICAgICA8c3Bhbj5jYXRhbG9nZWQgYXJ0aWZhY3RzPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJtaW5pLXN0YXQiPgogICAgICAgICAgICA8c3Ryb25nIGlkPSJoZXJvQ2FzZXMiPjY0PC9zdHJvbmc+CiAgICAgICAgICAgIDxzcGFuPmFjdGl2ZSBjYXNlcyByZXByZXNlbnRlZDwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0ibWluaS1zdGF0Ij4KICAgICAgICAgICAgPHN0cm9uZyBpZD0iaGVyb1BhdHRlcm5zIj4xOTc8L3N0cm9uZz4KICAgICAgICAgICAgPHNwYW4+YmVoYXZpb3JhbCBwYXR0ZXJucyBpbmRleGVkPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJtaW5pLXN0YXQiPgogICAgICAgICAgICA8c3Ryb25nIGlkPSJoZXJvRW1haWxzIj42LDAwMCs8L3N0cm9uZz4KICAgICAgICAgICAgPHNwYW4+ZW1haWxzIHByb2Nlc3NlZDwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICAgIDxwIGNsYXNzPSJtdXRlZC1ub3RlIiBzdHlsZT0ibWFyZ2luOjE4cHggMCAwIj4KICAgICAgICAgIFB1YmxpYyBidWlsZCBzb3VyY2VkIGZyb20gc2FuaXRpemVkIHN0YXRpYyBKU09OIGdlbmVyYXRlZCBvdXQgb2YgdGhlIGNhdGFsb2csIHBhdHRlcm4gcmVnaXN0cnksIGFuZCBwb3J0YWwgc25hcHNob3QgcGlwZWxpbmUuCiAgICAgICAgPC9wPgogICAgICA8L2FzaWRlPgogICAgPC9zZWN0aW9uPgoKICAgIDxzZWN0aW9uIGlkPSJudW1iZXJzIiBjbGFzcz0ic2VjdGlvbiI+CiAgICAgIDxkaXYgY2xhc3M9InNlY3Rpb24taGVhZCI+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxkaXYgY2xhc3M9InNlY3Rpb24tdGFnIj5CeSBUaGUgTnVtYmVyczwvZGl2PgogICAgICAgICAgPGgyPlNjYWxlIHdpdGhvdXQgYSBkYXRhYmFzZSBzZXJ2ZXI8L2gyPgogICAgICAgICAgPHA+CiAgICAgICAgICAgIFRoZSBwdWJsaWMgc2hvd2Nhc2Uga2VlcHMgdGhlIHJlYWwgb3BlcmF0aW9uYWwgc2NhbGUgdmlzaWJsZSB3aGlsZSBzdHJpcHBpbmcgb3V0IG5hbWVzLCBjYXB0aW9ucywgYW5kIHByaXZpbGVnZWQgdGV4dC4gVGhlc2UgY291bnRlcnMgbG9hZCBmcm9tIDxjb2RlPnNpdGUtZGF0YS5qc29uPC9jb2RlPiBzbyB0aGUgcGFnZSBjYW4gZGVwbG95IGFzIGEgc3RhdGljIGFydGlmYWN0LgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImFzaWRlIj4KICAgICAgICAgIFRoZSB1bmRlcmx5aW5nIGNvcnB1cyByZW1haW5zIEdpdC10cmFja2VkLCBodW1hbi1yZWFkYWJsZSwgZ3JlcC1xdWVyeWFibGUsIGFuZCB2YWxpZGF0aW9uLWZyaWVuZGx5LCB3aGljaCBpcyB0aGUgY2VudHJhbCBhcmNoaXRlY3R1cmFsIHRoZXNpcyBvZiB0aGUgcGxhdGZvcm0gYW5kIHRoZSByZWFzb24gaXQgY2FuIHNlcnZlIGFzIGJvdGggY29ycHVzIGxheWVyIGFuZCBvcGVyYXRvciBzdXJmYWNlLgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3RhdC1iYW5kIj4KICAgICAgICA8YXJ0aWNsZSBjbGFzcz0ic3RhdC10aWxlIj4KICAgICAgICAgIDxzdHJvbmcgaWQ9Im1ldHJpY0FydGlmYWN0cyI+MSwyMDY8L3N0cm9uZz4KICAgICAgICAgIDxzcGFuPkFydGlmYWN0cyBDYXRhbG9nZWQ8L3NwYW4+CiAgICAgICAgICA8cD5NYW5pZmVzdC1iYWNrZWQgY2F0YWxvZyB3aXRoIHR5cGUsIGRhdGUsIGVudGl0aWVzLCBwYXR0ZXJucywgYW5kIHN1bW1hcnkgbWV0YWRhdGEuPC9wPgogICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICA8YXJ0aWNsZSBjbGFzcz0ic3RhdC10aWxlIj4KICAgICAgICAgIDxzdHJvbmcgaWQ9Im1ldHJpY0Nhc2VzIj42NDwvc3Ryb25nPgogICAgICAgICAgPHNwYW4+QWN0aXZlIENhc2VzIFRyYWNrZWQ8L3NwYW4+CiAgICAgICAgICA8cD5QdWJsaWMtc2FmZSBjYXNlIGFsaWFzZXMgcHJlc2VydmUgcG9ydGZvbGlvIHNjYWxlIHdpdGhvdXQgZXhwb3NpbmcgbGl2ZSBjYXB0aW9ucyBvciBpZGVudGlmaWVycy48L3A+CiAgICAgICAgPC9hcnRpY2xlPgogICAgICAgIDxhcnRpY2xlIGNsYXNzPSJzdGF0LXRpbGUiPgogICAgICAgICAgPHN0cm9uZyBpZD0ibWV0cmljUGF0dGVybnMiPjE5Nzwvc3Ryb25nPgogICAgICAgICAgPHNwYW4+QmVoYXZpb3JhbCBQYXR0ZXJucz</parameters>},{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stonewall — Legal Document Intelligence Platform</title>
+  <meta name="description" content="Stonewall is a legal document intelligence platform that turns flat files, validation, AI recall, and static deployment into a litigation control plane.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0b09;
+      --surface: #171310;
+      --surface-soft: rgba(255,248,240,0.04);
+      --text: #f4ede3;
+      --muted: #a59583;
+      --accent: #c96b3c;
+      --accent-soft: rgba(201,107,60,0.14);
+      --line: rgba(255,241,230,0.09);
+      --line-strong: rgba(201,107,60,0.30);
+      --shadow: 0 30px 80px rgba(0,0,0,0.34);
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at 15% 8%, rgba(201,107,60,0.18), transparent 28%),
+        radial-gradient(circle at 84% 0%, rgba(201,107,60,0.08), transparent 24%),
+        linear-gradient(180deg, #110f0d 0%, var(--bg) 42%, #14100d 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.6), transparent 78%);
+    }
+
+    a { color: inherit; }
+    .shell { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; position: relative; }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      text-decoration: none;
+      font-family: "Newsreader", serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    nav a {
+      padding: 8px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: var(--accent-soft);
+      color: var(--text);
+      transform: translateY(-1px);
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-family: "Newsreader", serif;
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    h1 { font-size: clamp(48px, 7vw, 84px); max-width: 11ch; margin-top: 18px; }
+    h2 { font-size: clamp(34px, 4vw, 52px); }
+    h3 { font-size: 28px; }
+
+    .hero,
+    .section-head,
+    .portal-preview { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(280px,0.7fr); gap: 28px; }
+
+    .hero {
+      padding: 64px 0 28px;
+      align-items: end;
+    }
+
+    .eyebrow,
+    .section-tag,
+    .terminal-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: rgba(201,107,60,0.10);
+      color: #efb089;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before,
+    .section-tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(201,107,60,0.12);
+    }
+
+    .hero p,
+    .section-head p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 60ch;
+      margin: 18px 0 0;
+    }
+
+    .hero-actions,
+    .badge-row,
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-actions { margin-top: 28px; }
+    .badge-row { margin-top: 22px; gap: 10px; }
+
+    .btn,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    }
+
+    .btn {
+      color: #fff8f0;
+      background: linear-gradient(135deg, var(--accent), #e48d58);
+      box-shadow: 0 18px 42px rgba(201,107,60,0.26);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .btn:hover,
+    .btn-secondary:hover,
+    .card:hover,
+    .innovation:hover { transform: translateY(-2px); }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .panel,
+    .stat-tile,
+    .innovation,
+    .terminal,
+    .frame,
+    .notes,
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel,
+    .terminal,
+    .notes,
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
+      padding: 22px;
+    }
+
+    .panel-grid,
+    .metrics,
+    .outcome-grid,
+    .innovation-grid,
+    .demo-grid,
+    .footer-meta {
+      display: grid;
+      gap: 16px;
+    }
+
+    .panel-grid { grid-template-columns: repeat(2, minmax(0,1fr)); margin-top: 18px; gap: 14px; }
+    .metrics { grid-template-columns: repeat(6, minmax(0,1fr)); }
+    .outcome-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .innovation-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+    .demo-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .footer-meta { grid-template-columns: repeat(3, minmax(0,1fr)); }
+
+    .mini-stat,
+    .stat-tile {
+      background: var(--surface-soft);
+      padding: 16px 16px 18px;
+    }
+
+    .mini-stat strong,
+    .stat-tile strong {
+      display: block;
+      font-family: "Newsreader", serif;
+      line-height: 1;
+    }
+
+    .mini-stat strong {
+      font-size: 29px;
+      color: #f6c3a0;
+    }
+
+    .stat-tile strong {
+      font-size: 42px;
+      color: #ffd0af;
+    }
+
+    .mini-stat span,
+    .stat-tile span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    .stat-tile p,
+    .innovation p,
+    .card p,
+    .notes li,
+    .footer p { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
+
+    .section { padding: 52px 0 0; }
+    .section-head { align-items: end; margin-bottom: 24px; }
+    .section-head .aside {
+      color: var(--muted);
+      font-size: 15px;
+      border-left: 1px solid var(--line);
+      padding-left: 18px;
+    }
+
+    .card strong {
+      display: block;
+      color: #efb089;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .card h3 { margin-top: 10px; font-size: 24px; }
+
+    .innovation {
+      background:
+        linear-gradient(160deg, rgba(201,107,60,0.10), transparent 35%),
+        linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
+      padding: 24px;
+    }
+
+    .innovation .icon {
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: rgba(201,107,60,0.12);
+      border: 1px solid var(--line-strong);
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .terminal {
+      background: linear-gradient(180deg, rgba(8,7,6,0.90), rgba(18,14,11,0.94));
+    }
+
+    .terminal-label {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #efb089;
+    }
+
+    .terminal-label::before {
+      content: ">_";
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(6,5,4,0.65);
+      overflow-x: auto;
+      color: #f8e8da;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .diagram {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow);
+    }
+
+    .diagram pre { margin: 0; }
+
+    .frame {
+      min-height: 420px;
+      overflow: hidden;
+      background: rgba(10,8,6,0.74);
+    }
+
+    .frame iframe {
+      width: 100%;
+      min-height: 420px;
+      border: 0;
+      background: #120f0d;
+    }
+
+    .notes ul { margin: 14px 0 0; padding-left: 18px; }
+    .notes li + li { margin-top: 8px; }
+
+    footer {
+      padding: 40px 0 64px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid var(--line);
+      margin-top: 52px;
+    }
+
+    footer p { margin: 0; max-width: 52ch; }
+
+    .footer-links a {
+      text-decoration: none;
+      color: var(--text);
+      border-bottom: 1px solid transparent;
+    }
+
+    .footer-links a:hover { border-color: var(--accent); }
+
+    @media (max-width: 1100px) {
+      .hero,
+      .section-head,
+      .portal-preview,
+      .demo-grid,
+      .footer-meta { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .shell { width: min(var(--max), calc(100% - 20px)); }
+      .topbar { padding: 16px 0; }
+      .hero { padding-top: 42px; }
+      .panel-grid,
+      .metrics,
+      .outcome-grid,
+      .innovation-grid { grid-template-columns: 1fr; }
+      footer { padding-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="./">Stonewall</a>
+    <nav>
+      <a class="active" href="./">Showcase</a>
+      <a href="official-brief.html">Official Brief</a>
+      <a href="portal/">Portal Demo</a>
+      <a href="insights.html">Workflow Notes</a>
+      <a href="https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/">GitBook</a>
+      <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Public Deployment Ready</div>
+        <h1>Stonewall — Legal Document Intelligence Platform</h1>
+        <p>Stonewall is a production-grade legal document intelligence control plane built by a solo litigation attorney. It turns flat files, validated sidecars, AI recall discipline, and static deployment surfaces into a portfolio command dashboard for artifacts, deadlines, workflow readiness, and daily operating visibility without exposing privileged matter detail.</p>
+        <div class="hero-actions">
+          <a class="btn" href="portal/">Open Portal Demo</a>
+          <a class="btn-secondary" href="official-brief.html">Read Official Brief</a>
+          <a class="btn-secondary" href="https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/">Open GitBook Edition</a>
+        </div>
+        <div class="badge-row">
+          <span class="badge">Python 3.12+</span>
+          <span class="badge">Static Docs</span>
+          <span class="badge">Notion API</span>
+          <span class="badge">Claude Skills</span>
+          <span class="badge">GitHub Actions</span>
+        </div>
+      </div>
+      <aside class="panel">
+        <strong style="display:block;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;">Live Snapshot</strong>
+        <div class="panel-grid">
+          <div class="mini-stat"><strong id="heroCataloged">1,206</strong><span>cataloged artifacts</span></div>
+          <div class="mini-stat"><strong id="heroCases">64</strong><span>active cases represented</span></div>
+          <div class="mini-stat"><strong id="heroPatterns">197</strong><span>behavioral patterns indexed</span></div>
+          <div class="mini-stat"><strong id="heroEmails">6,000+</strong><span>emails processed</span></div>
+        </div>
+        <p style="margin:18px 0 0;color:var(--muted);font-size:14px;">Publication stack: GitHub Pages for instant impact, the official brief for print-safe PDF circulation, and GitBook for the durable non-ephemeral narrative edition of the same thesis.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="numbers">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">By The Numbers</div>
+          <h2>Scale without a database server</h2>
+          <p>The public showcase keeps the real operational scale visible while stripping out names, captions, and privileged text. These counters load from <code>site-data.json</code> so the page can deploy as a static artifact.</p>
+        </div>
+        <div class="aside">The underlying corpus remains Git-tracked, grep-queryable, and validation-friendly, which is the central architectural thesis of the platform and the reason it can serve as both corpus layer and operator surface.</div>
+      </div>
+      <div class="metrics">
+        <article class="stat-tile"><strong id="metricArtifacts">1,206</strong><span>Artifacts Cataloged</span><p>Manifest-backed catalog with type, date, entities, patterns, and summary metadata.</p></article>
+        <article class="stat-tile"><strong id="metricCases">64</strong><span>Active Cases Tracked</span><p>Public-safe case aliases preserve portfolio scale without exposing live captions or identifiers.</p></article>
+        <article class="stat-tile"><strong id="metricPatterns">197</strong><span>Behavioral Patterns</span><p>Phenomenology registry remains intact because the taxonomy itself is abstract and product-safe.</p></article>
+        <article class="stat-tile"><strong id="metricCharacters">173</strong><span>Characters Profiled</span><p>Role-based descriptors preserve the shape of the operating environment without naming real people.</p></article>
+        <article class="stat-tile"><strong id="metricEmails">6,000+</strong><span>Emails Processed</span><p>Normalized email flows demonstrate ingestion scale and searchable communication history.</p></article>
+        <article class="stat-tile"><strong id="metricTypes">23</strong><span>Artifact Classes</span><p>Deposition, pleading, email, notes, records, and workflow objects all live in one durable catalog.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="outcomes">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Operator Value</div>
+          <h2>More than storage, more than search</h2>
+          <p>The real pitch is operational compression. Stonewall makes a litigation corpus usable under time pressure, not merely organized in hindsight.</p>
+        </div>
+        <div class="aside">This is where the showcase becomes commercially legible: daily dossier visibility, deadline intelligence, workflow staging, and live tactical support all arise from the same indexed substrate.</div>
+      </div>
+      <div class="outcome-grid">
+        <article class="card"><strong>Daily Dossier</strong><h3>Immediate situational awareness</h3><p>The operator opens one surface and sees what changed, what is urgent, and which artifacts now matter today.</p></article>
+        <article class="card"><strong>Deadline Intelligence</strong><h3>Runway instead of raw dates</h3><p>Scattered source records become a usable agenda for upcoming work rather than a passive calendar dump.</p></article>
+        <article class="card"><strong>Workflow Readiness</strong><h3>Prep without scavenger hunts</h3><p>The same corpus supports deposition prep, mediation prep, intake triage, billing reconstruction, and chronology repair.</p></article>
+        <article class="card"><strong>Production Guarantees</strong><h3>Validation built into the operating rhythm</h3><p>Manifest checks, ontology enforcement, consistency scans, and sanitization guards make the output trustworthy by design.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="innovation">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Innovation Stack</div>
+          <h2>Eight layers working together</h2>
+          <p>Each layer is modest in isolation. The novelty is how they reinforce one another: flat-file durability, CLI access, AI recall, workflow sync, and public deployment all hang off the same corpus discipline.</p>
+        </div>
+        <div class="aside">The showcase keeps the system legible to buyers, collaborators, and technically curious readers without disclosing clients, case numbers, or privileged material.</div>
+      </div>
+      <div class="innovation-grid">
+        <article class="innovation"><div class="icon">📚</div><h3>Flat-File Searchable Database</h3><p><code>catalog/manifest.md</code> operates as a real database in Markdown. Every artifact receives a durable ID, date, type, case alias, entity links, pattern links, and summary text, with derivative indexes for date, case, character, pattern, and email lookups.</p><pre><code>$ rg "deposition" catalog/manifest.md
+$ rg "Pattern: BONEMAXXED" catalog/index_by_pattern.md</code></pre></article>
+        <article class="innovation"><div class="icon">⌨️</div><h3>CLI Intelligence Layer</h3><p>The stdlib-only CLI makes the corpus queryable without standing up a server or a database engine. It handles stats, case views, pattern lookups, timelines, validation, and artifact inspection from one consistent interface.</p><pre><code>$ python scripts/stonewall.py stats
+$ python scripts/stonewall.py case "Motor Vehicle Case A"</code></pre></article>
+        <article class="innovation"><div class="icon">🧠</div><h3>AI Skill Architecture</h3><p>The brain is explicit recall architecture, not mystery memory. Codex files point the model to source surfaces first, then require reading before assertions, with version lineage preserved through frozen snapshots up to <code>v10.4</code>.</p><pre><code>brain/
+  cast_codex.md
+  cases_codex.md
+  phenomenology_codex.md</code></pre></article>
+        <article class="innovation"><div class="icon">⚙️</div><h3>Automated Ingestion Pipeline</h3><p>Documents move from OneDrive and other reservoirs into normalized Markdown sidecars, OCR-assisted PDF transcriptions, DOCX conversions, and email imports. The result is a searchable corpus that remains Git-native.</p><pre><code>ingest_onedrive.py
+transcribe_repo_pdfs.py
+docx_to_verbatim_md.py</code></pre></article>
+        <article class="innovation"><div class="icon">🔄</div><h3>Multi-Platform Sync</h3><p>GitHub stores the durable corpus, OneDrive remains the source reservoir, and Notion becomes the operator layer for live case management, task runway, and daily command views. Cross-reference manifests keep IDs aligned across surfaces.</p><pre><code>python scripts/notion_wire_cases.py
+python scripts/notion_case_dates.py</code></pre></article>
+        <article class="innovation"><div class="icon">🛡️</div><h3>Verification & QC Automation</h3><p>Repo consistency checks, ontology enforcement, sidecar audits, and deployment guards make the public artifact structurally sound and safe to expose. The same discipline that protects the corpus also increases commercial credibility.</p><pre><code>$ python scripts/stonewall.py validate --strict
+0 error(s), 153 warning(s) across 1206 rows</code></pre></article>
+        <article class="innovation"><div class="icon">🧭</div><h3>Phenomenology Registry</h3><p>Stonewall tracks a 197-pattern behavioral taxonomy that can be instantiated across artifacts and traced longitudinally. The taxonomy survives public sanitization because the pattern language itself is abstract and reusable.</p><pre><code>$ python scripts/stonewall.py pattern "THEARTOFTHEDEALMAXXED"</code></pre></article>
+        <article class="innovation"><div class="icon">🖥️</div><h3>Static Portal</h3><p>The portal proves that a multi-page operational dashboard can run as a fully static site from JSON snapshots alone. Dashboard, cases, deadlines, artifacts, patterns, and character views all render without a backend in the public build.</p><pre><code>docs/portal/
+  index.html
+  data/*.json</code></pre></article>
+      </div>
+    </section>
+
+    <section class="section" id="tactical">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Tactical Workflow Layer</div>
+          <h2>Notion, DataGavel, and live deposition tailoring</h2>
+          <p>This is the part that moves the system from impressive archive to working legal machine. The repo remains the durable evidence trail while tactical layers turn the same corpus into forward motion.</p>
+        </div>
+        <div class="aside">The public story now makes the workflow thesis explicit: Stonewall is valuable because it stages the next move faster and more coherently than scattered folders, ad hoc notes, or one-off searches.</div>
+      </div>
+      <div class="demo-grid">
+        <article class="card"><strong>Notion as Operator Layer</strong><h3>Live command surface</h3><p>Stonewall is strongest when the repo and Notion do different jobs well. The repo preserves the durable archive; Notion turns that into active matter posture, archive relations, task runway, and daily operational control.</p><pre><code>python scripts/notion_wire_cases.py
+python scripts/notion_case_dates.py
+node scripts/repo_data_push.mjs</code></pre></article>
+        <article class="card"><strong>DataGavel Workflow Readiness</strong><h3>Report packets staged upstream</h3><p>Records can be pulled into a chronology, treatment trails checked, and damages notes staged into a packet that is ready for valuation or report work instead of requiring another scavenger hunt at the worst possible moment.</p><pre><code>records pulled
+→ chronology checked
+→ treatment ledger aligned
+→ damages notes staged
+→ report packet ready</code></pre></article>
+        <article class="card"><strong>Live Deposition Tailoring</strong><h3>Outline tightening while the room is still warm</h3><p>Because transcripts, filings, emails, and notes all live in one indexed corpus, the operator can sharpen the next section of an outline in real time by surfacing prior statements, chronology gaps, and issue clusters.</p><pre><code>python scripts/stonewall.py find "corporate representative"
+python scripts/stonewall.py timeline --start 2025-02-01 --end 2025-02-28
+python scripts/stonewall.py show A1104</code></pre></article>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Architecture</div>
+          <h2>Pipeline from source reservoir to static command surface</h2>
+          <p>The public build strips out confidential detail but leaves the architecture visible enough to understand why the system works and why it is commercially credible.</p>
+        </div>
+        <div class="aside">The charm here is not just automation. It is the refusal to require a heavyweight backend before the operator can have useful control over a large corpus.</div>
+      </div>
+      <div class="diagram">
+        <pre><code>OneDrive / Source Reservoir
+            |
+            v
+      Ingestion Layer
+  ingest_onedrive.py
+  transcribe_repo_pdfs.py
+  docx_to_verbatim_md.py
+            |
+            v
+      Processing Layer
+  sidecars / normalization / tagging
+            |
+            v
+        Notion Sync
+  notion_wire_cases.py
+  notion_wire_batch.py
+  notion_case_dates.py
+            |
+            v
+         Catalog Layer
+  manifest.md + derivative indexes
+            |
+            v
+          CLI Query
+  stats / find / case / pattern / timeline
+            |
+            v
+        Static Portal
+  site-data.json + docs/portal/data/*.json</code></pre>
+      </div>
+    </section>
+
+    <section class="section" id="cli-demo">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">CLI Demo</div>
+          <h2>Sanitized command examples from the real operating surface</h2>
+          <p>The format and scale are real; names and matter details are intentionally generic. This is enough to show how the platform behaves without exposing live work product.</p>
+        </div>
+        <div class="aside">The key product point is velocity: a lawyer can query, validate, and reorient the corpus from the terminal with no external dependencies and no opaque search appliance.</div>
+      </div>
+      <div class="demo-grid">
+        <article class="terminal"><div class="terminal-label">stats</div><pre><code>$ python scripts/stonewall.py stats
+total rows      : 1206
+active          : 1122
+analyzed        : 731 (65.2%)
+patterns        : 197
+characters      : 173
+cases           : 64</code></pre></article>
+        <article class="terminal"><div class="terminal-label">find</div><pre><code>$ python scripts/stonewall.py find "deposition"
+A0198  Public Deposition Transcript    2025-02-28  deposition
+A0441  Expert Deposition Outline       2025-07-16  deposition
+A0917  Corporate Representative Prep   2026-01-11  deposition</code></pre></article>
+        <article class="terminal"><div class="terminal-label">validate</div><pre><code>$ python scripts/stonewall.py validate --strict
+0 error(s), 153 warning(s) across 1206 rows
+ontology          : pass
+filesystem links  : pass
+date checks       : pass</code></pre></article>
+      </div>
+    </section>
+
+    <section class="section" id="portal">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Portal Preview</div>
+          <h2>Static dashboard, real product energy</h2>
+          <p>The included portal is the operator-facing face of the public build. It demonstrates how sanitized JSON snapshots can power a dashboard, cases view, deadlines board, artifact browser, and pattern registry with no backend required.</p>
+        </div>
+        <div class="aside">Pages is the instant send-this-now surface. The official brief is the PDF-safe edition. GitBook is the durable non-ephemeral narrative layer. Together they present one coherent argument instead of a pile of disconnected docs.</div>
+      </div>
+      <div class="portal-preview">
+        <div class="frame">
+          <iframe src="portal/" title="Stonewall portal preview"></iframe>
+        </div>
+        <aside class="notes">
+          <strong style="display:block;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;">Included surfaces</strong>
+          <ul>
+            <li>Dashboard, cases, deadlines, artifacts, patterns, cast, and billing-style views</li>
+            <li>Sanitized JSON payloads under <code>docs/portal/data/</code></li>
+            <li>Role-based aliases, generic case names, and abstracted summaries</li>
+            <li>Fast enough to host as plain static files while still feeling like an application</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:22px;">
+            <a class="btn" href="portal/">Open Portal</a>
+            <a class="btn-secondary" href="official-brief.html">Open Official Brief</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <p>Stonewall demonstrates how a litigation team can build durable document intelligence from disciplined flat files, strong validation, and static publication surfaces rather than a heavyweight proprietary stack.</p>
+    <div class="footer-links">
+      <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">GitHub Repo</a>
+      <a href="https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/">GitBook</a>
+      <a href="official-brief.html">Official Brief</a>
+      <a href="portal/">Portal</a>
+    </div>
+  </footer>
+
+  <script>
+    (async function () {
+      try {
+        const response = await fetch('site-data.json', { cache: 'no-store' });
+        if (!response.ok) return;
+        const data = await response.json();
+        const format = (value) => new Intl.NumberFormat('en-US').format(value);
+        const manifest = data.manifest || {};
+        const patterns = data.patterns || {};
+        const cases = data.cases || {};
+        const characters = data.characters || {};
+        const showcase = data.showcase_metrics || {};
+
+        const values = {
+          heroCataloged: format(manifest.total_rows || 0),
+          heroCases: format(cases.total_unique || 0),
+          heroPatterns: format(patterns.total || 0),
+          heroEmails: `${format(showcase.emails_processed || 0)}+`,
+          metricArtifacts: format(manifest.total_rows || 0),
+          metricCases: format(cases.total_unique || 0),
+          metricPatterns: format(patterns.total || 0),
+          metricCharacters: format(characters.total_unique || 0),
+          metricEmails: `${format(showcase.emails_processed || 0)}+`,
+          metricTypes: format(showcase.artifact_classes || 0)
+        };
+
+        Object.entries(values).forEach(([id, value]) => {
+          const node = document.getElementById(id);
+          if (node) node.textContent = value;
+        });
+      } catch (error) {
+        console.warn('Stonewall showcase metrics unavailable', error);
+      }
+    }());
+  </script>
+</body>
+</html>
