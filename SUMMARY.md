@@ -3,6 +3,7 @@
 ## Showcase
 
 * [Stonewall Showcase](README.md)
+* [Architecture Overview](docs/ARCHITECTURE.md)
 
 ## Hoss Stonewall
 
@@ -15,3 +16,4 @@
 * [cast\_codex](hoss-stonewall/cast_codex.md)
 * [phenomenology\_registry](hoss-stonewall/phenomenology_registry.md)
 * [📈 Claude Code Insights](hoss-stonewall/claude-code-insights.md)
+* [🖥️ Stonewall CLI](hoss-stonewall/stonewall-cli.md)

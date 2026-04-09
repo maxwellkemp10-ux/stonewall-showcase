@@ -8,9 +8,7 @@ metaLinks: {}
 
 > Stonewall is a knowledge-control system for complex, high-consequence work.
 
-{% hint style="info" %}
-Built for teams that cannot afford drift, delay, or fragmented operating memory.
-{% endhint %}
+> ℹ️ Built for teams that cannot afford drift, delay, or fragmented operating memory.
 
 ### Executive premise
 
@@ -26,9 +24,7 @@ Search replaces structure.
 
 Rework replaces continuity.
 
-{% hint style="success" %}
-Stonewall is designed for live use, not archive storage.
-{% endhint %}
+> ✅ Stonewall is designed for live use, not archive storage.
 
 ### Strategic thesis
 
@@ -44,30 +40,74 @@ That shift improves speed, consistency, and execution quality.
 * Preserves chronology, naming, and source integrity.
 * Routes work to the correct decision surface.
 * Reduces rework across drafting, review, and maintenance cycles.
+* Provides a purpose-built CLI for corpus stats, full-text search, and health diagnostics.
+* Automates corpus hardening with PDF-to-Markdown sidecar generation and OCR fallback repair.
+* Runs AI-powered QC sweeps that flag missing dates, unlinked records, and duplicate entries.
 
 ### Operating model
 
-{% columns %}
-{% column %}
-**Governance layer**
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
 
-* core rules
-* naming standards
-* chronology standards
-* ownership boundaries
-* update controls
-{% endcolumn %}
+**Ingestion layer**
 
-{% column %}
-**Execution layer**
+* OneDrive document intake
+* Email CSV parsing
+* PDF/DOCX/XLSX conversion
+* Markdown derivative generation
+</div>
+<div style="flex: 1; min-width: 200px;">
 
-* drafting surfaces
-* retrieval surfaces
-* pattern libraries
-* review workflows
-* operational memory
-{% endcolumn %}
-{% endcolumns %}
+**Processing layer**
+
+* Deduplication
+* Field normalization
+* OCR fallback repair
+* Corpus hardening pipeline
+</div>
+</div>
+
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
+
+**Sync layer**
+
+* Multi-surface synchronization
+* GitHub ↔ Notion ↔ OneDrive wiring
+* Relation linking
+* Batch uploads
+</div>
+<div style="flex: 1; min-width: 200px;">
+
+**AI Tagging layer**
+
+* Semantic email classification
+* Document type assignment
+* Property auto-fill
+* Case relevance scoring
+</div>
+</div>
+
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
+
+**QC layer**
+
+* AI-powered QC sweeps
+* Cross-platform validation
+* Manifest integrity checks
+* Pre-PR verification gates
+</div>
+<div style="flex: 1; min-width: 200px;">
+
+**Reporting layer**
+
+* Stonewall CLI diagnostics
+* Tactical daily briefs
+* PDF/HTML dashboard generation
+* Health and coverage metrics
+</div>
+</div>
 
 ### Distinctive features
 
@@ -81,77 +121,81 @@ Stonewall creates an operating architecture.
 
 ### Value creation logic
 
-{% columns %}
-{% column %}
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
+
 **Speed**
 
 Teams spend less time locating context.
 
 Work starts closer to decision-ready.
-{% endcolumn %}
+</div>
+<div style="flex: 1; min-width: 200px;">
 
-{% column %}
 **Quality**
 
 Core facts remain stable across repeated use.
 
 Contradictions surface earlier.
-{% endcolumn %}
-{% endcolumns %}
+</div>
+</div>
 
 ### System effects
 
-{% columns %}
-{% column %}
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
+
 **Compression**
 
 Large knowledge sets collapse into usable frames.
 
 Teams spend less time re-learning old context.
-{% endcolumn %}
+</div>
+<div style="flex: 1; min-width: 200px;">
 
-{% column %}
 **Coordination**
 
 People work from the same truth surface.
 
 Contradictions get caught earlier.
-{% endcolumn %}
-{% endcolumns %}
+</div>
+</div>
 
-{% columns %}
-{% column %}
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
+
 **Scalability**
 
 The system grows without collapsing into noise.
 
 New material fits an existing logic.
-{% endcolumn %}
+</div>
+<div style="flex: 1; min-width: 200px;">
 
-{% column %}
 **Continuity**
 
 Institutional memory survives handoffs.
 
 Key knowledge stays durable.
-{% endcolumn %}
-{% endcolumns %}
+</div>
+</div>
 
 ### Why it works
 
-{% columns %}
-{% column %}
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+<div style="flex: 1; min-width: 200px;">
+
 * **One front door:** entry is simple.
 * **Clear routing:** each question has a home.
 * **Repeatable rules:** scale does not require improvisation.
-{% endcolumn %}
+</div>
+<div style="flex: 1; min-width: 200px;">
 
-{% column %}
 * **Fast under pressure:** retrieval remains efficient.
 * **Built for maintenance:** updates remain controlled.
 * **Operational by design:** output supports real work, not display.
-{% endcolumn %}
-{% endcolumns %}
+</div>
+</div>
 
 ### Design principles
 
