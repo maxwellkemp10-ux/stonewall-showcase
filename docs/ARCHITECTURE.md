@@ -69,8 +69,14 @@ Stonewall is a multi-layer automation platform that transforms raw legal documen
 │  ├─ Flag missing dates/holds   ├─ Upcoming deadlines                │
 │  verify_repo_consistency.py    legal_matters_pdf.py                 │
 │  ├─ Validate corpus alignment  └─ PDF/HTML case report generator    │
-│  repo_sweep.py                                                      │
-│  └─ Repository hygiene checks                                       │
+│  repo_sweep.py                 stonewall.py (CLI)                   │
+│  ├─ Repository hygiene checks  ├─ Corpus stats & full-text search   │
+│  verify_all.py                 ├─ Manifest validation & health      │
+│  ├─ Pre-PR verification gate   └─ Case lookups & diagnostics        │
+│  pre_pr_check.py                                                    │
+│  ├─ Pre-merge quality gate                                          │
+│  pr_checklist.py                                                    │
+│  └─ PR verification checklist                                       │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -188,6 +194,37 @@ Generates a PDF or HTML case management dashboard from the Notion Legal Matters 
 NOTION_TOKEN=ntn_xxx python scripts/legal_matters_pdf.py --html -o dashboard.html
 ```
 
+#### `stonewall.py` (Stonewall CLI)
+Purpose-built command-line interface for corpus diagnostics and operations. Provides:
+- **Corpus stats** — artifact counts, format breakdowns, coverage metrics
+- **Full-text search** — search across all indexed artifacts with result limiting
+- **Case lookups** — query matter-specific data by keyword
+- **Manifest validation** — verify manifest integrity and detect inconsistencies
+- **Health diagnostics** — system-wide health checks and gap analysis
+
+```bash
+# Corpus overview
+python scripts/stonewall.py stats
+
+# Full-text search with result limit
+python scripts/stonewall.py search "keyword" --limit 10 --json
+
+# Case-specific lookup
+python scripts/stonewall.py case "smith"
+
+# Manifest validation
+python scripts/stonewall.py validate
+
+# Health check
+python scripts/stonewall.py health
+```
+
+#### `verify_all.py` / `pre_pr_check.py`
+Pre-merge verification gates that run before any pull request is merged. Executes manifest validation, repo consistency checks, and the full test suite to ensure no regressions.
+
+#### `pr_checklist.py`
+Generates a PR verification checklist covering naming conventions, file integrity, manifest alignment, and test coverage.
+
 ---
 
 ## Integration Points
@@ -235,7 +272,10 @@ NOTION_TOKEN=ntn_xxx python scripts/legal_matters_pdf.py --html -o dashboard.htm
 
 6. QC layer validates data integrity on every push
 
-7. Reporting layer surfaces actionable intelligence via CLI and dashboards
+7. Pre-PR verification gate runs manifest validation, consistency checks,
+   and test suites before any merge is accepted
+
+8. Reporting layer surfaces actionable intelligence via CLI and dashboards
 ```
 
 ---
