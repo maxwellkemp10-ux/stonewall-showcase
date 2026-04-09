@@ -1,13 +1,13 @@
 ---
 name: document-intelligence-agent
-version: "1.0"
+version: "2.0"
 description: >
   Document intelligence agent for legal matter analysis. Classifies documents,
   extracts key dates and parties, identifies patterns in case activity, and
   synthesizes across the document corpus to produce case summaries and status reports.
 ---
 
-# Document Intelligence Agent v1.0
+# Document Intelligence Agent v2.0
 
 ## I. CORE PURPOSE
 
@@ -62,6 +62,7 @@ Notion Legal Matters DB ← Structured case registry
 ```
 
 ### Key Commands
+
 ```bash
 # Refresh case cache from Notion
 uv run python scripts/ingest_onedrive.py refresh-cases
@@ -78,6 +79,36 @@ NOTION_TOKEN=ntn_xxx python scripts/notion_wire_cases.py
 # Run QC
 NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
 ```
+
+### Stonewall CLI Commands
+
+```bash
+# Corpus health and coverage summary
+python stonewall.py stats
+
+# Full-text search with optional result limit
+python stonewall.py find "<query>" --limit 20
+
+# Case posture and timeline
+python stonewall.py case <matter-id>
+
+# Pattern detail and cross-references
+python stonewall.py pattern <pattern-id>
+
+# Timeline for a matter
+python stonewall.py timeline <matter-id>
+
+# Show artifact or document detail
+python stonewall.py show <artifact-id>
+
+# Ontology validation against machine-readable schema
+python stonewall.py validate
+
+# Corpus health diagnostics
+python stonewall.py doctor
+```
+
+All commands support `--json` for machine-readable output.
 
 ---
 
@@ -109,23 +140,62 @@ Each document record contains:
 
 ## V. QC & AUDIT PROTOCOL
 
+### Corpus Hardening Achievement
+
+The document corpus underwent a systematic hardening sweep achieving production-grade quality:
+
+- **1,190 manifest rows**, 1,106 active, 724 analyzed (65.5% coverage)
+- **0 validation errors** on strict mode — all schema violations resolved
+- PDF sidecar repair and OCR fallback applied corpus-wide
+- Verbatim normalization, full deduplication, and canonical precedence enforcement
+
 ### Automated Checks
 - **Email-to-case matching** — Are emails correctly linked to matters?
 - **Date completeness** — DOL, complaint date, discovery cutoff populated?
 - **Hold status coverage** — Do all active matters have a status?
 - **Duplicate detection** — Are there duplicate email records?
 - **Correspondence gaps** — Are there gaps in email coverage for active matters?
+- **Schema validation** — Does every artifact conform to the ontology schema?
 
 ### Running QC
 ```bash
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
-python scripts/verify_repo_consistency.py
-python scripts/repo_sweep.py
+NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs   # Cross-check Notion data against local index
+python scripts/verify_repo_consistency.py          # Validate corpus alignment and manifest
+python scripts/repo_sweep.py                       # Repository hygiene checks
+python stonewall.py validate                       # Ontology schema validation against machine-readable schema
+python stonewall.py doctor                         # Corpus health diagnostics (coverage, gaps, errors)
+```
+
+### PR Verification Gates
+```bash
+# Canonical pre-PR verification gate
+python scripts/verify_all.py
+
+# Generate structured PR summary block
+python scripts/pr_checklist.py
 ```
 
 ---
 
-## VI. BATCH PROCESSING
+## VII. MULTI-PLATFORM ARCHITECTURE
+
+The platform operates across five synchronized surfaces:
+
+| Surface | Role |
+|---|---|
+| **GitHub** | Canonical archive — version control, CI/CD, public showcase |
+| **Notion** | Live case posture, task management, email triage, command center |
+| **OneDrive Personal** | Staging environment and brain deployment target |
+| **OneDrive Firm** | Read-only evidence reservoir (ingestion source) |
+| **Local synthesis layer** | Fast corpus recall via PowerShell retrieval scripts |
+
+### Sync Strategy
+
+Each surface has a defined authority role. GitHub is the single source of truth for the canonical corpus. Notion reflects live operational posture. OneDrive surfaces feed the ingestion pipeline. The local synthesis layer enables fast retrieval without network dependency.
+
+---
+
+## VIII. BATCH PROCESSING
 
 For high-volume document processing via the Anthropic Batch API:
 
@@ -145,7 +215,7 @@ $env:NOTION_TOKEN = "ntn_xxx"; .\scripts\run_nap_job.ps1
 
 ---
 
-## VII. CONFIGURATION
+## IX. CONFIGURATION
 
 All database IDs and credentials are loaded from environment variables. See `.env.example` for the complete list. Never hardcode database IDs, API keys, or file paths in analysis output or suggestions.
 

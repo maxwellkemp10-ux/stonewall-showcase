@@ -69,8 +69,10 @@ Stonewall is a multi-layer automation platform that transforms raw legal documen
 │  ├─ Flag missing dates/holds   ├─ Upcoming deadlines                │
 │  verify_repo_consistency.py    legal_matters_pdf.py                 │
 │  ├─ Validate corpus alignment  └─ PDF/HTML case report generator    │
-│  repo_sweep.py                                                      │
-│  └─ Repository hygiene checks                                       │
+│  repo_sweep.py                 verify_all.py                        │
+│  ├─ Repository hygiene checks  ├─ Canonical pre-PR gate             │
+│  stonewall.py (CLI)            pr_checklist.py                      │
+│  └─ stats/find/validate/doctor └─ PR summary block generator        │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -169,6 +171,9 @@ Comprehensive QC audit. Cross-checks Notion database data against the local case
 
 **Output:** Console report with counts and specific flagged items
 
+#### `verify_all.py` / `pr_checklist.py`
+Pre-PR verification gate. `verify_all.py` is the canonical gate that runs all consistency checks. `pr_checklist.py` generates a structured summary block for pull request descriptions.
+
 #### `tactical_brief.py`
 CLI tool for a daily operating brief. Reads the live corpus and produces:
 - Upcoming deadlines (within configurable window)
@@ -187,6 +192,55 @@ Generates a PDF or HTML case management dashboard from the Notion Legal Matters 
 ```bash
 NOTION_TOKEN=ntn_xxx python scripts/legal_matters_pdf.py --html -o dashboard.html
 ```
+
+---
+
+### CLI Layer
+
+#### `stonewall.py`
+Full command-line interface for corpus and case management queries.
+
+```bash
+python stonewall.py stats                    # Corpus health and coverage summary
+python stonewall.py find "<query>" --limit 20  # Full-text search
+python stonewall.py case <matter-id>         # Case posture and timeline
+python stonewall.py character <role-id>      # Role/party detail
+python stonewall.py pattern <pattern-id>     # Pattern detail and cross-references
+python stonewall.py timeline <matter-id>     # Matter timeline
+python stonewall.py show <artifact-id>       # Artifact detail
+python stonewall.py validate                 # Ontology validation
+python stonewall.py doctor                   # Corpus health diagnostics
+```
+
+All commands support `--json` for machine-readable output and `--limit` for result capping.
+
+---
+
+### Corpus Hardening
+
+The document corpus undergoes periodic hardening sweeps to maintain production-grade quality:
+
+- Full manifest validation against the machine-readable ontology schema
+- PDF sidecar repair and OCR fallback for text-extraction failures
+- Verbatim normalization to ensure consistent quoting and citation standards
+- Deduplication with canonical precedence enforcement
+- **Target:** 0 validation errors on strict mode
+
+---
+
+## Multi-Platform Architecture
+
+The platform spans five synchronized surfaces with defined authority roles:
+
+| Surface | Role | Access Pattern |
+|---|---|---|
+| **GitHub** | Canonical archive | Version control, CI/CD, public showcase |
+| **Notion** | Live operational posture | Case management, email triage, task tracking |
+| **OneDrive Personal** | Staging and deployment | Brain zip deployment, staging pipeline |
+| **OneDrive Firm** | Evidence reservoir | Read-only ingestion source |
+| **Local synthesis layer** | Fast retrieval | PowerShell corpus recall, offline queries |
+
+GitHub is the single source of truth. All other surfaces are synchronized derivatives or feeds.
 
 ---
 
