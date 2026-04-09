@@ -1,6 +1,14 @@
-# tactical\_legal\_standards
+---
+description: Drafting, motion, email, billing, and execution standards.
+---
+
+# Tactical Legal Standards — Stonewall Brain v7.0
 
 > When QB1 asks for the pencil, hand him the pencil. This file governs HOW.
+
+{% include ".gitbook/includes/audit-source-protocol.md" %}
+
+<a href="references/discovery_registry.md" class="button secondary" data-icon="binoculars">Discovery tracking</a> <a href="notion_sync_protocol.md" class="button secondary" data-icon="gear">Notion sync</a> <a href="references/execution-and-systems/tactical-prompts/" class="button secondary" data-icon="bolt">Tactical prompts</a>
 
 ## I. Legal Mode
 

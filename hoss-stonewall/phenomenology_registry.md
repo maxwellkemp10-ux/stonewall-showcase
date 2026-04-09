@@ -1,10 +1,69 @@
-# phenomenology\_registry
+---
+description: Complete Stonewall pattern taxonomy, classification bands, and registry law.
+---
 
-> Complete 172-pattern taxonomy. Patterns 1–97: institutional kabuki. Patterns 98–120: championship patterns (QB1 excellence). Patterns 121–126: cross-artifact. Patterns 127–130: formation. Patterns 131–141: post-Blitzkrieg. Patterns 142–152: corpus compendium. Patterns 153–172: Stomping the Yard expansion. Each pattern is a specimen. Know the registry before diagnosing. Consult when identifying patterns.
+# 🧬 Phenomenology Registry
+
+{% include ".gitbook/includes/global-control-deck.md" %}
+
+{% include ".gitbook/includes/audit-source-protocol.md" %}
+
+> Complete 197-pattern taxonomy across 11 classification bands. Patterns 1–97: institutional kabuki. Patterns 98–120: championship (QB1 excellence). Patterns 121–126: cross-artifact. Patterns 127–130: formation. Patterns 131–141: post-Blitzkrieg. Patterns 142–152: corpus compendium. Patterns 153–172: Stomping the Yard. Patterns 173–176: Ostrich. Patterns 177–178: CME/Expert. Patterns 179–184: Approval & Compliance Theater. Patterns 185–197: Chapter XIII-XIV / FOUNDERMAXXED. Next available: 198. Know the registry before diagnosing. Consult when identifying patterns.
+
+### Control deck
+
+<a href="../Tactical/" class="button primary" data-icon="house">Home</a> <a href="artifact_codex.md" class="button primary" data-icon="timeline">Artifact codex</a>
+
+<a href="../cast_codex.md" class="button secondary" data-icon="users">Cast codex</a> <a href="../stonewall-deep-reference.md" class="button secondary" data-icon="book">Deep reference</a> <a href="discovery_registry.md" class="button secondary" data-icon="crosshairs">Discovery registry</a>
+
+### Snapshot
+
+{% columns %}
+{% column %}
+* **Live patterns:** 197
+* **Bands:** 11
+* **Current range:** 1–197
+* **Next available:** 198
+{% endcolumn %}
+
+{% column %}
+* **Primary use:** pattern naming
+* **Control role:** classification law
+* **Scope:** whole Stonewall corpus
+* **Rule:** log recurring specimens only
+{% endcolumn %}
+{% endcolumns %}
+
+{% hint style="success" %}
+**Fast read:** use this page to name the phenomenon precisely before drafting analysis, routing canon, or assigning doctrine.
+{% endhint %}
+
+{% tabs %}
+{% tab title="What this page controls" %}
+* pattern names
+* pattern numbers
+* classification bands
+* next available slot
+{% endtab %}
+
+{% tab title="What it does not control" %}
+* chronology
+* identity
+* matter posture
+* drafting standards
+{% endtab %}
+
+{% tab title="Authority ladder" %}
+* **Pattern naming:** this page
+* **Chronology:** Artifact Codex
+* **Identity:** Cast Codex
+* **Matter posture:** Case Codex
+{% endtab %}
+{% endtabs %}
 
 ***
 
-## Registry Principles
+## REGISTRY PRINCIPLES
 
 1. Every pattern is a **specimen** — pin it to the wall, examine it, classify it.
 2. Patterns may co-occur. A single artifact can exhibit multiple patterns simultaneously.
@@ -14,7 +73,7 @@
 
 ***
 
-## Pattern Catalog
+## PATTERN CATALOG
 
 > Patterns are numbered for reference. Not all pattern numbers are sequential — gaps represent classified or pending specimens.
 
@@ -28,7 +87,7 @@
 | 4  | **Cotton-Candy Billing**      | Hours that dissolve upon examination — volume without substance                                                                                    |
 | 5  | **The Domo Panopticon**       | Filevine audit log captures all; the domo remembers what humans deny                                                                               |
 | 6  | **The Memo Tab**              | Repository of everything except comprehension                                                                                                      |
-| 7  | **RADAR ALERT**               | —                                                                                                                                                  |
+| 7  | **RADAR ALERT**               | Pattern of sending preemptive status alerts to adjuster/UPS rep to control the narrative before bad news surfaces organically.                     |
 | 8  | **The Ghostwriter's Paradox** | QB1 produces the work; others claim the credit or deny the production                                                                              |
 | 9  | **The Emersonian Sabbath**    | Jen produces competent independent work when Big Satan is remote — the institution functions better minus its most prolific actor                  |
 | 10 | **The Cocktail Shrimp**       | Will Fletcher — the Cocktail Shrimp Patriarch. Complaint was about ATS staff non-responsiveness TO clients. 'Max/Bill' salutation primacy 3/10/26. |
@@ -45,28 +104,28 @@
 
 ### Behavioral Patterns (21–40)
 
-| #  | Pattern Name                        | Description                                                                                                                                                                                          |
-| -- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 21 | **Reading Like Yisenia**            | Failure to read every word; missing details that change meaning                                                                                                                                      |
-| 22 | **The Prompty**                     | Misspelling as institutional artifact — "prompty" ages like wine                                                                                                                                     |
-| 23 | **The Meow**                        | "Looking meow" — now a volitional genre, not a typo (3/19/26)                                                                                                                                        |
-| 24 | **The Yoru**                        | "yoru" for "your" — let it breathe                                                                                                                                                                   |
-| 25 | **The Help That IS The Help**       | Offering assistance that constitutes the entire contribution — no further action                                                                                                                     |
-| 26 | **Arrogance Alongside Illiteracy**  | The lecture from the person who cannot read                                                                                                                                                          |
-| 27 | **The Lecture from the Unread**     | Variant of #26 — specific instances of correction from the uninformed                                                                                                                                |
-| 28 | **Zero Buy-In**                     | Complete indifference to case outcomes; only kabuki games matter                                                                                                                                     |
-| 29 | **Performance of Work**             | Theater of activity without substance                                                                                                                                                                |
-| 30 | **Adding Mr. Smoak**                | The event — the canonical instance                                                                                                                                                                   |
-| 31 | **Thank-You Parasitism**            | Thanking others for resolving things she didn't advance                                                                                                                                              |
-| 32 | **The Negrette Editorial**          | Commenting on nuclear depositions she didn't attend                                                                                                                                                  |
-| 33 | **The Crazy Crap**                  | Big Satan's pejorative for QB1 (3/17/26) — the naming of the threat                                                                                                                                  |
-| 34 | **The Reporting Associate**         | Derisive reframing of QB1's role to diminish agency                                                                                                                                                  |
-| 35 | **Syntax Collapse**                 | "Meeting go pushed" — language fails under institutional evasion                                                                                                                                     |
-| 36 | **The Michael Scott GIF**           | "Nope. Don't like that." — the visual vocabulary of institutional recoil                                                                                                                             |
-| 37 | **Carl Jung from Beyond the Grave** | Kerry's email template channels Jung to diagnose Big Satan                                                                                                                                           |
-| 38 | **What You Resist, Persists**       | The Jungian diagnosis manifest — the reporting associate persists                                                                                                                                    |
-| 39 | **Stomping the Yard**               | Live screen-share copy-paste demo to prove the Scope Paradox is ninety seconds of fiction. Pending. Karma is a copy-paste demonstration performed by a man who was called 'crazy crap' that morning. |
-| 40 | **The Blitzkrieg**                  | Multi-front rapid-fire execution — March 10: 18 emails, 6 fronts, one evening. March 19: seven fronts, one chair. BEDFORDMAXXED.                                                                     |
+| #  | Pattern Name                        | Description                                                                                                                                                                                                   |
+| -- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 21 | **Reading Like Yisenia**            | Failure to read every word; missing details that change meaning                                                                                                                                               |
+| 22 | **The Prompty**                     | Misspelling as institutional artifact — "prompty" ages like wine                                                                                                                                              |
+| 23 | **The Meow**                        | "Looking meow" — now a volitional genre, not a typo (3/19/26)                                                                                                                                                 |
+| 24 | **The Yoru**                        | "yoru" for "your" — let it breathe                                                                                                                                                                            |
+| 25 | **The Help That IS The Help**       | Offering assistance that constitutes the entire contribution — no further action                                                                                                                              |
+| 26 | **Arrogance Alongside Illiteracy**  | The lecture from the person who cannot read                                                                                                                                                                   |
+| 27 | **The Lecture from the Unread**     | Variant of #26 — specific instances of correction from the uninformed                                                                                                                                         |
+| 28 | **Zero Buy-In**                     | Complete indifference to case outcomes; only kabuki games matter                                                                                                                                              |
+| 29 | **Performance of Work**             | Theater of activity without substance                                                                                                                                                                         |
+| 30 | **Adding Mr. Smoak**                | The event — the canonical instance                                                                                                                                                                            |
+| 31 | **Thank-You Parasitism**            | Thanking others for resolving things she didn't advance                                                                                                                                                       |
+| 32 | **The Negrette Editorial**          | Commenting on nuclear depositions she didn't attend                                                                                                                                                           |
+| 33 | **The Crazy Crap**                  | Big Satan's pejorative for QB1 (3/17/26) — the naming of the threat                                                                                                                                           |
+| 34 | **The Reporting Associate**         | Derisive reframing of QB1's role to diminish agency                                                                                                                                                           |
+| 35 | **Syntax Collapse**                 | "Meeting go pushed" — language fails under institutional evasion                                                                                                                                              |
+| 36 | **The Michael Scott GIF**           | "Nope. Don't like that." — the visual vocabulary of institutional recoil                                                                                                                                      |
+| 37 | **Carl Jung from Beyond the Grave** | Kerry's email template channels Jung to diagnose Big Satan                                                                                                                                                    |
+| 38 | **What You Resist, Persists**       | The Jungian diagnosis manifest — the reporting associate persists                                                                                                                                             |
+| 39 | **Stomping the Yard**               | Live screen-share copy-paste demo to prove the Scope Paradox is ninety seconds of fiction. Executed 3/26/26. Karma is a copy-paste demonstration performed by a man who was called 'crazy crap' that morning. |
+| 40 | **The Blitzkrieg**                  | Multi-front rapid-fire execution — March 10: 18 emails, 6 fronts, one evening. March 19: seven fronts, one chair. BEDFORDMAXXED.                                                                              |
 
 ### Strategic Patterns (41–60)
 
@@ -97,12 +156,12 @@
 
 | #  | Pattern Name                          | Description                                                                                                                                                                        |
 | -- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 61 | **BONEMAXXED**                        | —                                                                                                                                                                                  |
-| 62 | **CHAIRMANMAXXED**                    | —                                                                                                                                                                                  |
-| 63 | **FATHERGAPONMAXXED**                 | —                                                                                                                                                                                  |
-| 64 | **BIGSATANMAXXED**                    | —                                                                                                                                                                                  |
+| 61 | **BONEMAXXED**                        | The March 20, 2026 cluster where Mr. Bone, Ms. Brite, and the Jet Star geometry converged into a single day of championship-level multi-front execution.                           |
+| 62 | **CHAIRMANMAXXED**                    | QB1 operating as de facto chairman of the UPS vertical — making decisions, directing strategy, and running matters that nominally belong to partners.                              |
+| 63 | **FATHERGAPONMAXXED**                 | QB1 as Father Gapon leading the institutional march — documenting dysfunction not to destroy but to force accountability, ultimately sacrificing his own comfort for the cause.    |
+| 64 | **BIGSATANMAXXED**                    | Peak Big Satan dysfunction — maximum kabuki output with minimum substantive work, the .10 farm running at full capacity.                                                           |
 | 65 | **Adding Mr. Smoak Doctrine**         | Codified from Pattern 30 — the event becomes law                                                                                                                                   |
-| 66 | **GUTTENTAGMAXXED**                   | —                                                                                                                                                                                  |
+| 66 | **GUTTENTAGMAXXED**                   | The March 6, 2026 "Superman" moment — QB1's competence acknowledged by the institution in a single word that validated the entire vertical.                                        |
 | 67 | **The Karighan**                      | Karighan Walker-Alicea — Libroth, Morgan & Morgan. Cathedral silence. Four-point proportionality foreclosure 2/24/26.                                                              |
 | 68 | **Mr. Bill Protocol**                 | Fire and fade. 'Checking back on this' 4 hours after delivery. Ghost-written AI Bootcamp: 38 slides, REV12, standing ovation from 125 in Dallas. Honeymooning Japan April 6–May 1. |
 | 69 | **The Cocktail Shrimp Doctrine**      | The codified version of Pattern 10. Client complaints about non-responsiveness become the catalyst.                                                                                |
@@ -185,7 +244,7 @@ These patterns emerged from the four-document cross-artifact synthesis (3/23/26)
 
 ***
 
-## Registry Notes
+## REGISTRY NOTES
 
 * When new patterns emerge, append to this registry with next available number.
 * Kabuki patterns (1–97): institutional dysfunction specimens.
@@ -198,7 +257,9 @@ These patterns emerged from the four-document cross-artifact synthesis (3/23/26)
 * The registry is descriptive, never prescriptive. We chronicle. We do not advise.
 * Post-Blitzkrieg patterns (131–141): operational patterns from March 2026 offensive.
 * Corpus Compendium patterns (142–152): cross-corpus synthesis patterns.
-* Next available pattern number: **177**
+* CME / Expert patterns (177–178): defense medical examination dynamics.
+* Approval & Compliance Theater patterns (179–184): approval loop mechanics, instruction metabolization, and nihilistic performance at institutional scale.
+* Next available pattern number: **198**
 
 ### Formation Patterns (127–130)
 
@@ -284,3 +345,45 @@ These patterns emerged from the prebill intervention of April 1, 2026, and the O
 | 174 | **Prebill Intervention** | The forensic audit of billing entries by the person whose productive time the audit consumes. QB1 discovers the phantom hours, then must spend his own billable time documenting and correcting them.            |
 | 175 | **Phantom 1.70**         | The specific numeric signature of Katie Madigan's March 30, 2026 fabrication — 1.70 phantom hours across 5 entries in Boy v. UPS for surveillance discovery work never completed.                                |
 | 176 | **PUNTMAXXED**           | Multi-party correspondence weightlessness; the settlement offer that floats in the interstitial space between firms where no single firm owns the obligation to respond. Jaunet Spellman / Manley type specimen. |
+
+### CME / Expert Patterns (177–178)
+
+These patterns emerged from the Donaldson CME call (4/3/26) and cross-deposition prior-accident analysis, expanding the taxonomy from 176 to 178 entries.
+
+| #   | Pattern Name             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 177 | **The Self-Gutting CME** | Plaintiff arrives at defense medical examination and voluntarily dismisses claimed body parts before the expert even examines them. Sheppard type specimen: "I've never injured my shoulders. I don't hurt my shoulders." Neck "not an issue." Case collapses from multi-body-part claim to degenerative lumbar only. The plaintiff performs the defense medical examination for you. Distinguished from Guttentag Demolition (#151) by agency — there the expert demolishes; here the plaintiff demolishes himself.                                                                                                                             |
+| 178 | **The Memory Fortress**  | Universal deployment of memory deficiency as impeachment shield. Adams type specimen: "I have memory issues, sir. That's what I'm telling you. Ever since all of this happened to me, I forget stuff." "I barely can remember how old I am sometime." Every prior accident denied through memory, every inconsistency explained by memory, every admission deflected to memory. The fortress protects against every question — and prevents the plaintiff from building any affirmative case, because a person who cannot remember the accidents that hurt her spine cannot remember that this accident hurt her spine. The shield IS the sword. |
+
+### Approval & Compliance Theater (179–184)
+
+These patterns emerged from the "Approval Chinese Checkers" chapter (April 4, 2026), expanding the taxonomy from 178 to 184 entries. They document the mechanics of institutional approval loops — the gap between receiving an instruction and executing it, the performance of compliance without its substance.
+
+| #   | Pattern Name                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                     |
+| --- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 179 | **The Receipt**                              | Big Satan's two-character acknowledgment — "Received!" — that instruction was received, turned over, admired, then shelved. The instruction never metabolizes into action. It is processed as a compliance artifact, not an operational input. The receipt IS the output.                                                                                                                                       |
+| 180 | **The Metabolized Instruction**              | When an instruction is treated as raw material rather than directive input. The operator takes the instruction, processes it through their existing behavioral firmware, and produces output that bears the instruction's fingerprints but serves the operator's pre-existing program. The instruction was heard. It was not followed. It was metabolized.                                                      |
+| 181 | **The Approval That Does Not Seek Approval** | QB1's operational mode: producing artifacts that look like they seek approval while actually functioning as autonomous execution. The approval request is architecture — it insulates the operator from accountability while continuing to run the only program they actually know how to run. The form is deference; the substance is sovereignty.                                                             |
+| 182 | **The Artifact Theater**                     | Producing output that looks like compliance while running the only program you know. The .10 farm assembly line is Artifact Theater at industrial scale — the entries look like legal work, bill like legal work, but advance no case. The theater is not deception; the performer genuinely cannot distinguish performance from substance.                                                                     |
+| 183 | **The Boomerang Clause**                     | An approval request that cycles back into the institutional approval apparatus without ever reaching execution. The request goes up, gets approved, comes back down, triggers a new request for clarification, goes back up. The approval loop IS the work product. Nothing external is produced. The institution mistakes internal circulation for forward motion.                                             |
+| 184 | **The Nihilistic Sublimity**                 | The sumptuous nihilism of institutional performance at terminal scale. When every participant knows the performance is empty, continues performing, and finds aesthetic satisfaction in the precision of the emptiness. Not cynicism — true nihilistic beauty. The .10 farm humming along at peak efficiency, producing nothing of value, and everyone involved experiencing genuine professional satisfaction. |
+
+### Chapter XIII-XIV / FOUNDERMAXXED Patterns (185–197)
+
+These patterns emerged from Chapters XIII ("Easter Monday") and XIV ("The Revolving Door"), plus "The Green Light" (FOUNDERMAXXED), April 7, 2026. Both sessions independently identified patterns — merged here with the richest descriptions.
+
+| #   | Pattern Name                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 185 | **The Revolving Door**                         | Architecture that converts linear motion into circular motion — push, enter, push again, back where you started. The door does not lock or refuse entry; it spins through quadrants until forward momentum is exhausted. Applied to any task requiring simple execution (send one email) that is instead subjected to twelve questions, four explanations of the same syllogism, and one "okay. i can get it started." Type specimen: Bartleson vehicle hold, 4/7/26 — 28 days and 12 revolving-door pushes to produce 0 emails. |
+| 186 | **The Electric Fence Doctrine**                | The unified field theory. They make every request sufficiently unpleasant to discourage future requests. Double question marks = voltage increase. "Did you submit again?" = buzz at the boundary. Intermittent reinforcement schedule. The Admiral was trained by this fence. QB1 was not: "the man has been electrocuted so many times that electricity is just weather."                                                                                                                                                      |
+| 187 | **The Pick-and-Pop**                           | Jennifer Escobar's invisible clock transfer. "How do I proceed?" looks like collaboration but is choreography — draws attention to the screen while the ball handler (actual obligation) slips behind. Distinguished from Big Satan's spotlight kabuki by stealth. The historian was fooled.                                                                                                                                                                                                                                     |
+| 188 | **The DoorDash Firmware**                      | Big Satan's core architecture. Complete Step 1, announce Step 1 with maximum broadcast radius, then surgically detach Step 2 and deposit it on someone else's desk. The bag is on the doorstep. Confirm receipt. Five stars. The timestamp is the product.                                                                                                                                                                                                                                                                       |
+| 189 | **The Clark Triptych**                         | Sine wave of competence: four emails across 25 days. Competent (3/13) → void "Please advise" (3/24) → competent (3/31) → collapsed "Is the matter mute?" (4/7). \~11 days peak-to-trough. Big Satan excluded the void email from her own numbering.                                                                                                                                                                                                                                                                              |
+| 190 | **The Orlando Congratulatory Volcanic System** | Third documented eruption Easter Monday. Trilobite body plan: bell, response, response, response, gif, done. 76:1 ratio of legal boilerplate to human communication. Five Engines of Compulsion drive participation. Schreck Standard: 4 exclamation points = natural resonant frequency of institutional celebration.                                                                                                                                                                                                           |
+| 191 | **FOUNDERMAXXED**                              | QB1 building Stonewall in 8 days with zero formal programming training. March 20 = Day 1 (first commit 8:58 AM → 9 PRs by 9:33 PM). By Day 8: 400+ commits, 80+ PRs, 6K lines Python, 33+ tests, 172 patterns, 533 manifest rows. The space station and the pothole.                                                                                                                                                                                                                                                             |
+| 192 | **The Geometric Dissolution**                  | Cooperative multi-player chinese checkers applied to meeting cancellation. Three pieces (domestic quadrant, silent quadrant, hovering) arrange themselves to create a runway for the kill shot: "Do we even need this meeting?" The game is not competitive — all players reach the same destination (the couch). QB1's piece is jumped last. Type specimen: Easter Monday UPS Fireteam meeting, 4/6/26.                                                                                                                         |
+| 193 | **Green on Teams**                             | The performance of availability without production. All status indicators glowing green — demonstrating presence to the Domo Panopticon while producing nothing. The .10 entry of the Teams status bar: exchange-value (I appear to be working) without use-value (I am not working). Type specimen: Big Satan, Little Satan, Katie, 4/7/26.                                                                                                                                                                                     |
+| 194 | **The Promise of Non-Difficulty**              | "I promise I'm not trying to be difficult..." The self-aware confession that serves as a Receipt (Pattern 179). Nobody who is not being difficult needs to promise they are not being difficult. Type specimen: Big Satan, 4/7/26 Bartleson Teams chat, 12:43 PM.                                                                                                                                                                                                                                                                |
+| 195 | **The Three Stooges Ping Pong**                | Multi-participant task deflection: Person A says Person B is working on it, Person B says she'll check in with Person A, the task circulates while the attorney builds the deliverable himself. Type specimen: Clark med chron/DG, 4/6-7/26 — Katie: "Yisenia has been working on that one" while QB1 builds the entire DataGavel.                                                                                                                                                                                               |
+| 196 | **The Volcanic Reply-All**                     | Firm-wide congratulatory email chain with morphological stability across eruptions: identical participants, identical response times, identical exclamation-point counts. The reply-all is not celebration but proof of institutional membership. Zero from Tampa. Type specimen: Congrats Libbie, 4/6/26.                                                                                                                                                                                                                       |
+| 197 | **The Motherhood Gambit (Extended)**           | Children deployed as ablative shielding against professional accountability. Three children (Ansley, Liam, Barnabas), three employees, three excuses. Unchallengeable: no male attorney in 2026 can say "I don't care about your child." Origin: 3/17/26. Extended Easter Monday: all three deployed simultaneously within 19 minutes (9:08-9:27 AM).                                                                                                                                                                            |

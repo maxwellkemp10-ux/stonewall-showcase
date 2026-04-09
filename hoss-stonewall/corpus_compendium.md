@@ -1,6 +1,8 @@
-# corpus\_compendium
+# 🧠 Corpus Compendium - Stonewall Synergy
 
 Use this reference when the user asks for broad Stonewall synthesis, lore maintenance, canon refresh, archive intake, chapter-writing across multiple source families, or any request that spans more than one artifact cluster.
+
+{% include ".gitbook/includes/global-control-deck.md" %}
 
 ## Purpose
 
@@ -318,7 +320,7 @@ The legacy ATS OneDrive root in older prompts may require confirmation before sc
 
 ## Local Retrieval Layer
 
-The Codex workspace also carries a dependency-light local retrieval bridge at `C:\Users\maxk6\OneDrive\Stonewall\stonewall-codex\stonewall-synthesis`.
+The main Stonewall repo also carries a dependency-light local retrieval bridge at `stonewall-synthesis/`.
 
 Key local artifacts:
 

@@ -1,6 +1,20 @@
-# notion\_sync\_protocol
+---
+description: Live surface map, sync rules, and control-plane workflow.
+---
+
+# 🔀 Notion Sync Protocol — v8.8 — Updated 2026-04-08
+
+{% include ".gitbook/includes/global-control-deck.md" %}
+
+{% include ".gitbook/includes/audit-source-protocol.md" %}
+
+<a href="references/execution-and-systems/tactical-prompts/" class="button secondary" data-icon="bolt">Tactical prompts</a>
 
 Use this reference when the user asks to sync Stonewall or legal-matter information into Notion.
+
+## 2026-04-08 Surface Note
+
+The `corpus-hardening` merge changed repo-side corpus quality and routing, but it did **not** change the live Notion IDs below. Treat the surfaces in this file as still-live; the update here is simply to record that the repo memory and retrieval layers were refreshed while the Notion surface map remained stable.
 
 ## Current Live Database Surfaces (verified 2026-03-31)
 
@@ -55,9 +69,7 @@ Use this reference when the user asks to sync Stonewall or legal-matter informat
 * Stonewall Archive `⚖️ Case` → Legal Matters (two-way relation, enabled 3/31/26)
 * Legal Matters `📎 Archive Docs` → Stonewall Archive (reciprocal property)
 
-### Relegated Views
-
-Not hard-deleted — connector lacks view deletion:
+### Relegated Views (not hard-deleted — connector lacks view deletion)
 
 Archive — Empty Dashboard, Archive — Legacy All Cases, Archive — Phase Board, Archive — Status Board, Archive — Adjuster Board, Archive — Trial Timeline, Archive — Active Caseload (relegated 3/31/26 — redundant with Command Deck), Analytics — Status Breakdown, Analytics — Phase Pipeline, Analytics — OC Firm Map, Analytics — Adjuster Split, Analytics — Reserve Distribution, Analytics — Incurred by Phase.
 
