@@ -1,27 +1,23 @@
 {
-  "generated": "2026-04-09T20:00:00-04:00",
+  "generated": "2026-04-09T12:00:00-04:00",
   "manifest": {
-    "total_rows": 1212,
-    "active": 1128,
+    "total_rows": 1206,
+    "active": 1122,
     "analyzed": 731,
-    "analysis_rate": 0.648
+    "analysis_rate": 0.652
   },
   "patterns": {
     "total": 197,
     "instantiated": 197
   },
   "cases": {
-    "total_unique": 59
+    "total_unique": 64
   },
   "characters": {
-    "total_unique": 179
+    "total_unique": 173
   },
   "showcase_metrics": {
     "emails_processed": 6000,
-    "artifact_classes": 23,
-    "literary_chapters": 113,
-    "mindfreak_record": "19-0",
-    "golden_hours": 109.8,
-    "crown_matters": 11
+    "artifact_classes": 23
   }
 }
