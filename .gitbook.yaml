@@ -1,4 +1,4 @@
-root: ./stonewall-showcase
+root: ./
 
 structure:
   readme: README.md
