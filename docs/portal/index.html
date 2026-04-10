@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stonewall Portal Demo</title>
-  <meta name="description" content="Static demo of the Stonewall operator portal.">
+  <title>Stonewall Portal — QB1 War Room</title>
+  <meta name="description" content="Private operational portal for QB1 active matters.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #120f0d;
-      --panel: rgba(255,248,240,0.04);
-      --line: rgba(255,240,228,0.08);
-      --text: #f6eee7;
-      --muted: #b19f91;
-      --accent: #cf7d4e;
-      --accent-soft: rgba(207,125,78,0.12);
-      --max: 1180px;
+      --bg: #0b0f14;
+      --panel: rgba(17, 24, 35, 0.82);
+      --line: rgba(244, 234, 219, 0.1);
+      --line-strong: rgba(209, 160, 106, 0.28);
+      --text: #f4eadb;
+      --muted: #aab3bf;
+      --accent: #d1a06a;
+      --accent-2: #77a7d9;
+      --accent-soft: rgba(209, 160, 106, 0.12);
+      --max: 1200px;
     }
     * { box-sizing: border-box; }
     body {
@@ -25,213 +27,158 @@
       font-family: "Source Sans 3", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 12% 0%, rgba(207,125,78,0.14), transparent 24%),
-        linear-gradient(180deg, #17120f 0%, var(--bg) 48%, #140f0c 100%);
+        radial-gradient(circle at 12% 0%, rgba(209, 160, 106, 0.18), transparent 24%),
+        radial-gradient(circle at 85% 8%, rgba(119, 167, 217, 0.12), transparent 22%),
+        linear-gradient(180deg, #090d12 0%, var(--bg) 48%, #0b0f14 100%);
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(244, 234, 219, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244, 234, 219, 0.03) 1px, transparent 1px);
+      background-size: 32px 32px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.5), transparent 85%);
     }
     a { color: inherit; }
-    .shell {
-      width: min(var(--max), calc(100% - 28px));
-      margin: 0 auto;
-      padding: 22px 0 28px;
-    }
+    .shell { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; padding: 22px 0 34px; }
     .topbar,
     .metric,
     .panel,
+    .case-card,
     .timeline-item {
       border: 1px solid var(--line);
       border-radius: 22px;
       background: var(--panel);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
     }
     .topbar {
-      display: flex;
-      align-items: center;
+      display: flex; align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      padding: 14px 18px;
+      gap: 16px; padding: 14px 18px;
     }
     .brand {
-      display: flex;
-      flex-direction: column;
+      display: flex; flex-direction: column;
       text-decoration: none;
     }
-    .brand strong,
-    h1, h2, h3 {
+    .brand strong, h1, h2, h3 {
       font-family: "Newsreader", serif;
       letter-spacing: -0.03em;
     }
-    .brand strong {
-      font-size: 24px;
-      line-height: 1;
-    }
-    .brand span,
-    .chip,
-    .meta,
-    .timeline-item p,
-    .eyebrow {
-      color: var(--muted);
-    }
-    .brand span,
-    .meta,
-    .timeline-item p {
-      font-size: 14px;
-    }
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .nav a,
-    .chip {
-      padding: 8px 12px;
-      border-radius: 999px;
+    .brand strong { font-size: 24px; line-height: 1; }
+    .brand span, .chip, .meta, .list li span, .timeline-item p, .eyebrow { color: var(--muted); }
+    .brand span, .meta, .list li span, .timeline-item p { font-size: 14px; }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    .nav a, .chip {
+      padding: 8px 12px; border-radius: 999px;
       border: 1px solid var(--line);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+      text-decoration: none; font-size: 12px;
+      font-weight: 700; letter-spacing: 0.08em;
       text-transform: uppercase;
+      transition: background 0.15s ease, border-color 0.15s ease;
     }
+    .nav a:hover { background: rgba(209, 160, 106, 0.08); border-color: var(--line-strong); }
     .hero {
       display: grid;
       grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-      gap: 16px;
-      padding-top: 18px;
+      gap: 16px; padding-top: 18px;
     }
-    .hero-card,
-    .sidebar {
-      padding: 20px;
+    .hero-card, .sidebar {
+      padding: 24px;
       border: 1px solid var(--line);
       border-radius: 28px;
       background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
     }
     .eyebrow {
-      margin: 0;
-      font-size: 12px;
+      margin: 0; font-size: 12px;
       letter-spacing: 0.16em;
-      text-transform: uppercase;
-      font-weight: 700;
+      text-transform: uppercase; font-weight: 700;
+      color: var(--accent);
     }
-    h1 {
-      margin: 12px 0 0;
-      font-size: clamp(42px, 6vw, 70px);
-      line-height: 0.95;
+    h1 { margin: 12px 0 0; font-size: clamp(42px, 6vw, 70px); line-height: 0.95; }
+    .lede { margin: 14px 0 0; max-width: 58ch; font-size: 18px; color: var(--muted); }
+    .mindfreak-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 16px; padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(209, 160, 106, 0.15), rgba(119, 167, 217, 0.1));
+      border: 1px solid var(--line-strong);
+      font-size: 14px; font-weight: 700;
+      letter-spacing: 0.06em;
     }
-    .lede {
-      margin: 14px 0 0;
-      max-width: 58ch;
-      font-size: 18px;
-      color: var(--muted);
-    }
-    .metric-grid,
-    .content-grid {
-      display: grid;
-      gap: 16px;
-    }
-    .metric-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      margin-top: 18px;
-    }
+    .mindfreak-badge .record { color: #7ce87c; font-size: 18px; }
+    .metric-grid, .content-grid { display: grid; gap: 16px; }
+    .metric-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 18px; }
     .metric {
       padding: 16px;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .metric:hover {
+      transform: translateY(-3px);
+      border-color: var(--line-strong);
+      box-shadow: 0 12px 40px rgba(209, 160, 106, 0.12);
     }
     .metric strong {
       display: block;
       font-family: "Newsreader", serif;
-      font-size: 34px;
-      line-height: 1;
+      font-size: 34px; line-height: 1;
+      color: var(--accent);
     }
     .metric span {
-      display: block;
-      margin-top: 8px;
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
+      display: block; margin-top: 8px;
+      font-size: 12px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted);
       font-weight: 700;
     }
-    .sidebar h3,
-    .panel h2 {
-      margin: 0;
-      font-size: 28px;
-    }
-    .sidebar ul,
-    .list {
-      list-style: none;
-      padding: 0;
-      margin: 14px 0 0;
-      display: grid;
-      gap: 12px;
-    }
-    .sidebar li,
-    .list li {
-      padding-top: 12px;
-      border-top: 1px solid var(--line);
-    }
-    .sidebar li:first-child,
-    .list li:first-child {
-      padding-top: 0;
-      border-top: 0;
-    }
-    .content-grid {
-      grid-template-columns: 1.1fr 0.9fr;
-      margin-top: 18px;
-    }
-    .panel {
-      padding: 20px;
-    }
-    .panel p {
-      margin: 12px 0 0;
-      color: var(--muted);
-    }
+    .sidebar h3, .panel h2 { margin: 0; font-size: 28px; }
+    .sidebar ul, .list { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 12px; }
+    .sidebar li, .list li { padding-top: 12px; border-top: 1px solid var(--line); }
+    .sidebar li:first-child, .list li:first-child { padding-top: 0; border-top: 0; }
+    .content-grid { grid-template-columns: 1.1fr 0.9fr; margin-top: 18px; }
+    .panel { padding: 22px; }
+    .panel p { margin: 12px 0 0; color: var(--muted); }
     .kpi {
-      display: flex;
-      align-items: center;
+      display: flex; align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      padding: 14px 0;
+      gap: 12px; padding: 14px 0;
       border-top: 1px solid var(--line);
     }
-    .kpi:first-of-type {
-      border-top: 0;
-      padding-top: 0;
-    }
-    .kpi strong {
-      display: block;
-      font-size: 18px;
-    }
+    .kpi:first-of-type { border-top: 0; padding-top: 0; }
+    .kpi strong { display: block; font-size: 18px; }
     .chip {
       background: var(--accent-soft);
-      border-color: rgba(207,125,78,0.26);
-      color: #f4c0a1;
+      border-color: rgba(209, 160, 106, 0.26);
+      color: #f4c0a1; white-space: nowrap;
     }
-    .timeline {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
+    .chip--green { background: rgba(124, 232, 124, 0.1); border-color: rgba(124, 232, 124, 0.25); color: #7ce87c; }
+    .chip--blue { background: rgba(119, 167, 217, 0.1); border-color: rgba(119, 167, 217, 0.25); color: #a5c8ee; }
+    .chip--red { background: rgba(232, 100, 100, 0.1); border-color: rgba(232, 100, 100, 0.25); color: #e89090; }
+    .case-card {
+      padding: 18px 20px;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      cursor: default;
     }
-    .timeline-item {
-      padding: 14px 16px;
+    .case-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--line-strong);
+      box-shadow: 0 16px 40px rgba(209, 160, 106, 0.15);
     }
-    .timeline-item strong {
-      display: block;
-      font-size: 16px;
-    }
-    .timeline-item p {
-      margin: 6px 0 0;
-    }
+    .case-card strong { font-size: 17px; }
+    .case-grid { display: grid; gap: 12px; margin-top: 18px; }
+    .timeline { display: grid; gap: 12px; margin-top: 16px; }
+    .timeline-item { padding: 16px 18px; }
+    .timeline-item strong { display: block; font-size: 16px; }
+    .timeline-item p { margin: 6px 0 0; }
     .footer {
-      margin-top: 18px;
-      font-size: 13px;
-      color: var(--muted);
-      text-align: right;
+      margin-top: 22px; font-size: 13px;
+      color: var(--muted); text-align: center;
+      padding-top: 16px; border-top: 1px solid var(--line);
     }
+    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
     @media (max-width: 980px) {
-      .hero,
-      .content-grid,
-      .metric-grid {
-        grid-template-columns: 1fr;
-      }
+      .hero, .content-grid, .metric-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -240,55 +187,63 @@
     <header class="topbar">
       <a class="brand" href="../">
         <strong>Stonewall Portal</strong>
-        <span>Static operator demo</span>
+        <span>QB1 War Room</span>
       </a>
       <nav class="nav" aria-label="Portal navigation">
-        <a href="../">Showcase</a>
-        <a href="../official-brief.html">Official Brief</a>
-        <a href="../insights.html">Workflow Notes</a>
+        <a href="../">Command Center</a>
+        <a href="../official-brief.html">Brief</a>
+        <a href="../insights.html">Insights</a>
+        <a href="https://maxwell-kemp.gitbook.io/stonewall-qb3/" target="_blank">GitBook</a>
       </nav>
     </header>
 
     <section class="hero">
       <div class="hero-card">
         <p class="eyebrow">Portfolio Control Plane</p>
-        <h1>Static operations view for a legal intelligence platform.</h1>
+        <h1>QB1 War Room</h1>
         <p class="lede">
-          This portal demonstrates the operating feel of Stonewall: daily visibility, matter posture, deadline runway, workflow readiness, and retrieval speed, all driven from structured snapshot data that behaves like a working litigation command surface.
+          Active matter posture, deadline intelligence, workflow readiness, and tactical control — all from the same indexed corpus. No scavenger hunts. No opaque search appliance. Just answers.
         </p>
+        <div class="mindfreak-badge">
+          🧠 MINDFREAK <span class="record">19-0</span>
+        </div>
         <div class="metric-grid">
           <article class="metric">
-            <strong>1,206</strong>
-            <span>cataloged artifacts</span>
+            <strong>1,212</strong>
+            <span>artifacts</span>
           </article>
           <article class="metric">
-            <strong>64</strong>
+            <strong>59+</strong>
             <span>active matters</span>
           </article>
           <article class="metric">
             <strong>197</strong>
-            <span>pattern tags</span>
+            <span>patterns</span>
           </article>
           <article class="metric">
-            <strong>23</strong>
-            <span>artifact classes</span>
+            <strong>109.8</strong>
+            <span>golden hours</span>
           </article>
         </div>
       </div>
       <aside class="sidebar">
-        <h3>Today at a glance</h3>
+        <h3>Today at a Glance</h3>
         <ul>
           <li>
-            <strong>3 matters inside urgent runway</strong><br>
-            <span>Deposition prep, mediation packet staging, and deadline confirmation are already surfaced.</span>
+            <strong>🐮 The Boy — MINDFREAK VI complete</strong><br>
+            <span>Phase VI deposition nuclear. Four pillars established. .10 farm audit on the record. Stomping the Yard documented.</span>
           </li>
           <li>
-            <strong>2 report packets nearly ready</strong><br>
-            <span>Chronology aligned, records pulled, and damages notes staged for downstream workflow.</span>
+            <strong>🌾 Bedford — Blitzkrieg III wrapped</strong><br>
+            <span>Three-phase campaign complete. Bedford Protocol refined and codified. All objectives green.</span>
           </li>
           <li>
-            <strong>1 live witness-prep thread active</strong><br>
-            <span>Prior statements, chronology gaps, and issue clusters are query-ready.</span>
+            <strong>💊 Samira — consciousness of guilt</strong><br>
+            <span>Revelation documented in the Archivist's Reckoning. Pattern instantiated across corpus.</span>
+          </li>
+          <li>
+            <strong>📞 CHAIRMANMAXXED active</strong><br>
+            <span>Honey Doctrine deployed. OC wrangling compendium updated. Art of the Deal philosophy applied.</span>
           </li>
         </ul>
       </aside>
@@ -296,54 +251,91 @@
 
     <section class="content-grid">
       <article class="panel">
-        <p class="eyebrow">Matter posture</p>
-        <h2>Operator-facing case board</h2>
+        <p class="eyebrow">Crown Matters</p>
+        <h2>Active Case Board</h2>
         <div class="list">
           <div class="kpi">
             <div>
-              <strong>Motor Vehicle Defense - Case A</strong>
-              <span class="meta">Mediation packet staging · valuation review · chronology clean</span>
+              <strong>🐮 The Boy — UPS Vertical</strong>
+              <span class="meta">MINDFREAK I–VI · .10 farm exposed · billing revelation · scope massacre</span>
             </div>
-            <span class="chip">readying packet</span>
+            <span class="chip chip--red">active</span>
           </div>
           <div class="kpi">
             <div>
-              <strong>Premises Liability - Case B</strong>
-              <span class="meta">Fact summary tightened · witness prep underway · treatment ledger checked</span>
+              <strong>🧊 Griffith — PI</strong>
+              <span class="meta">Ice Age protocol · Cold War audit · memory destruction documented</span>
             </div>
-            <span class="chip">deposition prep</span>
+            <span class="chip">mediation</span>
           </div>
           <div class="kpi">
             <div>
-              <strong>Corporate Exposure - Case C</strong>
-              <span class="meta">Recent correspondence normalized · reserve note refreshed · issue map updated</span>
+              <strong>🌊 Egan — Premises</strong>
+              <span class="meta">SDT Ouroboros · Dark Archive revealed · Audacity of Hope</span>
             </div>
-            <span class="chip">monitoring posture</span>
+            <span class="chip">litigation</span>
+          </div>
+          <div class="kpi">
+            <div>
+              <strong>🌾 Bedford — Defense</strong>
+              <span class="meta">Blitzkrieg I–III · Bedford Protocol refined · all objectives achieved</span>
+            </div>
+            <span class="chip chip--green">complete</span>
+          </div>
+          <div class="kpi">
+            <div>
+              <strong>🧲 Negrete — UPS</strong>
+              <span class="meta">Discovery ongoing · UPS vertical strategy applied</span>
+            </div>
+            <span class="chip chip--red">active</span>
+          </div>
+          <div class="kpi">
+            <div>
+              <strong>💊 Samira — Med Mal</strong>
+              <span class="meta">Consciousness of guilt · Archivist's Reckoning</span>
+            </div>
+            <span class="chip chip--red">active</span>
+          </div>
+          <div class="kpi">
+            <div>
+              <strong>🐍 Cavero — Complex Civil</strong>
+              <span class="meta">Calendar catastrophe documented · discovery disputes</span>
+            </div>
+            <span class="chip chip--red">active</span>
           </div>
         </div>
       </article>
 
       <article class="panel">
-        <p class="eyebrow">Workflow leverage</p>
-        <h2>Tactical surfaces</h2>
+        <p class="eyebrow">Tactical Surfaces</p>
+        <h2>Operational Layer</h2>
         <div class="timeline">
           <div class="timeline-item">
-            <strong>Notion operator layer</strong>
-            <p>Deadlines, archive links, and runway views become a fast morning control surface.</p>
+            <strong>📱 Notion Command Surface</strong>
+            <p>Legal Matters, All Email (6,000+), Document Archive. Deadlines, runway views, and morning control surfaces live here.</p>
           </div>
           <div class="timeline-item">
-            <strong>DataGavel packet readiness</strong>
-            <p>Chronology, treatment trail, and damages notes can be staged into a report-ready packet.</p>
+            <strong>📖 GitBook Knowledge Base</strong>
+            <p>Full codices, 113-chapter literary chronicle, MINDFREAK Spence Compendium, and tactical standards — the durable archive.</p>
           </div>
           <div class="timeline-item">
-            <strong>Live deposition tailoring</strong>
-            <p>The same archive can tighten a witness outline while testimony is still unfolding.</p>
+            <strong>🤖 Claude Code Skills</strong>
+            <p>case-lookup, stonewall-brain, case-file-finder, depo-reviewer, email-triage — AI recall architecture.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>⚔️ Deposition Tailoring</strong>
+            <p>MINDFREAK methodology: transcripts, filings, emails, notes — all indexed for real-time outline tightening.</p>
           </div>
         </div>
       </article>
     </section>
 
-    <p class="footer">Static product demo built from structured snapshot data.</p>
+    <p class="footer">
+      Stonewall QB1 War Room · Private Access Only ·
+      <a href="../">Command Center</a> ·
+      <a href="https://maxwell-kemp.gitbook.io/stonewall-qb3/" target="_blank">GitBook</a> ·
+      Shalom 🐢
+    </p>
   </main>
 </body>
 </html>
