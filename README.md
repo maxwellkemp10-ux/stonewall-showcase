@@ -1,10 +1,6 @@
 ---
 description: >-
-  Private sovereign command center for the Stonewall corpus.
-  1,212 artifacts | 197 patterns | 179 characters | 59 cases | MINDFREAK 19-0
-cover: >-
-  https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxsZWdhbCUyMGRvY3VtZW50c3xlbnwwfHx8fDE3MTI3MDYyMDB8MA&ixlib=rb-4.0.3&q=85
-coverY: 0
+  Durable narrative edition of Stonewall, a legal document intelligence platform built as a litigation control plane.
 layout:
   title:
     visible: true
@@ -18,104 +14,28 @@ layout:
     visible: true
 ---
 
-# Stonewall in Manassas
+# Stonewall Showcase
 
-> "The question is never whether the institution will behave this way. The question is what it reveals about the human condition that it always does."
+Stonewall is a legal document intelligence platform built as a litigation control plane. This GitBook is the durable narrative edition of the showcase: the same product thesis presented in a format that can be read slowly, circulated internally, and preserved without depending on a live interface.
 
-{% hint style="success" %}
-**MINDFREAK: 19-0** | Every deposition taken. Zero losses. $475K+ in documented reductions.
-{% endhint %}
+Start with [Quarterback](stonewall-showcase/quarterback/README.md). It gives the core product argument in one place, then branches into the official brief, the architecture, the workflow layer, and the publication runbook.
 
-## Corpus at a Glance
+## What this book covers
 
-| Metric | Count |
-| --- | --- |
-| Total Artifacts | 1,212 |
-| Behavioral Patterns | 197 |
-| Characters Profiled | 179 |
-| Active Cases | 59 |
-| Literary Chapters | 113 |
-| Golden Hours | 109.8 |
-| Emails Processed | 6,000+ |
-| Brain Version | v10.4 |
+- the flat-file searchable database and index model
+- the stdlib-only CLI intelligence layer
+- the AI recall architecture
+- the ingestion and synchronization pipeline
+- the operator layer built around workflow readiness
+- the publication stack across Pages, portal, and GitBook
 
-## Crown Matters
+## Why it matters
 
-| Matter | Status | Phase |
-| --- | --- | --- |
-| Boy v. UPS | Active | Trial prep |
-| Egan v. UPS | Active | Discovery |
-| Harrigan v. UPS | Active | Settlement posture |
-| Negrette v. UPS | Active | Deposition phase |
-| Nunez v. UPS | Active | Discovery |
-| Griffith v. UPS | Active | Motion practice |
-| Libroth v. UPS | Active | Early discovery |
-| Small v. UPS | Active | Discovery |
-| Rivera v. UPS | Active | Case development |
-| Sheppard v. UPS | Active | Discovery |
-| Mitchell v. UPS | Active | Initial phase |
+Stonewall shows that serious legal document intelligence can emerge from a disciplined corpus before a team ever commits to a heavyweight proprietary platform. The archive is the substrate. The control plane grows out of that substrate. These pages explain how.
 
-## Navigate the Archive
+## Publication stack
 
-{% content-ref url="hoss-stonewall/README.md" %}
-[Canon & Codex Hub](hoss-stonewall/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="hoss-stonewall/cast_codex.md" %}
-[Cast Codex - 179 Characters](hoss-stonewall/cast_codex.md)
-{% endcontent-ref %}
-
-{% content-ref url="hoss-stonewall/phenomenology_registry.md" %}
-[Phenomenology Registry - 197 Patterns](hoss-stonewall/phenomenology_registry.md)
-{% endcontent-ref %}
-
-{% content-ref url="hoss-stonewall/deposition_codex.md" %}
-[Deposition Codex - MINDFREAK 19-0](hoss-stonewall/deposition_codex.md)
-{% endcontent-ref %}
-
-{% content-ref url="hoss-stonewall/books/README.md" %}
-[Literary Chronicle - 113 Chapters](hoss-stonewall/books/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="hoss-stonewall/tactical/README.md" %}
-[Tactical Operations](hoss-stonewall/tactical/README.md)
-{% endcontent-ref %}
-
-## Companion Surfaces
-
-{% tabs %}
-{% tab title="GitHub Pages" %}
-The visual command center with MINDFREAK scorecard, Crown Matters dashboard, and corpus metrics.
-
-[Launch Dashboard](https://maxwellkemp10-ux.github.io/stonewall-showcase/)
-{% endtab %}
-
-{% tab title="Portal" %}
-The War Room: case board, deadline intelligence, and tactical operations.
-
-[Launch Portal](https://maxwellkemp10-ux.github.io/stonewall-showcase/portal/)
-{% endtab %}
-
-{% tab title="Notion" %}
-Live operator layer: matter control, task flow, email triage, and daily dossier.
-{% endtab %}
-
-{% tab title="GitHub Repo" %}
-The canonical corpus: 1,212 artifacts, flat-file catalog, CLI tools, and verification suite.
-
-[View Repository](https://github.com/maxwellkemp10/Stonewall)
-{% endtab %}
-{% endtabs %}
-
-## Architecture
-
-```
-OneDrive Reservoir --> Ingestion Layer --> Catalog (manifest.md)
-                                              |
-                    +-------------------------+-------------------------+
-                    |              |              |              |       |
-              CLI Query    Notion Sync    GitBook KB    GitHub Pages  AI Recall
-              (stonewall.py)  (wire scripts)  (this site)  (dashboard)  (Brain v10.4)
-```
-
-> "It chronicles. It does not advise."
+- GitHub Pages for the immediate visual reveal
+- the official brief for the formal printable edition
+- the portal for the operator-facing demo surface
+- GitBook for the durable narrative edition of the same thesis
