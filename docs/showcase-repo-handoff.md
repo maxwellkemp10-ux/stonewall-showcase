@@ -1,89 +1,74 @@
-# Stonewall Showcase — Repository Handoff Runbook
+# Stonewall Publication Runbook
 
-This document describes how to safely export sanitized content from the private
-`Stonewall` repository into the public `stonewall-showcase` repository.
+This runbook describes how to keep the Stonewall showcase surfaces aligned across GitHub Pages, the official brief, the portal demo, and GitBook.
 
 ## Principles
 
-1. **No PII or case data** — strip all client names, claim numbers, lore, and
-   internal identifiers before anything reaches `stonewall-showcase`.
-2. **No credentials** — never copy `.env`, tokens, or database IDs.
-3. **Preserve architecture** — the showcase should reflect the full automation
-   pipeline and system design without exposing production data.
+1. **Lead with innovation** — every published surface should foreground the platform thesis, not process commentary.
+2. **Keep one narrative** — the showcase, official brief, portal, and GitBook should feel like one product argument told in different formats.
+3. **Preserve architectural clarity** — the audience should immediately understand the flat-file database, CLI layer, AI recall system, workflow sync, verification gates, and portal stack.
+4. **Ship cleanly** — links, counts, and deployment surfaces should stay synchronized so the sendable URL always feels premium.
 
-## Workflow A — File-Only Copy (Recommended)
+## Publication Workflow
 
-The safest approach: copy individual files and commit with a clean message.
+### 1. Update the narrative surfaces
+
+Refresh these files together whenever the product story evolves:
+
+- `docs/index.html`
+- `docs/official-brief.html`
+- `docs/portal/index.html`
+- `README.md`
+- `OFFICIAL_BRIEF.md`
+
+### 2. Keep the messaging aligned
+
+Check that each surface reinforces the same core claims:
+
+- flat-file searchable database
+- stdlib-only CLI intelligence layer
+- AI recall architecture
+- automated ingestion pipeline
+- multi-platform sync with Notion as operator layer
+- verification and QC automation
+- phenomenology registry
+- static portal deployment
+- workflow leverage through DataGavel readiness and live deposition tailoring
+
+### 3. Verify the deploy surfaces
+
+Confirm these entrypoints all work after changes:
+
+- `/`
+- `/official-brief.html`
+- `/portal/`
+- GitBook landing page
+
+### 4. Trigger Pages deployment
+
+Push to `main` and confirm the static Pages workflow completes successfully.
 
 ```bash
-# 1. Clone the showcase repo
-git clone https://github.com/maxwellkemp10-ux/stonewall-showcase.git
-cd stonewall-showcase
-git checkout -b showcase-update
-
-# 2. Copy sanitized files from your local Stonewall clone
-#    Replace <STONEWALL_PATH> with your local Stonewall repo path
-cp <STONEWALL_PATH>/docs/showcase.html docs/
-cp <STONEWALL_PATH>/scripts/new_script.py scripts/
-
-# 3. Review the diff for any PII or credentials
-git diff
-
-# 4. Stage and commit with a clean message
-git add docs/ scripts/
-git commit -m "Import sanitized updates from Stonewall v9"
-
-# 5. Push and open a PR
-git push -u origin showcase-update
+gh run list --repo maxwellkemp10-ux/stonewall-showcase --workflow static.yml --limit 5
+gh run view <run-id> --repo maxwellkemp10-ux/stonewall-showcase
 ```
 
-## Workflow B — Cherry-Pick (Preserves Authorship)
+### 5. Do a language sweep
 
-Use `--no-commit` to avoid leaking private commit messages into public history.
+Before calling the site finished, grep the public copy for drift away from the product thesis.
 
 ```bash
-# 1. Clone the showcase repo
-git clone https://github.com/maxwellkemp10-ux/stonewall-showcase.git
-cd stonewall-showcase
-git checkout -b showcase-update
-
-# 2. Add the private repo as a remote
-git remote add stonewall-src <STONEWALL_PATH>
-git fetch stonewall-src
-
-# 3. Cherry-pick WITHOUT committing (to avoid leaking private commit messages)
-git cherry-pick --no-commit <STONEWALL_COMMIT_HASH>
-
-# 4. Scope to showcase-safe files only — unstage anything sensitive
-git reset HEAD catalog/ sources/ .env
-git checkout -- catalog/ sources/ .env 2>/dev/null
-
-# 5. Review the staged diff for PII
-git diff --cached
-
-# 6. Commit with a clean, sanitized message
-git commit -m "Import sanitized Stonewall v9 showcase page"
-
-# 7. Push and open a PR
-git push -u origin showcase-update
+rg -n -i "sanitized|kabuki|unsafe|privileged|private version|internal lore" docs README.md OFFICIAL_BRIEF.md
 ```
 
-## Guardrails
+The result should be empty on the publication surfaces.
 
-| Rule | Detail |
-|------|--------|
-| **Branch naming** | Use `showcase-*` prefix for all showcase update branches |
-| **File scope** | Only export from `docs/`, `scripts/`, `tests/`, `.github/`, `.claude/`, `agents/` |
-| **Never export** | `sources/`, `catalog/`, `.env`, `*.local.json`, batch output files |
-| **Review before push** | Always run `git diff` and search for client names, claim numbers, and internal references |
-| **Test after import** | Run `python -m unittest discover tests/` in the showcase repo to verify nothing broke |
+## Release Checklist
 
-## Verification Checklist
-
-- [ ] No `.env` or credential files in the diff
-- [ ] No client names, claim numbers, or case-specific data
-- [ ] No internal lore or personal identifiers
-- [ ] All Notion database IDs use placeholder values
-- [ ] OneDrive paths use environment variable references, not hardcoded paths
-- [ ] Tests pass in the showcase repo
-- [ ] Commit messages are clean and don't reference private work
+- [ ] Root showcase URL renders correctly
+- [ ] Official brief renders correctly
+- [ ] Portal renders correctly
+- [ ] GitBook link is current
+- [ ] Metrics match `docs/site-data.json`
+- [ ] Product language is consistent across all surfaces
+- [ ] No stray archive-language or process-language has crept back into the public story

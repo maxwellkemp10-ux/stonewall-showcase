@@ -1,22 +1,12 @@
 # Stonewall Official Brief
 
-Stonewall is the durable narrative edition of a legal intelligence system built as a control plane rather than a dashboard costume. The public showcase demonstrates a platform that can catalog, search, validate, synchronize, and publish a large litigation corpus without exposing private matter detail. The official brief is the non-ephemeral version of that same claim: the long-form reasoning that a GitBook surface or printed PDF can preserve without depending on a live UI.
-
-## Publication Stack
-
-Stonewall now publishes through three coordinated public-safe surfaces:
-
-- GitHub Pages is the immediate reveal layer designed to create instant product clarity
-- `official-brief.html` is the print-safe and PDF-safe edition of the same thesis
-- `OFFICIAL_BRIEF.md` is the durable markdown source for GitBook and long-form documentation
-
-These surfaces should not compete with each other. They should feel like one argument expressed in three tempos: immediate, formal, and durable.
+Stonewall is a legal document intelligence platform built as a control plane rather than a dashboard costume. The showcase demonstrates a system that can catalog, search, validate, synchronize, and publish a large litigation corpus with unusual coherence. The official brief is the durable version of that same claim: the long-form reasoning that a GitBook surface or printed PDF can preserve without depending on a live UI.
 
 ## Executive Summary
 
 Stonewall is a production-grade legal document intelligence platform built by a solo litigation attorney to organize a high-volume litigation corpus without relying on a conventional database backend. The system shows that a version-controlled flat-file archive can do real platform work when it is paired with explicit indexing, repeatable ingestion, operator-facing synchronization, and verification gates.
 
-The core commercial proposition is not generic legal AI. The proposition is that the archive becomes a working operating layer. Instead of asking counsel to reassemble context from scattered folders, inboxes, and task systems, Stonewall turns the corpus into something that can answer practical questions at speed: what changed, what matters, what is ready, what is missing, and what should happen next.
+The commercial appeal is not generic legal AI. The commercial appeal is that the archive becomes a working control plane. Instead of asking counsel to reassemble context from scattered folders, inboxes, and task systems, Stonewall turns the corpus into something that can answer practical questions at speed: what changed, what matters, what is ready, what is missing, and what should happen next.
 
 ## Core Product Claim
 
@@ -30,7 +20,7 @@ Once every artifact is cataloged with durable IDs, dates, types, matter links, e
 - publishing layer
 - AI retrieval layer
 
-That is why the platform feels coherent. The same source of truth drives the CLI, the public showcase, the operator view, and the AI recall system.
+That is why the platform feels coherent. The same source of truth drives the CLI, the showcase, the operator view, and the AI recall system.
 
 ## Distinctive Components
 
@@ -44,7 +34,7 @@ The stdlib-only CLI exposes stats, search, case, timeline, pattern, validation, 
 
 ### AI brain as routed recall
 
-Stonewall’s “brain” is not an invisible memory layer. It is a versioned recall architecture composed of codex files that tell the assistant where to look, then force fresh reading before confident assertion.
+Stonewall’s brain is a versioned recall architecture composed of codex files that tell the assistant where to look, then force fresh reading before confident assertion.
 
 ### Automated ingestion and sidecars
 
@@ -52,7 +42,7 @@ PDFs, DOCX files, screenshots, and email exports are converted into searchable d
 
 ### Verification gates
 
-Repo consistency checks, ontology enforcement, sidecar audits, and public-build guards make the system trustworthy by design. Searchable scale only matters if the catalog remains reliable.
+Repo consistency checks, ontology enforcement, sidecar audits, and deployment guards make the system trustworthy by design. Searchable scale only matters if the catalog remains reliable.
 
 ## Tactical Workflow Layer
 
@@ -64,7 +54,7 @@ The repository keeps the durable truth. Notion becomes the live command surface 
 
 ### DataGavel workflow readiness
 
-Stonewall is designed to make structured report workflows easier to feed. Chronology, treatment trail, and damages notes can be staged into a coherent packet before the specialized workflow begins.
+Stonewall is designed to make structured report workflows easier to feed. Chronology, treatment trail, and damages notes can be staged into a coherent packet before the specialist work begins.
 
 ### Live deposition outline tailoring
 
@@ -82,12 +72,16 @@ Stonewall is commercially viable because it reduces friction in expensive recurr
 
 These are the points where legal time is most expensive and context reconstruction is most painful. Stonewall’s architecture attacks that pain directly.
 
-## Public-Safe Deployment
+## Publication Stack
 
-The public build is sanitized by design. Real client names, matter captions, email addresses, internal identifiers, and privileged summaries are removed. Counts, artifact classes, dates, workflow shape, architecture, and product logic remain visible.
+Stonewall publishes through three coordinated surfaces:
 
-That is what allows GitHub Pages to function as the instant “send this to someone” surface, while GitBook serves as the durable narrative edition of the same thesis and the official brief serves as the PDF-safe expression of that same line of reasoning.
+- GitHub Pages is the immediate reveal layer designed to create instant product clarity
+- `official-brief.html` is the print and PDF edition of the same thesis
+- `OFFICIAL_BRIEF.md` is the durable markdown source for GitBook and long-form documentation
+
+These surfaces should feel like one argument expressed in three tempos: immediate, formal, and durable.
 
 ## Closing Position
 
-Stonewall is evidence that a small team or even a single disciplined operator can build real legal document intelligence without waiting for institutional permission, heavyweight software budgets, or opaque platform abstractions. The system works because its logic is coherent from ingestion through publication. The archive is the product. The control plane emerges from the archive. The public showcase and the official brief simply make that visible.
+Stonewall is evidence that a small team or even a single disciplined operator can build real legal document intelligence without waiting for institutional permission, heavyweight software budgets, or opaque platform abstractions. The system works because its logic is coherent from ingestion through publication. The archive is the product. The control plane emerges from the archive. The showcase and the official brief simply make that visible.
