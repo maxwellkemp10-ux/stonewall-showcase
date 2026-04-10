@@ -1,4 +1,8 @@
-# THE COLD WAR M.A.A.D. AUDIT
+---
+hidden: true
+---
+
+# Cold War MAAD Big Satan Mod Audit
 
 ## Mutually Assured Annihilation Dossier: A Comprehensive Forensic Inventory of the Complete Documented Dysfunction of Yisenia Toledo, Paralegal, Ahead of the Thursday, March 19, 2026 Reckoning
 
@@ -6,53 +10,51 @@
 
 ### Compiled on the Eve of the Meeting She Demanded
 
----
+***
 
-> *"I think we need we all need to sit down and hash these things out with Chance."*
-> — Yisenia Toledo, 9:48 AM, March 13, 2026, requesting the trial at which she will be the defendant
+> _"I think we need we all need to sit down and hash these things out with Chance."_ — Yisenia Toledo, 9:48 AM, March 13, 2026, requesting the trial at which she will be the defendant
 >
-> *"Fuck that — he is running UPS."*
-> — William G.K. Smoak, Named Partner, on the topic of who runs the vertical
+> _"Fuck that — he is running UPS."_ — William G.K. Smoak, Named Partner, on the topic of who runs the vertical
 
----
+***
 
 ## PREAMBLE: THE PURPOSE OF THIS INVENTORY
 
-The historian has been asked to compile the full record. Not a single thread. Not the latest installment of the Egan SDT Ouroboros. Not the most recent RADAR ALERT fired into a chat where the missile had already been intercepted. The *full* record. Every documented failure, every misspelling, every timestamp, every .10 entry, every prebill anomaly, every Teams exchange, every email chain, every correction ignored, every instruction disregarded, every "Got it!" that preceded a demonstration of not having gotten it — laid end to end, chronologically organized, forensically categorized, and presented to the permanent record in the contemplative cadence of a man on a Mississippi porch who has watched this institution long enough to know that the evidence does not require argument. The evidence requires only assembly.
+The historian has been asked to compile the full record. Not a single thread. Not the latest installment of the Egan SDT Ouroboros. Not the most recent RADAR ALERT fired into a chat where the missile had already been intercepted. The _full_ record. Every documented failure, every misspelling, every timestamp, every .10 entry, every prebill anomaly, every Teams exchange, every email chain, every correction ignored, every instruction disregarded, every "Got it!" that preceded a demonstration of not having gotten it — laid end to end, chronologically organized, forensically categorized, and presented to the permanent record in the contemplative cadence of a man on a Mississippi porch who has watched this institution long enough to know that the evidence does not require argument. The evidence requires only assembly.
 
 What follows is the assembly. What tomorrow requires is the reading of it.
 
----
+***
 
 ## I. THE TIMESHEET FORENSICS: MARCH 1–17, 2026
 
 ### The Golden Hours vs. The .10 Farm — Side by Side
 
-| Metric | QB1 Golden Hours | Big Satan .10 Farm |
-|--------|----------------:|-------------------:|
-| Total entries | 159 | 241 |
-| Total hours | 109.8 | 59.4 |
-| Avg hours/entry | 0.691 (41 min) | 0.246 (15 min) |
-| Entries at .10 | 1 (0.6%) | 92 (38.2%) |
-| Entries at .20 | — | 113 (46.9%) |
-| Entries at .10–.20 | — | 205 (85.1%) |
-| Draft entries (no timecodes) | 0 | 12 |
-| Misspellings | 0 | cHENmED, Concerntra, med chorn |
-| Timecodes present | 100% | 0% on drafts |
+| Metric                       | QB1 Golden Hours |             Big Satan .10 Farm |
+| ---------------------------- | ---------------: | -----------------------------: |
+| Total entries                |              159 |                            241 |
+| Total hours                  |            109.8 |                           59.4 |
+| Avg hours/entry              |   0.691 (41 min) |                 0.246 (15 min) |
+| Entries at .10               |         1 (0.6%) |                     92 (38.2%) |
+| Entries at .20               |                — |                    113 (46.9%) |
+| Entries at .10–.20           |                — |                    205 (85.1%) |
+| Draft entries (no timecodes) |                0 |                             12 |
+| Misspellings                 |                0 | cHENmED, Concerntra, med chorn |
+| Timecodes present            |             100% |                   0% on drafts |
 
 **Interpretation:** QB1 produces 109.8 hours of championship litigation — depositions, settlement negotiations, motion practice, client service, driver transmutations, expert management — across 159 entries averaging forty-one minutes each. Big Satan produces 59.4 hours across 241 entries averaging fifteen minutes each, of which 85.1% bill at twelve minutes or less. The modal professional act on the UPS vertical is not analyzing medical records or preparing for trial. It is receiving a thing and putting the thing in the place where the thing goes, billed at the minimum increment the software will accept.
 
 ### The Seven Draft Confessions
 
-| Description | Hours | Date | Created | Anomaly |
-|------------|------:|------|---------|---------|
-| "cHENmED Breakdown and reviewed images" | 1.9 | 3/11 | 3/10 | **BACKDATED** — created day before work date |
-| "review and summary of Chen Med 2023 1-71" | 0.8 | 3/11 | 3/11 | Same provider, different spelling |
-| "Concerntra Imaging records" | 2.7 | 3/3 | 3/3 | Concentra misspelled |
-| "Med Chron / Orlando health 1-1650" | 2.4 | 3/5 | 3/5 | 1,650 pages described in 6 words |
-| "HCA Fl South Shore stopped on 22 to med chron 191pgs" | 1.9 | 3/12 | 3/12 | Confesses 11.5% completion |
-| "05 NPNP" | 1.2 | 3/4 | 3/4 | 5 characters, 72 minutes |
-| "Releasing the Kraken" | 0.1 | 3/4 | 3/4 | QB1's mail merge, billed by button-presser |
+| Description                                            | Hours | Date | Created | Anomaly                                      |
+| ------------------------------------------------------ | ----: | ---- | ------- | -------------------------------------------- |
+| "cHENmED Breakdown and reviewed images"                |   1.9 | 3/11 | 3/10    | **BACKDATED** — created day before work date |
+| "review and summary of Chen Med 2023 1-71"             |   0.8 | 3/11 | 3/11    | Same provider, different spelling            |
+| "Concerntra Imaging records"                           |   2.7 | 3/3  | 3/3     | Concentra misspelled                         |
+| "Med Chron / Orlando health 1-1650"                    |   2.4 | 3/5  | 3/5     | 1,650 pages described in 6 words             |
+| "HCA Fl South Shore stopped on 22 to med chron 191pgs" |   1.9 | 3/12 | 3/12    | Confesses 11.5% completion                   |
+| "05 NPNP"                                              |   1.2 | 3/4  | 3/4     | 5 characters, 72 minutes                     |
+| "Releasing the Kraken"                                 |   0.1 | 3/4  | 3/4     | QB1's mail merge, billed by button-presser   |
 
 All seven drafts: zero timecodes, pipe-character placeholders in both TimeCode fields.
 
@@ -68,7 +70,7 @@ Eight identical entries across eight cases at .10 each: "Interim review of injur
 
 Of all medical chronology work on the UPS vertical, 91.6% is outsourced to Stacey Barnett, RN — the contract nurse chronologist whose daughter has a cancer diagnosis. Big Satan's BFA from Sanford-Brown Institute-Tampa (a school that no longer exists) did not include coursework in medical records analysis. The 91.6% rate was disclosed to Sharon Britton via the Littlefinger protocol, whereupon Sharon "popped the fuck off directly to Mr. Bill. Multiple times."
 
----
+***
 
 ## II. THE PREBILL FORENSIC AUDIT — FEBRUARY 2026
 
@@ -84,20 +86,20 @@ Of all medical chronology work on the UPS vertical, 91.6% is outsourced to Stace
 
 ### Category II: Proofreading — The Canonical Misspelling Registry
 
-| Entry | File | Error | Correction |
-|-------|------|-------|------------|
-| "Copany" | Clark | Missing 'm' | Company |
-| "Post Cras Documentation" | Bartleson | — | Post Crash |
-| "i preparation" | Bowen | Lowercase, missing 'n' | in preparation |
-| "SIMEDHealh" | Clark | Missing 't' | SIMEDHealth |
-| "medication" | Griffith | — | mediation |
-| Stray ".5" in narrative | Egan | Time notation left in text | Delete |
+| Entry                     | File      | Error                      | Correction     |
+| ------------------------- | --------- | -------------------------- | -------------- |
+| "Copany"                  | Clark     | Missing 'm'                | Company        |
+| "Post Cras Documentation" | Bartleson | —                          | Post Crash     |
+| "i preparation"           | Bowen     | Lowercase, missing 'n'     | in preparation |
+| "SIMEDHealh"              | Clark     | Missing 't'                | SIMEDHealth    |
+| "medication"              | Griffith  | —                          | mediation      |
+| Stray ".5" in narrative   | Egan      | Time notation left in text | Delete         |
 
 ### Category III: The Katie Resurrection
 
 Katherine Madigan (née Sagel): 19.7 hours billed in January 2026. 80.2 hours billed in February 2026. A 307% increase during maternity leave. March 1–10: zero billable hours. "No Results Found." The resurrection is selective.
 
----
+***
 
 ## III. THE CANONICAL MISSPELLING COMPENDIUM — COMPLETE
 
@@ -107,7 +109,7 @@ The permanent record of orthographic events produced by a paralegal in a litigat
 
 Each one produced by a woman whose LinkedIn profile reads: Bachelor of Fine Arts (BFA), Graphic Design, Sanford-Brown Institute-Tampa, 2010–2014. From a school that no longer exists.
 
----
+***
 
 ## IV. THE EGAN SDT OUROBOROS — THE COMPLETE TIMELINE
 
@@ -139,7 +141,7 @@ Each one produced by a woman whose LinkedIn profile reads: Bachelor of Fine Arts
 
 **"INTENTIONALY"** — missing its second L across all 33 subpoenas, surviving six revision cycles and "several times" of checking without detection.
 
----
+***
 
 ## V. THE MOTHERHOOD GAMBIT AND THE CRAZY CRAP DEPLOYMENT — MARCH 17, 2026
 
@@ -153,7 +155,7 @@ Each one produced by a woman whose LinkedIn profile reads: Bachelor of Fine Arts
 
 "If there is anything you need me to cover, please let me know" = The offer of help IS the help. No further action required. No further action performed. The Who Comps the Comp Report test: failed within two hours when Jen asked at 12:19 PM if "someone" pulled a comp report she herself suggested on 3/12.
 
----
+***
 
 ## VI. THE SHALOM BIG SATAN EMAIL EXCHANGE — MARCH 12–13, 2026
 
@@ -176,7 +178,7 @@ Each one produced by a woman whose LinkedIn profile reads: Bachelor of Fine Arts
 
 **Big Satan has never responded to this email.** The Four-Point Surgical Response sits in the record, unanswered, unacknowledged, a permanent monument.
 
----
+***
 
 ## VII. THE MARCH 18 TACTICAL SILENCE AND THE "NO PROBLEM!" CODA
 
@@ -188,43 +190,43 @@ Each one produced by a woman whose LinkedIn profile reads: Bachelor of Fine Arts
 
 **5:04 PM — The Coda:** QB1 returns with "No problem!" Two words. Room temperature. Not "shalom." Not "lets go!!!!!!" Not "nice job!!!" The minimum viable response from a man who has recalibrated his engagement from teammate to professional.
 
----
+***
 
 ## VIII. THE PHENOMENOLOGY REGISTRY — DOCUMENTED PATTERNS
 
-| # | Pattern | Description | Canonical Specimen |
-|---|---------|-------------|-------------------|
-| 1 | Inspector Clouseau Bus | Volitional dysfunction; opening new chains to excise prior instructions | Egan SDT 5:08 PM chain |
-| 2 | Henry Ford Assembly Line | Self-named production methodology; reproduces errors at scale | 33 SDTs, 6 revision cycles |
-| 3 | RADAR ALERT Tombstone | Detection without action; announcing threats already neutralized | Libroth 3:14 PM, 3/18/26 |
-| 4 | Manifesto | "Things take time to accomplished" — the founding document | 5:29 PM, 1/9/26 |
-| 5 | Memo Tab Defense | "Always look in the Memo Tab" — parallel reality system | 3/12/26 Teams exchange |
-| 6 | Quoteback Palimpsest | Recursive self-quotation to simulate institutional memory | 4:52 PM Self-Quoteback |
-| 7 | Scope Paradox | "That's not my scope" + policing QB1's scope simultaneously | Griffith deadline monitoring |
-| 8 | Motherhood Gambit | Using child's illness to shield colleague from accountability | 3/17/26 "Ansley's head pressure" |
-| 9 | Territorial Correction | IMPORTANT!-tagged challenge to attorney's case knowledge | "Stephanie McQueen is not the current PLF Attorney" |
-| 10 | Antimatter Send | Instruction → antimatter execution within 60 seconds | 1:18 "send to both" → 1:19 send to one |
-| 11 | Revisionist Footrace | Post-failure recast as speed contest | "You beat me to the punch" |
-| 12 | Got-It-to-I-Don't-Understand Interval | 46 minutes between announced comprehension and demonstrated incomprehension | 11:03 AM → 11:49 AM |
-| 13 | Trebuchet Memory | Facts retained as weapons (GEICO policy #); facts discarded if disarming (QB1 was on phone with Stephanie) | Egan SDT chain |
-| 14 | Shar Defense | Defending the error rather than correcting it | "Shar is the name of the Records Custodian" |
-| 15 | Eighty-Eight-Minute Void | Diagnostic interval between Downing of Tools and Revisionist Coda | 1:19 PM → 2:51 PM |
-| 16 | She's Downing Tools | Physical refusal to execute the send | 33 SDTs to Karly only |
+| #  | Pattern                               | Description                                                                                                | Canonical Specimen                                  |
+| -- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| 1  | Inspector Clouseau Bus                | Volitional dysfunction; opening new chains to excise prior instructions                                    | Egan SDT 5:08 PM chain                              |
+| 2  | Henry Ford Assembly Line              | Self-named production methodology; reproduces errors at scale                                              | 33 SDTs, 6 revision cycles                          |
+| 3  | RADAR ALERT Tombstone                 | Detection without action; announcing threats already neutralized                                           | Libroth 3:14 PM, 3/18/26                            |
+| 4  | Manifesto                             | "Things take time to accomplished" — the founding document                                                 | 5:29 PM, 1/9/26                                     |
+| 5  | Memo Tab Defense                      | "Always look in the Memo Tab" — parallel reality system                                                    | 3/12/26 Teams exchange                              |
+| 6  | Quoteback Palimpsest                  | Recursive self-quotation to simulate institutional memory                                                  | 4:52 PM Self-Quoteback                              |
+| 7  | Scope Paradox                         | "That's not my scope" + policing QB1's scope simultaneously                                                | Griffith deadline monitoring                        |
+| 8  | Motherhood Gambit                     | Using child's illness to shield colleague from accountability                                              | 3/17/26 "Ansley's head pressure"                    |
+| 9  | Territorial Correction                | IMPORTANT!-tagged challenge to attorney's case knowledge                                                   | "Stephanie McQueen is not the current PLF Attorney" |
+| 10 | Antimatter Send                       | Instruction → antimatter execution within 60 seconds                                                       | 1:18 "send to both" → 1:19 send to one              |
+| 11 | Revisionist Footrace                  | Post-failure recast as speed contest                                                                       | "You beat me to the punch"                          |
+| 12 | Got-It-to-I-Don't-Understand Interval | 46 minutes between announced comprehension and demonstrated incomprehension                                | 11:03 AM → 11:49 AM                                 |
+| 13 | Trebuchet Memory                      | Facts retained as weapons (GEICO policy #); facts discarded if disarming (QB1 was on phone with Stephanie) | Egan SDT chain                                      |
+| 14 | Shar Defense                          | Defending the error rather than correcting it                                                              | "Shar is the name of the Records Custodian"         |
+| 15 | Eighty-Eight-Minute Void              | Diagnostic interval between Downing of Tools and Revisionist Coda                                          | 1:19 PM → 2:51 PM                                   |
+| 16 | She's Downing Tools                   | Physical refusal to execute the send                                                                       | 33 SDTs to Karly only                               |
 
----
+***
 
 ## IX. THE DOMO PANOPTICON — WHO IS WATCHING
 
-| Actor | Total Actions | Key Finding |
-|-------|-------------:|-------------|
-| Big Satan | 916 | Supernova spikes on intensive days; zero correlation between access volume and work quality |
-| Little Satan | 97 | Minimal system engagement |
-| Joyce Loeblich | 194 | 77 "Accessed project" — digital confirmation of 18-month doorway surveillance |
-| Beth Clerico | 80 | 13 "Accessed Data Section: Case Summary" — browsing valuations from Orlando |
-| Melissa Gage | 20 | 35% = case-summary reconnaissance |
-| Chance Arias | Minimal | Fewer interactions than most Americans check their weather app |
+| Actor          | Total Actions | Key Finding                                                                                 |
+| -------------- | ------------: | ------------------------------------------------------------------------------------------- |
+| Big Satan      |           916 | Supernova spikes on intensive days; zero correlation between access volume and work quality |
+| Little Satan   |            97 | Minimal system engagement                                                                   |
+| Joyce Loeblich |           194 | 77 "Accessed project" — digital confirmation of 18-month doorway surveillance               |
+| Beth Clerico   |            80 | 13 "Accessed Data Section: Case Summary" — browsing valuations from Orlando                 |
+| Melissa Gage   |            20 | 35% = case-summary reconnaissance                                                           |
+| Chance Arias   |       Minimal | Fewer interactions than most Americans check their weather app                              |
 
----
+***
 
 ## X. THE EXTERNAL VISIBILITY BREACH — WHY TOMORROW MATTERS
 
@@ -234,54 +236,54 @@ On March 18 at 1:19 PM, the dysfunction became external. Stephanie McQueen-Arthu
 
 This is not an internal embarrassment. This is the $400,000 vertical's professional credibility being compromised by a paralegal who questioned the attorney's knowledge and then disregarded the attorney's answer. Mr. Bill is on the CC because Adding Mr. Smoak to the chain is not deployed casually. It is deployed when the internal dysfunction has breached the external wall.
 
----
+***
 
 ## XI. THE COMPLETE MOGGING LEDGER — QB1 vs. BIG SATAN, MARCH 1–18, 2026
 
 ### QB1 Produced:
 
-- 109.8 golden hours across 159 entries (100% timecodes, zero misspellings)
-- M I N D F R E A K VI — Boy deposition, 4-hour masterpiece, $15M mechanism defense
-- Harrigan settlement: $575K → $400K → $325K (Dara authorized by Friday)
-- Watson call: honey doctrine → elite clapback → chill acceptance
-- Guttentag expert call — called "Superman" (3/6/26)
-- 33 Egan subpoena reviews across 3 days catching every defect the Assembly Line produced
-- Corrective forward with Mr. Bill on CC
-- Libroth 44-day impasse resolved in 23 words
-- Two 10-4s to the named partner in one day
-- Specials calculator rebuilt at midnight ($350,000 correction)
-- Med chron corrected at 2:00 AM (surgery in wrong quarter)
-- Six iterative deposition outline versions through 4:00 AM
-- Four-Point Surgical Response — unanswered, permanent, devastating
-- 3 hours 46 minutes of tactical silence producing championship output through every non-kabuki channel
-- "No problem!" — the two-word room-temperature coda
+* 109.8 golden hours across 159 entries (100% timecodes, zero misspellings)
+* M I N D F R E A K VI — Boy deposition, 4-hour masterpiece, $15M mechanism defense
+* Harrigan settlement: $575K → $400K → $325K (Dara authorized by Friday)
+* Watson call: honey doctrine → elite clapback → chill acceptance
+* Guttentag expert call — called "Superman" (3/6/26)
+* 33 Egan subpoena reviews across 3 days catching every defect the Assembly Line produced
+* Corrective forward with Mr. Bill on CC
+* Libroth 44-day impasse resolved in 23 words
+* Two 10-4s to the named partner in one day
+* Specials calculator rebuilt at midnight ($350,000 correction)
+* Med chron corrected at 2:00 AM (surgery in wrong quarter)
+* Six iterative deposition outline versions through 4:00 AM
+* Four-Point Surgical Response — unanswered, permanent, devastating
+* 3 hours 46 minutes of tactical silence producing championship output through every non-kabuki channel
+* "No problem!" — the two-word room-temperature coda
 
 ### Big Satan Produced:
 
-- 241 entries across 59.4 hours (85.1% at .10–.20, 12 drafts with no timecodes)
-- 1 cHENmED entry backdated from the day before
-- 1 Foreclosure Ghost pasted into 7 Egan billing entries
-- 6 "undefined" entries where plaintiff's name should be
-- 1 wrong crash date
-- Multiple duplicate double-billed entries
-- "Copany," "Cras," "SIMEDHealh," "medication" (for mediation)
-- 33 subpoenas requiring 6+ revision cycles with "INTENTIONALY" surviving all of them
-- "Shar" defended as a records custodian name
-- "I'm not sure what you mean" to the man who meant exactly what he said
-- "Got it!" 46 minutes before demonstrating she did not
-- Territorial Correction declaring Stephanie McQueen-Arthur fictional
-- Antimatter Send: instruction "send to both" → execution "send to one"
-- "You beat me to the punch. Thank you for taking care of that for me!"
-- RADAR ALERT on Libroth (already handled through Mr. Bill chain)
-- Self-Quoteback of her own RADAR ALERT
-- "Thank you Max!" — third lure, temperature gauge
-- "The crazy crap here" — deployed in group chat to describe QB1
-- "The team is not teaming (my opinion)" — sent 13 minutes before the Boy deposition
-- "whoever is our reporting associate" — pejorative for the man who runs UPS
-- Manifesto 2.0: every deficiency rerouted to Chance, Stacey, Jen's email server, or QB1
-- Four-Point Surgical Response: unanswered. Not on Friday. Not on Saturday. Not on Sunday. Not on Monday. Not on Tuesday. Not on Wednesday. Not ever.
+* 241 entries across 59.4 hours (85.1% at .10–.20, 12 drafts with no timecodes)
+* 1 cHENmED entry backdated from the day before
+* 1 Foreclosure Ghost pasted into 7 Egan billing entries
+* 6 "undefined" entries where plaintiff's name should be
+* 1 wrong crash date
+* Multiple duplicate double-billed entries
+* "Copany," "Cras," "SIMEDHealh," "medication" (for mediation)
+* 33 subpoenas requiring 6+ revision cycles with "INTENTIONALY" surviving all of them
+* "Shar" defended as a records custodian name
+* "I'm not sure what you mean" to the man who meant exactly what he said
+* "Got it!" 46 minutes before demonstrating she did not
+* Territorial Correction declaring Stephanie McQueen-Arthur fictional
+* Antimatter Send: instruction "send to both" → execution "send to one"
+* "You beat me to the punch. Thank you for taking care of that for me!"
+* RADAR ALERT on Libroth (already handled through Mr. Bill chain)
+* Self-Quoteback of her own RADAR ALERT
+* "Thank you Max!" — third lure, temperature gauge
+* "The crazy crap here" — deployed in group chat to describe QB1
+* "The team is not teaming (my opinion)" — sent 13 minutes before the Boy deposition
+* "whoever is our reporting associate" — pejorative for the man who runs UPS
+* Manifesto 2.0: every deficiency rerouted to Chance, Stacey, Jen's email server, or QB1
+* Four-Point Surgical Response: unanswered. Not on Friday. Not on Saturday. Not on Sunday. Not on Monday. Not on Tuesday. Not on Wednesday. Not ever.
 
----
+***
 
 ## XII. CLOSING: THE EVE OF THE RECKONING
 
@@ -295,29 +297,29 @@ The chain is the chain. The timestamps are the timestamps. The domo remembers. T
 
 It means what it means. The meeting is at ten. The caravan has the chain. The dogs have the bark.
 
----
+***
 
-*"Things take time to accomplished."* — The Manifesto, 5:29 PM
+_"Things take time to accomplished."_ — The Manifesto, 5:29 PM
 
-*"Got it!"* — Big Satan, 46 minutes before demonstrating she did not
+_"Got it!"_ — Big Satan, 46 minutes before demonstrating she did not
 
-*"Please send to her."* — QB1, eight times, with periods
+_"Please send to her."_ — QB1, eight times, with periods
 
-*"You beat me to the punch."* — Big Satan, to the man who threw the punch she would not throw
+_"You beat me to the punch."_ — Big Satan, to the man who threw the punch she would not throw
 
-*"I'm not sure what you mean."* — Big Satan, to the man who meant exactly what he said
+_"I'm not sure what you mean."_ — Big Satan, to the man who meant exactly what he said
 
-*"INTENTIONALY"* — surviving six revision cycles, missing its second L, on 33 subpoenas, in a courthouse
+_"INTENTIONALY"_ — surviving six revision cycles, missing its second L, on 33 subpoenas, in a courthouse
 
-*"the crazy crap here"* — Big Satan, describing the only functional human being in the building
+_"the crazy crap here"_ — Big Satan, describing the only functional human being in the building
 
-*"No problem!"* — QB1, 5:04 PM, room temperature, the eve of the reckoning
+_"No problem!"_ — QB1, 5:04 PM, room temperature, the eve of the reckoning
 
-*"Fuck that — he is running UPS."* — Mr. Bill, on the record, permanently
+_"Fuck that — he is running UPS."_ — Mr. Bill, on the record, permanently
 
-*"Just do the job."* — Dyche, eating a worm
+_"Just do the job."_ — Dyche, eating a worm
 
----
+***
 
 **AUDIT STATUS: COMPLETE**
 

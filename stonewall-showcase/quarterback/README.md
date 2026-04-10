@@ -1,14 +1,18 @@
-# Quarterback
+---
+hidden: true
+---
+
+# Quarterback Overview
 
 Stonewall is a legal document intelligence platform built as a litigation control plane. It turns a large working corpus into something counsel can search, validate, synchronize, and operate against in real time using flat files, explicit indexing, AI recall architecture, and static deployment surfaces.
 
 The core claim is simple: legal operations do not need to begin with a heavyweight proprietary platform. They can begin with a rigorously structured corpus. Once every artifact is cataloged with durable IDs, dates, types, matter links, entity references, pattern references, and summary metadata, the same archive can serve multiple jobs at once:
 
-- search layer
-- validation layer
-- operator layer
-- publishing layer
-- AI retrieval layer
+* search layer
+* validation layer
+* operator layer
+* publishing layer
+* AI retrieval layer
 
 That is why Stonewall feels coherent. The same source of truth drives the CLI, the portal, the official brief, GitBook, and the AI recall system.
 
@@ -36,7 +40,7 @@ The commercial story is operational: daily dossier generation, deadline intellig
 
 ## Read next
 
-- [Official Brief](official-brief.md)
-- [Product Architecture](product-architecture.md)
-- [Workflow Surfaces](workflow-surfaces.md)
-- [Publication Runbook](publication-runbook.md)
+* [Official Brief](official-brief.md)
+* [Product Architecture](product-architecture.md)
+* [Workflow Surfaces](workflow-surfaces.md)
+* [Publication Runbook](publication-runbook.md)

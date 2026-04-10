@@ -2,6 +2,7 @@
 description: >-
   Standards for dispositive motions, motions to compel, and proposed orders in
   Florida civil litigation.
+hidden: true
 ---
 
 # Motion Practice

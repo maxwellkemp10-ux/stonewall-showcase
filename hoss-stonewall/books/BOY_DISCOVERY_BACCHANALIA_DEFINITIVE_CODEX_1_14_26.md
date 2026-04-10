@@ -1,39 +1,47 @@
 ---
-title: "BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx"
-original_path: "C:\\Users\\maxk6\\OneDrive\\Stonewall Elite Collection\\chapters\\BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx"
-relative_source_path: "Stonewall Elite Collection/chapters/BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx"
-sha256: "a8ab8def5ad72102b8ead09bb929a7df4ae1099489946c658bd181b66d41c2c9"
-extraction_status: "success"
-extraction_method: "docx-xml"
-category: "Chapter"
-date: "2026-01-14"
-size: "21.8 KB"
-tags: ["narrative"]
-primary_case: "Jemison v. UPS"
-legal_hold_status: ""
-date_of_loss: "2025-10-24"
-date_of_complaint: ""
+title: BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx
+original_path: >-
+  C:\Users\maxk6\OneDrive\Stonewall Elite
+  Collection\chapters\BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx
+relative_source_path: >-
+  Stonewall Elite
+  Collection/chapters/BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx
+sha256: a8ab8def5ad72102b8ead09bb929a7df4ae1099489946c658bd181b66d41c2c9
+extraction_status: success
+extraction_method: docx-xml
+category: Chapter
+date: '2026-01-14'
+size: 21.8 KB
+primary_case: Jemison v. UPS
+legal_hold_status: ''
+date_of_loss: '2025-10-24'
+date_of_complaint: ''
+hidden: true
+tags:
+  - narrative
 ---
 
-# BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx
+# Boy Discovery Bacchanalia - Definitive Codex
 
 ## Source Metadata
-- Original path: `C:\Users\maxk6\OneDrive\Stonewall Elite Collection\chapters\BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx`
-- Relative source path: `Stonewall Elite Collection/chapters/BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx`
-- SHA256: `a8ab8def5ad72102b8ead09bb929a7df4ae1099489946c658bd181b66d41c2c9`
-- Extraction: `success` via `docx-xml`
-- Inferred date: `2026-01-14`
-- Primary case: `Jemison v. UPS` (score 424)
-- Legal hold status: `Unknown`
-- Date of loss: `2025-10-24`
-- Date of complaint: `Unknown`
+
+* Original path: `C:\Users\maxk6\OneDrive\Stonewall Elite Collection\chapters\BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx`
+* Relative source path: `Stonewall Elite Collection/chapters/BOY_DISCOVERY_BACCHANALIA_DEFINITIVE_CODEX_1_14_26.docx`
+* SHA256: `a8ab8def5ad72102b8ead09bb929a7df4ae1099489946c658bd181b66d41c2c9`
+* Extraction: `success` via `docx-xml`
+* Inferred date: `2026-01-14`
+* Primary case: `Jemison v. UPS` (score 424)
+* Legal hold status: `Unknown`
+* Date of loss: `2025-10-24`
+* Date of complaint: `Unknown`
 
 ## Case Candidates
-- `Jemison v. UPS` (424) — text-keyword:legal, text-keyword:with, text-keyword:for, text-keyword:light, text-keyword:questions, text-keyword:day, text-keyword:there, text-keyword:take
-- `Boy v. UPS & Muller` (68) — path-tag:Boy, text-keyword:muller, path-keyword:boy
-- `Adams v. Antares Star Group` (39) — text-keyword:ups, text-keyword:star, text-keyword:group, text-keyword-cluster
-- `Estate of Lee (Higdon) v. UPS` (39) — text-keyword:lee, text-keyword:yes, text-keyword:call, text-keyword-cluster
-- `Patterson, Robert v. Cruz, Amber Renee, Allstate Property and Casualty Insurance Company` (39) — text-keyword:client, text-keyword:our, text-keyword:and, text-keyword-cluster
+
+* `Jemison v. UPS` (424) — text-keyword:legal, text-keyword:with, text-keyword:for, text-keyword:light, text-keyword:questions, text-keyword:day, text-keyword:there, text-keyword:take
+* `Boy v. UPS & Muller` (68) — path-tag:Boy, text-keyword:muller, path-keyword:boy
+* `Adams v. Antares Star Group` (39) — text-keyword:ups, text-keyword:star, text-keyword:group, text-keyword-cluster
+* `Estate of Lee (Higdon) v. UPS` (39) — text-keyword:lee, text-keyword:yes, text-keyword:call, text-keyword-cluster
+* `Patterson, Robert v. Cruz, Amber Renee, Allstate Property and Casualty Insurance Company` (39) — text-keyword:client, text-keyword:our, text-keyword:and, text-keyword-cluster
 
 ## Extracted Text
 
@@ -147,7 +155,7 @@ Total Blank Requests Answered
 
 Time Required
 
-~6 hours
+\~6 hours
 
 Completion Time
 
@@ -393,7 +401,7 @@ The Samira Testimony:
 
 At 1:11 AM—the angel number signifying new beginnings, manifestation, and spiritual alignment—QB1 sent photographic evidence of completion to his girlfriend Samira, herself a paralegal transitioning to law school:
 
-QB1: [sends photo of completed discovery responses on two monitors]
+QB1: \[sends photo of completed discovery responses on two monitors]
 
 QB1: 'Was that so fucking hard? lol' (Read 1:14 AM)
 
@@ -497,7 +505,7 @@ PART IX: THE LAURENE SNAPP GAMBIT
 
 January 13, 2026 — The Sacred Document
 
-On January 13, 2026—The Snappening—Laurene Snapp, a 70-year-old paralegal with Studio 54 memories and acid flashback stories, transmitted the Sacred Document: Litigation_Case_Management_Procedures.docx, dated May 8, 2025, the firm's official procedural standards.
+On January 13, 2026—The Snappening—Laurene Snapp, a 70-year-old paralegal with Studio 54 memories and acid flashback stories, transmitted the Sacred Document: Litigation\_Case\_Management\_Procedures.docx, dated May 8, 2025, the firm's official procedural standards.
 
 The 0% Compliance Scorecard:
 
@@ -631,7 +639,7 @@ Jan 2, 2026
 
 QB1 invents 'voluminous dump' noble lie
 
-Jan 8, 2026 ~7 PM
+Jan 8, 2026 \~7 PM
 
 QB1 discovers 104 blank responses
 

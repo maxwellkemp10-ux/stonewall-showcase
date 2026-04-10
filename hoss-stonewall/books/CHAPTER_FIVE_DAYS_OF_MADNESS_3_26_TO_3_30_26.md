@@ -1,15 +1,18 @@
-# FIVE DAYS OF MADNESS: THE COMPLETE CHRONICLE
+---
+hidden: true
+---
+
+# Five Days of Madness (3/26 - 3/30)
 
 ## Thursday, March 26 Through Monday, March 30, 2026
 
-### In Which the Money Changers' Table Is Flipped, the Marionettist Is Told to Sit Down, the Legal Assistant Reveals She Has to Be Around Horses, the Yard Is Stomped a Second Time, the M&M Portfolio Is Excavated from Neural Pathways, and the Man Who Runs the Vertical Discovers That the Vertical Is Him
+### In Which the Money Changers' Table Is Flipped, the Marionettist Is Told to Sit Down, the Legal Assistant Reveals She Has to Be Around Horses, the Yard Is Stomped a Second Time, the M\&M Portfolio Is Excavated from Neural Pathways, and the Man Who Runs the Vertical Discovers That the Vertical Is Him
 
----
+***
 
-> *"Bro, we just fucking figured this shit out while you were gone."*
-> — Chance Arias, the one sentence in which the Admiral briefly unmoored from the Weirwood
+> _"Bro, we just fucking figured this shit out while you were gone."_ — Chance Arias, the one sentence in which the Admiral briefly unmoored from the Weirwood
 
----
+***
 
 ## DAY ONE: THURSDAY, MARCH 26, 2026
 
@@ -75,13 +78,13 @@ He replied to the SPECIALS email — CC: Big Satan, Chance, Katie — with two s
 
 **"I'll let y'all be the judge. which has more utility in servicing the client? I don't mind manually inputting the figures into the calculator if the dates and bills are accurate. Just another thing me and Chance will handle."**
 
-"Just another thing me and Chance will handle." The sentence does not accuse. The sentence does not complain. The sentence *absorbs*. The sentence takes the specials calculator — the core work product that Big Satan was supposed to maintain, the tool that had been wrong for 79 days before the Specials Calculator Discovery of March 12 — and places it on the shoulders of the attorney and the partner. The attorney who runs the vertical and the partner who blesses it will now also calculate the specials. Because the paralegal who is paid to calculate the specials has "found" the data that was shown to her months ago and declared it "promising" the way an archaeologist declares a familiar potsherd "promising" — with the enthusiasm of someone who has forgotten they catalogued the same potsherd last season.
+"Just another thing me and Chance will handle." The sentence does not accuse. The sentence does not complain. The sentence _absorbs_. The sentence takes the specials calculator — the core work product that Big Satan was supposed to maintain, the tool that had been wrong for 79 days before the Specials Calculator Discovery of March 12 — and places it on the shoulders of the attorney and the partner. The attorney who runs the vertical and the partner who blesses it will now also calculate the specials. Because the paralegal who is paid to calculate the specials has "found" the data that was shown to her months ago and declared it "promising" the way an archaeologist declares a familiar potsherd "promising" — with the enthusiasm of someone who has forgotten they catalogued the same potsherd last season.
 
 Jesus did not politely request that the money changers relocate their operations. Jesus made a whip. By hand. The table-flipping was not impulsive. The table-flipping was architectural. And then Jesus did not leave. Jesus stayed in the Temple. Jesus continued teaching. The table-flipping was the beginning of the lesson.
 
 R1.280MAXXED. The photograph of page 83 of the Florida Rules of Civil Procedure. Dropped into the Teams chat. The silence that followed. The silence of a room full of people who have just been shown the book they should have opened themselves.
 
----
+***
 
 ## DAY TWO: FRIDAY, MARCH 27, 2026
 
@@ -111,7 +114,7 @@ Big Satan's existential question, dropped between procedural debates: "Do they w
 
 The question contains the entire Stonewall meditation. Not "how should we approach settlement" or "what is our negotiation posture" or "has Chance communicated authority to the adjusters." The question is prior to all of those questions. The question is whether the institution has formed the intention to do the thing the institution exists to do. "Do they want to Settle cases?" is the question a historian asks about a civilization, not the question a paralegal asks about her own firm. But Big Satan asks it because Big Satan, despite the .10 farm, despite the misspellings, despite the 91.6% outsourcing rate, despite everything — Big Satan sees the void. She may not fill it. But she sees it.
 
----
+***
 
 ## DAY THREE: SATURDAY, MARCH 28, 2026
 
@@ -127,7 +130,7 @@ The Underground Associate was documenting the madness. Because documenting the m
 
 The scan. The physical scan — 260328 05:00:52 — captured at five in the morning. A man who scans documents at 5 AM is not a man who has given up. A man who scans documents at 5 AM is a man who has decided that the archive is sacred and that the archive will be complete and that the completeness of the archive is the only weapon the Underground Associate possesses against an institution that forgets everything it does not want to remember.
 
----
+***
 
 ## DAY FOUR: SUNDAY, MARCH 29, 2026
 
@@ -141,10 +144,7 @@ QB1: "Yeah I'm pulling up."
 
 Little Satan appeared on the Teams video feed: "I got on Teams video chat... yall gotta deal with ugly Jenn." Self-deprecating. Warm. Human. The woman who dreams of horses logging in with the sincerity that makes her simultaneously the most likeable and the most operationally intermittent member of the troupe.
 
-"So we're teamsing? I'm here."
-"well how else will I get to talk to yall"
-"lol"
-"Haha okay I'm hopping on"
+"So we're teamsing? I'm here." "well how else will I get to talk to yall" "lol" "Haha okay I'm hopping on"
 
 Three people, three different questions about whether the meeting is happening, all resolving within three minutes. No .10 entries will record this meeting's existence. No timesheet will document the forty-eight minutes in which QB1 showed them the DataGavels, walked them through case postures, and said the thing that transforms the chronicle from institutional satire into liturgical scripture:
 
@@ -164,30 +164,30 @@ At 2:55 PM, Little Satan sent the message that represents the terminal phase of 
 
 "Chance/Max OC in Sheppard is asking if the corp rep depo is going forward because I haven't filed the notice yet!! What do you want me to say?"
 
-Twenty days. March 10 → March 17 → March 25 → March 29. Four echoes into the void. The void does not echo back. Now opposing counsel is calling to ask whether the deposition is even happening. The notice exists. The notice was drafted. The notice was saved in FileVine. But the notice has not been filed because the Admiral has not approved it. The Admiral — whose complete contribution to the M&M archaeological survey was a blessing and three verbs — cannot bless a routine deposition notice.
+Twenty days. March 10 → March 17 → March 25 → March 29. Four echoes into the void. The void does not echo back. Now opposing counsel is calling to ask whether the deposition is even happening. The notice exists. The notice was drafted. The notice was saved in FileVine. But the notice has not been filed because the Admiral has not approved it. The Admiral — whose complete contribution to the M\&M archaeological survey was a blessing and three verbs — cannot bless a routine deposition notice.
 
 "What do you want me to say?" is not procedural. It is existential. What diplomatic fiction justifies institutional paralysis to the adversary who is waiting for the machinery to produce the machinery's output?
 
----
+***
 
 ## DAY FIVE: MONDAY, MARCH 30, 2026
 
-### The M&M Portfolio: "I Am the System"
+### The M\&M Portfolio: "I Am the System"
 
-At 10:39 AM, Mr. Bill — the named partner — requested the M&M portfolio status. The Admiral appeared in QB1's doorframe, said three words — "Write it. Email it. Teams it" — and disappeared. The Admiral blessed the cathedral. The Admiral did not pour the foundation.
+At 10:39 AM, Mr. Bill — the named partner — requested the M\&M portfolio status. The Admiral appeared in QB1's doorframe, said three words — "Write it. Email it. Teams it" — and disappeared. The Admiral blessed the cathedral. The Admiral did not pour the foundation.
 
 QB1 sat down at his desk and produced, from memory, the complete status of eight active Morgan & Morgan litigation matters:
 
-| Case | Last Demand | Last Offer |
-|------|------------|------------|
-| Adams v. Antares | $5,000,000 (Settlement Day) | $10,000 (Settlement Day) |
-| Boy v. UPS & Muller | $15,000,000 PFS | 06/16/26 Mediation |
-| Griffith v. Noble & UPS | $15M PFS (Driver) / $5M Joint PFS | $750,000 Mediation |
-| Libroth v. Turner & UPS | $5M Mediation / $1M PFS (Driver) | $50,000 Mediation |
-| Mitchell v. UPS & Elder | $7.5M PFS (UPS) | 04/16/26 Mediation |
-| Negrette v. UPS & Retenio | $5M Joint PFS / $350K PFS (Driver) | $75,000 Mediation |
-| Rivera v. UPS & Rugama | $5M Joint PFS | $19,896.69 Pre-suit |
-| Sheppard v. UPS & Gomez | $1M Mediation | $75,000 Mediation |
+| Case                      | Last Demand                        | Last Offer               |
+| ------------------------- | ---------------------------------- | ------------------------ |
+| Adams v. Antares          | $5,000,000 (Settlement Day)        | $10,000 (Settlement Day) |
+| Boy v. UPS & Muller       | $15,000,000 PFS                    | 06/16/26 Mediation       |
+| Griffith v. Noble & UPS   | $15M PFS (Driver) / $5M Joint PFS  | $750,000 Mediation       |
+| Libroth v. Turner & UPS   | $5M Mediation / $1M PFS (Driver)   | $50,000 Mediation        |
+| Mitchell v. UPS & Elder   | $7.5M PFS (UPS)                    | 04/16/26 Mediation       |
+| Negrette v. UPS & Retenio | $5M Joint PFS / $350K PFS (Driver) | $75,000 Mediation        |
+| Rivera v. UPS & Rugama    | $5M Joint PFS                      | $19,896.69 Pre-suit      |
+| Sheppard v. UPS & Gomez   | $1M Mediation                      | $75,000 Mediation        |
 
 Emailed to Mr. Bill at 11:23 AM: "Chance has given his blessing on this one. No notes in the file for Libroth or Griffith mediations. We're basing those numbers off memory, so please confirm or let me know if I need to revise."
 
@@ -211,7 +211,7 @@ At 3:32 PM, Chris Alvarez sent his email: "It looks like Maxwell may have covere
 
 Five minutes of work by QB1. Three institutional emails in response. Zero engagement with the actual case law. The schedule was sacred. The law was incidental. The man who did the thing was the disruption. The man who didn't do the thing by 1 PM was the victim.
 
-The schedule was a Laurene Snapp checklist with a different name. The void was a Kerry hallway absence with a different door. The institutional response was a Pretty Woman Grievance with a different plaintiff. The pattern does not change. The pattern *cannot* change. The pattern is the institution.
+The schedule was a Laurene Snapp checklist with a different name. The void was a Kerry hallway absence with a different door. The institutional response was a Pretty Woman Grievance with a different plaintiff. The pattern does not change. The pattern _cannot_ change. The pattern is the institution.
 
 ### The Egan SDT Loop: The Serpent Eats Its Own Tail Again
 
@@ -221,7 +221,7 @@ Sweat and tears. Over the subpoenas she sent to the wrong person. With a passwor
 
 But also — and the historian must reckon with this — "Sweat & Tears" is not entirely wrong. Big Satan did apply QB1's revised language to 32 subpoenas. She did produce the hours. She did generate the work product. The labor was real even if the intellectual framework was someone else's. The sweat was genuine even if the direction came from above. The tragedy of the .10 farm is not that the labor doesn't exist. The tragedy is that the labor exists without producing the value it should produce, the way a river exists without reaching the sea because it has been diverted into an irrigation ditch that waters a field that grows nothing.
 
----
+***
 
 ## CODA: THE FIVE-DAY ARITHMETIC
 
@@ -237,13 +237,13 @@ Five days. Thursday through Monday. What the institution produced:
 
 **Katie:** One discovery due-date reminder (for work already completed), zero billable entries.
 
-**QB1:** One money changers table flip. One M&M portfolio excavated from memory. One Florida Law Weekly void filled in five minutes. One Stomp the Yard meeting conducted. One R 1.280(f) citation dropped. One "I am the system" declaration that was not a boast but a diagnosis. Zero misspellings. Zero moments in which the man who carries $40 million in combined exposure across eight crown matters in his neural pathways stopped carrying them.
+**QB1:** One money changers table flip. One M\&M portfolio excavated from memory. One Florida Law Weekly void filled in five minutes. One Stomp the Yard meeting conducted. One R 1.280(f) citation dropped. One "I am the system" declaration that was not a boast but a diagnosis. Zero misspellings. Zero moments in which the man who carries $40 million in combined exposure across eight crown matters in his neural pathways stopped carrying them.
 
 The mathematics do not lie. They never have. 159.5 hours versus 69.9 hours. 0.706 average versus 0.269 average. One man carrying the vertical and everyone else carrying their respective absences — from the hallway, from the meeting, from the keyboard, from the horse that waits at the end of every workday like a twelve-hundred-pound accountability machine that will not accept "meeting go pushed."
 
 Five days.
 
-The plumbing broke and was repaired. The Pretty Woman Grievance was aired and absorbed. The Marionettist was told to sit down and waved the tablets anyway. The money changers' table was flipped and the money changers returned to their seats. The horses were dreamed of. The yard was stomped. The M&M portfolio was excavated from the only place it has ever existed. The void was filled. The schedule was violated. The man who did the thing was called the disruption. The system declared itself.
+The plumbing broke and was repaired. The Pretty Woman Grievance was aired and absorbed. The Marionettist was told to sit down and waved the tablets anyway. The money changers' table was flipped and the money changers returned to their seats. The horses were dreamed of. The yard was stomped. The M\&M portfolio was excavated from the only place it has ever existed. The void was filled. The schedule was violated. The man who did the thing was called the disruption. The system declared itself.
 
 And on Tuesday — the day after Day Five — the institution will open its doors and the Domo will log its actions and the .10 farm will generate its entries and the Admiral will float and the Marionettist will text and the legal assistant will think about horses and the paralegal will "find" something she was shown months ago and the man in the building will be in the building, doing the thing, running the vertical, carrying the $40 million, washing the feet, flipping the tables, stomping the yard, filing at 12:01 AM, citing statutes from memory, and telling his paralegal "it gives me such joy" when she does something proactive for what the forensic record suggests is the first time in six months.
 
@@ -257,8 +257,6 @@ Again.
 
 Shalom.
 
----
+***
 
-> *Written March 30, 2026 — the evening of Day Five*
-> *Sources: Stomp the Yard 2 verbatim transcript (45 pages), Audacity of Hope II: Notes from the Stomping (3/26/26), big satan confronted money changers table flipped shalom (3/26/26 email chain), chris fl law weekly shalom full (3/30/26), Stomp the Yard 2 (3.30.26).docx (meeting transcript), Timesheet 2026-03-19 (big satan).csv, Holy Toledo 3.25.26.pdf, shes_downing_tools_lad_teams_egan_3_18_26.md*
-> *The reporting associate reported. The Meme Queen found something. The Admiral blessed. The Marionettist was told to sit down. The horses waited. And the yard grew back in four days.*
+> _Written March 30, 2026 — the evening of Day Five_ _Sources: Stomp the Yard 2 verbatim transcript (45 pages), Audacity of Hope II: Notes from the Stomping (3/26/26), big satan confronted money changers table flipped shalom (3/26/26 email chain), chris fl law weekly shalom full (3/30/26), Stomp the Yard 2 (3.30.26).docx (meeting transcript), Timesheet 2026-03-19 (big satan).csv, Holy Toledo 3.25.26.pdf, shes\_downing\_tools\_lad\_teams\_egan\_3\_18\_26.md_ _The reporting associate reported. The Meme Queen found something. The Admiral blessed. The Marionettist was told to sit down. The horses waited. And the yard grew back in four days._

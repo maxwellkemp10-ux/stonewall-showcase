@@ -2,6 +2,7 @@
 description: >-
   Standards for drafting time entries, reviewing prebills, and keeping
   client-facing billing precise and usable.
+hidden: true
 ---
 
 # Billing & Timesheet Operations

@@ -2,6 +2,7 @@
 description: >-
   Standards for client, adjuster, and opposing-counsel communication, including
   tone, structure, and sign-off control.
+hidden: true
 ---
 
 # Correspondence

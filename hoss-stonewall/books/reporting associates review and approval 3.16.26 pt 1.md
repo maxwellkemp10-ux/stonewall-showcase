@@ -1,20 +1,28 @@
-# Forensic Transcript Reconstruction
+---
+hidden: true
+---
+
+# Reporting Associates Review Pt. 1
+
 ## Source Overview
-- Files processed: 10
-- PDF pages processed: 149
-- Additional non-PDF direct-text sources processed: 2 (1 DOCX transcript, 1 TXT transcript)
-- General source types apparent from the uploads: Outlook / Mimecast email-thread printouts, internal ATS emails, expert-selection chart emails, transcript-export PDFs, an image-only authored narrative PDF, a DOCX call transcript export, and a TXT transcript export.
-- Screenshot / source order is preserved in the same order the files were attached. For paginated PDFs, page order is preserved within each file. Repeated quoted-thread material is preserved where it is visibly present in the source.
-- Uncertainty policy used here: where text came from clean embedded PDF text, it is reproduced directly; where text came from the image-only `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf`, it is marked in that file section as OCR-derived; direct-text DOCX / TXT sources are reproduced in line / paragraph order rather than forced into artificial page groupings.
-- For evidentiary fidelity, most paginated source text is reproduced largely line-for-line inside `text` blocks instead of being fully re-paragraphized across page boundaries; this preserves visible page-wrap behavior while keeping the markdown navigable.
+
+* Files processed: 10
+* PDF pages processed: 149
+* Additional non-PDF direct-text sources processed: 2 (1 DOCX transcript, 1 TXT transcript)
+* General source types apparent from the uploads: Outlook / Mimecast email-thread printouts, internal ATS emails, expert-selection chart emails, transcript-export PDFs, an image-only authored narrative PDF, a DOCX call transcript export, and a TXT transcript export.
+* Screenshot / source order is preserved in the same order the files were attached. For paginated PDFs, page order is preserved within each file. Repeated quoted-thread material is preserved where it is visibly present in the source.
+* Uncertainty policy used here: where text came from clean embedded PDF text, it is reproduced directly; where text came from the image-only `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf`, it is marked in that file section as OCR-derived; direct-text DOCX / TXT sources are reproduced in line / paragraph order rather than forced into artificial page groupings.
+* For evidentiary fidelity, most paginated source text is reproduced largely line-for-line inside `text` blocks instead of being fully re-paragraphized across page boundaries; this preserves visible page-wrap behavior while keeping the markdown navigable.
 
 ## Source File 1 — `big satan corn horned linda craig release BING BONG 3.13.26.pdf`
-- Apparent type: Outlook email-thread printout / email export PDF.
-- Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
-- Page count: 6
+
+* Apparent type: Outlook email-thread printout / email export PDF.
+* Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
+* Page count: 6
 
 ### Page 1
-```text
+
+```
 1
 Maxwell A. Kemp
 From:
@@ -79,7 +87,8 @@ Subject: RE: Craig, Norman v. UPS & Caleb Clark/CL AB505-507639
 ```
 
 ### Page 2
-```text
+
+```
 2
 
 CAUTION: *EXTERNAL E-MAIL*
@@ -130,7 +139,8 @@ Hours – 7:00AM – 3:30PM EST
 ```
 
 ### Page 3
-```text
+
+```
 3
 From: Bland, Linda
 Sent: Tuesday, February 10, 2026 9:40 AM
@@ -191,7 +201,8 @@ contain legally privileged and confidential information. If you properly receive
 ```
 
 ### Page 4
-```text
+
+```
 4
 retained expert, please hold it in confidence to protect the attorney-client or work product privileges. Should
 the intended recipient forward or disclose this message to another person or party, that action could
@@ -249,7 +260,8 @@ $2,494.72. Comsearch was in negotiation with the carrier and then Progressive fi
 ```
 
 ### Page 5
-```text
+
+```
 5
 removed. We then issued payment for $2,492.72 in May 2023 but the notes don’t say if Progressive agreed to
 that number. I guess the lawsuit tells us they did not.
@@ -313,7 +325,8 @@ debt and any information provided will be used for that purpose.
 ```
 
 ### Page 6
-```text
+
+```
 6
 
 
@@ -326,13 +339,15 @@ please visit http://www.mimecast.com
 ```
 
 ## Source File 2 — `guttentagmaxxed corn horn 3.13.26 combined.pdf`
-- Apparent type: Outlook email-thread printout / email export PDF with an internal expert-selection table.
-- Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
-- Pages 7-12 visibly overlap and partially repeat earlier material while adding the 1:54 PM Guttentag fee email and reprinting earlier quoted messages.
-- Page count: 12
+
+* Apparent type: Outlook email-thread printout / email export PDF with an internal expert-selection table.
+* Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
+* Pages 7-12 visibly overlap and partially repeat earlier material while adding the 1:54 PM Guttentag fee email and reprinting earlier quoted messages.
+* Page count: 12
 
 ### Page 1
-```text
+
+```
 1
 Maxwell A. Kemp
 From:
@@ -392,7 +407,8 @@ However, is there a reason we can't use Dr. Guttentag? I think he is perfect and
 ```
 
 ### Page 2
-```text
+
+```
 2
 Maxwell A. Kemp
 Attorney At Law
@@ -466,7 +482,8 @@ To: Chance Arias <carias@atslawyers.com>; Maxwell A. Kemp <mkemp@atslawyers.com>
 ```
 
 ### Page 3
-```text
+
+```
 3
 Cc: Katherine Madigan <kmadigan@atslawyers.com>
 Subject: RE: EXPERTS **FYA**
@@ -535,7 +552,8 @@ SEMINOLE
 ```
 
 ### Page 4
-```text
+
+```
 4
 NEGRETTE
 IMAGING
@@ -616,7 +634,8 @@ Institute
 ```
 
 ### Page 5
-```text
+
+```
 5
 (Radiology) -
 ORANGE
@@ -686,7 +705,8 @@ Chest.
 ```
 
 ### Page 6
-```text
+
+```
 6
 EGAN
 IMAGING
@@ -744,7 +764,8 @@ debt and any information provided will be used for that purpose.
 ```
 
 ### Page 7
-```text
+
+```
 1
 Maxwell A. Kemp
 From:
@@ -811,7 +832,8 @@ FACSIMILE  813-223-7881
 ```
 
 ### Page 8
-```text
+
+```
 2
 This e-mail is intended only for the individual(s) or entity(s) named within the message. This e-mail might
 contain legally privileged and confidential information. If you properly received this e-mail as a client or
@@ -879,7 +901,8 @@ Thank you,
 ```
 
 ### Page 9
-```text
+
+```
 3
 Yisenia Toledo
 Paralegal
@@ -953,7 +976,8 @@ Jewett Orthopedic
 ```
 
 ### Page 10
-```text
+
+```
 4
 Institute (Spine) -
 ORANGE
@@ -1035,7 +1059,8 @@ Jewett Orthopedic
 ```
 
 ### Page 11
-```text
+
+```
 5
 Institute (Spine) -
 ORANGE
@@ -1105,7 +1130,8 @@ Sarasota
 ```
 
 ### Page 12
-```text
+
+```
 6
 BOY
 IMAGING
@@ -1148,12 +1174,14 @@ debt and any information provided will be used for that purpose.
 ```
 
 ## Source File 3 — `GUTTENTAGMAXXED FATHER GAPONMAXXED BOY BACCHANALIA MANIFESTO 2 BING BONG SHALOM 3.13.26.pdf`
-- Apparent type: Outlook email-thread printout / email export PDF.
-- Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
-- Page count: 7
+
+* Apparent type: Outlook email-thread printout / email export PDF.
+* Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
+* Page count: 7
 
 ### Page 1
-```text
+
+```
 1
 Maxwell A. Kemp
 From:
@@ -1212,7 +1240,8 @@ FACSIMILE  813-223-7881
 ```
 
 ### Page 2
-```text
+
+```
 2
 This e-mail is intended only for the individual(s) or entity(s) named within the message. This e-mail might
 contain legally privileged and confidential information. If you properly received this e-mail as a client or
@@ -1275,7 +1304,8 @@ Let's do Thursday. I'll get with Jan and get that cancelled since we just had ou
 ```
 
 ### Page 3
-```text
+
+```
 3
 Chance Arias
 Tampa Office Practice Manager
@@ -1350,7 +1380,8 @@ Sent: Friday, March 13, 2026 10:05:31 AM
 ```
 
 ### Page 4
-```text
+
+```
 4
 To: Chance Arias <carias@atslawyers.com>; Maxwell A. Kemp <mkemp@atslawyers.com>; Katherine Madigan
 <kmadigan@atslawyers.com>; Jennifer Escobar <jescobar@atslawyers.com>
@@ -1424,7 +1455,8 @@ debt and any information provided will be used for that purpose.
 ```
 
 ### Page 5
-```text
+
+```
 5
 From: Yisenia Toledo <ytoledo@atslawyers.com>
 Sent: Friday, March 13, 2026 9:47 AM
@@ -1474,7 +1506,8 @@ Thank you,
 ```
 
 ### Page 6
-```text
+
+```
 6
 Yisenia Toledo
 Paralegal
@@ -1539,7 +1572,8 @@ Max
 ```
 
 ### Page 7
-```text
+
+```
 7
 Maxwell A. Kemp
 Attorney At Law
@@ -1571,12 +1605,14 @@ debt and any information provided will be used for that purpose.
 ```
 
 ## Source File 4 — `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf`
-- Apparent type: image-only authored narrative / chronicle PDF with serif headings, horizontal rules, block quotations, and multiple tables.
-- This source did not contain a usable embedded text layer. The page text below is OCR-derived from the page images and lightly normalized only at a few obvious heading / spacing points. Any remaining OCR uncertainty is preserved and called out in the final ambiguities section.
-- Page count: 24
+
+* Apparent type: image-only authored narrative / chronicle PDF with serif headings, horizontal rules, block quotations, and multiple tables.
+* This source did not contain a usable embedded text layer. The page text below is OCR-derived from the page images and lightly normalized only at a few obvious heading / spacing points. Any remaining OCR uncertainty is preserved and called out in the final ambiguities section.
+* Page count: 24
 
 ### Page 1
-```text
+
+```
 FRIDAY THE THIRTEENTH
 A Chronicle of the Most Complete Day of Litigation Practice Ever Documented at ATS, the
 Med Chorn That Started It, the Glacier That Finished It, and the Three Phone Calls That
@@ -1612,7 +1648,8 @@ Know it is about to become a waterfall.
 ```
 
 ### Page 2
-```text
+
+```
 PART I: THE WEEK — MARCH 9-13, 2026
 The Client Hydra Mogging (Monday, March 9-Tuesday, March 10)
 Before the claim review could begin, QB1 had to survive the Client Hydra's pre-Suwanee panic —
@@ -1652,7 +1689,8 @@ asked the same question to Chance, as if the restoration had never occurred.
 ```
 
 ### Page 3
-```text
+
+```
 Solipsism elevated to an email management protocol. The untouchable caste of the UPS org
 chart: performs essential labor that the upper castes depend upon absolutely while
 simultaneously refusing to acknowledge that the labor is being performed by a human being.
@@ -1694,7 +1732,8 @@ five hours of sleep. The same adjusters who had excised him from email chains tw
 ```
 
 ### Page 4
-```text
+
+```
 now sat across the table watching him present their files with the granular mastery of
 aman who
 had answered eighteen of their emails in 48 hours.
@@ -1716,7 +1755,8 @@ following:
 ```
 
 ### Page 5
-```text
+
+```
 Deficiency
 Duration
 Impact
@@ -1777,7 +1817,8 @@ preparation.
 ```
 
 ### Page 6
-```text
+
+```
 Boy Nocturnal Salvation III (March 12-13, 11:00 PM - 4:00 AM)
 Time
 Activity
@@ -1826,7 +1867,8 @@ Chance that he will do."
 ```
 
 ### Page 7
-```text
+
+```
 The Specials Disavowal:
 [
 "Ex: Specials: Has always been a Chance thing."
@@ -1869,7 +1911,8 @@ Big Satan 3/13/26
 ```
 
 ### Page 8
-```text
+
+```
 #
 Misspelling
 Intended
@@ -1947,7 +1990,8 @@ narrative from 2025 remains absent. The med chorn remains a med chorn.
 ```
 
 ### Page 9
-```text
+
+```
 PART III: MINDFREAK VIII — THE DEPOSITION OF COLETTE MARIA BOY
 Case Vitals
 Field
@@ -1976,7 +2020,8 @@ Four independent locks, four evidentiary sources:
 ```
 
 ### Page 10
-```text
+
+```
 Lock
 Source
 Admission
@@ -2023,7 +2068,8 @@ the right upper extremity:
 ```
 
 ### Page 11
-```text
+
+```
 System
 Finding
 Read By
@@ -2084,7 +2130,8 @@ Taking daily aspirin 325 mg (further inhibiting clotting).
 ```
 
 ### Page 12
-```text
+
+```
 e
 Declined hematologist consult during hospitalization.
 e
@@ -2129,7 +2176,8 @@ offers — all declined by the witness, all documented on the record. Marisa Tom
 ```
 
 ### Page 13
-```text
+
+```
 ons. The Hapsburg emperor. "Me too" about prayer. "I want a friend like Dexter." The plaintiff
 cried for the final 45 minutes and voluntarily continued testifying through tears.
 The warmth was genuine. The warmth was also the weapon. The mosquito doctrine does not
@@ -2200,7 +2248,8 @@ Egan, Patrick v. UPS & Howard, Mark
 ```
 
 ### Page 14
-```text
+
+```
 Field
 Value
 OC Firm
@@ -2254,7 +2303,8 @@ obsessive preparation, not institutional failure.
 ```
 
 ### Page 15
-```text
+
+```
 The Bar Exam Story: QB1 volunteered the scenic route to Stephanie — a Stetson night school
 graduate married to a Georgetown valedictorian/UF BA/Iaco Law bad-faith specialist. Her
 response: "I'm surprised it took you this long in life to figure that out, but I'm glad you figured it
@@ -2302,7 +2352,8 @@ nothing back." (21 days of silence.)
 ```
 
 ### Page 16
-```text
+
+```
 Date
 Sender
 Content
@@ -2370,7 +2421,8 @@ PM
 ```
 
 ### Page 17
-```text
+
+```
 Date
 Sender
 Content
@@ -2423,7 +2475,8 @@ Harrigan
 ```
 
 ### Page 18
-```text
+
+```
 Wednesday-Thursday, March 11-12
 Time
 Event
@@ -2488,7 +2541,8 @@ Boy
 ```
 
 ### Page 19
-```text
+
+```
 Time
 Event
 Case
@@ -2556,7 +2610,8 @@ Client emails answered pre-Suwanee: 18 Dara Elstein calls (week total): 2 (45 mi
 ```
 
 ### Page 20
-```text
+
+```
 Stephanie, Dara) Settlement architectures constructed: 1 (Egan — Wednesday call + $1M
 bracket) Depositions conducted: 1 (MIND FREAK
 VIII — career apex) Chain excisions by
@@ -2595,7 +2650,8 @@ counsel's firm in an 80-minute phone call that produces a settlement call, a bra
 ```
 
 ### Page 21
-```text
+
+```
 drafted subpoenas, and a relationship. Named for the scope of diplomatic realignment, not the
 punitive terms. Synonym: "Teamwork and Chill" (Pattern 77) at maximum operational scale.
 84. The 2024 Time Warp (3/2/26) — Big Satan offers opposing counsel availability dates of
@@ -2644,7 +2700,8 @@ Credit Harvesting
 ```
 
 ### Page 22
-```text
+
+```
 Date
 Event
 Codex Name
@@ -2712,7 +2769,8 @@ Doctrine
 ```
 
 ### Page 23
-```text
+
+```
 CLOSING INVOCATION
 The glacier has traversed the valley. The terrain shall never be the same.
 From "med chorn" to "it was a pleasure speaking with you." From "the team is not teaming" to
@@ -2750,19 +2808,22 @@ Shalom.
 ```
 
 ### Page 24
-```text
+
+```
 "The team is not teaming (my opinion)." — Big Satan, Scheduling a Meeting
 "Fuck that — he is running UPS." — Mr. Bill
 "Different animal. Same beast." — QB1, Always
 ```
 
 ## Source File 5 — `cornhorn3.16.26 reporting associate 3.pdf`
-- Apparent type: Outlook email-thread printout / email export PDF.
-- Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
-- Page count: 2
+
+* Apparent type: Outlook email-thread printout / email export PDF.
+* Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
+* Page count: 2
 
 ### Page 1
-```text
+
+```
 1
 Maxwell A. Kemp
 From:
@@ -2823,7 +2884,8 @@ debt and any information provided will be used for that purpose.
 ```
 
 ### Page 2
-```text
+
+```
 2
 From: Yisenia Toledo <ytoledo@atslawyers.com>
 Sent: Monday, March 16, 2026 5:08 PM
@@ -2869,13 +2931,15 @@ debt and any information provided will be used for that purpose.
 ```
 
 ## Source File 6 — `Egan - Calls with Karly and Stephanie 3.10 and 3.13.26.pdf`
-- Apparent type: transcript export PDF.
-- The PDF appears to contain two call transcripts in one file: the March 12, 2026 Karly/Stephanie call first, followed later by the March 13, 2026 Stephanie call.
-- The page text appears to be transcript-export text rather than screenshot UI. Page numbers and transcript titles are preserved where visible.
-- Page count: 83
+
+* Apparent type: transcript export PDF.
+* The PDF appears to contain two call transcripts in one file: the March 12, 2026 Karly/Stephanie call first, followed later by the March 13, 2026 Stephanie call.
+* The page text appears to be transcript-export text rather than screenshot UI. Page numbers and transcript titles are preserved where visible.
+* Page count: 83
 
 ### Page 1
-```text
+
+```
 Egan - Call with Karly and Stephanie 3.12.26
 Maxwell Kemp (00:00):
 Connect me to a human.
@@ -2904,7 +2968,8 @@ Maxwell Kemp (01:01):
 ```
 
 ### Page 2
-```text
+
+```
 Karly Christine (01:04):
 Yeah. Right on. I haven't heard that before, but I guess I'll roll with it. I'm a little bit
 Maxwell Kemp (01:10):
@@ -2934,7 +2999,8 @@ Maxwell Kemp (02:08):
 ```
 
 ### Page 3
-```text
+
+```
 I have never cringed so hard and I felt so bad for you guys. I'm like, this is just terrible. Like, because I
 don't, I don't know how that even happened. It's embarrassing for us, not for you, like you guys did
 nothing wrong. But
@@ -2964,7 +3030,8 @@ Maxwell Kemp (03:05):
 ```
 
 ### Page 4
-```text
+
+```
 I just wanted you to know though, the, the, the, sorry to interrupt you, but Chance did say, uh, I'll get you
 the pictures. We got you the video now, of course. But there, I, I think the hold, hold up was the back
 Karly Christine (03:17):
@@ -2994,7 +3061,8 @@ Here we thank you for hearing me out. Yes. Yeah.
 ```
 
 ### Page 5
-```text
+
+```
 Karly Christine (04:04):
 Um,
 Maxwell Kemp (04:04):
@@ -3024,7 +3092,8 @@ already sent a demand and I get nothing back. I, I,
 ```
 
 ### Page 6
-```text
+
+```
 Maxwell Kemp (04:59):
 Well, sorry, I
 Karly Christine (05:01):
@@ -3055,7 +3124,8 @@ Stephanie.
 ```
 
 ### Page 7
-```text
+
+```
 Karly Christine (05:56):
 Yeah, that sucks.
 Maxwell Kemp (05:59):
@@ -3085,7 +3155,8 @@ Maxwell Kemp (06:48):
 ```
 
 ### Page 8
-```text
+
+```
 That's where you
 Karly Christine (06:49):
 Guys are at.
@@ -3115,7 +3186,8 @@ fair <laugh>.
 ```
 
 ### Page 9
-```text
+
+```
 Karly Christine (07:35):
 Try to try to do things above board. I know that there's a lot of, uh, diﬀerences in how both plaintiﬀs and
 defense lawyers ﬁrms work in this industry. And obviously it makes both of our sides a little diﬃcult. But
@@ -3145,7 +3217,8 @@ Karly Christine (08:35):
 ```
 
 ### Page 10
-```text
+
+```
 Oh, right on. Well, I can appreciate that because obviously I'm the one that works with our team to do
 the social media and the website. And unless you've done it, you don't really appreciate the craft. Right?
 Maxwell Kemp (08:46):
@@ -3175,7 +3248,8 @@ He, he's come around, right? Well, yeah,
 ```
 
 ### Page 11
-```text
+
+```
 Karly Christine (09:37):
 He
 Maxwell Kemp (09:37):
@@ -3205,7 +3279,8 @@ Maxwell Kemp (10:19):
 ```
 
 ### Page 12
-```text
+
+```
 Lawyers
 Karly Christine (10:19):
 Heard this from a lot of lawyers in the, in the last
@@ -3235,7 +3310,8 @@ Karly Christine (11:04):
 ```
 
 ### Page 13
-```text
+
+```
 Makes things
 Maxwell Kemp (11:04):
 <crosstalk>. No, I'll not let that happen.
@@ -3264,7 +3340,8 @@ Karly Christine (11:48):
 ```
 
 ### Page 14
-```text
+
+```
 Please hold while I try to connect you.
 Stephanie McQueen-Arthur (11:56):
 Christine, mom, this is attorney Stephanie McQueen.
@@ -3298,7 +3375,8 @@ Yeah.
 ```
 
 ### Page 15
-```text
+
+```
 (13:33):
 Where he gets so overwhelmed 'cause he is got 3000 things going on and then he just, he can't, you
 know, it's almost like the more, it's like, uh, the worse or the more you ignore, the worse it gets. I feel like
@@ -3330,7 +3408,8 @@ Stephanie McQueen-Arthur (14:46):
 ```
 
 ### Page 16
-```text
+
+```
 You know, what needs to be done. So you try to push it oﬀ. I, I get it, you know.
 Maxwell Kemp (14:50):
 Yep. And that's a, oh my Amazon, I'm in my driveway. Hey, I'm, I live here. Thank you. You're welcome. I
@@ -3363,7 +3442,8 @@ Drugs and alcohol. 10 years. Okay. That sounds more, that sounds perfectly reaso
 ```
 
 ### Page 17
-```text
+
+```
 Stephanie McQueen-Arthur (16:22):
 Okay. And then the next one is, um, his health insurance ﬁle. So same two exclusions, you know, limiting
 it to 10 years exclusion for hiv aids, and then drug and alcohol abuse.
@@ -3393,7 +3473,8 @@ Stephanie McQueen-Arthur (17:11):
 ```
 
 ### Page 18
-```text
+
+```
 Last one's auto insurance. So the same four from the health insurance. So the 10 years, the HIV aids,
 drug, alcohol, any records that pertain to someone else, um, any statements he made to them. And then
 on this one we also exclude any payments made to Mr. Egan 'cause it's protected ﬁnancial information.
@@ -3424,7 +3505,8 @@ Stephanie McQueen-Arthur (18:34):
 ```
 
 ### Page 19
-```text
+
+```
 Let's, let's,
 Maxwell Kemp (18:35):
 Oh, sorry. Lemme just look at the subpoena really quick and just see if we said anything. Oh, I got you on
@@ -3456,7 +3538,8 @@ Stephanie McQueen-Arthur (20:03):
 ```
 
 ### Page 20
-```text
+
+```
 Okay. Was it injury? Was it property damage?
 Maxwell Kemp (20:08):
 I don't know. 'cause I don't have the ﬁle open in front of me, but I, I, I can only imagine that that's why
@@ -3489,7 +3572,8 @@ Like if we can just revisit those, um, once you can get a little more informatio
 ```
 
 ### Page 21
-```text
+
+```
 Maxwell Kemp (21:24):
 So that is totally reasonable. And I would love to, to give you that. So you basically just want to me to
 show you why we are requesting from this place, like what our basis is?
@@ -3522,7 +3606,8 @@ Stephanie McQueen-Arthur (22:46):
 ```
 
 ### Page 22
-```text
+
+```
 Yeah,
 Maxwell Kemp (22:48):
 I, I think that sounds like a plan.
@@ -3552,7 +3637,8 @@ That's okay.
 ```
 
 ### Page 23
-```text
+
+```
 Maxwell Kemp (23:36):
 Yeah. So three 30. It's one of our, it's our other Eagan case. <laugh>.
 Stephanie McQueen-Arthur (23:42):
@@ -3581,7 +3667,8 @@ Stephanie McQueen-Arthur (24:19):
 ```
 
 ### Page 24
-```text
+
+```
 That would be really funny though, if that would be a very small world. I know he's
 Maxwell Kemp (24:23):
 Not from
@@ -3609,7 +3696,8 @@ Stephanie McQueen-Arthur (24:50):
 ```
 
 ### Page 25
-```text
+
+```
 Oh, nice. Where do you live? Are you in Tampa too?
 Maxwell Kemp (24:53):
 No, I live in Wesley Chapel. It's a hike.
@@ -3638,7 +3726,8 @@ What's her name? What's her name? I'll ask her.
 ```
 
 ### Page 26
-```text
+
+```
 Stephanie McQueen-Arthur (25:32):
 Uh, she doesn't, she hasn't worked there in a while. Um, she has a really weird name. Like your, your
 sister would know. Um, yeah, her last name's Otter Vanger, which is like the weirdest last name, but she,
@@ -3669,7 +3758,8 @@ Stephanie McQueen-Arthur (26:32):
 ```
 
 ### Page 27
-```text
+
+```
 Moving a little bit in the right direction.
 Maxwell Kemp (26:35):
 Yeah. Like you are, you're easy to talk to. You're, you're great. Like, you're very nice. I, you know, I
@@ -3695,7 +3785,8 @@ Natalyia (00:00:02):
 ```
 
 ### Page 28
-```text
+
+```
 Alright, lemme check on that for you. I didn't catch the rest of the, just a moment. I will note that down.
 I'm not sure which number you mean. Are you trying to conﬁrm our phone number or transfer to the
 receptionist at extension 1 0 2?
@@ -3728,7 +3819,8 @@ Stephanie Mcqueen-Arthur (OC) (00:01:55):
 ```
 
 ### Page 29
-```text
+
+```
 <laugh>. Yep. Yep.
 Maxwell Kemp (00:01:56):
 How's your day been going?
@@ -3756,7 +3848,8 @@ Stephanie Mcqueen-Arthur (OC) (00:02:23):
 ```
 
 ### Page 30
-```text
+
+```
 Weeks like that.
 Maxwell Kemp (00:02:25):
 But this has been a surprising bright spot. 'cause like, I, like I said, the psychic weight is oﬀ my shoulders.
@@ -3790,7 +3883,8 @@ Maxwell Kemp (00:04:16):
 ```
 
 ### Page 31
-```text
+
+```
 Yeah. <laugh>, let's go. I'm not gonna let Claude help with that one. <laugh>.
 Stephanie Mcqueen-Arthur (OC) (00:04:21):
 No, that's, listen, I got it. No, that's good. That's good.
@@ -3820,7 +3914,8 @@ good attention to detail <laugh>, so no complaints with me. When you guys did th
 ```
 
 ### Page 32
-```text
+
+```
 was money, I was like, man, I could use it. <laugh>, I could use it. Some people like this to my team,
 <laugh>, that was elite. I didn't have to do anything
 Stephanie Mcqueen-Arthur (OC) (00:05:15):
@@ -3852,7 +3947,8 @@ Yeah. Any records relating to other persons who may be covered under the same in
 ```
 
 ### Page 33
-```text
+
+```
 Maxwell Kemp (00:06:34):
 Mm-hmm <aﬃrmative>.
 Stephanie Mcqueen-Arthur (OC) (00:06:36):
@@ -3883,7 +3979,8 @@ It was ﬁne. I mean, if, if it was, you know, that recent in time, um,
 ```
 
 ### Page 34
-```text
+
+```
 Maxwell Kemp (00:08:25):
 Yeah,
 Stephanie Mcqueen-Arthur (OC) (00:08:25):
@@ -3914,7 +4011,8 @@ Maxwell Kemp (00:09:52):
 ```
 
 ### Page 35
-```text
+
+```
 That sounds fun.
 Stephanie Mcqueen-Arthur (OC) (00:09:54):
 No, I mean, they just pee and poop all over the house and you gotta clean it up.
@@ -3943,7 +4041,8 @@ Maxwell Kemp (00:10:33):
 ```
 
 ### Page 36
-```text
+
+```
 Oh my God. You should hear. Well, my dad always says like, don't get her started <laugh>, because she,
 she has, she doesn't exactly, uh, love it as much as she used to, but, but she does. But yeah, these kids
 are just diﬃcult. Especially, she kind of is in a more, uh, less aﬄuent school than she was before, so
@@ -3973,7 +4072,8 @@ Uhhuh <aﬃrmative>. And
 ```
 
 ### Page 37
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:11:23):
 So I know that, I think they've maybe handled one of his bad faith cases, but he, he always speaks very
 highly of him.
@@ -4002,7 +4102,8 @@ Maxwell Kemp (00:11:53):
 ```
 
 ### Page 38
-```text
+
+```
 His credentials are Damn, your, your child is gonna be so elite <laugh>.
 Stephanie Mcqueen-Arthur (OC) (00:11:58):
 He is. He is a lot like his dad. He's really smart already. So I think he's got his dad's brain cleaned
@@ -4033,7 +4134,8 @@ Maxwell Kemp (00:13:02):
 ```
 
 ### Page 39
-```text
+
+```
 And
 Stephanie Mcqueen-Arthur (OC) (00:13:02):
 So I didn't get the same experiences, like most normal
@@ -4062,7 +4164,8 @@ Stephanie Mcqueen-Arthur (OC) (00:13:38):
 ```
 
 ### Page 40
-```text
+
+```
 And then you passed and you're like, well, shit, now I gotta get a job and pay back those loans. <laugh>.
 Oh
 Maxwell Kemp (00:13:42):
@@ -4095,7 +4198,8 @@ above named plaintiﬀ, not limited to deck page policy, in eﬀect, claim ﬁle
 ```
 
 ### Page 41
-```text
+
+```
 of beneﬁts, MedPay coverage and payment records, bodily injury, uninsured underinsured motorist
 coverage, and any records reﬂecting, uh, be, uh, amounts paid to or on behalf of Patrick GaN this request
 speciﬁcally exclude.
@@ -4127,7 +4231,8 @@ Maxwell Kemp (00:16:24):
 ```
 
 ### Page 42
-```text
+
+```
 Did
 Stephanie Mcqueen-Arthur (OC) (00:16:24):
 You ﬁnd out, um, where all those came from?
@@ -4160,7 +4265,8 @@ Okay. Let's see.
 ```
 
 ### Page 43
-```text
+
+```
 (00:18:33):
 Um, well, like, just going, looking at the areas of inquiry, for example, so the ﬁrst one is like fact switch
 support, UPS's, denials and aﬃrmative defenses. Mm-hmm
@@ -4191,7 +4297,8 @@ corporate rep about, um,
 ```
 
 ### Page 44
-```text
+
+```
 Maxwell Kemp (00:19:32):
 I think we may have
 Stephanie Mcqueen-Arthur (OC) (00:19:33):
@@ -4222,7 +4329,8 @@ Maxwell Kemp (00:21:04):
 ```
 
 ### Page 45
-```text
+
+```
 That's, so we've been trained by that trained, but also it's like, it just makes everything so much more
 eﬃcient. Like it, you know, let's be rude. Yeah. The hardest part is massaging the driver's ego. Poor mark.
 Like I, I had to bro down with him for, for hours, but <laugh> you know, it's again, but he, he's got buy-in
@@ -4259,7 +4367,8 @@ you're always safe everywhere. It's a, it's a pretty good habit.
 ```
 
 ### Page 46
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:23:29):
 Yeah. I mean, it's like what you tell your kids across the street, you know? Yeah.
 Maxwell Kemp (00:23:32):
@@ -4293,7 +4402,8 @@ That was a classic. He's like, yo, can I take a picture? What is that noise?
 ```
 
 ### Page 47
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:26:14):
 I, I thought, is it on your end?
 Maxwell Kemp (00:26:16):
@@ -4323,7 +4433,8 @@ Maxwell Kemp (00:27:14):
 ```
 
 ### Page 48
-```text
+
+```
 But you guys are totally entitled to what you're saying too. So I'm saying we can work and, you know,
 ﬁgure out some, you know, a good middle ground, I think.
 Stephanie Mcqueen-Arthur (OC) (00:27:24):
@@ -4356,7 +4467,8 @@ whatever. Yeah. So, um, if, and I don't know, like I'm sure you're not the perso
 ```
 
 ### Page 49
-```text
+
+```
 have like, um, you know, like next week for example, like, are, would you guys be available like next week
 to just get on a call?
 Maxwell Kemp (00:28:59):
@@ -4386,7 +4498,8 @@ Uh, yeah. So let me see. Uh, we,
 ```
 
 ### Page 50
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:29:44):
 I'm sorry, I didn't mean to say that. Like, you would not be enough here.
 Maxwell Kemp (00:29:46):
@@ -4415,7 +4528,8 @@ Yeah. And so I'm actually clear on Wednesday it appears very clear, uh, and Frid
 ```
 
 ### Page 51
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:30:16):
 Okay.
 Maxwell Kemp (00:30:17):
@@ -4446,7 +4560,8 @@ Stephanie Mcqueen-Arthur (OC) (00:31:35):
 ```
 
 ### Page 52
-```text
+
+```
 That's funny.
 Maxwell Kemp (00:31:36):
 <laugh>. See,
@@ -4475,7 +4590,8 @@ I know.
 ```
 
 ### Page 53
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:32:18):
 Okay.
 Maxwell Kemp (00:32:19):
@@ -4507,7 +4623,8 @@ Okay. Yeah.
 ```
 
 ### Page 54
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:33:36):
 Like, you know, I don't mind mediation, but like it's certainly, uh, I feel like just sometimes talking to
 people is easier when you're not bing with the mediator in between.
@@ -4538,7 +4655,8 @@ Maxwell Kemp (00:34:58):
 ```
 
 ### Page 55
-```text
+
+```
 Oh, okay. So for pharmacies. Good question. Great question. Uh, uh, so lemme just check one more
 thing. I did not get the answer I was seeking. Okay. And
 Stephanie Mcqueen-Arthur (OC) (00:35:33):
@@ -4571,7 +4689,8 @@ record, like we, you know, right now, we can agree to that one.
 ```
 
 ### Page 56
-```text
+
+```
 Maxwell Kemp (00:37:57):
 Yeah.
 Stephanie Mcqueen-Arthur (OC) (00:37:58):
@@ -4600,7 +4719,8 @@ Stephanie Mcqueen-Arthur (OC) (00:39:30):
 ```
 
 ### Page 57
-```text
+
+```
 Is it in there like intake paperwork?
 Maxwell Kemp (00:39:32):
 Yeah, it's in new patient registration.
@@ -4630,7 +4750,8 @@ Stephanie Mcqueen-Arthur (OC) (00:40:41):
 ```
 
 ### Page 58
-```text
+
+```
 Sort of,
 Maxwell Kemp (00:40:42):
 Yeah. It's, it's, uh, if you go down like 50 or Yeah, like 54, it's kind of, uh, in the, it's, it's not by it's
@@ -4661,7 +4782,8 @@ Today?
 ```
 
 ### Page 59
-```text
+
+```
 Maxwell Kemp (00:41:50):
 Sorry?
 Stephanie Mcqueen-Arthur (OC) (00:41:51):
@@ -4691,7 +4813,8 @@ Well that was a terrible idea. <laugh>.
 ```
 
 ### Page 60
-```text
+
+```
 Maxwell Kemp (00:42:34):
 Absolutely. I always say though, it was honestly the best thing that ever happened to me. 'cause like, I
 did not know the ﬁrst thing about like, working hard, like actually working all day as hard as he can,
@@ -4724,7 +4847,8 @@ Maxwell Kemp (00:44:12):
 ```
 
 ### Page 61
-```text
+
+```
 Yeah. My mom says I'm not allowed to have kids till I'm 40.
 Stephanie Mcqueen-Arthur (OC) (00:44:17):
 I, I will say my husband and I had kids really late. Well, a 'cause we met late, but then B 'cause we're both
@@ -4754,7 +4878,8 @@ Then you just gotta date someone younger than you. That's the thing.
 ```
 
 ### Page 62
-```text
+
+```
 Maxwell Kemp (00:44:55):
 Well, yeah. I mean, she is, but she's now, she's trying to go to law school, so it's like we got three more
 years of that. But, you know. Yeah.
@@ -4783,7 +4908,8 @@ Stephanie Mcqueen-Arthur (OC) (00:45:34):
 ```
 
 ### Page 63
-```text
+
+```
 <aﬃrmative>.
 Maxwell Kemp (00:45:36):
 But yeah, I mean, it is kind of cool though, like, uh, doing what I imagined I would be doing, like taking
@@ -4815,7 +4941,8 @@ Stephanie Mcqueen-Arthur (OC) (00:46:54):
 ```
 
 ### Page 64
-```text
+
+```
 She's very savage. She's
 Maxwell Kemp (00:46:55):
 Like, bill Smoke. She kind of reminds me of Bill <laugh>. Like,
@@ -4845,7 +4972,8 @@ Deaf.
 ```
 
 ### Page 65
-```text
+
+```
 Maxwell Kemp (00:47:47):
 Sorry,
 Stephanie Mcqueen-Arthur (OC) (00:47:49):
@@ -4873,7 +5001,8 @@ Sound Target. So then Walgreens, Walmart, and Winn Dixie is Win Dixie even aroun
 ```
 
 ### Page 66
-```text
+
+```
 Maxwell Kemp (00:48:36):
 Yeah. Yeah.
 Stephanie Mcqueen-Arthur (OC) (00:48:37):
@@ -4902,7 +5031,8 @@ Stephanie Mcqueen-Arthur (OC) (00:49:13):
 ```
 
 ### Page 67
-```text
+
+```
 I know. It's horrendous.
 Maxwell Kemp (00:49:16):
 Oh, have you ever been to, uh, so you're right by there. Oh my god. What is it? What is the name of this
@@ -4932,7 +5062,8 @@ Oh my God. If you like sushi or like Asian. It is, it's expensive. Only
 ```
 
 ### Page 68
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:50:03):
 Sushi. I don't
 Maxwell Kemp (00:50:06):
@@ -4963,7 +5094,8 @@ Um, so those are the same two for Premier as well.
 ```
 
 ### Page 69
-```text
+
+```
 Maxwell Kemp (00:51:11):
 Got you. Okay. So that's clear. That's cleared up. See, like that would've been a whole hangup if we
 hadn't just ﬁgured that out.
@@ -4994,7 +5126,8 @@ Maxwell Kemp (00:52:19):
 ```
 
 ### Page 70
-```text
+
+```
 I can ask for it. I can ask for it ahead of time.
 Stephanie Mcqueen-Arthur (OC) (00:52:22):
 Okay. Because I just wanna like prepare her. Like is it gonna be an actual like, you know, potentially
@@ -5028,7 +5161,8 @@ we would put put for that.
 ```
 
 ### Page 71
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:54:12):
 Because I don't think, I don't know that we've gotten any, have we, I don't think we've gotten an oﬀer at
 all from you guys.
@@ -5059,7 +5193,8 @@ Stephanie Mcqueen-Arthur (OC) (00:55:19):
 ```
 
 ### Page 72
-```text
+
+```
 Yeah, yeah, yeah.
 Maxwell Kemp (00:55:23):
 But that's probably what I would say is like, you know, I know that's a really high ﬂoor to start out from,
@@ -5089,7 +5224,8 @@ adds a little complication as well. Oh, Dr. Asif Shaﬁ, I always see this guy. 
 ```
 
 ### Page 73
-```text
+
+```
 frequent ﬂyer and Dr. Bie. Yeah. Premier Neurospine is a pretty big deal. I feel like I, what do I know? But
 <laugh>
 Stephanie Mcqueen-Arthur (OC) (00:56:24):
@@ -5120,7 +5256,8 @@ Yeah. So that, that's why she was freaking out. Uh, I
 ```
 
 ### Page 74
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (00:57:13):
 Would've too, like, ugh, I would've vomited. That's so nasty. Oh,
 Maxwell Kemp (00:57:16):
@@ -5154,7 +5291,8 @@ Stephanie Mcqueen-Arthur (OC) (00:59:02):
 ```
 
 ### Page 75
-```text
+
+```
 Oh, is it? Um, oh God, what's his name? Um, oh my God. I just listened to him on a podcast. I feel like
 Maxwell Kemp (00:59:12):
 Keith Mitnick.
@@ -5183,7 +5321,8 @@ Stephanie Mcqueen-Arthur (OC) (00:59:47):
 ```
 
 ### Page 76
-```text
+
+```
 Yeah, exactly. Exactly. Where's that case pending right now?
 Maxwell Kemp (00:59:52):
 Uh, that's in Hillsborough.
@@ -5213,7 +5352,8 @@ Stephanie Mcqueen-Arthur (OC) (01:01:06):
 ```
 
 ### Page 77
-```text
+
+```
 Yeah, I know. It's just, it is funny 'cause like the ones that you think, okay, there's great property damage,
 there's great coverage.
 Maxwell Kemp (01:01:14):
@@ -5246,7 +5386,8 @@ tap. So I'm like,
 ```
 
 ### Page 78
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (01:02:27):
 Oh, that would cool. Those do not have good, uh, reviews.
 Maxwell Kemp (01:02:31):
@@ -5278,7 +5419,8 @@ Maxwell Kemp (01:03:52):
 ```
 
 ### Page 79
-```text
+
+```
 <laugh>. It's, it's like you don't want a board certiﬁed, you know, spinal surgeon take taking a look and
 they're, they're neutral. Yeah. It's, you know, they have to be.
 Stephanie Mcqueen-Arthur (OC) (01:04:04):
@@ -5312,7 +5454,8 @@ Yeah.
 ```
 
 ### Page 80
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (01:05:26):
 Where, you know, we like to call people, we like to chat with 'em, we like to like work things out. And so,
 you know, when bad cop has to come in, like I'm calling her because I'm not, I can't do it. <laugh>,
@@ -5343,7 +5486,8 @@ like single handedly, you know.
 ```
 
 ### Page 81
-```text
+
+```
 Maxwell Kemp (01:06:24):
 Awesome. Some credit. I I feel like you're the, uh, you're the judge Posner behind the scenes, you know,
 <laugh>
@@ -5373,7 +5517,8 @@ Even know
 ```
 
 ### Page 82
-```text
+
+```
 Stephanie Mcqueen-Arthur (OC) (01:07:12):
 If she's still in the oﬃce.
 Maxwell Kemp (01:07:13):
@@ -5403,7 +5548,8 @@ Yeah. It's sometimes just hard to get there, but I think we're there. So I think
 ```
 
 ### Page 83
-```text
+
+```
 Maxwell Kemp (01:08:02):
 Yes, a hundred percent. Me too. I feel, I feel really good and like it's just the best for everybody. It's the
 optimal outcome.
@@ -5426,12 +5572,14 @@ Bye.
 ```
 
 ## Source File 7 — `Egan - Disco Call with UPS Driver Mark _Ducky_ Howard (3.11.26)_otter_ai.docx`
-- Apparent type: direct DOCX transcript export rather than a screenshot PDF.
-- Visible/export context captured from retrieval metadata includes the line `This transcript was exported on Mar 16, 2026 - view latest version here.` and a visible `Transcript by Rev.com` footer in retrieval snippets.
-- Paragraph order is preserved below; this source is not paginated in the same way as the screenshot PDFs.
+
+* Apparent type: direct DOCX transcript export rather than a screenshot PDF.
+* Visible/export context captured from retrieval metadata includes the line `This transcript was exported on Mar 16, 2026 - view latest version here.` and a visible `Transcript by Rev.com` footer in retrieval snippets.
+* Paragraph order is preserved below; this source is not paginated in the same way as the screenshot PDFs.
 
 ### Direct text transcript (paragraph order preserved)
-```text
+
+```
 Maxwell Kemp (00:00):
 <silence> We want somebody who cares about like, their jobs, society, other people.
 Mark Howard (UPS Driver) (00:07):
@@ -5925,11 +6073,13 @@ Maxwell Kemp (35:31):
 ```
 
 ## Source File 8 — `Egan - Call with Karly and Stephanie 3.12.26 1.txt`
-- Apparent type: plain-text transcript export rather than a screenshot PDF.
-- Line order is preserved below; this source is not paginated.
+
+* Apparent type: plain-text transcript export rather than a screenshot PDF.
+* Line order is preserved below; this source is not paginated.
 
 ### Direct text transcript (line order preserved)
-```text
+
+```
 Maxwell Kemp (00:00):
 Connect me to a human.
 
@@ -6778,12 +6928,14 @@ Bye.
 ```
 
 ## Source File 9 — `The art of the deal Bing bong Stephanie 3.12.26.pdf`
-- Apparent type: Outlook / Mimecast email-thread printout / email export PDF.
-- Repeated visible elements on the pages include Christine Law signature styling, a red circular Christine Law `C` logo, `CAUTION: *EXTERNAL E-MAIL*` warnings, and recurring ATS confidentiality / debt-collector disclaimers in the quoted ATS replies.
-- Page count: 12
+
+* Apparent type: Outlook / Mimecast email-thread printout / email export PDF.
+* Repeated visible elements on the pages include Christine Law signature styling, a red circular Christine Law `C` logo, `CAUTION: *EXTERNAL E-MAIL*` warnings, and recurring ATS confidentiality / debt-collector disclaimers in the quoted ATS replies.
+* Page count: 12
 
 ### Page 1
-```text
+
+```
 From:
 To:
 Cc:
@@ -6822,7 +6974,8 @@ COOPERATION AND COURTESY IN THIS MATTER.
 ```
 
 ### Page 2
-```text
+
+```
 From:
 To:
 Cc:
@@ -6871,7 +7024,8 @@ CAUTION: *EXTERNAL E-MAIL*
 ```
 
 ### Page 3
-```text
+
+```
 From:
 To:
 Cc:
@@ -6910,7 +7064,8 @@ privileges. Should the intended recipient forward or disclose this message to an
 ```
 
 ### Page 4
-```text
+
+```
 From:
 To:
 Cc:
@@ -6961,7 +7116,8 @@ Chance Arias carias@atslawyers.com
 ```
 
 ### Page 5
-```text
+
+```
 Cc:
 Date:
 From:
@@ -7009,7 +7165,8 @@ Stephanie A. McQueen-Arthur, Esq.
 ```
 
 ### Page 6
-```text
+
+```
 From:
 To:
 Cc:
@@ -7051,7 +7208,8 @@ message shall, in and of itself, create an attorney-client relationship with the
 ```
 
 ### Page 7
-```text
+
+```
 From:
 To:
 Cc:
@@ -7088,7 +7246,8 @@ Z12399860@atslawyers.filevineapp.com , Chance Arias carias@atslawyers.com, Kathe
 ```
 
 ### Page 8
-```text
+
+```
 Date:
 Madigan kmadigan@atslawyers.com, William G. K. Smoak bsmoak@atslawyers.com,
 Yisenia Toledo ytoledo@atslawyers.com, Jennifer Escobar jescobar@atslawyers.com
@@ -7127,7 +7286,8 @@ debt and any information provided will be used for that purpose.
 ```
 
 ### Page 9
-```text
+
+```
 From:
 To:
 Cc:
@@ -7170,7 +7330,8 @@ Kind regards,
 ```
 
 ### Page 10
-```text
+
+```
 From:
 To:
 Cc:
@@ -7203,7 +7364,8 @@ Max
 ```
 
 ### Page 11
-```text
+
+```
 From:
 To:
 Date:
@@ -7245,7 +7407,8 @@ Thank you for your patience.
 ```
 
 ### Page 12
-```text
+
+```
 From:
 To:
 Cc:
@@ -7281,12 +7444,14 @@ http://www.justiceformyinjury.com
 ```
 
 ## Source File 10 — `subpoena categories egan 3.16.26.pdf`
-- Apparent type: Outlook email-thread printout / email export PDF.
-- Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
-- Page count: 3
+
+* Apparent type: Outlook email-thread printout / email export PDF.
+* Repeated visible elements on the pages include ATS letterhead styling, ATS logo in signature blocks, a black `ATSLAWYERS.COM` banner, and the recurring ATS confidentiality / debt-collector disclaimer.
+* Page count: 3
 
 ### Page 1
-```text
+
+```
 1
 Maxwell A. Kemp
 From:
@@ -7362,7 +7527,8 @@ CORRESPONDENCE, AND BILLING RECORDS/LEDGERS.
 ```
 
 ### Page 2
-```text
+
+```
 2
 THIS SUBPOENA DOES NOT AUTHORIZE AND SHALL NOT BE CONSTRUED TO REQUIRE THE
 PRODUCTION OF RECORDS PROTECTED BY FLORIDA STATUTE § 381.004 (HIV/AIDS TESTING
@@ -7418,7 +7584,8 @@ NO.: XXX-XX-1346, INCLUDING, BUT NOT LIMITED TO THE FOLLOWING FOR DATES FROM
 ```
 
 ### Page 3
-```text
+
+```
 3
 
 ALL PHARMACY RECORDS, INCLUDING BUT NOT LIMITED TO PRESCRIPTION RECORDS,
@@ -7475,11 +7642,12 @@ debt and any information provided will be used for that purpose.
 ```
 
 ## Notes / Ambiguities
-- The source `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf` was image-only. Its transcription is OCR-derived from rendered page images. I manually normalized a small number of obvious heading / spacing issues, but some OCR artifacts may still remain, especially within dense tables, unusual capitalization, and page-break continuations.
-- Page 13 of `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf` begins with the visible fragment `ons.` because the page opens mid-sentence from the prior page; that fragment was preserved as visible.
-- Page 24 of `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf` is a sparse quote-only page on a mostly blank background; only the three visible quotation lines appear there.
-- The PDF `guttentagmaxxed corn horn 3.13.26 combined.pdf` includes overlapping / repeated email-chain material. Pages 7-12 substantially reprint earlier chain content while adding the 1:54 PM Guttentag fee email and repeating earlier quoted messages.
-- Several transcript sources appear to be ASR / transcript exports. Any unusual spellings, speaker mishears, malformed punctuation, or awkward phrasing inside those transcripts were preserved as source text rather than silently normalized.
-- The DOCX transcript source included visible export-context snippets in retrieval results (`This transcript was exported on Mar 16, 2026 - view latest version here.` and `Transcript by Rev.com`). Those lines were not visible in the paragraph extraction itself, so they are noted at the file level rather than inserted as if they had appeared in the extracted paragraph flow.
-- Repeated ATS and Christine Law signature logos / banners were not exhaustively re-described on every page when the page text itself already captured the surrounding signature block language; common repeated visual elements are instead noted at the start of each source-file section.
-- Where page text in the original PDF export visibly continued into quoted prior emails, that repeated quoted-thread text was preserved as part of the page transcription rather than deduplicated away.
+
+* The source `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf` was image-only. Its transcription is OCR-derived from rendered page images. I manually normalized a small number of obvious heading / spacing issues, but some OCR artifacts may still remain, especially within dense tables, unusual capitalization, and page-break continuations.
+* Page 13 of `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf` begins with the visible fragment `ons.` because the page opens mid-sentence from the prior page; that fragment was preserved as visible.
+* Page 24 of `FRIDAY_THE_THIRTEENTH_DEFINITIVE_3_13_26.pdf` is a sparse quote-only page on a mostly blank background; only the three visible quotation lines appear there.
+* The PDF `guttentagmaxxed corn horn 3.13.26 combined.pdf` includes overlapping / repeated email-chain material. Pages 7-12 substantially reprint earlier chain content while adding the 1:54 PM Guttentag fee email and repeating earlier quoted messages.
+* Several transcript sources appear to be ASR / transcript exports. Any unusual spellings, speaker mishears, malformed punctuation, or awkward phrasing inside those transcripts were preserved as source text rather than silently normalized.
+* The DOCX transcript source included visible export-context snippets in retrieval results (`This transcript was exported on Mar 16, 2026 - view latest version here.` and `Transcript by Rev.com`). Those lines were not visible in the paragraph extraction itself, so they are noted at the file level rather than inserted as if they had appeared in the extracted paragraph flow.
+* Repeated ATS and Christine Law signature logos / banners were not exhaustively re-described on every page when the page text itself already captured the surrounding signature block language; common repeated visual elements are instead noted at the start of each source-file section.
+* Where page text in the original PDF export visibly continued into quoted prior emails, that repeated quoted-thread text was preserved as part of the page transcription rather than deduplicated away.

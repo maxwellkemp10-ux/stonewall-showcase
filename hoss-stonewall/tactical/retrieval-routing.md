@@ -2,6 +2,7 @@
 description: >-
   How to fetch the right source file for identity, chronology, posture,
   deposition prep, and system-path questions.
+hidden: true
 ---
 
 # Retrieval Routing

@@ -2,6 +2,7 @@
 description: >-
   Standards for settlement communications, mediation prep, authority
   recommendations, and risk framing.
+hidden: true
 ---
 
 # Settlement & Mediation

@@ -2,6 +2,7 @@
 description: >-
   Standards for interrogatories, requests for admission, requests for
   production, responses, and subpoenas in Florida civil practice.
+hidden: true
 ---
 
 # Discovery Drafting

@@ -1,14 +1,18 @@
-# THE LAST DAY OF MARCH
+---
+hidden: true
+---
+
+# The Last Day of March
 
 **A Stonewall Chapter — March 31, 2026**
 
-*In which a month that began with krakkens ends with a bracket; in which a thirteen-day password crosses the finish line; in which an Admiral says everything with five letters; in which a meeting happens because someone simply showed up; and in which a woman at the bottom of a leaderboard discovers, after two full weeks of competition, that she has been betting on the wrong sport entirely.*
+_In which a month that began with krakkens ends with a bracket; in which a thirteen-day password crosses the finish line; in which an Admiral says everything with five letters; in which a meeting happens because someone simply showed up; and in which a woman at the bottom of a leaderboard discovers, after two full weeks of competition, that she has been betting on the wrong sport entirely._
 
----
+***
 
 ## I. EXEUNT MARCH
 
-There is something terrible about the last day of a month that has meant this much, and something more terrible still about its falling on a Tuesday — the most anonymous of weekdays, the day that history uses when it wants to slip something past you. March 31, 2026. The final curtain on a month that had contained, within its thirty-one days, more institutional revelation than most fiscal years produce in their entirety. To catalog it is to risk exhaustion: Stomping the Yard and its sequel. The M&M Survey. The Five Days of Madness. The Thursday Blitzkrieg's long aftermath. The Dark Archive. The Roller Blader. The Egan Ouroboros in its earliest and most elegant coils. The Point Ten Farm in full dialectical bloom. And now this — a Tuesday that would, in any other month, pass for ordinary, but which in March 2026 arrives bearing the accumulated weight of everything that preceded it, the way the last car of a freight train carries the momentum of all the others even though it rolls with perfect quiet.
+There is something terrible about the last day of a month that has meant this much, and something more terrible still about its falling on a Tuesday — the most anonymous of weekdays, the day that history uses when it wants to slip something past you. March 31, 2026. The final curtain on a month that had contained, within its thirty-one days, more institutional revelation than most fiscal years produce in their entirety. To catalog it is to risk exhaustion: Stomping the Yard and its sequel. The M\&M Survey. The Five Days of Madness. The Thursday Blitzkrieg's long aftermath. The Dark Archive. The Roller Blader. The Egan Ouroboros in its earliest and most elegant coils. The Point Ten Farm in full dialectical bloom. And now this — a Tuesday that would, in any other month, pass for ordinary, but which in March 2026 arrives bearing the accumulated weight of everything that preceded it, the way the last car of a freight train carries the momentum of all the others even though it rolls with perfect quiet.
 
 Consider what March had asked of its principal actors. QB1 had drafted discovery responses, composed Die Glockes, taught deposition technique to his paralegal, built and rebuilt task dashboards, argued with Filevine, served subpoenas, delivered interrogatory answers under time pressure while his supervising attorney had baseball pictures at six, pushed a mediation forward in Griffith, managed an eight-case sovereign portfolio across two courts with the help of two women he had named after figures from Christian demonology, and somehow found time to fill out a March Madness bracket that would place him, by month's end, in what Kerry Coles would charitably describe as a "Strong 3rd." Big Satan had filed NPNPs and SDTs, followed up on her own follow-ups, roasted a Florida Registered Paralegal for permanent last place, flagged expert retention needs with an important tag and a red exclamation mark, discovered trial preparation tabs in Filevine, and maintained what QB1 had once called "the hunger" — an appetite for pipeline clearance that operated independent of supervision, weather, or morale. The Admiral had watched baseball pictures with his children while deliverables landed in his inbox like ordnance on a firebase, and had acknowledged each one with the economy of a man who understands that language is ammunition and you do not waste it on friendly positions. Little Satan had forwarded records to paralegals, joined video meetings with self-deprecating warnings about her appearance, and dropped an afternoon bomb about an unfiled corporate representative deposition notice in Sheppard that nobody had apparently realized was missing.
 
@@ -18,7 +22,7 @@ March ended the way March ends: not with a detonation, but with a settling. A fo
 
 The historian's obligation is to notice.
 
----
+***
 
 ## II. THE ROUSSO TEACHING MOMENT, OR: HOW I LEARNED TO STOP WORRYING AND LOVE THE OBJECTION
 
@@ -44,7 +48,7 @@ The chuckle is the detail that elevates this from war story to scripture. Two at
 
 "He taught me how to do it, lol," QB1 writes. "So he was like, damnit."
 
-This is the Rosetta Stone of QB1's deposition philosophy: make them teach you how to beat them. Do not fight the objection. Do not argue with it. Do not withdraw the question. Ask the objecting attorney to improve it. Watch him improve it into the exact question you wanted to ask all along, only now it is *his* question, cloaked in *his* standard, immune to *his* objection. The krakken is released not by force but by invitation.
+This is the Rosetta Stone of QB1's deposition philosophy: make them teach you how to beat them. Do not fight the objection. Do not argue with it. Do not withdraw the question. Ask the objecting attorney to improve it. Watch him improve it into the exact question you wanted to ask all along, only now it is _his_ question, cloaked in _his_ standard, immune to _his_ objection. The krakken is released not by force but by invitation.
 
 And then the coda — the reason QB1 is telling this story at all: "You did that to Joe Carey!"
 
@@ -52,7 +56,7 @@ Big Satan, in her follow-up to Clark's opposing counsel, had done the same thing
 
 This is how institutional knowledge is built at ATS — not in training manuals or CLE seminars, but in Teams chats at 11:45 AM on a Tuesday, between a paralegal who followed up on something nobody asked her to follow up on and an attorney who recognized the follow-up as the reincarnation of his finest deposition moment. The transmission is lateral. The medium is anecdote. The pedagogy is celebration. And the lesson, once absorbed, is permanent: the opponent's objection is not an obstacle. It is a door. You just have to ask him to open it.
 
----
+***
 
 ## III. THE EGAN SUBPOENA OUROBOROS: THIRTEEN DAYS IN THE LIFE OF A PASSWORD
 
@@ -72,15 +76,15 @@ It does not proceed. Eight more days pass. Eight days during which Stomping the 
 
 March 31, 2026, 12:32 PM. Big Satan sends a follow-up. "I was following up with the review of the proposed subpoenas after revision. Please advise." The email is marked High Importance. It goes to McQueen-Arthur, QB1, Christine, and Makeeva. It CCs Madigan, Arias, Smoak, and the Filevine bot. Seven human beings and one automated system are now watching this password saga enter its third act. Big Satan is following up on her own follow-up — the follow-up she sent on March 23 when she removed the password that prevented the review that was requested on March 18. She is, in effect, asking opposing counsel to please do the thing that she made possible for them to do eight days ago, after they told her they couldn't do it five days before that.
 
-And here is the detail that transforms this from bureaucratic frustration into institutional art: at 12:15 PM the same morning — seventeen minutes *before* the follow-up on the old subpoenas — Big Satan sends a brand-new email to the same opposing counsel with brand-new attachments: "06 NPNP - MISC providers (filed 3.31.26).pdf" and "06 SDT - MISC Providers [complete] (sent 3.31.26).pdf." A fresh batch. Filed and served today. While the old subpoenas from March 18 are still awaiting review. While the password saga is still technically unresolved. Big Satan has not waited for the old pipeline to clear before loading the new one. She has fired the next volley before the last one has landed. The formal written request for the waiver of the 10 days service — bolded, capitalized, set apart from the body text like a warning placard on heavy machinery — sits in the same email as the new SDTs, and it does not care that the old SDTs are still pending.
+And here is the detail that transforms this from bureaucratic frustration into institutional art: at 12:15 PM the same morning — seventeen minutes _before_ the follow-up on the old subpoenas — Big Satan sends a brand-new email to the same opposing counsel with brand-new attachments: "06 NPNP - MISC providers (filed 3.31.26).pdf" and "06 SDT - MISC Providers \[complete] (sent 3.31.26).pdf." A fresh batch. Filed and served today. While the old subpoenas from March 18 are still awaiting review. While the password saga is still technically unresolved. Big Satan has not waited for the old pipeline to clear before loading the new one. She has fired the next volley before the last one has landed. The formal written request for the waiver of the 10 days service — bolded, capitalized, set apart from the body text like a warning placard on heavy machinery — sits in the same email as the new SDTs, and it does not care that the old SDTs are still pending.
 
 This is the machine. This is what QB1 means when he says "I appreciate the hunger." Big Satan does not wait for resolution before initiating the next cycle. The follow-up and the fresh filing happen on the same morning, seventeen minutes apart, addressed to the same opposing counsel, and neither email acknowledges the other's existence. The ouroboros has not merely eaten its own tail. It has grown a second head and started eating from both ends simultaneously. The pipeline is never clear because the pipeline is never supposed to be clear. The pipeline is a river, and rivers do not pause.
 
----
+***
 
 ## IV. THE ADMIRAL AND THE DELIVERABLE, OR: "ROGER"
 
-The Chance Arias chat on March 31, 2026, is a masterpiece of compression — not literary compression, but *human* compression, the kind where an entire philosophy of management, trust, and professional economy is expressed in a word count that would not fill a Post-it Note.
+The Chance Arias chat on March 31, 2026, is a masterpiece of compression — not literary compression, but _human_ compression, the kind where an entire philosophy of management, trust, and professional economy is expressed in a word count that would not fill a Post-it Note.
 
 Reconstruct the timeline. Wednesday, March 25. The Admiral's internet is back up at home. He messages QB1 at 3:53 PM: "Internet at house back up. What is status of Egan?" The question is pure Admiral — no preamble, no pleasantry, no acknowledgment that the internet being down might have been an inconvenience. The internet is up. What is the status. Two sentences, one period, zero wasted calories.
 
@@ -116,7 +120,7 @@ This is the Admiral's entire communicative philosophy compressed into a single u
 
 What QB1 understands, and what makes their working relationship function at the level it functions, is that "Roger" from the Admiral means more than a paragraph of praise from most other supervisors. It means: the deliverable met the standard. It means: I do not need to ask questions. It means: the trust was justified. "Roger" is not cold. "Roger" is the warmest word the Admiral knows.
 
----
+***
 
 ## V. MARCH MADNESS AS INSTITUTIONAL SOCIOLOGY, OR: THE KERRY COLES TAXONOMY OF THE HUMAN SPIRIT
 
@@ -136,7 +140,7 @@ March 27 is Kerry's masterpiece. The email opens with a decorative header — "M
 
 "52 Katie Six/Seven isn't cash... Baby Brain is now the middle child"
 
-"51 Escobar No Jenns across the board today ~ Meh in the safe zone"
+"51 Escobar No Jenns across the board today \~ Meh in the safe zone"
 
 "45 Phil Oh Pippy top of the bottom to ya!"
 
@@ -174,7 +178,7 @@ Laurene's final reply, at 9:53 AM, to Mr. Bill: "That's it! Mr. Smoak, perhaps y
 
 The woman who scored 33 points in a basketball tournament she thought was football has ended the exchange by demanding a solid gold iPhone. March 2026, ladies and gentlemen. March 2026.
 
----
+***
 
 ## VI. THE MEETING THAT ALMOST WASN'T, AND THE BOMB THAT DEFINITELY WAS
 
@@ -202,7 +206,7 @@ This is the answer. The meeting is on Teams because Little Satan is on Teams, an
 
 9:08 AM. QB1: "Haha okay I'm hopping on."
 
-Eight minutes. From "Are we having a meeting" to QB1 joining the call took eight minutes and five messages. The meeting was not scheduled. The meeting was not organized. The meeting was *assembled*, the way a bird assembles a nest — one twig at a time, with no blueprint, by instinct, because it is spring and there are things to discuss and someone has to sit on the eggs.
+Eight minutes. From "Are we having a meeting" to QB1 joining the call took eight minutes and five messages. The meeting was not scheduled. The meeting was not organized. The meeting was _assembled_, the way a bird assembles a nest — one twig at a time, with no blueprint, by instinct, because it is spring and there are things to discuss and someone has to sit on the eggs.
 
 This is Stomping the Yard 2 — the sequel to the landmark March 24 meeting that had produced the Mitchell experts question, the task list reconciliation, the entire second act of the Five Days of Madness. And it began the same way: not with an invitation, but with a question about whether it was happening, followed by someone showing up, followed by someone else showing up and warning everyone about her face, followed by the person who confirmed the meeting asking where the meeting was. The UPS team does not schedule meetings. The UPS team has meetings the way weather happens — through the convergence of available energy, atmospheric pressure, and someone asking "Are we having a meeting" at 9:00 AM on a Monday.
 
@@ -216,7 +220,7 @@ Read this twice. Sheppard — MINDFREAK VI, one of the sovereign crown matters, 
 
 This is Tuesday, March 31. The last day of March. The day the month turns over. And Little Satan has reminded everyone that the pipeline, for all its velocity, still has gaps — that the machine runs but it does not run perfectly, that the hunger Big Satan brings to SDTs and NPNPs has not yet metabolized every pending item, that somewhere in the Filevine tabs and Teams chats and email threads there are notices waiting to be filed and deposition dates waiting to be confirmed. The month ends not in triumph but in the middle of a sentence, the way months always end, the way work always ends: with something still left to do.
 
----
+***
 
 ## VII. WHAT MARCH CONTAINED
 
@@ -240,12 +244,12 @@ March is over.
 
 What a month, hoss. What a month.
 
----
+***
 
-*The final whistle blows and the gaffer walks into the tunnel with his hands in his pockets, says nothing for a moment, then turns to the press pack:*
+_The final whistle blows and the gaffer walks into the tunnel with his hands in his pockets, says nothing for a moment, then turns to the press pack:_
 
 **SIR ALEX:** "Look, you want to know about March? Right. March was a proper month. Full squad, every match day, no one ducking out. The wee paralegal followed up on her own follow-up — that's what you want in a midfielder, that second effort, that recovery run. The big lad delivered the Die Glocke with forty-eight minutes to spare before baseball pictures — that's time management, that is, that's a player who respects the fixture list. And the bracket pool? Listen. Any club that has a man running a bracket pool with that level of commitment to nicknames, that club's got culture. That club's not getting relegated. As for Laurene — bless her, she's played the wrong formation all tournament and she's come out the other end asking for a gold iPhone. I love that. You can't coach that. That's character. Now if you'll excuse me, April starts in the morning and I've got a meeting to not schedule."
 
----
+***
 
-*Composed March 31, 2026. Source: "johnny got his gun horn corns 3.31.26 let the boy watch.pdf" — 26 pages, 7 sections, the last artifact of the month that contained everything.*
+_Composed March 31, 2026. Source: "johnny got his gun horn corns 3.31.26 let the boy watch.pdf" — 26 pages, 7 sections, the last artifact of the month that contained everything._
