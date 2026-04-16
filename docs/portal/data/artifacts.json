@@ -1,0 +1,10 @@
+{
+  "artifacts": [
+    { "id": "A0198", "type": "deposition", "matter": "M-1088", "summary": "Public deposition transcript", "date": "2025-02-28" },
+    { "id": "A0441", "type": "outline", "matter": "M-1042", "summary": "Expert deposition outline", "date": "2025-07-16" },
+    { "id": "A0917", "type": "prep", "matter": "M-1088", "summary": "Corporate representative prep", "date": "2026-01-11" },
+    { "id": "A0623", "type": "email", "matter": "M-1101", "summary": "Carrier correspondence thread", "date": "2025-11-03" },
+    { "id": "A0888", "type": "filing", "matter": "M-1124", "summary": "Third amended complaint", "date": "2025-09-19" },
+    { "id": "A0301", "type": "medical", "matter": "M-1042", "summary": "Treatment ledger export", "date": "2025-12-02" }
+  ]
+}

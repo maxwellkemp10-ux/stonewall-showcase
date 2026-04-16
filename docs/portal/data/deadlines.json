@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "date": "2026-04-18",
+      "matter": "M-1088",
+      "label": "Deposition — corporate designee",
+      "band": "urgent"
+    },
+    {
+      "date": "2026-04-22",
+      "matter": "M-1042",
+      "label": "Mediation submission deadline",
+      "band": "soon"
+    },
+    {
+      "date": "2026-05-01",
+      "matter": "M-1124",
+      "label": "Expert disclosure cutoff",
+      "band": "planned"
+    },
+    {
+      "date": "2026-05-14",
+      "matter": "M-1101",
+      "label": "Reserve committee review",
+      "band": "planned"
+    }
+  ]
+}
