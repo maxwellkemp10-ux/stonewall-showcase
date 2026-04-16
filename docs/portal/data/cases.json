@@ -1,0 +1,32 @@
+{
+  "matters": [
+    {
+      "id": "M-1042",
+      "label": "Motor Vehicle Defense — Case A",
+      "posture": "Mediation packet staging",
+      "runway": "12d",
+      "status": "readying packet"
+    },
+    {
+      "id": "M-1088",
+      "label": "Premises Liability — Case B",
+      "posture": "Witness prep underway",
+      "runway": "5d",
+      "status": "deposition prep"
+    },
+    {
+      "id": "M-1101",
+      "label": "Corporate Exposure — Case C",
+      "posture": "Correspondence normalized",
+      "runway": "34d",
+      "status": "monitoring"
+    },
+    {
+      "id": "M-1124",
+      "label": "Products Liability — Case D",
+      "posture": "Expert review queue",
+      "runway": "21d",
+      "status": "discovery"
+    }
+  ]
+}
