@@ -6,7 +6,7 @@ This repository now includes first-class deployment configuration for all four r
 
 The repository has two deployment modes:
 
-1) **Python static server mode** (Replit + Railway):
+1) **Python static server mode** (Replit):
 
 - `python3 scripts/serve_static.py --directory docs`
 
@@ -67,15 +67,15 @@ Usage:
 
 ## Railway
 
-Files:
-
-- `railway.json`
-
 Usage:
 
-1. Connect the repo in Railway.
-2. Deploy using default start command from `railway.json`.
-3. Railway injects `$PORT`; `scripts/serve_static.py` binds automatically.
+Railway is commonly used for long-running worker/bot processes in Stonewall (for example, Telegram bot services). To avoid overriding an existing bot start command, this repo intentionally does **not** pin a `railway.json` start command.
+
+Recommended approach:
+
+1. Keep your bot service command configured in Railway service settings.
+2. Use Vercel/Cloudflare/Replit for static web surfaces from this repo.
+3. If you later want a separate Railway static service, configure that service command directly in Railway UI (instead of a repo-wide override).
 
 ## Local verification
 
