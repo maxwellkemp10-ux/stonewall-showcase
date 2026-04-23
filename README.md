@@ -77,6 +77,19 @@ Technical surfaces — official brief, product architecture, workflow surfaces, 
 
 ---
 
+## Developer Quickstart
+
+Set up and validate the script-first development environment:
+
+- `make bootstrap` — provision required local tooling (`python3`, `node`, `uv`, `python-docx`)
+- `make smoke` — run end-to-end smoke checks across Node + Python + CLI integration surfaces
+
+Detailed workflow and command map:
+
+- `docs/DEVELOPMENT_ENVIRONMENT.md`
+
+---
+
 ## Architecture
 
 ```
