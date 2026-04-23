@@ -1,10 +1,13 @@
-.PHONY: bootstrap smoke test-node test-python verify repo-sweep brief-help ingest-help
+.PHONY: bootstrap smoke test-node test-python verify repo-sweep brief-help ingest-help serve
 
 bootstrap:
 	./scripts/bootstrap_env.sh
 
 smoke:
 	./scripts/surface_smoke.sh
+
+serve:
+	python3 scripts/serve_static.py
 
 test-node:
 	node --test tests/qb1_tracker_helpers.test.mjs tests/email_consolidator.test.mjs

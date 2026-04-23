@@ -1,0 +1,9 @@
+run = "python3 scripts/serve_static.py"
+language = "python3"
+
+[deployment]
+run = ["python3", "scripts/serve_static.py"]
+deploymentTarget = "autoscale"
+
+[env]
+PORT = "3000"

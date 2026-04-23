@@ -1,0 +1,38 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Platform",
+          "value": "Vercel"
+        },
+        {
+          "key": "X-Stonewall-Surface",
+          "value": "docs"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/docs/index.html"
+    },
+    {
+      "source": "/portal",
+      "destination": "/docs/portal/index.html"
+    },
+    {
+      "source": "/portal/:path*",
+      "destination": "/docs/portal/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/docs/$1"
+    }
+  ]
+}

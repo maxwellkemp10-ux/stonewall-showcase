@@ -88,6 +88,10 @@ Detailed workflow and command map:
 
 - `docs/DEVELOPMENT_ENVIRONMENT.md`
 
+Deployment platform integration guides:
+
+- `docs/DEPLOYMENT_PLATFORMS.md`
+
 ---
 
 ## Architecture

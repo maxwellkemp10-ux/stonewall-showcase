@@ -1,0 +1,10 @@
+name = "stonewall-showcase"
+compatibility_date = "2026-04-23"
+main = "_worker.js"
+
+[assets]
+directory = "./docs"
+binding = "ASSETS"
+
+[observability.logs]
+enabled = true
