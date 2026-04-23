@@ -35,6 +35,7 @@ The smoke script is designed to avoid mutating tracked repository state.
 
 ## 3) Fast command surface map
 
+- `make lint` — CI guardrails (env contract, deploy config checks, Python/Node syntax)
 - `make test-node` — Node tests for helper/consolidator logic
 - `make test-python` — Python tests for ingestion/brief/consistency
 - `make verify` — repository consistency report
@@ -46,9 +47,9 @@ The smoke script is designed to avoid mutating tracked repository state.
 
 1. `make bootstrap`
 2. Implement changes for one surface at a time (`scripts/*` + `tests/*`)
-3. Run targeted checks (`make test-node` or `make test-python`)
+3. Run guardrails + targeted checks (`make lint` and `make test-node` or `make test-python`)
 4. Run full integration confidence check: `make smoke`
-5. Commit once smoke passes
+5. Commit once guardrails and smoke pass
 
 ## 5) Optional PATH convenience
 

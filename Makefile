@@ -1,7 +1,10 @@
-.PHONY: bootstrap smoke test-node test-python verify repo-sweep brief-help ingest-help serve
+.PHONY: bootstrap lint smoke test-node test-python verify repo-sweep brief-help ingest-help serve
 
 bootstrap:
 	./scripts/bootstrap_env.sh
+
+lint:
+	python3 scripts/ci_guardrails.py
 
 smoke:
 	./scripts/surface_smoke.sh

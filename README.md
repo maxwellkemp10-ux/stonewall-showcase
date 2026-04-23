@@ -82,6 +82,7 @@ Technical surfaces — official brief, product architecture, workflow surfaces, 
 Set up and validate the script-first development environment:
 
 - `make bootstrap` — provision required local tooling (`python3`, `node`, `uv`, `python-docx`)
+- `make lint` — run CI guardrails (env contract, deploy config, syntax checks)
 - `make smoke` — run end-to-end smoke checks across Node + Python + CLI integration surfaces
 
 Detailed workflow and command map:
