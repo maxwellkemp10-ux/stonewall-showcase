@@ -100,18 +100,7 @@ def assert_deploy_configs() -> None:
     if "env.ASSETS.fetch" not in worker_source:
         raise SystemExit("[FAIL] _worker.js must fetch static assets via env.ASSETS.fetch")
 
-    replit = REPO_ROOT / ".replit"
-    if not replit.exists():
-        raise SystemExit("[FAIL] Missing Replit config: .replit")
-    replit_text = replit.read_text(encoding="utf-8")
-    if "scripts/serve_static.py" not in replit_text:
-        raise SystemExit("[FAIL] .replit must run scripts/serve_static.py")
-
-    replit_nix = REPO_ROOT / "replit.nix"
-    if not replit_nix.exists():
-        raise SystemExit("[FAIL] Missing Replit nix config: replit.nix")
-
-    print("[OK] Deployment configs validated (Vercel/Cloudflare/Replit + Railway guard)")
+    print("[OK] Deployment configs validated (Vercel/Cloudflare + Railway guard)")
 
 
 def iter_python_files() -> list[Path]:

@@ -1,16 +1,12 @@
-# Deployment Integrations: Vercel, Cloudflare, Replit, Railway
+# Deployment Integrations: Vercel, Cloudflare, Railway
 
-This repository now includes first-class deployment configuration for all four requested platforms.
+This repository includes deployment configuration for Vercel + Cloudflare static surfaces and Railway bot-safe guidance.
 
 ## Shared runtime surface
 
-The repository has two deployment modes:
+The repository has one deployment mode:
 
-1) **Python static server mode** (Replit):
-
-- `python3 scripts/serve_static.py --directory docs`
-
-2) **Edge static assets mode** (Vercel + Cloudflare):
+1) **Edge static assets mode** (Vercel + Cloudflare):
 
 - `docs/` is served directly by platform routing/asset bindings.
 
@@ -51,20 +47,6 @@ Usage (Cloudflare Workers static assets):
 
 The worker serves static content from `docs/` through Cloudflare assets and falls back unknown paths to `/`.
 
-## Replit
-
-Files:
-
-- `.replit`
-- `replit.nix`
-
-Usage:
-
-1. Import repo into Replit.
-2. Replit reads `.replit` and starts:
-   - `python3 scripts/serve_static.py --host 0.0.0.0 --directory docs`
-3. Open the web preview.
-
 ## Railway
 
 Usage:
@@ -74,7 +56,7 @@ Railway is commonly used for long-running worker/bot processes in Stonewall (for
 Recommended approach:
 
 1. Keep your bot service command configured in Railway service settings.
-2. Use Vercel/Cloudflare/Replit for static web surfaces from this repo.
+2. Use Vercel/Cloudflare for static web surfaces from this repo.
 3. If you later want a separate Railway static service, configure that service command directly in Railway UI (instead of a repo-wide override).
 
 ### Railway Telegram bot checklist
