@@ -452,19 +452,6 @@ table.data tr:last-child td {
   line-height: 1.4;
 }
 
-.playbook-meta {
-  display: inline-block;
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(207, 125, 78, 0.45);
-  background: var(--accent-soft);
-  color: #f4c0a1;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .playbook-signal {
   display: block;
   margin-top: 8px;
