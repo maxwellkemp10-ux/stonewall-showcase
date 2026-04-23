@@ -77,6 +77,26 @@ Recommended approach:
 2. Use Vercel/Cloudflare/Replit for static web surfaces from this repo.
 3. If you later want a separate Railway static service, configure that service command directly in Railway UI (instead of a repo-wide override).
 
+### Railway Telegram bot checklist
+
+Use this before each Railway bot deploy:
+
+1. **Start command**
+   - Confirm Railway service settings point to your bot entrypoint (not `scripts/serve_static.py`).
+2. **Required secrets/env vars**
+   - `TELEGRAM_BOT_TOKEN` (required)
+   - Any Stonewall integration secrets your bot uses (for example `NOTION_TOKEN`)
+   - Webhook mode only: `TELEGRAM_WEBHOOK_URL` (or equivalent var used by your bot code)
+3. **Runtime mode sanity**
+   - Polling bots: no inbound route required.
+   - Webhook bots: bind to `0.0.0.0:$PORT` and expose the configured webhook route.
+4. **Health/readiness expectation**
+   - Prefer a lightweight health endpoint (for example `/healthz`) returning HTTP `200`.
+   - Logs should show bot startup success (token loaded, client initialized, no crash loop).
+5. **Post-deploy functional check**
+   - Send a real Telegram command/message to the bot and confirm a valid response.
+   - For webhook bots, verify provider-side webhook delivery is returning `2xx`.
+
 ## Local verification
 
 - `make serve` to run local web surface
