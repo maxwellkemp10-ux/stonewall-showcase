@@ -408,6 +408,75 @@ table.data tr:last-child td {
   gap: 12px;
 }
 
+.playbook-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.playbook-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.18);
+  padding: 12px;
+}
+.playbook-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.playbook-layer {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(207, 125, 78, 0.45);
+  background: var(--accent-soft);
+  color: #f4c0a1;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.playbook-card h3 {
+  margin: 8px 0 0;
+  font-family: var(--font-serif);
+  font-size: 20px;
+}
+
+.playbook-card p {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.playbook-signal {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #f4c0a1;
+}
+
+.pipeline-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.pipeline-list li {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.pipeline-list li strong {
+  color: var(--text);
+}
+
 .pattern-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -593,6 +662,10 @@ table.data tr:last-child td {
 
 @media (max-width: 520px) {
   .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .playbook-grid {
     grid-template-columns: 1fr;
   }
 }

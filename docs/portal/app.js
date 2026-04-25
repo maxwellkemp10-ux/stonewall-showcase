@@ -78,6 +78,7 @@ async function loadData() {
     "cases.json",
     "deadlines.json",
     "artifacts.json",
+    "playbooks.json",
     "patterns.json",
     "cast.json",
     "billing.json",
@@ -187,6 +188,65 @@ function renderPatterns() {
     </article>`,
     )
     .join("");
+}
+
+function renderPlaybooks() {
+  const playbooks = state.data.playbooks || {};
+  const modules = Array.isArray(playbooks.modules) ? playbooks.modules : [];
+  const pipeline = Array.isArray(playbooks.pipeline) ? playbooks.pipeline : [];
+  const qc = Array.isArray(playbooks.qc_checks) ? playbooks.qc_checks : [];
+  const readiness = Array.isArray(playbooks.readiness_lanes) ? playbooks.readiness_lanes : [];
+
+  const modulesRoot = document.getElementById("playbook-modules");
+  if (modulesRoot) {
+    modulesRoot.innerHTML = modules
+      .map(
+        (m) => `<article class="playbook-card">
+      <div class="playbook-card__head">
+        <span class="playbook-layer">${m.layer || "Layer"}</span>
+        <span class="chip">${m.status || "active"}</span>
+      </div>
+      <h3>${m.title || "Untitled module"}</h3>
+      <p>${m.summary || ""}</p>
+      <code class="playbook-signal">${m.signal || ""}</code>
+    </article>`,
+      )
+      .join("");
+  }
+
+  const pipeRoot = document.getElementById("playbook-pipeline");
+  if (pipeRoot) {
+    pipeRoot.innerHTML = pipeline
+      .map((step, idx) => {
+        if (typeof step === "string") {
+          return `<li class="pipeline-step"><strong>Step ${idx + 1}</strong><span>${step}</span></li>`;
+        }
+        return `<li class="pipeline-step"><strong>${step.step || `Step ${idx + 1}`}</strong><span>${step.outcome || ""}</span></li>`;
+      })
+      .join("");
+  }
+
+  const qcRoot = document.getElementById("playbook-qc");
+  if (qcRoot) {
+    qcRoot.innerHTML = qc
+      .map((item) => {
+        const title = item.check || item.name || "Check";
+        const desc = item.note || item.description || "";
+        return `<li><strong>${title}</strong><br><span>${desc}</span></li>`;
+      })
+      .join("");
+  }
+
+  const readinessRoot = document.getElementById("playbook-readiness");
+  if (readinessRoot) {
+    readinessRoot.innerHTML = readiness
+      .map((item) => {
+        const title = item.lane || item.name || "Lane";
+        const desc = item.value || item.description || "";
+        return `<li><strong>${title}</strong><br><span>${desc}</span></li>`;
+      })
+      .join("");
+  }
 }
 
 function renderCast() {
@@ -322,6 +382,7 @@ function switchPage(name) {
     btn.classList.toggle("is-active", btn.dataset.page === name);
   });
   if (name === "billing" || name === "dashboard") renderBilling();
+  if (name === "playbooks") renderPlaybooks();
 }
 
 function bindNav() {
@@ -347,13 +408,24 @@ async function init() {
   renderCases();
   renderDeadlines();
   renderArtifacts();
+  renderPlaybooks();
   renderPatterns();
   renderCast();
   renderBilling();
   populateSettingsForm();
 
   const initial = new URLSearchParams(window.location.search).get("page");
-  const allowed = ["dashboard", "cases", "deadlines", "artifacts", "patterns", "characters", "billing", "settings"];
+  const allowed = [
+    "dashboard",
+    "cases",
+    "deadlines",
+    "artifacts",
+    "playbooks",
+    "patterns",
+    "characters",
+    "billing",
+    "settings",
+  ];
   switchPage(allowed.includes(initial) ? initial : "dashboard");
 }
 

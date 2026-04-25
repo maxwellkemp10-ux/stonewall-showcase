@@ -196,11 +196,13 @@
     .metrics,
     .outcome-grid,
     .innovation-grid,
+    .matrix-grid,
     .demo-grid { display: grid; gap: 16px; }
     .panel-grid { grid-template-columns: repeat(2, minmax(0,1fr)); margin-top: 18px; gap: 14px; }
     .metrics { grid-template-columns: repeat(6, minmax(0,1fr)); }
     .outcome-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
     .innovation-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+    .matrix-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
     .demo-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
     .mini-stat,
     .stat-tile { background: var(--surface-soft); padding: 16px 16px 18px; }
@@ -248,6 +250,44 @@
         linear-gradient(160deg, rgba(201,107,60,0.10), transparent 35%),
         linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
       padding: 24px;
+    }
+    .matrix-card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
+    }
+    .matrix-card .layer {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: rgba(201,107,60,0.10);
+      color: #efb089;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .matrix-card h3 {
+      margin-top: 12px;
+      font-size: 22px;
+    }
+    .matrix-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 10px 0 0;
+    }
+    .matrix-card code {
+      display: block;
+      margin-top: 12px;
+      font-size: 12px;
+      color: #f1c8ab;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: rgba(8,7,6,0.55);
+      line-height: 1.4;
     }
     .innovation .icon {
       width: 46px;
@@ -339,7 +379,8 @@
       .panel-grid,
       .metrics,
       .outcome-grid,
-      .innovation-grid { grid-template-columns: 1fr; }
+      .innovation-grid,
+      .matrix-grid { grid-template-columns: 1fr; }
       footer { padding-bottom: 40px; }
     }
   </style>
@@ -480,6 +521,41 @@ python scripts/stonewall.py show A1104</code></pre></article>
       </div>
     </section>
 
+    <section class="section" id="innovation-matrix">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Sanitized Innovation Matrix</div>
+          <h2>Twelve operating innovations rendered for showcase use</h2>
+          <p>This matrix translates high-value innovations from the main Stonewall operating stack into public-safe product language while preserving architecture, workflow utility, and implementation reality.</p>
+        </div>
+        <div class="aside">Each card maps one real subsystem into a sanitized design signal so collaborators can see both product polish and operational depth without exposing private matter data.</div>
+      </div>
+      <div class="matrix-grid" id="innovationMatrix">
+        <article class="matrix-card">
+          <span class="layer">Ingestion</span>
+          <h3>OneDrive Intake Orchestration</h3>
+          <p>Transforms source folders into normalized Markdown sidecars and structured manifest rows.</p>
+          <code>Batch intake with root + glob controls</code>
+        </article>
+        <article class="matrix-card">
+          <span class="layer">Quality Control</span>
+          <h3>Repo Consistency Sweep</h3>
+          <p>Flags manifest drift, uncataloged canonical files, and missing sidecar coverage.</p>
+          <code>Blocking vs non-blocking report output</code>
+        </article>
+        <article class="matrix-card">
+          <span class="layer">Case Management</span>
+          <h3>Runway Deadline Bands</h3>
+          <p>Converts raw event dates into urgency bands for immediate triage.</p>
+          <code>urgent / soon / planned labels</code>
+        </article>
+      </div>
+      <div class="hero-actions" style="margin-top:20px;">
+        <a class="btn" href="portal/?page=playbooks">Open Playbooks Surface</a>
+        <a class="btn-secondary" href="insights.html">Read Workflow Notes</a>
+      </div>
+    </section>
+
     <section class="section" id="architecture">
       <div class="section-head">
         <div>
@@ -603,6 +679,7 @@ date checks       : pass</code></pre></article>
         const cases = data.cases || {};
         const characters = data.characters || {};
         const showcase = data.showcase_metrics || {};
+        const innovationMatrix = Array.isArray(data.innovation_matrix) ? data.innovation_matrix : [];
 
         const values = {
           heroCataloged: format(manifest.total_rows || 0),
@@ -621,6 +698,29 @@ date checks       : pass</code></pre></article>
           const node = document.getElementById(id);
           if (node) node.textContent = value;
         });
+
+        const matrixRoot = document.getElementById('innovationMatrix');
+        if (matrixRoot && innovationMatrix.length) {
+          matrixRoot.innerHTML = '';
+          innovationMatrix.forEach((item) => {
+            const card = document.createElement('article');
+            card.className = 'matrix-card';
+            const layer = document.createElement('span');
+            layer.className = 'layer';
+            layer.textContent = item.layer || 'Innovation';
+            const title = document.createElement('h3');
+            title.textContent = item.title || 'Untitled innovation';
+            const impact = document.createElement('p');
+            impact.textContent = item.impact || '';
+            const signal = document.createElement('code');
+            signal.textContent = item.sanitized_signal || '';
+            card.appendChild(layer);
+            card.appendChild(title);
+            card.appendChild(impact);
+            card.appendChild(signal);
+            matrixRoot.appendChild(card);
+          });
+        }
       } catch (error) {
         console.warn('Stonewall showcase metrics unavailable', error);
       }
