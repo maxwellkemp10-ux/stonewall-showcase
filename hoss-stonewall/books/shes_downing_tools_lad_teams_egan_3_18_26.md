@@ -929,7 +929,7 @@ These Outlook screens appear in **E318 pp. 13-14**. They are **not** part of the
 * Sender: `Yisenia Toledo`
 * Reading-pane time: `1:19 PM`
 * To: `Karly R. Christine`
-* Cc visible: `Z12399860@atslawyers.filevineapp.com; Maxwell A. Kemp; Katherine Madigan`
+* Cc visible: `[REDACTED_FILEVINE_ROUTING_EMAIL]; Maxwell A. Kemp; Katherine Madigan`
 * Body text: `Good Afternoon,` followed by `Below you will find the sharelink to access the subpoenas for your review and approval.`
 
 **E318 p. 14 - Maxwell A. Kemp forward**

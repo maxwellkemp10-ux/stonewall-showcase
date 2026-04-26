@@ -715,7 +715,7 @@ def build_derivative_path(derivative_root: Path, source_root_name: str, relative
     target = target.with_name(f"{relative_source.stem}{suffix}.md")
     if len(str(target)) <= 240:
         return target
-    digest = hashlib.sha1(relative_source.as_posix().encode("utf-8")).hexdigest()[:10]
+    digest = hashlib.sha256(relative_source.as_posix().encode("utf-8")).hexdigest()[:10]
     shortened_name = f"{relative_source.stem[:80]}__{digest}{suffix}.md"
     return derivative_root / source_root_name / relative_source.parent / shortened_name
 

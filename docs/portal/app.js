@@ -72,6 +72,34 @@ function showToast(message) {
   showToast._t = window.setTimeout(() => el.classList.remove("is-visible"), 2200);
 }
 
+function node(tagName, options = {}, children = []) {
+  const el = document.createElement(tagName);
+  if (options.className) el.className = options.className;
+  if (options.text !== undefined) el.textContent = String(options.text);
+  children.forEach((child) => {
+    el.appendChild(typeof child === "string" ? document.createTextNode(child) : child);
+  });
+  return el;
+}
+
+function metric(value, label) {
+  return node("article", { className: "metric" }, [
+    node("strong", { text: value }),
+    node("span", { text: label }),
+  ]);
+}
+
+function tableRow(cells) {
+  const tr = node("tr");
+  cells.forEach((cell) => {
+    const td = node("td", { className: cell.className || "" });
+    if (cell.child) td.appendChild(cell.child);
+    else td.textContent = String(cell.text ?? "");
+    tr.appendChild(td);
+  });
+  return tr;
+}
+
 async function loadData() {
   const files = [
     "metrics.json",
@@ -99,21 +127,38 @@ function renderDashboard() {
   const m = state.data.metrics || {};
   const root = document.getElementById("dash-metrics");
   if (!root) return;
-  root.innerHTML = `
-    <article class="metric"><strong>${formatNumber(m.cataloged_artifacts ?? 0)}</strong><span>cataloged artifacts</span></article>
-    <article class="metric"><strong>${formatNumber(m.active_matters ?? 0)}</strong><span>active matters</span></article>
-    <article class="metric"><strong>${formatNumber(m.pattern_tags ?? 0)}</strong><span>pattern tags</span></article>
-    <article class="metric"><strong>${formatNumber(m.artifact_classes ?? 0)}</strong><span>artifact classes</span></article>
-  `;
+  root.replaceChildren(
+    metric(formatNumber(m.cataloged_artifacts ?? 0), "cataloged artifacts"),
+    metric(formatNumber(m.active_matters ?? 0), "active matters"),
+    metric(formatNumber(m.pattern_tags ?? 0), "pattern tags"),
+    metric(formatNumber(m.artifact_classes ?? 0), "artifact classes"),
+  );
 
   const glance = document.getElementById("dash-glance");
   if (glance) {
-    glance.innerHTML = `
-      <li><strong>${m.urgent_runway ?? 0} matters inside urgent runway</strong><br><span>Deposition prep, mediation staging, and deadline confirmation surfaced in the board.</span></li>
-      <li><strong>${m.packets_ready ?? 0} report packets nearly ready</strong><br><span>Chronology aligned, records pulled, and damages notes staged for downstream workflow.</span></li>
-      <li><strong>${m.live_threads ?? 0} live witness-prep thread active</strong><br><span>Prior statements, chronology gaps, and issue clusters stay query-ready.</span></li>
-    `;
+    glance.replaceChildren(
+      glanceItem(
+        `${m.urgent_runway ?? 0} matters inside urgent runway`,
+        "Deposition prep, mediation staging, and deadline confirmation surfaced in the board.",
+      ),
+      glanceItem(
+        `${m.packets_ready ?? 0} report packets nearly ready`,
+        "Chronology aligned, records pulled, and damages notes staged for downstream workflow.",
+      ),
+      glanceItem(
+        `${m.live_threads ?? 0} live witness-prep thread active`,
+        "Prior statements, chronology gaps, and issue clusters stay query-ready.",
+      ),
+    );
   }
+}
+
+function glanceItem(title, description) {
+  return node("li", {}, [
+    node("strong", { text: title }),
+    node("br"),
+    node("span", { text: description }),
+  ]);
 }
 
 function renderCases() {
@@ -121,20 +166,17 @@ function renderCases() {
   if (!tbody) return;
   const matters = state.data.cases?.matters || [];
   const { showMatterIds } = state.settings;
-  tbody.innerHTML = matters
-    .map((row) => {
-      const idCell = showMatterIds
-        ? `<td class="mono">${row.id}</td>`
-        : `<td class="mono">—</td>`;
-      return `<tr>
-        ${idCell}
-        <td>${row.label}</td>
-        <td>${row.posture}</td>
-        <td>${row.runway}</td>
-        <td><span class="chip">${row.status}</span></td>
-      </tr>`;
-    })
-    .join("");
+  tbody.replaceChildren(
+    ...matters.map((row) =>
+      tableRow([
+        { className: "mono", text: showMatterIds ? row.id : "—" },
+        { text: row.label },
+        { text: row.posture },
+        { text: row.runway },
+        { child: node("span", { className: "chip", text: row.status }) },
+      ]),
+    ),
+  );
 }
 
 function renderDeadlines() {
@@ -142,20 +184,20 @@ function renderDeadlines() {
   if (!tbody) return;
   const items = state.data.deadlines?.items || [];
   const { showMatterIds, showRunwayBadges } = state.settings;
-  tbody.innerHTML = items
-    .map((row) => {
+  tbody.replaceChildren(
+    ...items.map((row) => {
       const matter = showMatterIds ? row.matter : "Matter";
       const band = showRunwayBadges ? row.band : "scheduled";
       const chipClass =
         band === "urgent" ? "chip chip--urgent" : band === "soon" ? "chip chip--soon" : "chip chip--planned";
-      return `<tr>
-        <td class="mono">${row.date}</td>
-        <td class="mono">${matter}</td>
-        <td>${row.label}</td>
-        <td><span class="${chipClass}">${band}</span></td>
-      </tr>`;
-    })
-    .join("");
+      return tableRow([
+        { className: "mono", text: row.date },
+        { className: "mono", text: matter },
+        { text: row.label },
+        { child: node("span", { className: chipClass, text: band }) },
+      ]);
+    }),
+  );
 }
 
 function renderArtifacts() {
@@ -163,31 +205,35 @@ function renderArtifacts() {
   if (!tbody) return;
   const arts = state.data.artifacts?.artifacts || [];
   const { showMatterIds } = state.settings;
-  tbody.innerHTML = arts
-    .map(
-      (a) => `<tr>
-      <td class="mono">${a.id}</td>
-      <td>${a.type}</td>
-      <td class="mono">${showMatterIds ? a.matter : "—"}</td>
-      <td>${a.summary}</td>
-      <td class="mono">${a.date}</td>
-    </tr>`,
-    )
-    .join("");
+  tbody.replaceChildren(
+    ...arts.map((a) =>
+      tableRow([
+        { className: "mono", text: a.id },
+        { text: a.type },
+        { className: "mono", text: showMatterIds ? a.matter : "—" },
+        { text: a.summary },
+        { className: "mono", text: a.date },
+      ]),
+    ),
+  );
 }
 
 function renderPatterns() {
   const root = document.getElementById("pattern-list");
   if (!root) return;
   const patterns = state.data.patterns?.patterns || [];
-  root.innerHTML = patterns
-    .map(
-      (p) => `<article class="pattern-card">
-      <code>${p.code}</code>
-      <p style="margin:8px 0 0;font-size:13px;color:var(--muted);">${p.band} · ${formatNumber(p.hits)} hits</p>
-    </article>`,
-    )
-    .join("");
+  root.replaceChildren(
+    ...patterns.map((p) => {
+      const meta = node("p", { text: `${p.band} · ${formatNumber(p.hits)} hits` });
+      meta.style.margin = "8px 0 0";
+      meta.style.fontSize = "13px";
+      meta.style.color = "var(--muted)";
+      return node("article", { className: "pattern-card" }, [
+        node("code", { text: p.code }),
+        meta,
+      ]);
+    }),
+  );
 }
 
 function renderPlaybooks() {
@@ -199,53 +245,67 @@ function renderPlaybooks() {
 
   const modulesRoot = document.getElementById("playbook-modules");
   if (modulesRoot) {
-    modulesRoot.innerHTML = modules
-      .map(
-        (m) => `<article class="playbook-card">
-      <div class="playbook-card__head">
-        <span class="playbook-layer">${m.layer || "Layer"}</span>
-        <span class="chip">${m.status || "active"}</span>
-      </div>
-      <h3>${m.title || "Untitled module"}</h3>
-      <p>${m.summary || ""}</p>
-      <code class="playbook-signal">${m.signal || ""}</code>
-    </article>`,
-      )
-      .join("");
+    modulesRoot.replaceChildren(
+      ...modules.map((m) =>
+        node("article", { className: "playbook-card" }, [
+          node("div", { className: "playbook-card__head" }, [
+            node("span", { className: "playbook-layer", text: m.layer || "Layer" }),
+            node("span", { className: "chip", text: m.status || "active" }),
+          ]),
+          node("h3", { text: m.title || "Untitled module" }),
+          node("p", { text: m.summary || "" }),
+          node("code", { className: "playbook-signal", text: m.signal || "" }),
+        ]),
+      ),
+    );
   }
 
   const pipeRoot = document.getElementById("playbook-pipeline");
   if (pipeRoot) {
-    pipeRoot.innerHTML = pipeline
-      .map((step, idx) => {
+    pipeRoot.replaceChildren(
+      ...pipeline.map((step, idx) => {
         if (typeof step === "string") {
-          return `<li class="pipeline-step"><strong>Step ${idx + 1}</strong><span>${step}</span></li>`;
+          return node("li", { className: "pipeline-step" }, [
+            node("strong", { text: `Step ${idx + 1}` }),
+            node("span", { text: step }),
+          ]);
         }
-        return `<li class="pipeline-step"><strong>${step.step || `Step ${idx + 1}`}</strong><span>${step.outcome || ""}</span></li>`;
-      })
-      .join("");
+        return node("li", { className: "pipeline-step" }, [
+          node("strong", { text: step.step || `Step ${idx + 1}` }),
+          node("span", { text: step.outcome || "" }),
+        ]);
+      }),
+    );
   }
 
   const qcRoot = document.getElementById("playbook-qc");
   if (qcRoot) {
-    qcRoot.innerHTML = qc
-      .map((item) => {
+    qcRoot.replaceChildren(
+      ...qc.map((item) => {
         const title = item.check || item.name || "Check";
         const desc = item.note || item.description || "";
-        return `<li><strong>${title}</strong><br><span>${desc}</span></li>`;
-      })
-      .join("");
+        return node("li", {}, [
+          node("strong", { text: title }),
+          node("br"),
+          node("span", { text: desc }),
+        ]);
+      }),
+    );
   }
 
   const readinessRoot = document.getElementById("playbook-readiness");
   if (readinessRoot) {
-    readinessRoot.innerHTML = readiness
-      .map((item) => {
+    readinessRoot.replaceChildren(
+      ...readiness.map((item) => {
         const title = item.lane || item.name || "Lane";
         const desc = item.value || item.description || "";
-        return `<li><strong>${title}</strong><br><span>${desc}</span></li>`;
-      })
-      .join("");
+        return node("li", {}, [
+          node("strong", { text: title }),
+          node("br"),
+          node("span", { text: desc }),
+        ]);
+      }),
+    );
   }
 }
 
@@ -253,16 +313,24 @@ function renderCast() {
   const root = document.getElementById("cast-list");
   if (!root) return;
   const chars = state.data.cast?.characters || [];
-  root.innerHTML = chars
-    .map(
-      (c) => `<article class="cast-card">
-      <div class="cast-meta">${c.role}</div>
-      <h3>${c.alias}</h3>
-      <p style="margin:6px 0 0;font-size:14px;color:var(--muted);">${c.note}</p>
-      <p style="margin:10px 0 0;font-size:13px;"><span class="chip">${formatNumber(c.matters)} matters</span></p>
-    </article>`,
-    )
-    .join("");
+  root.replaceChildren(
+    ...chars.map((c) => {
+      const note = node("p", { text: c.note });
+      note.style.margin = "6px 0 0";
+      note.style.fontSize = "14px";
+      note.style.color = "var(--muted)";
+      const matters = node("p");
+      matters.style.margin = "10px 0 0";
+      matters.style.fontSize = "13px";
+      matters.appendChild(node("span", { className: "chip", text: `${formatNumber(c.matters)} matters` }));
+      return node("article", { className: "cast-card" }, [
+        node("div", { className: "cast-meta", text: c.role }),
+        node("h3", { text: c.alias }),
+        note,
+        matters,
+      ]);
+    }),
+  );
 }
 
 function renderBilling() {
@@ -282,23 +350,29 @@ function renderBilling() {
 
   const summary = document.getElementById("billing-summary");
   if (summary) {
-    summary.innerHTML = `
-      <p class="billing-total">${formatMoney(totalAmt, currency)}</p>
-      <p class="billing-note">${formatNumber(totalHours)} billable hours × ${formatMoney(rate, currency)}/hr (demo math — preferences only)</p>
-    `;
+    summary.replaceChildren(
+      node("p", { className: "billing-total", text: formatMoney(totalAmt, currency) }),
+      node(
+        "p",
+        {
+          className: "billing-note",
+          text: `${formatNumber(totalHours)} billable hours × ${formatMoney(rate, currency)}/hr (demo math — preferences only)`,
+        },
+      ),
+    );
   }
 
   if (tbody) {
-    tbody.innerHTML = lineItems
-      .map(
-        (row) => `<tr>
-        <td class="mono">${state.settings.showMatterIds ? row.matter : "Matter"}</td>
-        <td>${row.phase}</td>
-        <td class="mono">${row.hours}</td>
-        <td class="mono">${formatMoney(row.hours * rate, currency)}</td>
-      </tr>`,
-      )
-      .join("");
+    tbody.replaceChildren(
+      ...lineItems.map((row) =>
+        tableRow([
+          { className: "mono", text: state.settings.showMatterIds ? row.matter : "Matter" },
+          { text: row.phase },
+          { className: "mono", text: row.hours },
+          { className: "mono", text: formatMoney(row.hours * rate, currency) },
+        ]),
+      ),
+    );
   }
 }
 
