@@ -5,9 +5,9 @@
  * Matches on subject+date, skips pages that already have content.
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/email_body_push.mjs
- *   NOTION_TOKEN=ntn_xxx node scripts/email_body_push.mjs --dry-run
- *   NOTION_TOKEN=ntn_xxx node scripts/email_body_push.mjs --limit 50
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_body_push.mjs
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_body_push.mjs --dry-run
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_body_push.mjs --limit 50
  */
 
 import { readFileSync } from "fs";

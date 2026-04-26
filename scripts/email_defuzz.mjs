@@ -7,8 +7,8 @@
  * Also classifies remaining unmatched as spam/admin/case-related.
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/email_defuzz.mjs
- *   NOTION_TOKEN=ntn_xxx node scripts/email_defuzz.mjs --dry-run
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_defuzz.mjs
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_defuzz.mjs --dry-run
  */
 import https from "https";
 import { readFileSync } from "fs";

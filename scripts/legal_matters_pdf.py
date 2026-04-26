@@ -6,9 +6,9 @@ Pulls the Legal Matters database from Notion and generates a styled
 dashboard PDF with summary cards, grouped sections, and color coding.
 
 Usage:
-  NOTION_TOKEN=ntn_xxx python3 legal_matters_pdf.py
-  NOTION_TOKEN=ntn_xxx python3 legal_matters_pdf.py -o ~/Desktop/legal_matters.pdf
-  NOTION_TOKEN=ntn_xxx python3 legal_matters_pdf.py --html
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 legal_matters_pdf.py
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 legal_matters_pdf.py -o ~/Desktop/legal_matters.pdf
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 legal_matters_pdf.py --html
 
 Output: legal_matters.pdf (current directory by default)
 """

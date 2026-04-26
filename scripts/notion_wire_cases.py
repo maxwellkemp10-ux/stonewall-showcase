@@ -9,7 +9,7 @@ Phase 2: Scan all emails, match by subject line to case names/claim numbers,
 Phase 3: Add rollup fields on Legal Matters for email counts.
 
 Usage:
-  NOTION_TOKEN=ntn_xxx python3 notion_wire_cases.py
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 notion_wire_cases.py
 
 Environment Variables:
   NOTION_TOKEN  - Notion integration token (required)

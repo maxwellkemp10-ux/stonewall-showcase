@@ -4,9 +4,9 @@
  * Audits case tagging + date confidence, then auto-tags untagged emails.
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/email_audit.mjs --audit
- *   NOTION_TOKEN=ntn_xxx node scripts/email_audit.mjs --tag --limit 100
- *   NOTION_TOKEN=ntn_xxx node scripts/email_audit.mjs --fix-dates --limit 50
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_audit.mjs --audit
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_audit.mjs --tag --limit 100
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_audit.mjs --fix-dates --limit 50
  */
 import https from "https";
 import { readFileSync } from "fs";

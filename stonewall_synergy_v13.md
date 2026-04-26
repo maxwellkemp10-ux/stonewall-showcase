@@ -73,10 +73,10 @@ uv run --with pypdf python scripts/ingest_onedrive.py ingest --root firm --limit
 uv run python scripts/ingest_onedrive.py sync-notion --workers 4
 
 # Wire email relations
-NOTION_TOKEN=ntn_xxx python scripts/notion_wire_cases.py
+NOTION_TOKEN=YOUR_NOTION_TOKEN python scripts/notion_wire_cases.py
 
 # Run QC
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
+NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/qc_sweep.mjs
 ```
 
 ---
@@ -118,7 +118,7 @@ Each document record contains:
 
 ### Running QC
 ```bash
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
+NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/qc_sweep.mjs
 python scripts/verify_repo_consistency.py
 python scripts/repo_sweep.py
 ```
@@ -134,7 +134,7 @@ For high-volume document processing via the Anthropic Batch API:
 .\scripts\split_batches.ps1
 
 # Launch batch job
-$env:NOTION_TOKEN = "ntn_xxx"; .\scripts\run_nap_job.ps1
+$env:NOTION_TOKEN = "YOUR_NOTION_TOKEN"; .\scripts\run_nap_job.ps1
 
 # Check status
 .\scripts\nap_job_status.ps1

@@ -7,7 +7,7 @@ Reserve, Incurred, Plaintiff Depo, Depo Date, Discovery, Discovery Date)
 to the Legal Matters database, then populates them from case_dates.json.
 
 Usage:
-  NOTION_TOKEN=ntn_xxx python3 notion_case_dates.py
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 notion_case_dates.py
 
 Options:
   DRY_RUN=1    Preview changes without writing

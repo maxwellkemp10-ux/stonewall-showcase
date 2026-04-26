@@ -5,9 +5,9 @@
  * for every Legal Matters case, then pushes updates to Notion.
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/legal_matters_fill.mjs --audit
- *   NOTION_TOKEN=ntn_xxx node scripts/legal_matters_fill.mjs --fill
- *   NOTION_TOKEN=ntn_xxx node scripts/legal_matters_fill.mjs --fill --dry-run
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/legal_matters_fill.mjs --audit
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/legal_matters_fill.mjs --fill
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/legal_matters_fill.mjs --fill --dry-run
  */
 import https from "https";
 import { readFileSync } from "fs";

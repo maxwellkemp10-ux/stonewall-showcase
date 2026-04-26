@@ -16,7 +16,7 @@ processed asynchronously via the Anthropic Batch API.
    ```
 3. **Launch batch job** — Run `run_nap_job.ps1`:
    ```powershell
-   $env:NOTION_TOKEN = "ntn_xxx"; .\scripts\run_nap_job.ps1
+   $env:NOTION_TOKEN = "YOUR_NOTION_TOKEN"; .\scripts\run_nap_job.ps1
    ```
 4. **Check status** — Run `nap_job_status.ps1`
 5. **Inspect output** — Run `check_output.ps1`

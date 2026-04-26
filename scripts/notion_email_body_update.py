@@ -6,9 +6,9 @@ Reads consolidated_emails.json (with body text) and updates
 existing Notion email pages with the body content as page blocks.
 
 Usage:
-  NOTION_TOKEN=ntn_xxx python3 scripts/notion_email_body_update.py
-  NOTION_TOKEN=ntn_xxx python3 scripts/notion_email_body_update.py --dry-run
-  NOTION_TOKEN=ntn_xxx python3 scripts/notion_email_body_update.py --limit 50
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 scripts/notion_email_body_update.py
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 scripts/notion_email_body_update.py --dry-run
+  NOTION_TOKEN=YOUR_NOTION_TOKEN python3 scripts/notion_email_body_update.py --limit 50
 """
 
 import json
