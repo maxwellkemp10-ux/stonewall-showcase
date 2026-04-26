@@ -2,7 +2,7 @@
 ## The Rosetta Stone — Claude.ai ↔ Notion ↔ GitHub
 ### Generated 3/23/26 by the Jedi Archive Engine
 
-> Status note (2026-03-24): this file is a preserved 3/23 snapshot. In the current workspace, the live control plane is `Stonewall 3.23.26`, `QB1 Command Center` (`2dec0fdb25298133a01bea072887809b`), `Stonewall Archive` (`collection://28206687-1565-4ca1-85ad-510964e3250d`), and `Legal Matters` (`collection://66396fb5-82db-40a7-ab24-2e3a225a6d3c`). The repo-documented March 20 Corpus Compendium page and data source are stale in the active Notion integration. Legal Matters also now includes `Date of Loss`, `Date of Complaint`, and `Legal Hold Status`.
+> Status note (2026-03-24): this file is a preserved 3/23 snapshot. In the current workspace, the live control plane is `Stonewall 3.23.26`, `QB1 Command Center` (`2dec0fdb25298133a01bea072887809b`), `Stonewall Archive` (`[REDACTED_COLLECTION_ID]`), and `Legal Matters` (`[REDACTED_COLLECTION_ID]`). The repo-documented March 20 Corpus Compendium page and data source are stale in the active Notion integration. Legal Matters also now includes `Date of Loss`, `Date of Complaint`, and `Legal Hold Status`.
 
 ---
 

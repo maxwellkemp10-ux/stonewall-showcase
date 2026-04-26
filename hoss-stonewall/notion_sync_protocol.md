@@ -20,10 +20,10 @@ The `corpus-hardening` merge changed repo-side corpus quality and routing, but i
 
 | Surface           | Page ID                                | Data Source                                         |
 | ----------------- | -------------------------------------- | --------------------------------------------------- |
-| Legal Matters     | `d96a8582-ddba-42a8-a396-b595bc9b5034` | `collection://66396fb5-82db-40a7-ab24-2e3a225a6d3c` |
-| All Email v2      | `450d0313-15c4-4459-afca-a5c0b7b952d2` | `collection://8cdb2f05-752d-4911-8405-d374685cf37b` |
-| Stonewall Archive | `37bb53a0-cfad-476d-b715-4bca6b310660` | `collection://28206687-1565-4ca1-85ad-510964e3250d` |
-| Stonewall Tasks   | `0ecc4db1-c622-49a9-9365-0d1f458e5b5a` | `collection://551a80f5-d9c3-45fb-9b7c-ca32491a52c5` |
+| Legal Matters     | `d96a8582-ddba-42a8-a396-b595bc9b5034` | `[REDACTED_COLLECTION_ID]` |
+| All Email v2      | `450d0313-15c4-4459-afca-a5c0b7b952d2` | `[REDACTED_COLLECTION_ID]` |
+| Stonewall Archive | `37bb53a0-cfad-476d-b715-4bca6b310660` | `[REDACTED_COLLECTION_ID]` |
+| Stonewall Tasks   | `0ecc4db1-c622-49a9-9365-0d1f458e5b5a` | `[REDACTED_COLLECTION_ID]` |
 | My Tasks          | `43b0d5e0-c2fe-4c8a-a43a-f3bd796693ae` | —                                                   |
 
 ## Current Live Page Surfaces

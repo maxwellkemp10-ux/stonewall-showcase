@@ -56,7 +56,7 @@ uv run --with pypdf python scripts/ingest_onedrive.py ingest --root firm --limit
 uv run python scripts/ingest_onedrive.py sync-notion --workers 4
 
 # QC sweep
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
+NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/qc_sweep.mjs
 
 # Daily brief
 python scripts/tactical_brief.py today

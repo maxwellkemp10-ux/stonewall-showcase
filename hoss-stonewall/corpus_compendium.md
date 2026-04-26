@@ -188,14 +188,14 @@ Canonical takeaways:
 
 Status note (2026-03-31):
 
-* Live routing / implementation page: `https://www.notion.so/32ac0fdb2529815cb784e6c628002bb2`
-* Live QB1 Command Center: `https://www.notion.so/2dec0fdb25298133a01bea072887809b`
-* Live Stonewall Archive DB: `https://www.notion.so/37bb53a0cfad476db7154bca6b310660`
-* Live Stonewall Archive data source: `collection://28206687-1565-4ca1-85ad-510964e3250d`
-* Live Legal Matters data source: `collection://66396fb5-82db-40a7-ab24-2e3a225a6d3c`
-* Live Stonewall Tasks page: `https://www.notion.so/0ecc4db1c62249a993650d1f458e5b5a`
-* Live Stonewall Tasks data source: `collection://551a80f5-d9c3-45fb-9b7c-ca32491a52c5`
-* Retired repo-documented corpus targets: `https://www.notion.so/667f9a80c0af4f809d810ccc3990830d`, `collection://cb6644e3-f25b-4fd5-ba05-1638f9f7afb4`, and `https://www.notion.so/329d8306a5748193bb74e824d5e5c06d`
+* Live routing / implementation page: `[REDACTED_NOTION_LINK]`
+* Live QB1 Command Center: `[REDACTED_NOTION_LINK]`
+* Live Stonewall Archive DB: `[REDACTED_NOTION_LINK]`
+* Live Stonewall Archive data source: `[REDACTED_COLLECTION_ID]`
+* Live Legal Matters data source: `[REDACTED_COLLECTION_ID]`
+* Live Stonewall Tasks page: `[REDACTED_NOTION_LINK]`
+* Live Stonewall Tasks data source: `[REDACTED_COLLECTION_ID]`
+* Retired repo-documented corpus targets: `[REDACTED_NOTION_LINK]`, `[REDACTED_COLLECTION_ID]`, and `[REDACTED_NOTION_LINK]`
 
 Treat the retired March 20 identifiers as stale unless they become fetchable again.
 
@@ -203,13 +203,13 @@ This cluster is the active retrieval layer for the corpus in the current Notion 
 
 Live targets:
 
-* Routing / implementation page: `https://www.notion.so/32ac0fdb2529815cb784e6c628002bb2`
-* QB1 Command Center page: `https://www.notion.so/2dec0fdb25298133a01bea072887809b`
-* Stonewall Archive DB: `https://www.notion.so/37bb53a0cfad476db7154bca6b310660`
-* Stonewall Archive data source: `collection://28206687-1565-4ca1-85ad-510964e3250d`
-* Legal Matters data source: `collection://66396fb5-82db-40a7-ab24-2e3a225a6d3c`
-* Stonewall Tasks page: `https://www.notion.so/0ecc4db1c62249a993650d1f458e5b5a`
-* Stonewall Tasks data source: `collection://551a80f5-d9c3-45fb-9b7c-ca32491a52c5`
+* Routing / implementation page: `[REDACTED_NOTION_LINK]`
+* QB1 Command Center page: `[REDACTED_NOTION_LINK]`
+* Stonewall Archive DB: `[REDACTED_NOTION_LINK]`
+* Stonewall Archive data source: `[REDACTED_COLLECTION_ID]`
+* Legal Matters data source: `[REDACTED_COLLECTION_ID]`
+* Stonewall Tasks page: `[REDACTED_NOTION_LINK]`
+* Stonewall Tasks data source: `[REDACTED_COLLECTION_ID]`
 
 Local bridge file:
 

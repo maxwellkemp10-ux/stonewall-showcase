@@ -6,9 +6,9 @@
  * Also sets case relations and pushes body text in one pass.
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/email_bulk_upload.mjs
- *   NOTION_TOKEN=ntn_xxx node scripts/email_bulk_upload.mjs --dry-run
- *   NOTION_TOKEN=ntn_xxx node scripts/email_bulk_upload.mjs --limit 500
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_bulk_upload.mjs
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_bulk_upload.mjs --dry-run
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_bulk_upload.mjs --limit 500
  */
 import https from "https";
 import { readFileSync } from "fs";

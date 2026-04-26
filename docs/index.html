@@ -701,7 +701,7 @@ date checks       : pass</code></pre></article>
 
         const matrixRoot = document.getElementById('innovationMatrix');
         if (matrixRoot && innovationMatrix.length) {
-          matrixRoot.innerHTML = '';
+          matrixRoot.replaceChildren();
           innovationMatrix.forEach((item) => {
             const card = document.createElement('article');
             card.className = 'matrix-card';

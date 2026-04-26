@@ -20,7 +20,7 @@ Visible context: printed email page headed `Maxwell A. Kemp`. Printed page numbe
 **Topmost visible email** From: Yisenia Toledo\
 Sent: Tuesday, March 17, 2026 11:21 AM\
 To: Maxwell A. Kemp\
-Cc: Z12399860@atslawyers.filevineapp.com; Katherine Madigan\
+Cc: [REDACTED_FILEVINE_ROUTING_EMAIL]; Katherine Madigan\
 Subject: RE: 33 Shared Docs via Filevine | For Your Review and Approval\
 Importance: High\
 Categories: UPS
@@ -53,7 +53,7 @@ Debt-collector notice: Please be advised that this law firm may be acting as a d
 **Quoted prior email begins at bottom of page** From: Maxwell A. Kemp [mkemp@atslawyers.com](mailto:mkemp@atslawyers.com)\
 Sent: Monday, March 16, 2026 6:43 PM\
 To: Yisenia Toledo [ytoledo@atslawyers.com](mailto:ytoledo@atslawyers.com)\
-Cc: Z12399860@atslawyers.filevineapp.com; Katherine Madigan [kmadigan@atslawyers.com](mailto:kmadigan@atslawyers.com); Maxwell A. Kemp [mkemp@atslawyers.com](mailto:mkemp@atslawyers.com)\
+Cc: [REDACTED_FILEVINE_ROUTING_EMAIL]; Katherine Madigan [kmadigan@atslawyers.com](mailto:kmadigan@atslawyers.com); Maxwell A. Kemp [mkemp@atslawyers.com](mailto:mkemp@atslawyers.com)\
 Subject: RE: 33 Shared Docs via Filevine | For Your Review and Approval
 
 Body visible on this page: Yisenia,
@@ -96,13 +96,13 @@ Confidentiality / debt-collector notice: \[same ATS confidentiality notice and d
 **Earlier quoted email begins lower on the page** From: Yisenia Toledo [ytoledo@atslawyers.com](mailto:ytoledo@atslawyers.com)\
 Sent: Monday, March 16, 2026 5:08 PM\
 To: Maxwell A. Kemp [mkemp@atslawyers.com](mailto:mkemp@atslawyers.com)\
-Cc: Z12399860@atslawyers.filevineapp.com; Katherine Madigan [kmadigan@atslawyers.com](mailto:kmadigan@atslawyers.com)\
+Cc: [REDACTED_FILEVINE_ROUTING_EMAIL]; Katherine Madigan [kmadigan@atslawyers.com](mailto:kmadigan@atslawyers.com)\
 Subject: 33 Shared Docs via Filevine | For Your Review and Approval\
 Importance: High
 
 Message text: Multiple documents have been shared with you on Filevine:
 
-`https://atslawyers.filev.io/r/s/17b7cnaQPpYFrIEpLL8upSdx5KEV5qhJHoN2ZTk19xSPJ0CRl3uQ3dkj`
+`[REDACTED_FILEVINE_LINK]`
 
 Max,
 
@@ -142,7 +142,7 @@ Visible context: printed email page headed `Maxwell A. Kemp`. Red text centered 
 **Email** From: Maxwell A. Kemp\
 Sent: Monday, March 16, 2026 12:41 PM\
 To: Yisenia Toledo\
-Cc: Chance Arias; Katherine Madigan; Jennifer Escobar; Z12399860@atslawyers.filevineapp.com; Maxwell A. Kemp\
+Cc: Chance Arias; Katherine Madigan; Jennifer Escobar; [REDACTED_FILEVINE_ROUTING_EMAIL]; Maxwell A. Kemp\
 Subject: Egan SDTs — Updated Language for All 4 Categories\
 Categories: UPS
 
@@ -248,7 +248,7 @@ Visible context: Microsoft Edge window showing a Filevine Shared Documents page.
 Visible browser/tab text (left to right, as legible; most titles truncated by the UI):
 
 * Tab labels include: `Boy, Colette`, `Claude`, `Court report...`, `Mindfreak do...`, `Document up...`, `Baffled by t...`, `Shalom Big S...`, `Library | Spe...`, `Colette Boy...`, `Exhibit G Res...`, `Filevine Doc...`, `New tab`, and the active `Filevine Doc...` tab.
-* Address bar URL visible: `https://atslawyers.filevineapp.com/s/17b7cnaQPpYFrIEpLL8upSdx5KEV5qhJHoN2ZTk19xSPJ0CRl3uQ3dkj/files`
+* Address bar URL visible: `[REDACTED_FILEVINE_LINK]`
 * Bookmarks / toolbar labels visible: `Feed | Filevine`, `Home - OneDrive`, `DataGavel`, `Claude`, `State of Florida E-F...`, `Lexis®`, `ChatGPT`, `Google Gemini`, `UPS Casualty Liabi...`, `ConnectUC`, `Chat | M365 Copilot`, `iTimeKeep`, `Lawyer Directory-...`, `PACER: Login`, `Other favorites`
 * Right side of browser toolbar shows a multicolor `Chat` button.
 

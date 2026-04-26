@@ -101,10 +101,10 @@ uv run python scripts/ingest_onedrive.py refresh-cases
 uv run python scripts/ingest_onedrive.py sync-notion --workers 4
 
 # Wire email relations
-NOTION_TOKEN=ntn_xxx python scripts/notion_wire_cases.py
+NOTION_TOKEN=YOUR_NOTION_TOKEN python scripts/notion_wire_cases.py
 
 # Update case dates from CSV
-NOTION_TOKEN=ntn_xxx python scripts/notion_case_dates.py case_dates.csv
+NOTION_TOKEN=YOUR_NOTION_TOKEN python scripts/notion_case_dates.py case_dates.csv
 ```
 
 ---
@@ -121,7 +121,7 @@ NOTION_TOKEN=ntn_xxx python scripts/notion_case_dates.py case_dates.csv
 ### Running QC
 ```bash
 # Full QC sweep
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
+NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/qc_sweep.mjs
 
 # Repo consistency check
 python scripts/verify_repo_consistency.py
@@ -141,7 +141,7 @@ For high-volume document processing using the Anthropic Batch API:
 .\scripts\split_batches.ps1
 
 # Launch batch job
-$env:NOTION_TOKEN = "ntn_xxx"; .\scripts\run_nap_job.ps1
+$env:NOTION_TOKEN = "YOUR_NOTION_TOKEN"; .\scripts\run_nap_job.ps1
 
 # Check job status
 .\scripts\nap_job_status.ps1

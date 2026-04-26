@@ -90,7 +90,7 @@ OneDrive / Outlook Export
 ```bash
 python scripts/tactical_brief.py today
 uv run python scripts/notion_case_dates.py --csv case_dates.csv
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
+NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/qc_sweep.mjs
 python scripts/verify_repo_consistency.py
 ```
 

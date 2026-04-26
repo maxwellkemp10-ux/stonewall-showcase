@@ -5,9 +5,9 @@
  * across subject, from, to, CC, AND body text from the consolidated JSON.
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/email_deep_tag.mjs --audit
- *   NOTION_TOKEN=ntn_xxx node scripts/email_deep_tag.mjs --tag
- *   NOTION_TOKEN=ntn_xxx node scripts/email_deep_tag.mjs --tag --dry-run
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_deep_tag.mjs --audit
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_deep_tag.mjs --tag
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/email_deep_tag.mjs --tag --dry-run
  */
 import https from "https";
 import { readFileSync } from "fs";

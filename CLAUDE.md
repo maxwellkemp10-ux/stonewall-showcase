@@ -71,7 +71,7 @@ uv run python scripts/ingest_onedrive.py sync-notion --limit 50 --workers 4
 
 **Run QC sweep:**
 ```bash
-NOTION_TOKEN=ntn_xxx node scripts/qc_sweep.mjs
+NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/qc_sweep.mjs
 ```
 
 **Daily brief:**

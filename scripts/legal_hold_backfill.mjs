@@ -10,7 +10,7 @@
  *   Unknown        — all other active cases with blank status
  *
  * Usage:
- *   NOTION_TOKEN=ntn_xxx node scripts/legal_hold_backfill.mjs
+ *   NOTION_TOKEN=YOUR_NOTION_TOKEN node scripts/legal_hold_backfill.mjs
  */
 import https from "https";
 

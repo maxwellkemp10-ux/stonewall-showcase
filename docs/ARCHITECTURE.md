@@ -185,7 +185,7 @@ python scripts/tactical_brief.py case "smith"
 Generates a PDF or HTML case management dashboard from the Notion Legal Matters database. Includes matter cards with key dates, hold status, and phase.
 
 ```bash
-NOTION_TOKEN=ntn_xxx python scripts/legal_matters_pdf.py --html -o dashboard.html
+NOTION_TOKEN=YOUR_NOTION_TOKEN python scripts/legal_matters_pdf.py --html -o dashboard.html
 ```
 
 ---
