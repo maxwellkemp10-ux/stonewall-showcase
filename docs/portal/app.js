@@ -76,7 +76,8 @@ function node(tagName, options = {}, children = []) {
   const el = document.createElement(tagName);
   if (options.className) el.className = options.className;
   if (options.text !== undefined) el.textContent = String(options.text);
-  children.forEach((child) => {
+  const childList = Array.isArray(children) ? children : [children];
+  childList.forEach((child) => {
     el.appendChild(typeof child === "string" ? document.createTextNode(child) : child);
   });
   return el;
