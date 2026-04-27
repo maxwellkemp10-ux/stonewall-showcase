@@ -5,6 +5,7 @@ Thumbs.db
 # Environment / secrets
 .env
 .env.*
+!.env.example
 credentials.*
 .claude/settings.local.json
 
