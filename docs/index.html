@@ -160,7 +160,121 @@
     .btn:hover,
     .btn-secondary:hover,
     .card:hover,
-    .innovation:hover { transform: translateY(-2px); }
+    .innovation:hover,
+    .matrix-card:hover,
+    .tour-card:hover { transform: translateY(-3px); box-shadow: 0 22px 48px rgba(201,107,60,0.20); border-color: var(--line-strong); }
+
+    /* Quick Tour grid — large clickable buttons that jump to each surface */
+    .tour-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .tour-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .tour-card::after {
+      content: "→";
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 700;
+      transition: transform 180ms ease;
+    }
+    .tour-card:hover::after { transform: translateX(4px); }
+    .tour-card .tour-icon { font-size: 28px; line-height: 1; }
+    .tour-card .tour-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .tour-card h3 {
+      margin: 4px 0 0;
+      font-family: "Newsreader", serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .tour-card p { margin: 4px 0 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+    /* Scale comparison table */
+    .scale-table-wrap {
+      margin-top: 22px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+    }
+    .scale-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    .scale-table thead th {
+      text-align: left;
+      padding: 16px 22px;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.02);
+      font-weight: 700;
+    }
+    .scale-table tbody td {
+      padding: 16px 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .scale-table tbody tr:last-child td { border-bottom: none; }
+    .scale-table tbody tr:hover td { background: rgba(201,107,60,0.05); }
+    .scale-table .num {
+      font-family: "Newsreader", serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffd0af;
+    }
+    .scale-table .delta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(98, 200, 145, 0.12);
+      color: #8de7b4;
+      border: 1px solid rgba(98, 200, 145, 0.25);
+    }
+    .scale-table .delta.flat {
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      border-color: var(--line);
+    }
+    @media (max-width: 760px) {
+      .tour-grid { grid-template-columns: 1fr 1fr; }
+      .scale-table thead { display: none; }
+      .scale-table tbody td { display: block; padding: 8px 18px; border-bottom: none; }
+      .scale-table tbody tr { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); }
+      .scale-table tbody tr:last-child { border-bottom: none; }
+    }
+    @media (max-width: 520px) {
+      .tour-grid { grid-template-columns: 1fr; }
+    }
     .badge {
       display: inline-flex;
       align-items: center;
@@ -393,7 +507,6 @@
       <a href="official-brief.html">Official Brief</a>
       <a href="portal/">Portal Demo</a>
       <a href="insights.html">Workflow Notes</a>
-      <a href="https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/">GitBook</a>
       <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">GitHub</a>
     </nav>
   </header>
@@ -407,7 +520,7 @@
         <div class="hero-actions">
           <a class="btn" href="portal/">Open Portal Demo</a>
           <a class="btn-secondary" href="official-brief.html">Read Official Brief</a>
-          <a class="btn-secondary" href="https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/">Open GitBook Edition</a>
+          <a class="btn-secondary" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">View Source on GitHub</a>
         </div>
         <div class="badge-row">
           <span class="badge">Python 3.12+</span>
@@ -426,8 +539,45 @@
           <div class="mini-stat"><strong id="heroPatterns">197</strong><span>behavioral patterns indexed</span></div>
           <div class="mini-stat"><strong id="heroEmails">6,000+</strong><span>emails processed</span></div>
         </div>
-        <p style="margin:18px 0 0;color:var(--muted);font-size:14px;">Publication stack: GitHub Pages for immediate impact, the official brief for print and PDF circulation, and GitBook for the durable long-form edition of the same product thesis.</p>
+        <p style="margin:18px 0 0;color:var(--muted);font-size:14px;">Publication stack: GitHub Pages for immediate impact, the official brief for print and PDF circulation, and the public source repo for collaborators who want to read the implementation.</p>
       </aside>
+    </section>
+
+    <section class="section" id="tour" style="padding-top: 24px;">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Quick Tour</div>
+          <h2>Four surfaces, one product</h2>
+          <p>Jump straight into any layer of the showcase. Each card is a clickable destination — no scavenger hunting for the goods.</p>
+        </div>
+        <div class="aside">The whole stack is static, fork-friendly, and fully runnable in under sixty seconds.</div>
+      </div>
+      <div class="tour-grid">
+        <a class="tour-card" href="portal/">
+          <span class="tour-icon">🖥️</span>
+          <span class="tour-label">Live Demo</span>
+          <h3>Operator Portal</h3>
+          <p>Multi-page dashboard with matters, deadlines, artifacts, patterns, cast, and billing — all from static JSON.</p>
+        </a>
+        <a class="tour-card" href="official-brief.html">
+          <span class="tour-icon">📜</span>
+          <span class="tour-label">Long Form</span>
+          <h3>Official Brief</h3>
+          <p>The print-edition product brief for circulation, valuation, and the full architectural argument.</p>
+        </a>
+        <a class="tour-card" href="insights.html">
+          <span class="tour-icon">🧠</span>
+          <span class="tour-label">Deep Cuts</span>
+          <h3>Workflow Notes</h3>
+          <p>The operator-feel commentary explaining why this stack changes what a lawyer can do under pressure.</p>
+        </a>
+        <a class="tour-card" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">
+          <span class="tour-icon">⌨️</span>
+          <span class="tour-label">Source</span>
+          <h3>GitHub Repo</h3>
+          <p>Read the implementation. 752-test verification suite, 78-artifact corpus, CI-enforced voice guard.</p>
+        </a>
+      </div>
     </section>
 
     <section class="section" id="numbers">
@@ -446,6 +596,26 @@
         <article class="stat-tile"><strong id="metricCharacters">179</strong><span>Character Profiles</span><p>Role and actor modeling give the archive memory about who drives which outcomes.</p></article>
         <article class="stat-tile"><strong id="metricEmails">6,000+</strong><span>Emails Processed</span><p>Normalized communication flows preserve timeline, leverage, and workflow context.</p></article>
         <article class="stat-tile"><strong id="metricTypes">23</strong><span>Artifact Classes</span><p>Deposition, pleading, email, notes, records, and workflow objects live in one durable catalog.</p></article>
+      </div>
+      <div class="scale-table-wrap" role="region" aria-label="Scale at a glance">
+        <table class="scale-table">
+          <thead>
+            <tr>
+              <th>Surface</th>
+              <th>Earlier Snapshot</th>
+              <th>Current</th>
+              <th>Delta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Manifest Rows</td><td>1,206</td><td><span class="num">1,887</span></td><td><span class="delta">+681</span></td></tr>
+            <tr><td>Analyzed %</td><td>65.2%</td><td><span class="num">83.8%</span></td><td><span class="delta">+18.6 pts</span></td></tr>
+            <tr><td>Validation Errors / Warnings</td><td>0 / 153</td><td><span class="num">0 / 0</span></td><td><span class="delta">−153 warn</span></td></tr>
+            <tr><td>Brain Codex Version</td><td>v10.4</td><td><span class="num">v12.1</span></td><td><span class="delta">+1.7</span></td></tr>
+            <tr><td>Verification Suite</td><td>45 tests</td><td><span class="num">752 tests</span></td><td><span class="delta">+707</span></td></tr>
+            <tr><td>Corpus Artifacts On Disk</td><td>—</td><td><span class="num">78</span></td><td><span class="delta">new</span></td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -644,7 +814,7 @@ OK</code></pre></article>
           <h2>Static dashboard, real product energy</h2>
           <p>The included portal is the operator-facing face of the platform. It demonstrates how structured JSON snapshots can power a dashboard, matter view, deadlines board, artifact browser, and pattern registry with no backend required.</p>
         </div>
-        <div class="aside">Pages is the immediate reveal surface. The official brief is the print edition. GitBook is the durable narrative layer. Together they present one coherent argument instead of a pile of disconnected docs.</div>
+        <div class="aside">Pages is the immediate reveal surface. The official brief is the print edition. The portal is the live operator-facing demo. Together they present one coherent argument instead of a pile of disconnected docs.</div>
       </div>
       <div class="portal-preview">
         <div class="frame">
@@ -671,7 +841,6 @@ OK</code></pre></article>
     <p>Stonewall demonstrates how a litigation team can build durable document intelligence from disciplined flat files, strong validation, and tightly integrated workflow surfaces rather than a heavyweight proprietary stack.</p>
     <div class="footer-links">
       <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">GitHub Repo</a>
-      <a href="https://maxwell-kemp.gitbook.io/stonewall-qb3/stonewall-showcase/quarterback/">GitBook</a>
       <a href="official-brief.html">Official Brief</a>
       <a href="portal/">Portal</a>
     </div>
