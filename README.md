@@ -25,6 +25,8 @@ description: >-
 | Spence Compendium Chapters | 14 |
 | Brain Skill | v12.1 |
 | MINDFREAK Record | 19-0 |
+| Verification Suite | 752 tests (743 Python + 9 Node) |
+| Sample Corpus Fixtures | 78 sanitized fictional matters |
 | Golden Hours Exposed | 109.8 |
 | Crown Matters | 11 |
 

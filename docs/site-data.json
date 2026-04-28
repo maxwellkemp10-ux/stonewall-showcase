@@ -25,6 +25,13 @@
     "pdfs_missing_markdown": 0,
     "duplicate_clusters_unresolved": 0
   },
+  "test_suite": {
+    "total": 752,
+    "python": 743,
+    "node": 9,
+    "sample_corpus_fixtures": 78,
+    "headline": "615+ test verification suite"
+  },
   "brain": {
     "version": "v12.1",
     "release": "cd7fe11c",
@@ -162,10 +169,16 @@
       "sanitized_signal": "Per-type unanalyzed counts"
     },
     {
-      "title": "PR Verification Checklist",
+      "title": "615+ Test Verification Suite",
       "layer": "Quality Control",
-      "impact": "One command runs node tests, python unittest, strict pre-PR checks, and ontology validation, then emits a paste-ready PR summary.",
-      "sanitized_signal": "PR_CHECKLIST_SUMMARY block"
+      "impact": "Parameterized fixture verification (752 tests) runs on every PR — sanitization, structure, no-PII, and manifest invariants are enforced per artifact.",
+      "sanitized_signal": "node + python + sample-corpus checks in one workflow"
+    },
+    {
+      "title": "Sanitized Sample Corpus",
+      "layer": "Showcase",
+      "impact": "78 fictional fixtures (cases, depositions, transcripts, emails, motions, characters, patterns, billing) demonstrate the platform shape without exposing any real matter.",
+      "sanitized_signal": "Smith v. Acme Corp pattern, sanitized: true on every row"
     }
   ]
 }
