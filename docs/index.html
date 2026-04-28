@@ -420,7 +420,7 @@
       <aside class="panel">
         <strong style="display:block;color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;">Live Snapshot</strong>
         <div class="panel-grid">
-          <div class="mini-stat"><strong id="heroCataloged">1,206</strong><span>cataloged artifacts</span></div>
+          <div class="mini-stat"><strong id="heroCataloged">1,887</strong><span>cataloged artifacts</span></div>
           <div class="mini-stat"><strong id="heroCases">64</strong><span>active matters represented</span></div>
           <div class="mini-stat"><strong id="heroPatterns">197</strong><span>behavioral patterns indexed</span></div>
           <div class="mini-stat"><strong id="heroEmails">6,000+</strong><span>emails processed</span></div>
@@ -439,10 +439,10 @@
         <div class="aside">The underlying corpus remains Git-tracked, grep-queryable, and validation-friendly, which is the central architectural thesis of the platform and the reason it can serve as both corpus layer and operator surface.</div>
       </div>
       <div class="metrics">
-        <article class="stat-tile"><strong id="metricArtifacts">1,206</strong><span>Artifacts Cataloged</span><p>Manifest-backed catalog with type, date, entities, patterns, and summary metadata.</p></article>
+        <article class="stat-tile"><strong id="metricArtifacts">1,887</strong><span>Artifacts Cataloged</span><p>Manifest-backed catalog with type, date, entities, patterns, and summary metadata.</p></article>
         <article class="stat-tile"><strong id="metricCases">64</strong><span>Active Matters</span><p>Portfolio structure remains legible across a broad litigation workload.</p></article>
         <article class="stat-tile"><strong id="metricPatterns">197</strong><span>Behavioral Patterns</span><p>A full phenomenology registry makes recurring dynamics traceable across the corpus.</p></article>
-        <article class="stat-tile"><strong id="metricCharacters">173</strong><span>Character Profiles</span><p>Role and actor modeling give the archive memory about who drives which outcomes.</p></article>
+        <article class="stat-tile"><strong id="metricCharacters">179</strong><span>Character Profiles</span><p>Role and actor modeling give the archive memory about who drives which outcomes.</p></article>
         <article class="stat-tile"><strong id="metricEmails">6,000+</strong><span>Emails Processed</span><p>Normalized communication flows preserve timeline, leverage, and workflow context.</p></article>
         <article class="stat-tile"><strong id="metricTypes">23</strong><span>Artifact Classes</span><p>Deposition, pleading, email, notes, records, and workflow objects live in one durable catalog.</p></article>
       </div>
@@ -479,7 +479,7 @@
 $ rg "Pattern: BONEMAXXED" catalog/index_by_pattern.md</code></pre></article>
         <article class="innovation"><div class="icon">⌨️</div><h3>CLI Intelligence Layer</h3><p>The stdlib-only CLI makes the corpus queryable without standing up a server or a database engine. It handles stats, matter views, pattern lookups, timelines, validation, and artifact inspection from one consistent interface.</p><pre><code>$ python scripts/stonewall.py stats
 $ python scripts/stonewall.py case "Motor Vehicle Case A"</code></pre></article>
-        <article class="innovation"><div class="icon">🧠</div><h3>AI Recall Architecture</h3><p>The brain is explicit recall architecture, not mystery memory. Codex files point the model to source surfaces first, then require reading before assertions, with version lineage preserved through frozen snapshots up to <code>v10.4</code>.</p><pre><code>brain/
+        <article class="innovation"><div class="icon">🧠</div><h3>AI Recall Architecture</h3><p>The brain is explicit recall architecture, not mystery memory. Codex files point the model to source surfaces first, then require reading before assertions, with version lineage preserved through frozen snapshots up to <code>v12.1</code> ("the ultimate cut").</p><pre><code>brain/
   cast_codex.md
   cases_codex.md
   phenomenology_codex.md</code></pre></article>
@@ -488,8 +488,8 @@ transcribe_repo_pdfs.py
 docx_to_verbatim_md.py</code></pre></article>
         <article class="innovation"><div class="icon">🔄</div><h3>Multi-Platform Sync</h3><p>GitHub stores the durable corpus, OneDrive remains the source reservoir, and Notion becomes the operator layer for live matter management, task runway, and daily command views. Cross-reference manifests keep IDs aligned across surfaces.</p><pre><code>python scripts/notion_wire_cases.py
 python scripts/notion_case_dates.py</code></pre></article>
-        <article class="innovation"><div class="icon">🛡️</div><h3>Verification & QC Automation</h3><p>Repo consistency checks, ontology enforcement, sidecar audits, and deployment guards make the output structurally sound. The same discipline that protects the corpus also increases commercial credibility.</p><pre><code>$ python scripts/stonewall.py validate --strict
-0 error(s), 153 warning(s) across 1206 rows</code></pre></article>
+        <article class="innovation"><div class="icon">🛡️</div><h3>Verification & QC Automation</h3><p>Repo consistency checks, ontology enforcement, sidecar audits, gitleaks secret scanning, governance pre-commit hooks, and deployment guards make the output structurally sound. The same discipline that protects the corpus also increases commercial credibility.</p><pre><code>$ python scripts/stonewall.py validate --strict
+0 error(s), 0 warning(s) across 1887 rows</code></pre></article>
         <article class="innovation"><div class="icon">🧭</div><h3>Phenomenology Registry</h3><p>Stonewall tracks a 197-pattern behavioral taxonomy that can be instantiated across artifacts and traced longitudinally across the corpus.</p><pre><code>$ python scripts/stonewall.py pattern "THEARTOFTHEDEALMAXXED"</code></pre></article>
         <article class="innovation"><div class="icon">🖥️</div><h3>Static Portal</h3><p>The portal proves that a multi-page operational dashboard can run as a fully static site from JSON snapshots alone. Dashboard, matters, deadlines, artifacts, patterns, cast, billing-style totals, and local settings all render without a backend in the live build.</p><pre><code>docs/portal/
   index.html
@@ -609,18 +609,19 @@ python scripts/stonewall.py show A1104</code></pre></article>
       </div>
       <div class="demo-grid">
         <article class="terminal"><div class="terminal-label">stats</div><pre><code>$ python scripts/stonewall.py stats
-total rows      : 1206
-active          : 1122
-analyzed        : 731 (65.2%)
+total rows      : 1887
+active          : 1604
+tombstoned      : 283
+analyzed        : 1344 (83.8%)
 patterns        : 197
-characters      : 173
+characters      : 179
 cases           : 64</code></pre></article>
         <article class="terminal"><div class="terminal-label">find</div><pre><code>$ python scripts/stonewall.py find "deposition"
 A0198  Public Deposition Transcript    2025-02-28  deposition
 A0441  Expert Deposition Outline       2025-07-16  deposition
 A0917  Corporate Representative Prep   2026-01-11  deposition</code></pre></article>
         <article class="terminal"><div class="terminal-label">validate</div><pre><code>$ python scripts/stonewall.py validate --strict
-0 error(s), 153 warning(s) across 1206 rows
+0 error(s), 0 warning(s) across 1887 rows
 ontology          : pass
 filesystem links  : pass
 date checks       : pass</code></pre></article>

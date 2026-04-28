@@ -1,8 +1,8 @@
 ---
 description: >-
   QB1 Sovereign Command Center — the private operational nucleus of the
-  Stonewall analytical project. 1,212 artifacts. 197 patterns. 179 characters.
-  59 cases. MINDFREAK 19-0.
+  Stonewall analytical project. 1,887 artifacts. 197 patterns. 179 characters.
+  64 cases. Brain v12.1. MINDFREAK 19-0.
 ---
 
 # Stonewall at Manassas
@@ -15,12 +15,15 @@ description: >-
 
 | Metric | Count |
 |---|---|
-| Total Artifacts | 1,212 |
+| Total Artifacts | 1,887 |
+| Active Rows | 1,604 |
+| Analyzed Rows | 1,344 (83.8%) |
 | Documented Patterns | 197 |
 | Named Characters | 179 |
-| Active Cases | 59 |
+| Active Cases | 64 |
 | Literary Chapters | 113 |
 | Spence Compendium Chapters | 14 |
+| Brain Skill | v12.1 |
 | MINDFREAK Record | 19-0 |
 | Golden Hours Exposed | 109.8 |
 | Crown Matters | 11 |

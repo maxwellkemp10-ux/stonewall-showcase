@@ -1,10 +1,11 @@
 {
-  "generated": "2026-04-09T12:00:00-04:00",
+  "generated": "2026-04-28T12:00:00-04:00",
   "manifest": {
-    "total_rows": 1206,
-    "active": 1122,
-    "analyzed": 731,
-    "analysis_rate": 0.652
+    "total_rows": 1887,
+    "active": 1604,
+    "tombstoned": 283,
+    "analyzed": 1344,
+    "analysis_rate": 0.838
   },
   "patterns": {
     "total": 197,
@@ -14,7 +15,20 @@
     "total_unique": 64
   },
   "characters": {
-    "total_unique": 173
+    "total_unique": 179
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 0,
+    "missing_manifest_paths": 0,
+    "uncataloged_canonical_sources": 0,
+    "pdfs_missing_markdown": 0,
+    "duplicate_clusters_unresolved": 0
+  },
+  "brain": {
+    "version": "v12.1",
+    "release": "cd7fe11c",
+    "tagline": "the ultimate cut"
   },
   "showcase_metrics": {
     "emails_processed": 6000,
@@ -92,6 +106,66 @@
       "layer": "Report Readiness",
       "impact": "Stages chronology, treatment, and damages notes before downstream packet workflows.",
       "sanitized_signal": "Pre-report packet readiness lane"
+    },
+    {
+      "title": "Brain Skill v12.1 Recall Routing",
+      "layer": "AI Recall",
+      "impact": "Routes Claude to the right source surface for any question so no session starts from zero.",
+      "sanitized_signal": "Versioned codex routing with read-before-assert discipline"
+    },
+    {
+      "title": "Governance Guardrails & Audit Gate",
+      "layer": "Repo Regulation",
+      "impact": "PR communication standard plus pre-commit guardrails enforce a uniform audit trail across every change.",
+      "sanitized_signal": "pre-commit + PR audit summary block"
+    },
+    {
+      "title": "Gitleaks Secret Scanning",
+      "layer": "Security",
+      "impact": "Free GHAS-class secret scanning runs on every push to keep credentials out of the corpus.",
+      "sanitized_signal": ".gitleaks.toml + ignore allowlist"
+    },
+    {
+      "title": "Notion Drift Report",
+      "layer": "Operator Control",
+      "impact": "Read-only Legal Matters audit surfaces drift between repo and Notion without ever writing to Notion.",
+      "sanitized_signal": "Markdown report + optional JSON sidecar"
+    },
+    {
+      "title": "Watchlist Digest",
+      "layer": "Daily Operations",
+      "impact": "Declarative watchlist over the manifest tracks names, aliases, patterns, and cases the operator cares about.",
+      "sanitized_signal": "tier + since + oneline digest modes"
+    },
+    {
+      "title": "Cloud Repo Repair Automation",
+      "layer": "Reliability",
+      "impact": "Deterministic cloud runs snapshot, refresh KPIs, run consistency checks, and bundle a handoff report.",
+      "sanitized_signal": "Branch-first + clean-worktree guards"
+    },
+    {
+      "title": "Deployment Platform Matrix",
+      "layer": "Deployment",
+      "impact": "Cloudflare Pages, Railway bot, and optional Vercel are documented in a single keep/cut runbook.",
+      "sanitized_signal": "60-second deployment quickstart"
+    },
+    {
+      "title": "Command Platform Foundation",
+      "layer": "Operator Surfaces",
+      "impact": "FastAPI portal + Dockerfile + Railway config establish a multi-user command surface on top of the corpus.",
+      "sanitized_signal": "portal/ + Dockerfile.portal + railway.toml"
+    },
+    {
+      "title": "Corpus KPI Campaign Block",
+      "layer": "Analytics",
+      "impact": "corpus_kpis.json exposes unanalyzed_active_total and unanalyzed_by_type so backlog can be prioritized by artifact type.",
+      "sanitized_signal": "Per-type unanalyzed counts"
+    },
+    {
+      "title": "PR Verification Checklist",
+      "layer": "Quality Control",
+      "impact": "One command runs node tests, python unittest, strict pre-PR checks, and ontology validation, then emits a paste-ready PR summary.",
+      "sanitized_signal": "PR_CHECKLIST_SUMMARY block"
     }
   ]
 }
