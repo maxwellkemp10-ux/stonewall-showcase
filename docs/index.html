@@ -91,7 +91,7 @@
       line-height: 1.02;
       letter-spacing: -0.04em;
     }
-    h1 { font-size: clamp(48px, 7vw, 84px); max-width: 11ch; margin-top: 18px; }
+    h1 { font-size: clamp(38px, 7vw, 84px); max-width: 11ch; margin-top: 18px; }
     h2 { font-size: clamp(34px, 4vw, 52px); }
     h3 { font-size: 28px; }
     .hero,
@@ -167,7 +167,7 @@
     /* Quick Tour grid — large clickable buttons that jump to each surface */
     .tour-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
       margin-top: 28px;
     }
@@ -266,14 +266,10 @@
       border-color: var(--line);
     }
     @media (max-width: 760px) {
-      .tour-grid { grid-template-columns: 1fr 1fr; }
       .scale-table thead { display: none; }
       .scale-table tbody td { display: block; padding: 8px 18px; border-bottom: none; }
       .scale-table tbody tr { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); }
       .scale-table tbody tr:last-child { border-bottom: none; }
-    }
-    @media (max-width: 520px) {
-      .tour-grid { grid-template-columns: 1fr; }
     }
     .badge {
       display: inline-flex;
@@ -497,6 +493,22 @@
       .matrix-grid { grid-template-columns: 1fr; }
       footer { padding-bottom: 40px; }
     }
+    @media (max-width: 560px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      nav { justify-content: flex-start; gap: 6px; }
+      nav a { padding: 6px 10px; font-size: 13px; }
+      .hero { padding-top: 28px; }
+      .hero p, .section-head p { font-size: 16px; }
+      .stat-tile strong { font-size: 36px; }
+      .scale-table .num { font-size: 17px; }
+      .tour-card { padding: 18px; }
+      .tour-card::after { top: 16px; right: 18px; font-size: 18px; }
+      .tour-card h3 { font-size: 19px; }
+    }
   </style>
 </head>
 <body>
@@ -507,6 +519,7 @@
       <a href="official-brief.html">Official Brief</a>
       <a href="portal/">Portal Demo</a>
       <a href="insights.html">Workflow Notes</a>
+      <a href="https://stonewall.esq">Canon</a>
       <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">GitHub</a>
     </nav>
   </header>
@@ -519,6 +532,7 @@
         <p>Stonewall is a production-grade legal document intelligence control plane built by a solo litigation attorney. It turns flat files, validated sidecars, AI recall discipline, and static deployment surfaces into a portfolio command dashboard for artifacts, deadlines, workflow readiness, and daily operating visibility.</p>
         <div class="hero-actions">
           <a class="btn" href="portal/">Open Portal Demo</a>
+          <a class="btn-secondary" href="https://stonewall.esq">Open Canon (stonewall.esq)</a>
           <a class="btn-secondary" href="official-brief.html">Read Official Brief</a>
           <a class="btn-secondary" href="https://github.com/maxwellkemp10-ux/stonewall-showcase">View Source on GitHub</a>
         </div>
@@ -558,6 +572,12 @@
           <span class="tour-label">Live Demo</span>
           <h3>Operator Portal</h3>
           <p>Multi-page dashboard with matters, deadlines, artifacts, patterns, cast, and billing — all from static JSON.</p>
+        </a>
+        <a class="tour-card" href="https://stonewall.esq">
+          <span class="tour-icon">📚</span>
+          <span class="tour-label">Canon</span>
+          <h3>stonewall.esq</h3>
+          <p>The full canonical codices — case codex, character dossiers, phenomenology registry, discovery registry, and the corpus compendium.</p>
         </a>
         <a class="tour-card" href="official-brief.html">
           <span class="tour-icon">📜</span>
@@ -840,6 +860,7 @@ OK</code></pre></article>
   <footer class="shell">
     <p>Stonewall demonstrates how a litigation team can build durable document intelligence from disciplined flat files, strong validation, and tightly integrated workflow surfaces rather than a heavyweight proprietary stack.</p>
     <div class="footer-links">
+      <a href="https://stonewall.esq">Canon (stonewall.esq)</a>
       <a href="https://github.com/maxwellkemp10-ux/stonewall-showcase">GitHub Repo</a>
       <a href="official-brief.html">Official Brief</a>
       <a href="portal/">Portal</a>
