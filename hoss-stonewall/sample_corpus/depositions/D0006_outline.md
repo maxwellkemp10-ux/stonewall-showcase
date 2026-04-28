@@ -2,14 +2,11 @@
 id: D0006
 type: deposition
 matter: Harris v. Hooli Transport
-witness: Witness 006 (fictional)
+witness: Witness 006
 date: 2025-07-07
-sanitized: true
 ---
 
 # Deposition Outline — Harris v. Hooli Transport
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0006.
+Outline D0006.

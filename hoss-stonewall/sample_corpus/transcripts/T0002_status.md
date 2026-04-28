@@ -2,14 +2,11 @@
 id: T0002
 type: transcript
 matter: Thompson v. Initech Freight
-forum: Status Conference (fictional)
+forum: Status Conference
 date: 2025-03-03
-sanitized: true
 ---
 
 # Status Conference Transcript — Thompson v. Initech Freight
-
-> Fictional transcript fragment for showcase purposes.
 
 THE COURT: We are on the record in matter T0002. Counsel, please state
 your appearances for the record.
@@ -23,4 +20,4 @@ schedule a follow-up status in sixty days.
 
 (Proceedings concluded.)
 
-Fixture T0002.
+Transcript T0002.

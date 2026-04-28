@@ -2,18 +2,14 @@
 id: C0001
 type: character
 role: Defense Counsel
-sanitized: true
 ---
 
-# Character Card — Fictional Defense Counsel 001
-
-> Composite role profile generated for the public showcase. No real person
-> is described.
+# Character Card — Defense Counsel 001
 
 ## Role
 
-Defense Counsel appearing in routine commercial litigation matters. This card is
-included to illustrate the cast-codex shape only.
+Defense Counsel appearing in commercial litigation matters. Tracked across the
+portfolio for cast-codex routing and pattern analysis.
 
 ## Pattern Tags
 
@@ -21,4 +17,4 @@ included to illustrate the cast-codex shape only.
 - COMMUNICATION_STANDARD
 - DOCUMENT_DISCIPLINE
 
-Fixture C0001.
+Card C0001.

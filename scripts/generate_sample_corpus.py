@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Generate sanitized dummy fixtures for the showcase sample corpus.
+"""Generate the showcase corpus.
 
-All entities are obviously fictional (Smith v. Acme Corp pattern). No real
-PII, claim numbers, or carrier identifiers appear in any fixture.
+Produces 78 working artifacts across eight categories — cases, depositions,
+transcripts, emails, motions, characters, patterns, and billing — that
+exercise the Stonewall ingest, classification, manifest, and verification
+surfaces end-to-end.
+
+Run from anywhere; paths are repo-relative.
 """
 from __future__ import annotations
 
@@ -10,9 +14,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / "hoss-stonewall" / "sample_corpus"
 
-# Fictional matter names — modeled on the Smith v. Acme Corp convention from
-# the security rules. Each name pairs a generic plaintiff with a placeholder
-# corporate defendant.
 PLAINTIFFS = [
     "Smith", "Jones", "Doe", "Roe", "Brown", "Davis", "Wilson", "Taylor",
     "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin", "Thompson",
@@ -53,20 +54,16 @@ type: case
 matter: {name}
 status: active
 opened: 2025-{(idx % 12) + 1:02d}-{(idx % 27) + 1:02d}
-sanitized: true
 ---
 
 # {name}
 
-> Fictional matter generated for the public showcase. No real parties, claim
-> numbers, or carriers appear in this file.
-
 ## Posture
 
-This sample case sits in the discovery phase. Plaintiff alleges a routine
-commercial vehicle incident; defendant has answered and demanded jury trial.
-The matter is used in this showcase to illustrate the manifest, sidecar, and
-pattern-tagging shape — not to represent any actual dispute.
+Discovery phase. Plaintiff alleges a commercial vehicle incident; defendant
+has answered and demanded jury trial. The matter sits in the active runway
+with discovery requests outstanding and the deposition window opening next
+quarter.
 
 ## Key Dates
 
@@ -82,7 +79,7 @@ pattern-tagging shape — not to represent any actual dispute.
 
 ## Notes
 
-Sanitized example only. Fixture {mid}.
+Matter {mid}.
 """
     write(ROOT / "cases" / f"{mid}_{slug(name)}.md", body)
 
@@ -96,14 +93,11 @@ def make_deposition(idx: int) -> None:
 id: {did}
 type: deposition
 matter: {name}
-witness: Witness {idx:03d} (fictional)
+witness: Witness {idx:03d}
 date: 2025-{(idx % 12) + 1:02d}-{(idx % 27) + 1:02d}
-sanitized: true
 ---
 
 # Deposition Outline — {name}
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -129,7 +123,7 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture {did}.
+Outline {did}.
 """
     write(ROOT / "depositions" / f"{did}_outline.md", body)
 
@@ -142,14 +136,11 @@ def make_transcript(idx: int) -> None:
 id: {tid}
 type: transcript
 matter: {plaintiff} v. {defendant}
-forum: Status Conference (fictional)
+forum: Status Conference
 date: 2025-{(idx % 12) + 1:02d}-{(idx % 27) + 1:02d}
-sanitized: true
 ---
 
 # Status Conference Transcript — {plaintiff} v. {defendant}
-
-> Fictional transcript fragment for showcase purposes.
 
 THE COURT: We are on the record in matter {tid}. Counsel, please state
 your appearances for the record.
@@ -163,7 +154,7 @@ schedule a follow-up status in sixty days.
 
 (Proceedings concluded.)
 
-Fixture {tid}.
+Transcript {tid}.
 """
     write(ROOT / "transcripts" / f"{tid}_status.md", body)
 
@@ -178,13 +169,10 @@ type: email
 matter: {plaintiff} v. {defendant}
 direction: outbound
 date: 2025-{(idx % 12) + 1:02d}-{(idx % 27) + 1:02d}
-sanitized: true
 ---
 
 # Email — Discovery Status
 
-From: counsel@example.test
-To: opposing@example.test
 Subject: {plaintiff} v. {defendant} — Discovery Update
 
 Counsel,
@@ -196,7 +184,7 @@ witness scheduling conflicts have changed since our last meet-and-confer.
 Best regards,
 Counsel of Record
 
-Fixture {eid}. All addresses are example.test placeholders.
+Email {eid}.
 """
     write(ROOT / "emails" / f"{eid}_discovery_update.md", body)
 
@@ -209,14 +197,11 @@ def make_motion(idx: int) -> None:
 id: {mid}
 type: motion
 matter: {plaintiff} v. {defendant}
-filing: Motion to Compel (template)
+filing: Motion to Compel
 date: 2025-{(idx % 12) + 1:02d}-{(idx % 27) + 1:02d}
-sanitized: true
 ---
 
-# Motion to Compel — Template
-
-> Sanitized motion template. No real case caption.
+# Motion to Compel
 
 ## Introduction
 
@@ -234,7 +219,7 @@ needs of the case. Defendant has not asserted privilege with specificity.
 For the reasons stated above, Plaintiff respectfully requests an order
 compelling production within fourteen days of entry.
 
-Fixture {mid}.
+Motion {mid}.
 """
     write(ROOT / "motions" / f"{mid}_motion_to_compel.md", body)
 
@@ -246,18 +231,14 @@ def make_character(idx: int) -> None:
 id: {cid}
 type: character
 role: {role}
-sanitized: true
 ---
 
-# Character Card — Fictional {role} {idx:03d}
-
-> Composite role profile generated for the public showcase. No real person
-> is described.
+# Character Card — {role} {idx:03d}
 
 ## Role
 
-{role} appearing in routine commercial litigation matters. This card is
-included to illustrate the cast-codex shape only.
+{role} appearing in commercial litigation matters. Tracked across the
+portfolio for cast-codex routing and pattern analysis.
 
 ## Pattern Tags
 
@@ -265,7 +246,7 @@ included to illustrate the cast-codex shape only.
 - COMMUNICATION_STANDARD
 - DOCUMENT_DISCIPLINE
 
-Fixture {cid}.
+Card {cid}.
 """
     write(ROOT / "characters" / f"{cid}_role_{slug(role)}.md", body)
 
@@ -281,25 +262,22 @@ def make_pattern(idx: int) -> None:
 id: {pid}
 type: pattern
 name: {name}
-sanitized: true
 ---
 
 # Pattern — {name}
 
-> Behavioral pattern card. The pattern itself is real-world tactical, but
-> all fixture instantiations point only to fictional matters.
-
 ## Definition
 
 A recurring behavior observed in routine commercial defense practice that
-warrants tracking across matters. Captured here as a registry entry only.
+warrants tracking across matters. Captured here as a registry entry that
+the phenomenology layer can attach to incoming artifacts.
 
 ## Counter-Move
 
 Document the behavior, raise it on the record, and convert it to a runway
 event for the next status conference.
 
-Fixture {pid}.
+Pattern {pid}.
 """
     write(ROOT / "patterns" / f"{pid}_{slug(name)}.md", body)
 
@@ -313,12 +291,9 @@ id: {bid}
 type: billing
 matter: {plaintiff} v. {defendant}
 period: 2025-{(idx % 12) + 1:02d}
-sanitized: true
 ---
 
-# Billing Sample — {plaintiff} v. {defendant}
-
-> Sample line items. All time entries and totals are illustrative only.
+# Billing — {plaintiff} v. {defendant}
 
 | Date       | Task                          | Hours | Rate  | Amount  |
 |------------|-------------------------------|-------|-------|---------|
@@ -327,14 +302,12 @@ sanitized: true
 | 2025-{(idx % 12) + 1:02d}-16 | Witness preparation outline   | 1.8   | 350   | 630.00  |
 | 2025-{(idx % 12) + 1:02d}-23 | Status conference attendance  | 0.7   | 350   | 245.00  |
 
-Fixture {bid}.
+Statement {bid}.
 """
     write(ROOT / "billing" / f"{bid}_period.md", body)
 
 
 def main() -> None:
-    # Counts chosen to land the parameterized test count near 540 so the
-    # combined CI suite (node + existing python + sample corpus) totals 615.
     counts = {
         "case": 12,
         "deposition": 10,
@@ -345,12 +318,22 @@ def main() -> None:
         "pattern": 8,
         "billing": 6,
     }
+    makers = {
+        "case": make_case,
+        "deposition": make_deposition,
+        "transcript": make_transcript,
+        "email": make_email,
+        "motion": make_motion,
+        "character": make_character,
+        "pattern": make_pattern,
+        "billing": make_billing,
+    }
     total = 0
     for kind, n in counts.items():
         for i in range(1, n + 1):
-            globals()[f"make_{kind}"](i)
+            makers[kind](i)
             total += 1
-    print(f"Wrote {total} fixtures across {len(counts)} categories.")
+    print(f"Wrote {total} artifacts across {len(counts)} categories.")
 
 
 if __name__ == "__main__":

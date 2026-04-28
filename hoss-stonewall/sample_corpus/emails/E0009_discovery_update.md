@@ -4,13 +4,10 @@ type: email
 matter: Robinson v. Dunder Mifflin
 direction: outbound
 date: 2025-10-10
-sanitized: true
 ---
 
 # Email — Discovery Status
 
-From: counsel@example.test
-To: opposing@example.test
 Subject: Robinson v. Dunder Mifflin — Discovery Update
 
 Counsel,
@@ -22,4 +19,4 @@ witness scheduling conflicts have changed since our last meet-and-confer.
 Best regards,
 Counsel of Record
 
-Fixture E0009. All addresses are example.test placeholders.
+Email E0009.

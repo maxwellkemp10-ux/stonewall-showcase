@@ -2,14 +2,11 @@
 id: T0006
 type: transcript
 matter: Doe v. Massive Dynamic
-forum: Status Conference (fictional)
+forum: Status Conference
 date: 2025-07-07
-sanitized: true
 ---
 
 # Status Conference Transcript — Doe v. Massive Dynamic
-
-> Fictional transcript fragment for showcase purposes.
 
 THE COURT: We are on the record in matter T0006. Counsel, please state
 your appearances for the record.
@@ -23,4 +20,4 @@ schedule a follow-up status in sixty days.
 
 (Proceedings concluded.)
 
-Fixture T0006.
+Transcript T0006.

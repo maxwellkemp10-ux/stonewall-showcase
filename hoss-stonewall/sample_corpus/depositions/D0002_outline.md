@@ -2,14 +2,11 @@
 id: D0002
 type: deposition
 matter: Brown v. Hooli Transport
-witness: Witness 002 (fictional)
+witness: Witness 002
 date: 2025-03-03
-sanitized: true
 ---
 
 # Deposition Outline — Brown v. Hooli Transport
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0002.
+Outline D0002.

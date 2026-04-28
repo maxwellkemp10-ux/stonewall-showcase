@@ -2,14 +2,11 @@
 id: D0001
 type: deposition
 matter: Doe v. Vehement Capital
-witness: Witness 001 (fictional)
+witness: Witness 001
 date: 2025-02-02
-sanitized: true
 ---
 
 # Deposition Outline — Doe v. Vehement Capital
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0001.
+Outline D0001.

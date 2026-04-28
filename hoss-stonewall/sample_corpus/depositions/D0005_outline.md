@@ -2,14 +2,11 @@
 id: D0005
 type: deposition
 matter: Jackson v. Vehement Capital
-witness: Witness 005 (fictional)
+witness: Witness 005
 date: 2025-06-06
-sanitized: true
 ---
 
 # Deposition Outline — Jackson v. Vehement Capital
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0005.
+Outline D0005.

@@ -3,12 +3,9 @@ id: B0005
 type: billing
 matter: Davis v. Aperture Hauling
 period: 2025-06
-sanitized: true
 ---
 
-# Billing Sample — Davis v. Aperture Hauling
-
-> Sample line items. All time entries and totals are illustrative only.
+# Billing — Davis v. Aperture Hauling
 
 | Date       | Task                          | Hours | Rate  | Amount  |
 |------------|-------------------------------|-------|-------|---------|
@@ -17,4 +14,4 @@ sanitized: true
 | 2025-06-16 | Witness preparation outline   | 1.8   | 350   | 630.00  |
 | 2025-06-23 | Status conference attendance  | 0.7   | 350   | 245.00  |
 
-Fixture B0005.
+Statement B0005.

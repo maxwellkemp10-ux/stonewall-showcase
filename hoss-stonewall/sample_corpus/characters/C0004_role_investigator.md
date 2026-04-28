@@ -2,18 +2,14 @@
 id: C0004
 type: character
 role: Investigator
-sanitized: true
 ---
 
-# Character Card — Fictional Investigator 004
-
-> Composite role profile generated for the public showcase. No real person
-> is described.
+# Character Card — Investigator 004
 
 ## Role
 
-Investigator appearing in routine commercial litigation matters. This card is
-included to illustrate the cast-codex shape only.
+Investigator appearing in commercial litigation matters. Tracked across the
+portfolio for cast-codex routing and pattern analysis.
 
 ## Pattern Tags
 
@@ -21,4 +17,4 @@ included to illustrate the cast-codex shape only.
 - COMMUNICATION_STANDARD
 - DOCUMENT_DISCIPLINE
 
-Fixture C0004.
+Card C0004.

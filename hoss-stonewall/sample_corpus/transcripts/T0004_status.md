@@ -2,14 +2,11 @@
 id: T0004
 type: transcript
 matter: Anderson v. Soylent Transport
-forum: Status Conference (fictional)
+forum: Status Conference
 date: 2025-05-05
-sanitized: true
 ---
 
 # Status Conference Transcript — Anderson v. Soylent Transport
-
-> Fictional transcript fragment for showcase purposes.
 
 THE COURT: We are on the record in matter T0004. Counsel, please state
 your appearances for the record.
@@ -23,4 +20,4 @@ schedule a follow-up status in sixty days.
 
 (Proceedings concluded.)
 
-Fixture T0004.
+Transcript T0004.

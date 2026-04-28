@@ -3,12 +3,9 @@ id: B0003
 type: billing
 matter: Taylor v. Dunder Mifflin
 period: 2025-04
-sanitized: true
 ---
 
-# Billing Sample — Taylor v. Dunder Mifflin
-
-> Sample line items. All time entries and totals are illustrative only.
+# Billing — Taylor v. Dunder Mifflin
 
 | Date       | Task                          | Hours | Rate  | Amount  |
 |------------|-------------------------------|-------|-------|---------|
@@ -17,4 +14,4 @@ sanitized: true
 | 2025-04-16 | Witness preparation outline   | 1.8   | 350   | 630.00  |
 | 2025-04-23 | Status conference attendance  | 0.7   | 350   | 245.00  |
 
-Fixture B0003.
+Statement B0003.

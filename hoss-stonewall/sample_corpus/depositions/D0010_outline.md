@@ -2,14 +2,11 @@
 id: D0010
 type: deposition
 matter: Smith v. Hooli Transport
-witness: Witness 010 (fictional)
+witness: Witness 010
 date: 2025-11-11
-sanitized: true
 ---
 
 # Deposition Outline — Smith v. Hooli Transport
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0010.
+Outline D0010.

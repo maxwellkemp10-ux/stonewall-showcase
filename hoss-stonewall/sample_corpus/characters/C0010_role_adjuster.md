@@ -2,18 +2,14 @@
 id: C0010
 type: character
 role: Adjuster
-sanitized: true
 ---
 
-# Character Card — Fictional Adjuster 010
-
-> Composite role profile generated for the public showcase. No real person
-> is described.
+# Character Card — Adjuster 010
 
 ## Role
 
-Adjuster appearing in routine commercial litigation matters. This card is
-included to illustrate the cast-codex shape only.
+Adjuster appearing in commercial litigation matters. Tracked across the
+portfolio for cast-codex routing and pattern analysis.
 
 ## Pattern Tags
 
@@ -21,4 +17,4 @@ included to illustrate the cast-codex shape only.
 - COMMUNICATION_STANDARD
 - DOCUMENT_DISCIPLINE
 
-Fixture C0010.
+Card C0010.

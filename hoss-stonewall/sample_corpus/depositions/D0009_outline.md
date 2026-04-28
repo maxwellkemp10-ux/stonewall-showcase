@@ -2,14 +2,11 @@
 id: D0009
 type: deposition
 matter: Clark v. Vehement Capital
-witness: Witness 009 (fictional)
+witness: Witness 009
 date: 2025-10-10
-sanitized: true
 ---
 
 # Deposition Outline — Clark v. Vehement Capital
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0009.
+Outline D0009.

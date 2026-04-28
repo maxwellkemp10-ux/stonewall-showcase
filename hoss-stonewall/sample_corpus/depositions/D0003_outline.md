@@ -2,14 +2,11 @@
 id: D0003
 type: deposition
 matter: Wilson v. Aperture Hauling
-witness: Witness 003 (fictional)
+witness: Witness 003
 date: 2025-04-04
-sanitized: true
 ---
 
 # Deposition Outline — Wilson v. Aperture Hauling
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0003.
+Outline D0003.

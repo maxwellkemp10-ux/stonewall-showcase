@@ -2,14 +2,11 @@
 id: X0005
 type: motion
 matter: Garcia v. Aperture Hauling
-filing: Motion to Compel (template)
+filing: Motion to Compel
 date: 2025-06-06
-sanitized: true
 ---
 
-# Motion to Compel — Template
-
-> Sanitized motion template. No real case caption.
+# Motion to Compel
 
 ## Introduction
 
@@ -27,4 +24,4 @@ needs of the case. Defendant has not asserted privilege with specificity.
 For the reasons stated above, Plaintiff respectfully requests an order
 compelling production within fourteen days of entry.
 
-Fixture X0005.
+Motion X0005.

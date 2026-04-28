@@ -525,11 +525,11 @@ python scripts/stonewall.py show A1104</code></pre></article>
     <section class="section" id="innovation-matrix">
       <div class="section-head">
         <div>
-          <div class="section-tag">Sanitized Innovation Matrix</div>
-          <h2>Twelve operating innovations rendered for showcase use</h2>
-          <p>This matrix translates high-value innovations from the main Stonewall operating stack into public-safe product language while preserving architecture, workflow utility, and implementation reality.</p>
+          <div class="section-tag">Innovation Matrix</div>
+          <h2>Operating innovations across the Stonewall stack</h2>
+          <p>This matrix walks through the high-value innovations powering the platform — architecture, workflow utility, and the implementation surfaces that ship today.</p>
         </div>
-        <div class="aside">Each card maps one real subsystem into a sanitized design signal so collaborators can see both product polish and operational depth without exposing private matter data.</div>
+        <div class="aside">Each card maps one subsystem to its design signal so collaborators can see product polish and operational depth at the same time.</div>
       </div>
       <div class="matrix-grid" id="innovationMatrix">
         <article class="matrix-card">
@@ -723,7 +723,7 @@ OK</code></pre></article>
             const impact = document.createElement('p');
             impact.textContent = item.impact || '';
             const signal = document.createElement('code');
-            signal.textContent = item.sanitized_signal || '';
+            signal.textContent = item.signal || '';
             card.appendChild(layer);
             card.appendChild(title);
             card.appendChild(impact);

@@ -3,12 +3,9 @@ id: B0001
 type: billing
 matter: Thomas v. Pied Piper Co
 period: 2025-02
-sanitized: true
 ---
 
-# Billing Sample — Thomas v. Pied Piper Co
-
-> Sample line items. All time entries and totals are illustrative only.
+# Billing — Thomas v. Pied Piper Co
 
 | Date       | Task                          | Hours | Rate  | Amount  |
 |------------|-------------------------------|-------|-------|---------|
@@ -17,4 +14,4 @@ sanitized: true
 | 2025-02-16 | Witness preparation outline   | 1.8   | 350   | 630.00  |
 | 2025-02-23 | Status conference attendance  | 0.7   | 350   | 245.00  |
 
-Fixture B0001.
+Statement B0001.

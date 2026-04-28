@@ -2,14 +2,11 @@
 id: D0004
 type: deposition
 matter: Anderson v. Acme Corp
-witness: Witness 004 (fictional)
+witness: Witness 004
 date: 2025-05-05
-sanitized: true
 ---
 
 # Deposition Outline — Anderson v. Acme Corp
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0004.
+Outline D0004.

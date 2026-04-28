@@ -2,14 +2,11 @@
 id: D0008
 type: deposition
 matter: Martinez v. Acme Corp
-witness: Witness 008 (fictional)
+witness: Witness 008
 date: 2025-09-09
-sanitized: true
 ---
 
 # Deposition Outline — Martinez v. Acme Corp
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0008.
+Outline D0008.

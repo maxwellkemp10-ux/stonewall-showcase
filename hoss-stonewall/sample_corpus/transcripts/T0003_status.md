@@ -2,14 +2,11 @@
 id: T0003
 type: transcript
 matter: Jones v. Dunder Mifflin
-forum: Status Conference (fictional)
+forum: Status Conference
 date: 2025-04-04
-sanitized: true
 ---
 
 # Status Conference Transcript — Jones v. Dunder Mifflin
-
-> Fictional transcript fragment for showcase purposes.
 
 THE COURT: We are on the record in matter T0003. Counsel, please state
 your appearances for the record.
@@ -23,4 +20,4 @@ schedule a follow-up status in sixty days.
 
 (Proceedings concluded.)
 
-Fixture T0003.
+Transcript T0003.

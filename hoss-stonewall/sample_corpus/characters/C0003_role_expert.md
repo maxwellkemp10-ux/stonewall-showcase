@@ -2,18 +2,14 @@
 id: C0003
 type: character
 role: Expert
-sanitized: true
 ---
 
-# Character Card — Fictional Expert 003
-
-> Composite role profile generated for the public showcase. No real person
-> is described.
+# Character Card — Expert 003
 
 ## Role
 
-Expert appearing in routine commercial litigation matters. This card is
-included to illustrate the cast-codex shape only.
+Expert appearing in commercial litigation matters. Tracked across the
+portfolio for cast-codex routing and pattern analysis.
 
 ## Pattern Tags
 
@@ -21,4 +17,4 @@ included to illustrate the cast-codex shape only.
 - COMMUNICATION_STANDARD
 - DOCUMENT_DISCIPLINE
 
-Fixture C0003.
+Card C0003.

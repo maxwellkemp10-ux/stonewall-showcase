@@ -4,20 +4,16 @@ type: case
 matter: Jackson v. Hooli Transport
 status: active
 opened: 2025-11-11
-sanitized: true
 ---
 
 # Jackson v. Hooli Transport
 
-> Fictional matter generated for the public showcase. No real parties, claim
-> numbers, or carriers appear in this file.
-
 ## Posture
 
-This sample case sits in the discovery phase. Plaintiff alleges a routine
-commercial vehicle incident; defendant has answered and demanded jury trial.
-The matter is used in this showcase to illustrate the manifest, sidecar, and
-pattern-tagging shape — not to represent any actual dispute.
+Discovery phase. Plaintiff alleges a commercial vehicle incident; defendant
+has answered and demanded jury trial. The matter sits in the active runway
+with discovery requests outstanding and the deposition window opening next
+quarter.
 
 ## Key Dates
 
@@ -33,4 +29,4 @@ pattern-tagging shape — not to represent any actual dispute.
 
 ## Notes
 
-Sanitized example only. Fixture M0010.
+Matter M0010.

@@ -3,12 +3,9 @@ id: B0006
 type: billing
 matter: Thompson v. Massive Dynamic
 period: 2025-07
-sanitized: true
 ---
 
-# Billing Sample — Thompson v. Massive Dynamic
-
-> Sample line items. All time entries and totals are illustrative only.
+# Billing — Thompson v. Massive Dynamic
 
 | Date       | Task                          | Hours | Rate  | Amount  |
 |------------|-------------------------------|-------|-------|---------|
@@ -17,4 +14,4 @@ sanitized: true
 | 2025-07-16 | Witness preparation outline   | 1.8   | 350   | 630.00  |
 | 2025-07-23 | Status conference attendance  | 0.7   | 350   | 245.00  |
 
-Fixture B0006.
+Statement B0006.

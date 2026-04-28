@@ -3,12 +3,9 @@ id: B0002
 type: billing
 matter: Clark v. Initech Freight
 period: 2025-03
-sanitized: true
 ---
 
-# Billing Sample — Clark v. Initech Freight
-
-> Sample line items. All time entries and totals are illustrative only.
+# Billing — Clark v. Initech Freight
 
 | Date       | Task                          | Hours | Rate  | Amount  |
 |------------|-------------------------------|-------|-------|---------|
@@ -17,4 +14,4 @@ sanitized: true
 | 2025-03-16 | Witness preparation outline   | 1.8   | 350   | 630.00  |
 | 2025-03-23 | Status conference attendance  | 0.7   | 350   | 245.00  |
 
-Fixture B0002.
+Statement B0002.

@@ -2,14 +2,11 @@
 id: D0007
 type: deposition
 matter: Thompson v. Aperture Hauling
-witness: Witness 007 (fictional)
+witness: Witness 007
 date: 2025-08-08
-sanitized: true
 ---
 
 # Deposition Outline — Thompson v. Aperture Hauling
-
-> Sanitized template. All names, employers, and addresses are fictional.
 
 ## Background
 
@@ -35,4 +32,4 @@ sanitized: true
 - TIMELINE_CONFIRMED
 - DOCUMENT_HOLD_REVIEWED
 
-Fixture D0007.
+Outline D0007.

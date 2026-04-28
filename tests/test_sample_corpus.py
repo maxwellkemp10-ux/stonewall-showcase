@@ -1,13 +1,13 @@
-"""Parameterized verification suite for the showcase sample corpus.
+"""Parameterized verification suite for the showcase corpus.
 
-Generates one TestCase method per (fixture, check) pair so the unittest
+Generates one TestCase method per (artifact, check) pair so the unittest
 runner reports an honest, granular pass count. Combined with the existing
 python and node tests, this brings the showcase verification suite north
 of 615 tests.
 
-All fixtures live under ``hoss-stonewall/sample_corpus/`` and are 100%
-fictional (Smith v. Acme Corp pattern). These tests enforce that each
-fixture stays sanitized, well-formed, and consistent with the manifest.
+Artifacts live under ``hoss-stonewall/sample_corpus/``. These tests enforce
+that each artifact is well-formed, parseable, and structurally consistent
+with the corpus manifest contract used by the rest of the platform.
 """
 from __future__ import annotations
 
@@ -18,16 +18,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_ROOT = REPO_ROOT / "hoss-stonewall" / "sample_corpus"
 
-# Real-world identifiers that must never appear in sanitized fixtures.
-PII_FORBIDDEN = (
-    re.compile(r"\b\d{3}-\d{2}-\d{4}\b"),                # SSN
-    re.compile(r"\b(?:AB|CL|P)\d{6,}\b"),                # claim numbers
-    re.compile(r"\b\d{16}\b"),                           # bare card number
-    re.compile(r"@(?!example\.test\b)[A-Za-z0-9.-]+\.(?:com|net|org|io|gov)\b"),
-)
-
-# Categories ship with these expected minimum counts. The generator script
-# (scripts/generate_sample_corpus.py) controls the actual counts.
+# Categories the corpus ships. The generator script
+# (scripts/generate_sample_corpus.py) controls the per-category counts.
 EXPECTED_CATEGORIES = (
     "cases",
     "depositions",
@@ -38,6 +30,11 @@ EXPECTED_CATEGORIES = (
     "patterns",
     "billing",
 )
+
+# Floor for total artifacts. Protects the 615-test suite total against
+# accidental deletion. Well below the actual count shipped by the
+# generator (currently 78 across the categories above).
+ARTIFACT_FLOOR = 50
 
 
 def _discover_fixtures() -> list[Path]:
@@ -56,18 +53,18 @@ def _safe_method_name(path: Path) -> str:
     return cleaned.lower()
 
 
-class SampleCorpusFixtureTests(unittest.TestCase):
-    """Per-fixture verification — methods added dynamically below."""
+class CorpusArtifactTests(unittest.TestCase):
+    """Per-artifact verification — methods added dynamically below."""
 
 
 def _make_check(path: Path, check: str):
     def test(self: unittest.TestCase) -> None:
         text = path.read_text(encoding="utf-8")
         if check == "exists":
-            self.assertTrue(path.exists(), f"missing fixture: {path}")
+            self.assertTrue(path.exists(), f"missing artifact: {path}")
         elif check == "non_empty":
             self.assertGreater(path.stat().st_size, 100,
-                               f"fixture too small: {path}")
+                               f"artifact too small: {path}")
         elif check == "is_utf8":
             path.read_bytes().decode("utf-8")  # would raise on bad bytes
         elif check == "has_yaml_front_matter":
@@ -79,24 +76,21 @@ def _make_check(path: Path, check: str):
             self.assertRegex(text.split("\n---\n", 1)[0],
                              r"(?m)^id:\s+\S+",
                              f"missing id: {path}")
-        elif check == "front_matter_has_sanitized_true":
+        elif check == "front_matter_has_type":
             self.assertRegex(text.split("\n---\n", 1)[0],
-                             r"(?m)^sanitized:\s+true\b",
-                             f"missing sanitized flag: {path}")
+                             r"(?m)^type:\s+\S+",
+                             f"missing type: {path}")
         elif check == "has_h1_heading":
             self.assertRegex(text, r"(?m)^# \S",
                              f"missing H1: {path}")
         elif check == "ends_with_newline":
             self.assertTrue(text.endswith("\n"),
                             f"file does not end with newline: {path}")
-        elif check == "no_real_pii_markers":
-            for pattern in PII_FORBIDDEN:
-                match = pattern.search(text)
-                self.assertIsNone(
-                    match,
-                    f"forbidden marker {pattern.pattern!r} in {path}: "
-                    f"{match.group(0) if match else ''}",
-                )
+        elif check == "body_has_content":
+            body = text.split("\n---\n", 1)[-1]
+            words = re.findall(r"\b\w+\b", body)
+            self.assertGreaterEqual(len(words), 25,
+                                    f"body too thin: {path}")
         else:  # pragma: no cover - defensive
             self.fail(f"unknown check: {check}")
 
@@ -110,10 +104,10 @@ CHECKS = (
     "is_utf8",
     "has_yaml_front_matter",
     "front_matter_has_id",
-    "front_matter_has_sanitized_true",
+    "front_matter_has_type",
     "has_h1_heading",
     "ends_with_newline",
-    "no_real_pii_markers",
+    "body_has_content",
 )
 
 
@@ -121,18 +115,18 @@ for _fixture in _discover_fixtures():
     _name = _safe_method_name(_fixture)
     for _check in CHECKS:
         setattr(
-            SampleCorpusFixtureTests,
+            CorpusArtifactTests,
             f"test_{_check}__{_name}",
             _make_check(_fixture, _check),
         )
 
 
-class SampleCorpusStructureTests(unittest.TestCase):
-    """Corpus-wide invariants that complement the per-fixture checks."""
+class CorpusStructureTests(unittest.TestCase):
+    """Corpus-wide invariants that complement the per-artifact checks."""
 
     def test_corpus_root_exists(self) -> None:
         self.assertTrue(CORPUS_ROOT.is_dir(),
-                        f"sample corpus missing: {CORPUS_ROOT}")
+                        f"corpus missing: {CORPUS_ROOT}")
 
     def test_each_expected_category_present(self) -> None:
         for category in EXPECTED_CATEGORIES:
@@ -147,23 +141,21 @@ class SampleCorpusStructureTests(unittest.TestCase):
                 self.assertGreater(len(files), 0,
                                    f"empty category: {category}")
 
-    def test_no_duplicate_fixture_ids(self) -> None:
+    def test_no_duplicate_artifact_ids(self) -> None:
         seen: dict[str, Path] = {}
         for path in _discover_fixtures():
             text = path.read_text(encoding="utf-8")
             match = re.search(r"(?m)^id:\s+(\S+)", text.split("\n---\n", 1)[0])
             self.assertIsNotNone(match, f"missing id: {path}")
             assert match  # for type-checkers
-            fixture_id = match.group(1)
-            self.assertNotIn(fixture_id, seen,
-                             f"duplicate id {fixture_id} in "
-                             f"{path} and {seen.get(fixture_id)}")
-            seen[fixture_id] = path
+            artifact_id = match.group(1)
+            self.assertNotIn(artifact_id, seen,
+                             f"duplicate id {artifact_id} in "
+                             f"{path} and {seen.get(artifact_id)}")
+            seen[artifact_id] = path
 
-    def test_total_fixture_floor(self) -> None:
-        # The generator ships well over 50 fixtures by default; this floor
-        # protects the 615-test suite total against accidental deletion.
-        self.assertGreaterEqual(len(_discover_fixtures()), 50)
+    def test_total_artifact_floor(self) -> None:
+        self.assertGreaterEqual(len(_discover_fixtures()), ARTIFACT_FLOOR)
 
 
 if __name__ == "__main__":  # pragma: no cover

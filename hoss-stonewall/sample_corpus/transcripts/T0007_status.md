@@ -2,14 +2,11 @@
 id: T0007
 type: transcript
 matter: Thomas v. Krusty Co
-forum: Status Conference (fictional)
+forum: Status Conference
 date: 2025-08-08
-sanitized: true
 ---
 
 # Status Conference Transcript — Thomas v. Krusty Co
-
-> Fictional transcript fragment for showcase purposes.
 
 THE COURT: We are on the record in matter T0007. Counsel, please state
 your appearances for the record.
@@ -23,4 +20,4 @@ schedule a follow-up status in sixty days.
 
 (Proceedings concluded.)
 
-Fixture T0007.
+Transcript T0007.
